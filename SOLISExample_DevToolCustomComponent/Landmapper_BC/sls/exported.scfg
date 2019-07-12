@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<HighLevelConfiguration Version="11.0.0">
+  <PowerThermal>
+    <Storage>
+      <SystemVoltageTable>
+        <VoltageEntry SOC="0" ChargeCurrentLimit="0.5" ChargeVoltage="0" DischargeVoltage="0" />
+        <VoltageEntry SOC="40" ChargeCurrentLimit="0.5" ChargeVoltage="3.4" DischargeVoltage="3.4" />
+        <VoltageEntry SOC="80" ChargeCurrentLimit="0.5" ChargeVoltage="3.8" DischargeVoltage="3.7" />
+        <VoltageEntry SOC="95" ChargeCurrentLimit="0.5" ChargeVoltage="3.8" DischargeVoltage="3.7" />
+        <VoltageEntry SOC="98" ChargeCurrentLimit="0.2" ChargeVoltage="3.8" DischargeVoltage="3.7" />
+        <VoltageEntry SOC="100" ChargeCurrentLimit="0.05" ChargeVoltage="3.8" DischargeVoltage="3.7" />
+      </SystemVoltageTable>
+      <Batteries>
+        <Battery Name="Battery 1" DesignCapacity="12" EffectiveCapacity="12" RechargeEfficiency="0.9" InitialSOC="90" />
+      </Batteries>
+      <Collection EnableThermalModel="False" DistanceDependentSolarFlux="True" SolarFlux="1367" IncludeIRAlbedoEffects="True" IRFlux="241" Albedo="0.3">
+        <Panel Name="SP_pY" SurfaceType="SolarPanel" FrontSurfaceArea="0.1" Efficiency="0.25" FrontAbsorbtivity="0.95" FrontEmissivity="0.85" FrontThermalMass="1000" FrontInitialTemp="0" NormalVector="[ 0.0  1.0  0.0 ]" AlignmentVector="SunVector" Mounting="FixedBody" BackSideSpecified="False" BackSurfaceArea="3" BackAbsorbtivity="0.95" BackEmissivity="0.85" BackThermalMass="1000" BackInitialTemp="0">
+          <Gimbal1Axis Axis="[ 0.0  1.0  0.0 ]" MinAngle="-90" MaxAngle="90" />
+          <Gimbal2Axis Axis="[ 0.0  0.0  1.0 ]" MinAngle="-90" MaxAngle="90" />
+          <EfficiencyMatrix>
+            <EfficiencyEntry Temp="0" Effeciency="0.25" />
+          </EfficiencyMatrix>
+        </Panel>
+        <Panel Name="SP_mY" SurfaceType="SolarPanel" FrontSurfaceArea="0.1" Efficiency="0.25" FrontAbsorbtivity="0.95" FrontEmissivity="0.85" FrontThermalMass="1000" FrontInitialTemp="0" NormalVector="[ 0.0  -1.0  0.0 ]" AlignmentVector="SunVector" Mounting="FixedBody" BackSideSpecified="False" BackSurfaceArea="3" BackAbsorbtivity="0.95" BackEmissivity="0.85" BackThermalMass="1000" BackInitialTemp="0">
+          <Gimbal1Axis Axis="[ 0.0  1.0  0.0 ]" MinAngle="-90" MaxAngle="90" />
+          <Gimbal2Axis Axis="[ 0.0  0.0  1.0 ]" MinAngle="-90" MaxAngle="90" />
+          <EfficiencyMatrix>
+            <EfficiencyEntry Temp="0" Effeciency="0.25" />
+            <EfficiencyEntry Temp="0" Effeciency="0.25" />
+          </EfficiencyMatrix>
+        </Panel>
+        <Panel Name="SP_pX" SurfaceType="SolarPanel" FrontSurfaceArea="0.02" Efficiency="0.25" FrontAbsorbtivity="0.95" FrontEmissivity="0.85" FrontThermalMass="1000" FrontInitialTemp="0" NormalVector="[ 1.0  0.0  0.0 ]" AlignmentVector="SunVector" Mounting="FixedBody" BackSideSpecified="False" BackSurfaceArea="3" BackAbsorbtivity="0.95" BackEmissivity="0.85" BackThermalMass="1000" BackInitialTemp="0">
+          <Gimbal1Axis Axis="[ 0.0  1.0  0.0 ]" MinAngle="-90" MaxAngle="90" />
+          <Gimbal2Axis Axis="[ 0.0  0.0  1.0 ]" MinAngle="-90" MaxAngle="90" />
+          <EfficiencyMatrix>
+            <EfficiencyEntry Temp="0" Effeciency="0.25" />
+            <EfficiencyEntry Temp="0" Effeciency="0.25" />
+            <EfficiencyEntry Temp="0" Effeciency="0.25" />
+          </EfficiencyMatrix>
+        </Panel>
+        <Panel Name="SP_mX" SurfaceType="SolarPanel" FrontSurfaceArea="0.02" Efficiency="0.25" FrontAbsorbtivity="0.95" FrontEmissivity="0.85" FrontThermalMass="1000" FrontInitialTemp="0" NormalVector="[ -1.0  0.0  0.0 ]" AlignmentVector="SunVector" Mounting="FixedBody" BackSideSpecified="False" BackSurfaceArea="3" BackAbsorbtivity="0.95" BackEmissivity="0.85" BackThermalMass="1000" BackInitialTemp="0">
+          <Gimbal1Axis Axis="[ 0.0  1.0  0.0 ]" MinAngle="-90" MaxAngle="90" />
+          <Gimbal2Axis Axis="[ 0.0  0.0  1.0 ]" MinAngle="-90" MaxAngle="90" />
+          <EfficiencyMatrix>
+            <EfficiencyEntry Temp="0" Effeciency="0.25" />
+            <EfficiencyEntry Temp="0" Effeciency="0.25" />
+            <EfficiencyEntry Temp="0" Effeciency="0.25" />
+            <EfficiencyEntry Temp="0" Effeciency="0.25" />
+          </EfficiencyMatrix>
+        </Panel>
+      </Collection>
+      <Load SunlightLoad="10" EclipseLoad="10" AddPayloadPower="True" AddCommPower="True" AddReactionWheelPower="False" />
+      <Thermal UseSpacecraftModeledPower="False" IncludeDetailedTelemetry="False" BusInternalPower="0" BusInitialTemp="0" BusThermalMass="1000">
+        <ConductivityMatrix />
+        <ShuntMatrix />
+      </Thermal>
+    </Storage>
+  </PowerThermal>
+  <DataRecorder Size="50" Units="Gigabytes" Saturate="True" InitialUsage="1" />
+  <MassProperties UseSTKValues="False" SpacecraftMass="12.5" InertiaMatrix="[[9.4457e-2 -1.2575e-4 -9.348e-4]&#xD; [-1.2575e-4 1.7821e-1 1.7159e-4]&#xD; [-9.348e-4 1.7159e-4 0.1168]]" OverrideODySSyValues="False" />
+  <Actuators>
+    <MagneticTorquers TotalMagneticPeriod="10.0" QuiescentPeriod="1.0" PulseWidthPeriod="1.0" MeasurementTimeout="60.0" MagneticTorquerQuiescentThreshold="0.0" />
+  </Actuators>
+  <MissionSequencing SequenceEngineCount="50" EnableRawEditor="True" />
+  <AttitudeDisturbances ForceDisturbance="[ 0.0  0.0  0.0 ]" TorqueDisturbance="[ 0.0  0.0  0.0 ]" EnableGravityGradientModel="False" EnableMagneticTorqueModel="False" SpacecraftMagneticDipole="[ 0.0  0.0  0.0 ]" />
+  <Sensors>
+    <Magnetometers />
+    <AngularRateSensors>
+      <AngularRateSensor Name="MPU_X" MeasurementAxis="[ 0.0  0.0  1.0 ]" InitialBiasEstimate="0.0" Quantization="0.0" MeasurementPeriod="0.0" MagnitudeLimit="1.0e+10" ConsistencyLimit="1.0e+10" DiscreteFilter="[[1.45350373523893e-1 1.07858900557112e-1][1.0 -1.15808661347859e+0 4.11295887559595e-1]]">
+        <AngularRateSensorODySSy FixedMeasurementError="[ 0.0  0.0  0.0 ]" NoiseStandardDeviation="0.015" BiasDriftStandardDeviation="2.0e-5" InitialBias="0.0" />
+      </AngularRateSensor>
+      <AngularRateSensor Name="MPU_Y" MeasurementAxis="[ 0.0  1.0  0.0 ]" InitialBiasEstimate="0.0" Quantization="0.0" MeasurementPeriod="0.0" MagnitudeLimit="1.0e+10" ConsistencyLimit="1.0e+10" DiscreteFilter="[[1.45350373523893e-1 1.07858900557112e-1][1.0 -1.15808661347859e+0 4.11295887559595e-1]]">
+        <AngularRateSensorODySSy FixedMeasurementError="[ 0.0  0.0  0.0 ]" NoiseStandardDeviation="0.015" BiasDriftStandardDeviation="2.0e-5" InitialBias="0.0" />
+      </AngularRateSensor>
+      <AngularRateSensor Name="MPU_Z" MeasurementAxis="[ -1.0  0.0  0.0 ]" InitialBiasEstimate="0.0" Quantization="0.0" MeasurementPeriod="0.0" MagnitudeLimit="1.0e+10" ConsistencyLimit="1.0e+10" DiscreteFilter="[[1.45350373523893e-1 1.07858900557112e-1][1.0 -1.15808661347859e+0 4.11295887559595e-1]]">
+        <AngularRateSensorODySSy FixedMeasurementError="[ 0.0  0.0  0.0 ]" NoiseStandardDeviation="0.015" BiasDriftStandardDeviation="2.0e-5" InitialBias="0.0" />
+      </AngularRateSensor>
+    </AngularRateSensors>
+    <SunVectorSensors />
+  </Sensors>
+  <Communications>
+    <CommSystem Name="Comm System 1" STKSatelliteObjectLink="No Link" Receiver="True" Transmitter="True" LinkType="X-Band">
+      <Antenna OmniDirectional="True" Boresight="[ 1.0  0.0  0.0 ]" FieldOfView="15" />
+      <Transmitter Frequency="2.4" DataRate="320" DataRateUnits="Mbps" Overhead="10" PowerConsumption="4" StandbyPower="0" />
+      <Receiver Frequency="2.4" DataRate="19200" DataRateUnits="bps" Overhead="10" PowerConsumption="3.4" StandbyPower="0" />
+    </CommSystem>
+  </Communications>
+  <Payloads />
+</HighLevelConfiguration>

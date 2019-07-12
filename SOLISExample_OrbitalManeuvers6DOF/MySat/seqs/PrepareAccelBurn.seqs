@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<sequence version="1.0.3">
+  <sc_cmd delta_time="0.1" mnemonic="MDC_SLEW_TRACK">
+    <parameter mnemonic="SLEWTIME_S" value="70" />
+    <parameter mnemonic="SLEWMODE" value="EigenSlew" />
+    <parameter mnemonic="TRACKMODE" value="AccelBurn" />
+    <parameter mnemonic="CLOCKINGOPTION" value="SC2NadirDetic" />
+  </sc_cmd>
+  <sc_cmd delta_time="0.1" mnemonic="MISC_CONFIG_PARSE">
+    <parameter mnemonic="STRING" value="FSW_ActProc_THR_Thrusters_Set.E_ThrusterControlState = 1;" />
+  </sc_cmd>
+  <sequence_cmd delta_time="69.8" name="FiveBurns" sequence_type="Series (Sequential Execution)" time_type="Relative" time="0" call_count="1" input_arg="" />
+</sequence>

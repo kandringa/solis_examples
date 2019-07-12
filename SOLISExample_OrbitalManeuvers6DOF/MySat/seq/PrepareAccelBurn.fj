@@ -1,0 +1,15 @@
+//WARNING: This code is automatically generated and any modifications will be overwritten by STK SOLIS.
+PROC PrepareAccelBurn
+DATE SEQ_START_TIME
+BEGIN
+SEQ_START_TIME = NOW()
+
+//Here Begins the user created sequence
+
+WAIT_UNTIL (SEQ_START_TIME + 0.1)
+CMD "MDC_SLEW_TRACK" (70 ,"EigenSlew","AccelBurn","SC2NadirDetic")
+CMD "MISC_CONFIG_PARSE" ("FSW_ActProc_THR_Thrusters_Set.E_ThrusterControlState = 1;")
+
+WAIT_UNTIL (SEQ_START_TIME + 70)
+CALL FiveBurns
+ENDPROC

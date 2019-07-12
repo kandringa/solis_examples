@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TargetPlannerConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" BtwnTgtMinDwell="1000" BeginTime="2016-02-05T14:25:00" EndTime="2016-02-05T15:45:00">
+  <BtwnTgtCmd SlewMode="RendezSlew" DestinationMode="SunTrack" ClockingOption="SC2NadirDetic" />
+  <Targets />
+  <TargetingConfigurations>
+    <TargetingConfiguration Name="Spotlight" TargetingType="Point" OnTargetSequenceDeltaTimeInit="0" OnTargetSequenceName="PayloadOn" OffTargetSequenceDeltaTimeInit="0" OffTargetSequenceName="PayloadOff" MaxSamples="1" MinimumDwellTime="5" DesiredDwellTime="5" ConstraintSourceReference="[No Constraints - Line of Sight]">
+      <ModeCmd SlewMode="RendezSlew" DestinationMode="TargetTrack" ClockingOption="SCVelocity" />
+    </TargetingConfiguration>
+    <TargetingConfiguration Name="Scan" TargetingType="Scan" OnTargetSequenceDeltaTimeInit="0" OnTargetSequenceName="PayloadOn" OffTargetSequenceDeltaTimeInit="0" OffTargetSequenceName="PayloadOff" MaxSamples="1" MinimumDwellTime="2" DesiredDwellTime="2" ConstraintSourceReference="[No Constraints - Line of Sight]">
+      <ScanInfo>
+        <EndTargetType>Default</EndTargetType>
+        <ScanInterpType>XYZ</ScanInterpType>
+        <ScanEitherDirection>false</ScanEitherDirection>
+        <ClockEitherDirection>false</ClockEitherDirection>
+        <Distance_km>20</Distance_km>
+        <Bearing_deg>0</Bearing_deg>
+        <BearingType>TrueNorth</BearingType>
+        <Duration_s>2</Duration_s>
+        <GroundSpeed_kmps>10</GroundSpeed_kmps>
+        <TimeMethod>GroundSpeed</TimeMethod>
+      </ScanInfo>
+      <ModeCmd SlewMode="RendezSlew" DestinationMode="TargetTrack" ClockingOption="SCVelocity" />
+    </TargetingConfiguration>
+    <TargetingConfiguration Name="GroundStation" TargetingType="Point" OnTargetSequenceDeltaTimeInit="0" OnTargetSequenceName="CommOn" OffTargetSequenceDeltaTimeInit="0" OffTargetSequenceName="CommOff" MaxSamples="1" MinimumDwellTime="1" DesiredDwellTime="1000" ConstraintSourceReference="[No Constraints - Line of Sight]">
+      <ModeCmd SlewMode="RendezSlew" DestinationMode="TargetTrack" ClockingOption="SCVelocity" />
+    </TargetingConfiguration>
+  </TargetingConfigurations>
+</TargetPlannerConfiguration>

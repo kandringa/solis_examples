@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="MissionSequenceSystemModel" type="SLS.CmdTlm.MissionSequenceSystemModel" id="MissionSequenceSystemModel_PWworz8DgiweNRuLWXKgEg" fileId="CDvAiYaG1kw8NMCDyGPh0A">
+  <value name="NumSequenceEngines" type="System.Int32">50</value>
+  <table name="AvailableSequences" type="List`1[[SLS.CmdTlm.SequenceModel]]" id="MissionSequenceSystemModel_Wt6qwS8aqe7tNxsgâPCpVA">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="Name" type="System.String" />
+    </header><![CDATA[
+:0	"CommOff"
+:1	"CommOn"
+:2	"PayloadOff"
+:3	"PayloadOn"
+:4	"TargetPlan"
+:5	"TrackOtherSat"
+]]></table>
+  <table name="ExecutionList" type="List`1[[SLS.CmdTlm.MissionSequenceModel]]" id="MissionSequenceSystemModel_33l8NPPoBYgmQcmKofLo0w">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <reference_column index="1" name="Sequence" type="SLS.CmdTlm.SequenceModel" />
+      <value_column index="2" name="ExecutionCondition" type="SLS.CmdTlm.MissionSequenceModel+ESequenceExecutionEventType" />
+      <value_column index="3" name="TimeValue_s" type="System.Double" />
+      <value_column index="4" name="InputArgString" type="System.String" />
+    </header><![CDATA[
+:0	MissionSequenceSystemModel_Wt6qwS8aqe7tNxsgâPCpVA:4	SimulationRunTime	0	""
+]]></table>
+</container>

@@ -1,0 +1,20 @@
+PROC TelemetryMonitor
+INT evr_count
+INT evr_i
+STRING evr[10]
+STRING color
+
+BEGIN
+WHILE(1)
+
+
+evr_count = 0
+color = "TLM_MON_G"
+
+
+FOR(evr_i = 0, evr_i < evr_count, evr_i += 1)
+    CMD "MISC_EVR" (color + evr[evr_i])
+ENDFOR
+
+ENDWHILE
+ENDPROC

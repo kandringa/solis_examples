@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<sequence version="1.0.3">
+  <sc_cmd delta_time="0" mnemonic="OCM0_SET_TX_POWER">
+    <parameter mnemonic="STATE" value="On" />
+  </sc_cmd>
+</sequence>

@@ -1,0 +1,84 @@
+stk.v.11.0
+WrittenBy    STK_v11.6.0
+
+BEGIN LineTarget
+
+    Name		 Scan2
+
+    BEGIN IndexPtData
+
+        CentralBody		 Earth
+        AnchorPtIndex		 -3
+        NumberOfPolylinePts		 2
+
+        BEGIN PolylinePoints
+
+             4.3000000000000000e+01 -1.0500000000000001e+02  0.0000000000000000e+00
+             4.4000000000000000e+01 -1.0300000000000000e+02  0.0000000000000000e+00
+
+        END PolylinePoints
+
+        BoundaryType		 GreatArc
+        Granularity		 0.008727
+
+    END IndexPtData
+
+    BEGIN Extensions
+
+        BEGIN ExternData
+        END ExternData
+
+        BEGIN ADFFileData
+        END ADFFileData
+
+        BEGIN AccessConstraints
+            LineOfSight IncludeIntervals
+        END AccessConstraints
+
+        BEGIN Desc
+        END Desc
+
+        BEGIN Crdn
+        END Crdn
+
+        BEGIN Graphics
+
+            BEGIN Attributes
+
+                LineColor		 #00ffff
+                LabelColor		 #00ffff
+                LineStyle		 0
+                LineWidth		 1
+                FontStyle		 0
+
+            END Attributes
+
+            BEGIN Graphics
+
+                ShowGfx		 On
+                Inherit		 On
+                ShowLabel		 On
+                ShowBoundingRect		 Off
+
+            END Graphics
+            BEGIN PointData
+                ShowPoints		 Off
+                NewPointShow		 Off
+                NewPointMarkerStyle		 1
+                NewPointFontStyle		 0
+                PointMarkerShow		 On
+                PointMarkerStyle		 1
+            END PointData
+
+            BEGIN DisplayTimes
+                DisplayType		 AlwaysOn
+            END DisplayTimes
+        END Graphics
+
+        BEGIN VO
+        END VO
+
+    END Extensions
+
+END LineTarget
+

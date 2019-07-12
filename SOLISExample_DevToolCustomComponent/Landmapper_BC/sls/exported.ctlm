@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<SelectedTelemetryList Version="11.0.0" APIDCount="12">
+  <Packet APID="800" Period="1" Mnemonic="GID_FSW_GUIDANCE" />
+  <Packet APID="700" Period="1" Mnemonic="MDC_FSW_MODECONTROLLER" />
+  <Packet APID="620" Period="1" Mnemonic="VEH_FSW_VEHICLESTATE" />
+  <Packet APID="930" Period="1" Mnemonic="CAT_FSW_CTRL_ATTITUDE" />
+  <Packet APID="900" Period="1" Mnemonic="CEG_FSW_CTRL_ERRORGEN" />
+  <Packet APID="920" Period="1" Mnemonic="CFF_FSW_CTRL_FEEDFORWARD" />
+  <Packet APID="910" Period="1" Mnemonic="CMC_FSW_CTRL_MOMENTUM" />
+  <Packet APID="610" Period="1" Mnemonic="EPH_FSW_EPHEMERIS" />
+  <Packet APID="123" Period="1" Mnemonic="CDT_CUSTOMDISTURBANCE" />
+  <Packet APID="2500" Period="1" Mnemonic="OPW_MDL" />
+  <Packet APID="2999" Period="1" Mnemonic="OER_ODY_SIMERROR" />
+  <Packet APID="2300" Period="1" Mnemonic="OEP_ODY_EPHEMERIS" />
+</SelectedTelemetryList>

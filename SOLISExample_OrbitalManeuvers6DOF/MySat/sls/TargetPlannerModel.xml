@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="TargetPlannerModel" type="SLS.TargetPlanner.TargetPlannerModel" id="TargetPlannerModel_zsDEgjpnDgsFezqqtEQSJw" fileId="2vMkhJtDmQ50pASSbeRIxA">
+  <value name="AutosaveSummaryCSV" type="System.Boolean">False</value>
+  <value name="UseSOLISTimes" type="System.Boolean">True</value>
+  <value name="BeginDateTime" type="System.DateTime">01/29/2018 17:00:00</value>
+  <value name="EndDateTime" type="System.DateTime">01/29/2018 17:44:14</value>
+  <reference name="BetweenTgt_SlewMode" type="SLS.ADCS.ModeController.RendezSlewModeModel" id="ModeControllerModel_9qbôH6kOBPgmVa1KkskTcQ" />
+  <container UnanchoredReference="true" name="BetweenTgt_DestinationMode" type="SLS.ADCS.ModeController.HoldModeModel">
+    <value name="Name" type="System.String">Hold</value>
+  </container>
+  <value name="BetweenTgt_ClockingOption" type="SLS.ADCS.ModeController.ModeControllerModel+EEphemVectors">InertialFixed</value>
+  <value name="BetweenTgt_MinDwell_s" type="System.Double">0</value>
+  <table name="TargetList" type="List`1[[SLS.TargetPlanner.TargetModel]]" id="TargetPlannerModel_cvfIz0lzjZen5TeeH49ztg" />
+  <table name="TargetPointsManagedList" type="List`1[[SLS.TargetPlanner.TargetPointManaged]]" id="TargetPlannerModel_kXRWAZNkuKLM0qRJED0sCA" />
+  <table name="TargetPointsCustomList" type="List`1[[SLS.TargetPlanner.TargetPointCustom]]" id="TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw" />
+  <table name="TargetingConfigList" type="List`1[[SLS.TargetPlanner.TargetingConfigModel]]" id="TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="ConfigType" type="SLS.TargetPlanner.TargetPlannerModel+ETargetingConfigTypes" />
+      <value_column index="2" name="Name" type="System.String" />
+      <value_column index="3" name="MaxAccesses" type="System.Int32" />
+      <value_column index="4" name="SatSensorConstraints" type="System.String" />
+      <value_column index="5" name="TargetConstraints" type="System.String" />
+      <reference_column index="6" name="SlewMode" type="SLS.ADCS.ModeController.IModeModel" />
+      <reference_column index="7" name="DestinationMode" type="SLS.ADCS.ModeController.IModeModel" />
+      <value_column index="8" name="ClockingOption" type="SLS.ADCS.ModeController.ModeControllerModel+EEphemVectors" />
+      <reference_column index="9" name="OnTargetSequence" type="SLS.CmdTlm.SequenceModel" />
+      <reference_column index="10" name="OffTargetSequence" type="SLS.CmdTlm.SequenceModel" />
+      <value_column index="11" name="OnTargetDeltaTime_s" type="System.Double" />
+      <value_column index="12" name="OffTargetDeltaTime_s" type="System.Double" />
+      <value_column index="13" name="MinimumDwellTime_s" type="System.Double" />
+      <value_column index="14" name="DesiredDwellTime_s" type="System.Double" />
+      <reference_column index="15" name="ScanInfo" type="SLS.TargetPlanner.ScanInfoModel" />
+    </header><![CDATA[
+:0	Point	"NewTgtConfig0"	1	null	"[No Constraints - Line of Sight]"	ModeControllerModel_4iO1KeGOj4poz7D5XyRMRg	ModeControllerModel_OZLBPVW05utwIVFbLZu6Tg	InertialFixed	null	null	0	0	0	0	null
+]]></table>
+  <container name="TargetAccessConstraintList" type="List`1[[SLS.TargetPlanner.TargetPlannerModel+ConstraintSet]]" id="TargetPlannerModel_6eF2nIxXEqôvâhmrFSEaEQ" />
+  <table name="ScanInfoList" type="List`1[[SLS.TargetPlanner.ScanInfoModel]]" id="TargetPlannerModel_7KDcDq7chVa1JUwfSbpEtA" />
+  <table name="EndOptionList" type="List`1[[SLS.TargetPlanner.TargetPlannerModel+EndPointOptions]]" id="TargetPlannerModel_uH1yjy6tz83APvExFtahFQ" />
+  <table name="CustomBearingList" type="List`1[[SLS.TargetPlanner.CustomBearingModel]]" id="TargetPlannerModel_Uu1ClBIhtZâzw1zGTaVV8w" />
+</container>

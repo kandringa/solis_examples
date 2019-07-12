@@ -1,0 +1,238 @@
+stk.v.11.0
+WrittenBy    STK_v11.6.0
+
+BEGIN Sensor
+
+    Name		 Kodak1000_Imager
+
+    BEGIN Pattern
+
+        BEGIN SimpleCone
+
+            ConeAngle		  2.0000000000000000e+00
+            AngularPatternResolution		  4.0000000000000000e+00
+
+        END SimpleCone
+
+        DetailedTerrainHorizon		 Yes
+
+
+    END Pattern
+
+    BEGIN Location
+
+        BEGIN Fixed
+
+            CoordinateType		 Cart
+            Sequence		 321
+            X		  0.0000000000000000e+00
+            Y		  0.0000000000000000e+00
+            Z		  0.0000000000000000e+00
+
+        END Fixed
+
+    END Location
+
+    BEGIN Pointing
+
+        BEGIN Fixed
+
+            PointingMethod		 AzEl
+            Sequence		 213
+            Qx		  0.0000000000000000e+00
+            Qy		  0.0000000000000000e+00
+            Qz		  0.0000000000000000e+00
+            Qs		  1.0000000000000000e+00
+
+        END Fixed
+
+    END Pointing
+
+    BEGIN Optics
+
+        FocalLength		  1.0000000000000000e+02
+        DetectorPitch		  1.0000000000000000e-03
+        IQConstant		  0.0000000000000000e+00
+        GsdCoefficient		  0.0000000000000000e+00
+
+    END Optics
+
+    BEGIN Extensions
+
+        BEGIN ExternData
+        END ExternData
+
+        BEGIN ADFFileData
+        END ADFFileData
+
+        BEGIN AccessConstraints
+            AtFieldOfView IncludeIntervals
+            FieldOfView IncludeIntervals
+            LineOfSight IncludeIntervals
+        END AccessConstraints
+
+        BEGIN ObjectCoverage
+        END ObjectCoverage
+
+        BEGIN Desc
+            BEGIN LongText
+Name 		: None
+Type 		: OpticalImager
+Health 		: NotRecorded
+Manufacturer 	: ITT Space Systems
+Optical Operation # 1 
+IMAGE CHARACTERISTIC TYPE
+  Scene Size Length   	: -999 kilometers
+  Scene Size Width    	: 11 kilometers
+  RESOLUTIONS:
+      Resolution 0.8 meters
+SPECTRUM CHARACTERISTICS:
+# of spectrum bands: 1
+Spectrum Type      	: VisibleNearIR
+Spectrum Band      	: Panchromatic
+    Lower Wavelength 	 : 526 nanometers
+    Upper Wavelength 	 : 929 nanometers
+Optical Operation # 2 
+IMAGE CHARACTERISTIC TYPE
+  Scene Size Length   	: -999 kilometers
+  Scene Size Width    	: 11 kilometers
+  RESOLUTIONS:
+      CrossTrackResolution 3.2 meters
+SPECTRUM CHARACTERISTICS:
+# of spectrum bands: 4
+Spectrum Type      	: VisibleNearIR
+Spectrum Band      	: Blue
+    Lower Wavelength 	 : 445 nanometers
+    Upper Wavelength 	 : 516 nanometers
+Spectrum Band      	: Green
+    Lower Wavelength 	 : 506 nanometers
+    Upper Wavelength 	 : 595 nanometers
+Spectrum Band      	: Red
+    Lower Wavelength 	 : 632 nanometers
+    Upper Wavelength 	 : 698 nanometers
+Spectrum Band      	: NearIR
+    Lower Wavelength 	 : 757 nanometers
+    Upper Wavelength 	 : 853 nanometers
+Field of View Properties 
+Short Name  	: Ikonos_Kodak1000_Vnir_BodyPt_FieldOfView
+Pattern type	: Rectangular
+Dimensions:
+   Horizontal Half Angle	: 2.0 degrees 
+   Vertical Half Angle 	: 0.5 degrees 
+Pointing:
+   Pointing Azimuth 	: 0 degrees
+   Pointing Elevation : 90 degrees
+Center Position 
+   X 		: 0.0 meters
+   Y 		: 0.0 meters
+   Z 		: 0.0 meters
+            END LongText
+        END Desc
+
+        BEGIN Refraction
+            RefractionModel		 Effective Radius Method
+
+            UseRefractionInAccess		 No
+
+            BEGIN ModelData
+                RefractionCeiling		  5.0000000000000000e+03
+                MaxTargetAltitude		  1.0000000000000000e+04
+                EffectiveRadius		  1.3333333333333299e+00
+
+                UseExtrapolation		 Yes
+
+
+            END ModelData
+        END Refraction
+
+        BEGIN Crdn
+        END Crdn
+
+        BEGIN Graphics
+
+            BEGIN Attributes
+
+                Inherit		 Yes
+                Show		 Yes
+                LineStyle		 0
+                LineWidth		 1
+                PatternColor		 #221374
+
+            END Attributes
+
+            BEGIN Display
+
+                NumberOfPatterns		 1
+                PersistenceDuration		  0.0000000000000000e+00
+                PersistenceIgnoreDefChg		 No
+                UpdatesDefnOften		 No
+                MinDisplayAltitude		  0.0000000000000000e+00
+                MaxDisplayAltitude		  1.0000000000000000e+07
+                AltitudeIntersectSense		 Either
+                ShowBothAltCrossings		 No
+                IntersectType		 CentralBody
+                ShowGround		 Yes
+                UseProjectionRadii		 No
+                ExcludeHorizonArcs		 No
+                ForwardPersist		 No
+                FillPersist		 No
+                DsplyTmHidesPersist		 No
+                SpaceLength		  5.0000000000000000e+07
+                TgtExtLength		  0.0000000000000000e+00
+                FOVHalfAngle		 No
+                HalfAngle		  0.0000000000000000e+00
+                ProjDisplay		 Sphere
+                DisplayType		 ConstantRadius
+                DisplayFOVWithConstraints		 No
+                ShowBoresight		 No
+                BoresightMarker		 4
+                BoresightColor		 #ffffff
+                ShowFill		 No
+                FillTranslucency		 0.5
+                ShowOn2DMap		 Yes
+
+            END Display
+
+            BEGIN Swath
+
+                MaxStep		  6.0000000000000000e+01
+                MinStep		  1.0000000000000001e-01
+                CloseSwath		 Yes
+                Tolerance		  4.0000000000000000e+00
+                MatchTolerance		  9.0000000000000000e+01
+                ShowSwath		 No
+                ComputationalMethod		 Numerical
+                Color		 #f0ffff
+                LineStyle		 0
+                LineWidth		 1
+                SwathIntervalPtr		
+                BEGIN EVENTINTERVAL
+                    BEGIN Interval
+                        Start		 25 Jul 2011 18:00:00.000000000
+                        Stop		 25 Jul 2011 20:00:00.000000000
+                    END Interval
+                    IntervalState		 Explicit
+                END EVENTINTERVAL
+
+
+            END Swath
+
+            BEGIN DisplayTimes
+                DisplayType		 AlwaysOn
+            END DisplayTimes
+        END Graphics
+
+        BEGIN Swath
+        END Swath
+
+        BEGIN VO
+        END VO
+
+    END Extensions
+
+    BEGIN SubObjects
+
+    END SubObjects
+
+END Sensor
+

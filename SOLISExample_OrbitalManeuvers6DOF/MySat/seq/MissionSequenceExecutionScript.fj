@@ -1,0 +1,14 @@
+PROC MissionSequenceExecutionScript
+
+BEGIN
+
+WAIT_UNTIL (0)
+START DisplayAltitude ()
+
+WAIT_UNTIL (0)
+START PrepareAccelBurn ()
+
+WAIT_UNTIL (521.1)
+START PrepareDecelBurn ()
+
+ENDPROC

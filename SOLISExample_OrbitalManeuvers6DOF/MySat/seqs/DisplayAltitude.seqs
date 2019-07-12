@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<sequence version="1.0.3">
+  <raw_code delta_time="0" code="// insert code here&#xD;&#xA;Delay_s = 10&#xD;&#xA;WHILE(1)&#xD;&#xA;   Altitude_km  = TM(&quot;OEP_ALTITUDE&quot;) / 1000&#xD;&#xA;   Eccentricity = TM(&quot;EPH_ECCENTRICITY&quot;)&#xD;&#xA;   SHOW(&quot;Altitude = &quot;+TOSTRING(Altitude_km)+&quot; km, Eccentricity = &quot;+TOSTRING(Eccentricity))&#xD;&#xA;   WAIT(Delay_s)&#xD;&#xA;ENDWHILE" variables="// insert variables here, the five types are INT, REAL, STRING, DATE and TIME&#xD;&#xA;REAL Altitude_km&#xD;&#xA;REAL Eccentricity&#xD;&#xA;REAL Delay_s" />
+</sequence>

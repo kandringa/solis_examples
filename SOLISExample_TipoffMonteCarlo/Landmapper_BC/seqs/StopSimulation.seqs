@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<sequence version="1.0.3">
+  <sc_cmd delta_time="0" mnemonic="STK_STOP_SIM" />
+</sequence>

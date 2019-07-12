@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<sequence version="1.0.3">
+  <comment text="" />
+  <sc_cmd delta_time="0" mnemonic="ACS_NOOP" />
+  <raw_code delta_time="0.1" code="// insert code here&#xD;&#xA;SHOW(&quot;Example Text&quot;);" variables="// insert variables here, the five types are INT, REAL, STRING, DATE and TIME" />
+  <sequence_cmd delta_time="4.9" name="Seq_2" sequence_type="Series (Sequential Execution)" time_type="Relative" time="2" call_count="3" input_arg="" />
+  <sequence_cmd delta_time="21.6" name="" sequence_type="Series (Sequential Execution)" time_type="Absolute" time="1559347260" call_count="1" input_arg="" />
+</sequence>

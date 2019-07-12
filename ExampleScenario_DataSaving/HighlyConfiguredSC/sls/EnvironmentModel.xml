@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="EnvironmentModel" type="SLS.Environment.EnvironmentModel" id="EnvironmentModel_MâdGcOlUKSômS8tJxE6sCw" fileId="OeaâMXxTD3Vw0Fvklpb3dQ">
+  <value name="SpacecraftForceDisturbance_BDYCM_N" type="SLS.Util.VectorModel">[ 0.0001 0.0002 0.0003 ]</value>
+  <value name="SpacecraftTorqueDisturbance_BDYCM_Nm" type="SLS.Util.VectorModel">[ 0.0003 0.0002 0.0001 ]</value>
+  <value name="EnableGravityGradient" type="System.Boolean">True</value>
+  <value name="EnableMagneticDisturbances" type="System.Boolean">True</value>
+  <value name="SpacecraftMagneticDipole_BDYCM_Am2" type="SLS.Util.VectorModel">[ 0.1 0.2 0.3 ]</value>
+  <value name="EnableAeroSolarDisturbances" type="System.Boolean">True</value>
+  <value name="SurfaceDisturbanceMode" type="SLS.Environment.EnvironmentModel+ESurfaceDistEnable">ForceOnly</value>
+  <value name="SolarFluxAt1AU_Wpm2" type="System.Double">999</value>
+  <table name="SurfaceList" type="List`1[[SLS.Environment.DisturbanceSurfaceModel]]" id="EnvironmentModel_K5LJ6OecIxkzu4SXEFl8zA">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="Name" type="System.String" />
+      <value_column index="2" name="DisturbanceType" type="SLS.Environment.EnvironmentModel+ESurfaceDistType" />
+      <value_column index="3" name="Area_m2" type="System.Double" />
+      <value_column index="4" name="Location_BDY_m" type="SLS.Util.VectorModel" />
+      <value_column index="5" name="Cd" type="System.Double" />
+      <value_column index="6" name="Cs" type="System.Double" />
+      <value_column index="7" name="Cdi" type="System.Double" />
+      <value_column index="8" name="SurfaceNormal_UBDY" type="SLS.Util.VectorModel" />
+      <value_column index="9" name="TwoSidedSurface" type="System.Boolean" />
+    </header><![CDATA[
+:0	"S1"	AeroSolar	22	[ 1 1 0 ]	0.01	0.02	0.03	[ 0.707106781186548 0.707106781186548 0 ]	True
+:1	"S2"	SolarOnly	77	[ 0 0 0 ]	0.33	0.22	0.11	[ 0 0 1 ]	False
+]]></table>
+</container>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="InitialConditionsModel" type="SLS.InitialConditions.InitialConditionsModel" id="InitialConditionsModel_ZcL0IniRD6hX9P1qmSdmzA" fileId="2rNFS9nuZhI73B7ZWYRVYw">
+  <reference name="MissionMode" type="SLS.ADCS.MissionModeModel" id="VehicleStateModel_lVB6ChkMqpLsQisxhXEflw:0" />
+  <value name="EphemerisState" type="SLS.InitialConditions.InitialConditionsModel+EEphemerisState">Unconverged</value>
+  <value name="AttitudeState" type="SLS.InitialConditions.InitialConditionsModel+EAttitudeDeterminedState">Undetermined</value>
+  <container UnanchoredReference="true" name="AttitudeControlMode" type="SLS.ADCS.ModeController.IdleModeModel">
+    <value name="Name" type="System.String">Idle</value>
+  </container>
+  <value name="AttitudeControlClockingOption" type="SLS.ADCS.ModeController.ModeControllerModel+EEphemVectors">InertialFixed</value>
+  <reference name="ClockingCelestialBody" type="SLS.Core.SolisConfigModel+CelestialBody" id="SolisConfigModel_C8sqF8TâXcKkYqCAc9BXMg:0" />
+  <reference name="ActiveAttitudeController" type="SLS.ADCS.AttControllerModel" id="ControllersModel_RXy5n9LM4jNz47yVbl3e7w" />
+  <reference name="ActiveMomentumController" type="SLS.ADCS.MomControllerModel" id="ControllersModel_uTyUfVDâ2MMC3wZbSw4yfQ" />
+  <value name="FSW_OverrideAttitudeAndRate" type="System.Boolean">False</value>
+  <value name="FSW_Attitude_CBI2BDY" type="SLS.Util.QuaternionModel">[ 0 0 0 1 ]</value>
+  <value name="FSW_Rate_BDY_degps" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+  <value name="FSW_OverridePositionAndVelocity" type="System.Boolean">False</value>
+  <value name="FSW_Position_CBI_km" type="SLS.Util.VectorModel">[ 6529.06753478323 1231.25359203765 -566.888753540984 ]</value>
+  <value name="FSW_Velocity_CBI_kmps" type="SLS.Util.VectorModel">[ 0.766866424124533 -0.54140778277823 7.6800046588112 ]</value>
+  <value name="ODY_OverrideAttitudeAndRate" type="System.Boolean">False</value>
+  <value name="ODY_Attitude_CBI2BDY" type="SLS.Util.QuaternionModel">[ 0 0 0 1 ]</value>
+  <value name="ODY_Rate_BDY_degps" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+  <value name="ODY_OverridePositionAndVelocity" type="System.Boolean">False</value>
+  <value name="ODY_Position_CBI_km" type="SLS.Util.VectorModel">[ 6529.06753478323 1231.25359203765 -566.888753540984 ]</value>
+  <value name="ODY_Velocity_CBI_kmps" type="SLS.Util.VectorModel">[ 0.766866424124533 -0.54140778277823 7.6800046588112 ]</value>
+</container>

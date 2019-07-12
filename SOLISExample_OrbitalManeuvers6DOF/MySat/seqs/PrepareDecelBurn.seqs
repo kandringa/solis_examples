@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<sequence version="1.0.3">
+  <sc_cmd delta_time="0.1" mnemonic="MDC_SLEW_TRACK">
+    <parameter mnemonic="SLEWTIME_S" value="70" />
+    <parameter mnemonic="SLEWMODE" value="EigenSlew" />
+    <parameter mnemonic="TRACKMODE" value="DecelBurn" />
+    <parameter mnemonic="CLOCKINGOPTION" value="SC2NadirDetic" />
+  </sc_cmd>
+  <sequence_cmd delta_time="74.9" name="FiveBurns" sequence_type="Series (Sequential Execution)" time_type="Relative" time="0" call_count="1" input_arg="" />
+</sequence>

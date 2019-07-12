@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Output\$(Configuration)\</OutDir>
+    <IntDir>Output\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <ExtensionsToDeleteonClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi;*.gen</ExtensionsToDeleteonClean>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Output\$(Configuration)\</OutDir>
+    <IntDir>Output\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <ExtensionsToDeleteonClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi;*.gen</ExtensionsToDeleteonClean>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command />
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\..\program files\agi\stk 11\solis\includes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;LITTLE_ENDIAN;MCDH_EXTENSION;USE_ASI_NAMESPACE;DLL_PROJECT;INCLUDE_PARAM_DB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4068;4482;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\ASI\MAXDevTool\MCDH_Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>REM Visual Studio isn't consistant about its root directory, so for relative paths, it is always either one of these.
+IF EXIST "C:\ProgramData\AGI\STK 11 (x64)\SOLIS\SOLISExample_DevToolCustomComponent\Landmapper_BC\dll\" COPY /Y "$(TargetPath)" "C:\ProgramData\AGI\STK 11 (x64)\SOLIS\SOLISExample_DevToolCustomComponent\Landmapper_BC\dll\"
+IF EXIST "..\C:\ProgramData\AGI\STK 11 (x64)\SOLIS\SOLISExample_DevToolCustomComponent\Landmapper_BC\dll\" COPY /Y "$(TargetPath)" "..\C:\ProgramData\AGI\STK 11 (x64)\SOLIS\SOLISExample_DevToolCustomComponent\Landmapper_BC\dll\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command />
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\..\program files\agi\stk 11\solis\includes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;LITTLE_ENDIAN;MCDH_EXTENSION;USE_ASI_NAMESPACE;DLL_PROJECT;INCLUDE_PARAM_DB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4068;4482;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\ASI\MAXDevTool\MCDH_Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>REM Visual Studio isn't consistant about its root directory, so for relative paths, it is always either one of these.
+IF EXIST "C:\ProgramData\AGI\STK 11 (x64)\SOLIS\SOLISExample_DevToolCustomComponent\Landmapper_BC\dll\" COPY /Y "$(TargetPath)" "C:\ProgramData\AGI\STK 11 (x64)\SOLIS\SOLISExample_DevToolCustomComponent\Landmapper_BC\dll\"
+IF EXIST "..\C:\ProgramData\AGI\STK 11 (x64)\SOLIS\SOLISExample_DevToolCustomComponent\Landmapper_BC\dll\" COPY /Y "$(TargetPath)" "..\C:\ProgramData\AGI\STK 11 (x64)\SOLIS\SOLISExample_DevToolCustomComponent\Landmapper_BC\dll\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+</Project>

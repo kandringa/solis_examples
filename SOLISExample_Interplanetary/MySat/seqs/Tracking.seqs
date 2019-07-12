@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<sequence version="1.0.3">
+  <sc_cmd delta_time="0" mnemonic="MDC_SLEW_TRACK_CB">
+    <parameter mnemonic="SLEWTIME_S" value="0" />
+    <parameter mnemonic="SLEWMODE" value="RendezSlew" />
+    <parameter mnemonic="TRACKMODE" value="OrbitTrack" />
+    <parameter mnemonic="CLOCKINGOPTION" value="SC2NadirDetic" />
+    <parameter mnemonic="CLOCKINGCELESTIALBODY" value="Earth" />
+  </sc_cmd>
+  <sc_cmd delta_time="200" mnemonic="MDC_SLEW_TRACK_CB">
+    <parameter mnemonic="SLEWTIME_S" value="0" />
+    <parameter mnemonic="SLEWMODE" value="RendezSlew" />
+    <parameter mnemonic="TRACKMODE" value="MarsTrack" />
+    <parameter mnemonic="CLOCKINGOPTION" value="SC2NadirDetic" />
+    <parameter mnemonic="CLOCKINGCELESTIALBODY" value="Earth" />
+  </sc_cmd>
+  <sc_cmd delta_time="200" mnemonic="MDC_SLEW_TRACK">
+    <parameter mnemonic="SLEWTIME_S" value="0" />
+    <parameter mnemonic="SLEWMODE" value="RendezSlew_SLOW" />
+    <parameter mnemonic="TRACKMODE" value="MarsTrack" />
+    <parameter mnemonic="CLOCKINGOPTION" value="SCVelocity" />
+  </sc_cmd>
+  <sc_cmd delta_time="200" mnemonic="MDC_SLEW_TRACK">
+    <parameter mnemonic="SLEWTIME_S" value="0" />
+    <parameter mnemonic="SLEWMODE" value="RendezSlew" />
+    <parameter mnemonic="TRACKMODE" value="TargetTrack" />
+    <parameter mnemonic="CLOCKINGOPTION" value="SC2Sun" />
+  </sc_cmd>
+  <sc_cmd delta_time="200" mnemonic="MDC_SLEW_TRACK">
+    <parameter mnemonic="SLEWTIME_S" value="0" />
+    <parameter mnemonic="SLEWMODE" value="RendezSlew" />
+    <parameter mnemonic="TRACKMODE" value="EarthTrack" />
+    <parameter mnemonic="CLOCKINGOPTION" value="SC2Sun" />
+  </sc_cmd>
+</sequence>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="CommModel" type="SLS.Communications.CommModel" id="CommModel_nW6Mp31LMâvDonPdNFvODw" fileId="qRNGeHôRGGK0mfp7IRjH6A">
+  <table name="CommItemList" type="List`1[[SLS.Communications.CommItemModel]]" id="CommModel_c2dwK99DACpveiQCP93YMg">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="Name" type="System.String" />
+      <value_column index="2" name="StkLink" type="System.String" />
+      <value_column index="3" name="IsReceiver" type="System.Boolean" />
+      <value_column index="4" name="IsTransmitter" type="System.Boolean" />
+      <value_column index="5" name="ReceiveDataRate" type="System.Double" />
+      <value_column index="6" name="ReceiveOverhead_pct" type="System.Double" />
+      <value_column index="7" name="ReceiveRateUnits" type="SLS.Communications.CommModel+ECommDataRateUnitsType" />
+      <value_column index="8" name="ReceivePower_W" type="System.Double" />
+      <value_column index="9" name="ReceiveStandbyPower_W" type="System.Double" />
+      <value_column index="10" name="TransmitDataRate" type="System.Double" />
+      <value_column index="11" name="TransmitRateUnits" type="SLS.Communications.CommModel+ECommDataRateUnitsType" />
+      <value_column index="12" name="TransmitOverhead_pct" type="System.Double" />
+      <value_column index="13" name="TransmitPower_W" type="System.Double" />
+      <value_column index="14" name="TransmitStandbyPower_W" type="System.Double" />
+      <value_column index="15" name="OmniDirectional" type="System.Boolean" />
+      <value_column index="16" name="AntennaBoresight_UBDY" type="SLS.Util.VectorModel" />
+      <value_column index="17" name="FieldOfView_deg" type="System.Double" />
+    </header><![CDATA[
+:0	"KaTransmitter"	"No Link"	False	True	19200	10	bps	3.4	0	320	Mbps	10	15	0	False	[ 0 0 1 ]	5
+:1	"UHF"	"No Link"	True	True	38.4	10	Kbps	2	0	38.4	Kbps	10	2	0	True	[ 1 0 0 ]	15
+]]></table>
+</container>

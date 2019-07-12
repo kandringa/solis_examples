@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="TargetPlannerModel" type="SLS.TargetPlanner.TargetPlannerModel" id="TargetPlannerModel_zsDEgjpnDgsFezqqtEQSJw" fileId="3mtC68P9jZPâQaGEuATPzA">
+  <value name="AutosaveSummaryCSV" type="System.Boolean">False</value>
+  <value name="UseSOLISTimes" type="System.Boolean">True</value>
+  <value name="BeginDateTime" type="System.DateTime">02/05/2016 14:25:00</value>
+  <value name="EndDateTime" type="System.DateTime">02/05/2016 14:45:00</value>
+  <reference name="BetweenTgt_SlewMode" type="SLS.ADCS.ModeController.RendezSlewModeModel" id="ModeControllerModel_LOtTmrHRYqyno8lLz5jVoQ" />
+  <reference name="BetweenTgt_DestinationMode" type="SLS.ADCS.ModeController.TrackingModeModel" id="ModeControllerModel_pDg5f7cY1RXdCCEH7âcygg" />
+  <value name="BetweenTgt_ClockingOption" type="SLS.ADCS.ModeController.ModeControllerModel+EEphemVectors">SC2NadirDetic</value>
+  <value name="BetweenTgt_MinDwell_s" type="System.Double">1000</value>
+  <table name="TargetList" type="List`1[[SLS.TargetPlanner.TargetModel]]" id="TargetPlannerModel_cvfIz0lzjZen5TeeH49ztg">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="Name" type="System.String" />
+      <value_column index="2" name="Priority" type="System.Byte" />
+      <reference_column index="3" name="Point1" type="SLS.TargetPlanner.TargetPointCustom" />
+      <value_column index="4" name="TargetType" type="SLS.TargetPlanner.TargetModel+ETargetType" />
+      <reference_column index="5" name="TargetingConfig" type="SLS.TargetPlanner.TargetingConfigModel" />
+      <reference_column index="6" name="ConstraintSet" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" />
+      <reference_column index="7" name="EndOption" type="SLS.TargetPlanner.TargetPlannerModel+EndPointOptions" />
+    </header><![CDATA[
+:0	"GroundStation"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:0	Facility	TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q:2	TargetPlannerModel_nDIE30LiôRTCy5zZ0lcWBA	null
+:1	"SE1"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:1	Target	null	TargetPlannerModel_wMbIâzANjBhiQnM69PDrOA	null
+:2	"SE2"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:2	Target	null	TargetPlannerModel_5YCzoFFlâxRoClGUx4uNfA	null
+:3	"SE3"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:3	Target	null	TargetPlannerModel_CShyNwyDRiOUH51jvQIH8w	null
+:4	"SS1"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:4	Target	TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q:1	TargetPlannerModel_ZBD6j0eXtgôE25Pe60vQJQ	TargetPlannerModel_uH1yjy6tz83APvExFtahFQ:1
+:5	"SS2"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:5	Target	TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q:1	TargetPlannerModel_WONH277195fdRpuxQGâ8Lw	TargetPlannerModel_uH1yjy6tz83APvExFtahFQ:2
+:6	"SS3"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:6	Target	TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q:1	TargetPlannerModel_F8hjrSBbn7zg1JAcauyLLQ	TargetPlannerModel_uH1yjy6tz83APvExFtahFQ:3
+:7	"Tgt1"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:7	Target	TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q:0	TargetPlannerModel_vLQdI0k8ADyibQdY84âPâw	null
+:8	"Tgt2"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:8	Target	TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q:0	TargetPlannerModel_cSl7zhPdMDk1W9RGYUqeew	null
+:9	"Tgt3"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:9	Target	TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q:0	TargetPlannerModel_6Z9eXOrweBsaBlVJDnzwrQ	null
+:10	"Tgt4"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:10	Target	TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q:0	TargetPlannerModel_HcG1tytXLuYGrA1ltwXzqg	null
+:11	"Tgt5"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:11	Target	TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q:0	TargetPlannerModel_nNâôw8PIôwKZyMbN30O1nw	null
+:12	"Tgt6"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:12	Target	TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q:0	TargetPlannerModel_EVQ3xYLGb0BWTqqlgENxpA	null
+:13	"Tgt7"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:13	Target	TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q:0	TargetPlannerModel_KLMMVUkTSO9lAIgtQjouxw	null
+:14	"Tgt8"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:14	Target	TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q:0	TargetPlannerModel_XEy5ti0klbNbiY5PKb8SXA	null
+:15	"Tgt9"	100	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:15	Target	TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q:0	TargetPlannerModel_ueZcBydâoR2FyVnQrôjTcg	null
+]]></table>
+  <table name="TargetPointsManagedList" type="List`1[[SLS.TargetPlanner.TargetPointManaged]]" id="TargetPlannerModel_kXRWAZNkuKLM0qRJED0sCA" />
+  <table name="TargetPointsCustomList" type="List`1[[SLS.TargetPlanner.TargetPointCustom]]" id="TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="Name" type="System.String" />
+      <value_column index="2" name="LLA_degdegm" type="SLS.Util.VectorModel" />
+    </header><![CDATA[
+:0	"GroundStation"	[ 58.00000000000001 -118 0 ]
+:1	"SE1"	[ 33 -99 0 ]
+:2	"SE2"	[ 44 -103 0 ]
+:3	"SE3"	[ 51 -104 0 ]
+:4	"SS1"	[ 32 -99 0 ]
+:5	"SS2"	[ 43 -105 0 ]
+:6	"SS3"	[ 49 -103 0 ]
+:7	"Tgt1"	[ 49.5135329197832 -107.003653964675 0 ]
+:8	"Tgt2"	[ 40.86807610242881 -100.81307994731 0 ]
+:9	"Tgt3"	[ 46.5249799458829 -108.604664486407 0 ]
+:10	"Tgt4"	[ 55.4906388675837 -107.537324138586 0 ]
+:11	"Tgt5"	[ 45.9253175605701 -102.08120775772 0 ]
+:12	"Tgt6"	[ 45.7136366864608 -100.070239453682 0 ]
+:13	"Tgt7"	[ 52.0640629097387 -105.044739995249 0 ]
+:14	"Tgt8"	[ 39.4690509002375 -102.716250380048 0 ]
+:15	"Tgt9"	[ 45.6077962494062 -105.362261306413 0 ]
+]]></table>
+  <table name="TargetingConfigList" type="List`1[[SLS.TargetPlanner.TargetingConfigModel]]" id="TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="ConfigType" type="SLS.TargetPlanner.TargetPlannerModel+ETargetingConfigTypes" />
+      <value_column index="2" name="Name" type="System.String" />
+      <value_column index="3" name="MaxAccesses" type="System.Int32" />
+      <value_column index="4" name="SatSensorConstraints" type="System.String" />
+      <value_column index="5" name="TargetConstraints" type="System.String" />
+      <reference_column index="6" name="SlewMode" type="SLS.ADCS.ModeController.IModeModel" />
+      <reference_column index="7" name="DestinationMode" type="SLS.ADCS.ModeController.IModeModel" />
+      <value_column index="8" name="ClockingOption" type="SLS.ADCS.ModeController.ModeControllerModel+EEphemVectors" />
+      <reference_column index="9" name="OnTargetSequence" type="SLS.CmdTlm.SequenceModel" />
+      <reference_column index="10" name="OffTargetSequence" type="SLS.CmdTlm.SequenceModel" />
+      <value_column index="11" name="OnTargetDeltaTime_s" type="System.Double" />
+      <value_column index="12" name="OffTargetDeltaTime_s" type="System.Double" />
+      <value_column index="13" name="MinimumDwellTime_s" type="System.Double" />
+      <value_column index="14" name="DesiredDwellTime_s" type="System.Double" />
+      <reference_column index="15" name="ScanInfo" type="SLS.TargetPlanner.ScanInfoModel" />
+    </header><![CDATA[
+:0	Point	"Spotlight"	1	null	"Tgt1"	ModeControllerModel_LOtTmrHRYqyno8lLz5jVoQ	ModeControllerModel_tjYb1PgdLJZpyweFk0WLow	SCVelocity	MissionSequenceSystemModel_Wt6qwS8aqe7tNxsgâPCpVA:3	MissionSequenceSystemModel_Wt6qwS8aqe7tNxsgâPCpVA:2	0	0	5	5	null
+:1	Scan	"Scan"	1	null	"Tgt1"	ModeControllerModel_LOtTmrHRYqyno8lLz5jVoQ	ModeControllerModel_tjYb1PgdLJZpyweFk0WLow	SCVelocity	MissionSequenceSystemModel_Wt6qwS8aqe7tNxsgâPCpVA:3	MissionSequenceSystemModel_Wt6qwS8aqe7tNxsgâPCpVA:2	0	0	2	2	TargetPlannerModel_7KDcDq7chVa1JUwfSbpEtA:0
+:2	Point	"GroundStation"	1	null	"Tgt1"	ModeControllerModel_LOtTmrHRYqyno8lLz5jVoQ	ModeControllerModel_tjYb1PgdLJZpyweFk0WLow	SCVelocity	MissionSequenceSystemModel_Wt6qwS8aqe7tNxsgâPCpVA:1	MissionSequenceSystemModel_Wt6qwS8aqe7tNxsgâPCpVA:0	0	0	1	1000	null
+]]></table>
+  <container name="TargetAccessConstraintList" type="List`1[[SLS.TargetPlanner.TargetPlannerModel+ConstraintSet]]" id="TargetPlannerModel_6eF2nIxXEqôvâhmrFSEaEQ">
+    <container name="TargetAccessConstraintList[0]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_nDIE30LiôRTCy5zZ0lcWBA">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_nQTBxlhWoBQWpyfhoGSblA">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_6Hrv9EgFâ2HqSI9aQ0c7tg">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+      </container>
+    </container>
+    <container name="TargetAccessConstraintList[1]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_wMbIâzANjBhiQnM69PDrOA">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_tPzcgPbZjWxto0WôwC7HhA">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_esuwzERXôyrgnR5Vkeô8Ng">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+      </container>
+    </container>
+    <container name="TargetAccessConstraintList[2]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_5YCzoFFlâxRoClGUx4uNfA">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_nUP6oLR65Kgjthô9gHôdXA">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_4D5Iy21vBpdza4e8aRpSGw">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+      </container>
+    </container>
+    <container name="TargetAccessConstraintList[3]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_CShyNwyDRiOUH51jvQIH8w">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_wacisBgPW8Jy0zyV4Ht0BA">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_Sqtm03AyPJWw12aE50Shdw">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+      </container>
+    </container>
+    <container name="TargetAccessConstraintList[4]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_ZBD6j0eXtgôE25Pe60vQJQ">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_RâziSFOLOwDâT1wVqLVDog">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_lx8zQMQTsuMCRjldh2B2ew">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+      </container>
+    </container>
+    <container name="TargetAccessConstraintList[5]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_WONH277195fdRpuxQGâ8Lw">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_sHpbVCHfvUkgssHGqtiHEg">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_YLPBeuWC3DKrYcdEw2nabg">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+      </container>
+    </container>
+    <container name="TargetAccessConstraintList[6]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_F8hjrSBbn7zg1JAcauyLLQ">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_JGnFdC9jHRWYHSL0dO2PBg">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_97CL4AAddRC7CE3VYglxGA">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+      </container>
+    </container>
+    <container name="TargetAccessConstraintList[7]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_vLQdI0k8ADyibQdY84âPâw">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_VzkmY5MrT0Afz7eDgI0kQA">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_4Ge0Np0t0BHxgx2Pn2aXcQ">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+        <container name="TargetAccessConstraints[1]" type="SLS.TargetPlanner.MinMaxConstraint" id="TargetPlannerModel_8gAo6ôvAXtSITT7W4lâqNg">
+          <value name="Name" type="System.String">ElevationAngle</value>
+          <value name="Type" type="System.Int32">14</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+          <value name="EnableMax" type="System.Boolean">False</value>
+          <value name="EnableMin" type="System.Boolean">True</value>
+          <value name="Max" type="System.Double">1.570796326794897</value>
+          <value name="Min" type="System.Double">0.6108652381980153</value>
+        </container>
+      </container>
+    </container>
+    <container name="TargetAccessConstraintList[8]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_cSl7zhPdMDk1W9RGYUqeew">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_JFh6cMB2qâLVmtQ5AUi2cA">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_tWtGôIovFzPJô5jNNGkbew">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+      </container>
+    </container>
+    <container name="TargetAccessConstraintList[9]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_6Z9eXOrweBsaBlVJDnzwrQ">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_ôNmQzDwYMQLMdlE8Ngfb9w">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_U7Y4pSIbdEFLrVEaIPMy0w">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+      </container>
+    </container>
+    <container name="TargetAccessConstraintList[10]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_HcG1tytXLuYGrA1ltwXzqg">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_âEDXpcQBtlôwXRpkkôEsEg">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_ojtb5lJOBgSx9OKBsfMNxQ">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+      </container>
+    </container>
+    <container name="TargetAccessConstraintList[11]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_nNâôw8PIôwKZyMbN30O1nw">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_ZiefVof50TKyJtTE4qrj2A">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_7kadpKFZLNâ6ôLQ37qpaVQ">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+      </container>
+    </container>
+    <container name="TargetAccessConstraintList[12]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_EVQ3xYLGb0BWTqqlgENxpA">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_MTn9KUszcD4hôrZ8pvXcfw">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_5tawp1NNs3Goh2ms4sItdA">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+      </container>
+    </container>
+    <container name="TargetAccessConstraintList[13]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_KLMMVUkTSO9lAIgtQjouxw">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_Bus6mQo5dVOCkkN8fQ6T1Q">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_1L1ezkDgc3ôKecE0âIrbEg">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+      </container>
+    </container>
+    <container name="TargetAccessConstraintList[14]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_XEy5ti0klbNbiY5PKb8SXA">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_mf5wzOe0fDTB0JQ44l3Xôw">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_1XRf2hZfW02WMdBôdcFQZg">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+      </container>
+    </container>
+    <container name="TargetAccessConstraintList[15]" type="SLS.TargetPlanner.TargetPlannerModel+ConstraintSet" id="TargetPlannerModel_ueZcBydâoR2FyVnQrôjTcg">
+      <container name="TargetAccessConstraints" type="List`1[[SLS.TargetPlanner.TargetAccessConstraintModel]]" id="TargetPlannerModel_bfDLBSCClQz89jN5x0CVUQ">
+        <container name="TargetAccessConstraints[0]" type="SLS.TargetPlanner.TargetAccessConstraintModel" id="TargetPlannerModel_B5UVt53MzOhcYFEvEkrHnA">
+          <value name="Name" type="System.String">LineOfSight</value>
+          <value name="Type" type="System.Int32">26</value>
+          <value name="ExclIntvl" type="System.Boolean">False</value>
+          <value name="MaxRelMotion" type="System.Double">0</value>
+          <value name="MaxTimeStep" type="System.Double">0</value>
+        </container>
+      </container>
+    </container>
+  </container>
+  <table name="ScanInfoList" type="List`1[[SLS.TargetPlanner.ScanInfoModel]]" id="TargetPlannerModel_7KDcDq7chVa1JUwfSbpEtA">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="ScanEitherDirection" type="System.Boolean" />
+      <value_column index="2" name="ClockEitherDirection" type="System.Boolean" />
+      <value_column index="3" name="ScanInterpType" type="SLS.TargetPlanner.TargetPlannerModel+EScanInterpTypes" />
+      <value_column index="4" name="Distance_km" type="System.Double" />
+      <value_column index="5" name="Bearing_deg" type="System.Double" />
+      <value_column index="6" name="BearingRelativeTo" type="SLS.TargetPlanner.TargetPlannerModel+EBearingTypes" />
+      <value_column index="7" name="Duration_s" type="System.Double" />
+      <value_column index="8" name="GroundSpeed_kmps" type="System.Double" />
+      <value_column index="9" name="TimeMethod" type="SLS.TargetPlanner.TargetPlannerModel+EScanTimeMethod" />
+    </header><![CDATA[
+:0	False	False	XYZ	20	0	TrueNorth	2	10	GroundSpeed
+]]></table>
+  <table name="EndOptionList" type="List`1[[SLS.TargetPlanner.TargetPlannerModel+EndPointOptions]]" id="TargetPlannerModel_uH1yjy6tz83APvExFtahFQ">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="EndType" type="SLS.TargetPlanner.TargetPlannerModel+EndPointOptions+EEndTargetTypes" />
+      <reference_column index="2" name="RefPoint" type="SLS.TargetPlanner.ITargetPointBase" />
+      <value_column index="3" name="CustomLLA_degdegm" type="SLS.Util.VectorModel" />
+      <value_column index="4" name="CustomDistance_km" type="System.Double" />
+      <value_column index="5" name="CustomBearing_deg" type="System.Double" />
+    </header><![CDATA[
+:0:null
+:1	Target	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:1	[ 33 -99 0 ]	0	0
+:2	Target	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:2	[ 44 -103 0 ]	0	0
+:3	Target	TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw:3	[ 51 -104 0 ]	0	0
+:4	Default	null	null	0	0
+]]></table>
+  <table name="CustomBearingList" type="List`1[[SLS.TargetPlanner.CustomBearingModel]]" id="TargetPlannerModel_Uu1ClBIhtZâzw1zGTaVV8w" />
+</container>

@@ -1,0 +1,9 @@
+//WARNING: This code is automatically generated and any modifications will be overwritten by STK SOLIS.
+PROC TrackOtherSat
+DATE SEQ_START_TIME
+BEGIN
+SEQ_START_TIME = NOW()
+
+//Here Begins the user created sequence
+CMD "MDC_SLEW_TRACK" (0 ,"RendezSlew","OrbitTrack","SC2Sun")
+ENDPROC

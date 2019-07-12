@@ -1,0 +1,9 @@
+//WARNING: This code is automatically generated and any modifications will be overwritten by SOLIS.
+PROC CommOn
+DATE SEQ_START_TIME
+BEGIN
+SEQ_START_TIME = NOW()
+
+//Here Begins the user created sequence
+CMD "OCM0_SET_TX_POWER" ("On")
+ENDPROC

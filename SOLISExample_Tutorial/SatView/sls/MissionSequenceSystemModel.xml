@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="MissionSequenceSystemModel" type="SLS.CmdTlm.MissionSequenceSystemModel" id="MissionSequenceSystemModel_PWworz8DgiweNRuLWXKgEg" fileId="ô8gl6j3Enuf0aScx4zHqng">
+  <value name="NumSequenceEngines" type="System.Int32">50</value>
+  <table name="AvailableSequences" type="List`1[[SLS.CmdTlm.SequenceModel]]" id="MissionSequenceSystemModel_Wt6qwS8aqe7tNxsgâPCpVA">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="Name" type="System.String" />
+    </header><![CDATA[
+:0	"TelemetryMonitor"
+]]></table>
+  <table name="ExecutionList" type="List`1[[SLS.CmdTlm.MissionSequenceModel]]" id="MissionSequenceSystemModel_33l8NPPoBYgmQcmKofLo0w" />
+</container>

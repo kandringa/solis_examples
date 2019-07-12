@@ -1,0 +1,9 @@
+//WARNING: This code is automatically generated and any modifications will be overwritten by SOLIS.
+PROC StopSimulation
+DATE SEQ_START_TIME
+BEGIN
+SEQ_START_TIME = NOW()
+
+//Here Begins the user created sequence
+CMD "STK_STOP_SIM"
+ENDPROC

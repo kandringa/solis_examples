@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="MissionSequenceSystemModel" type="SLS.CmdTlm.MissionSequenceSystemModel" id="MissionSequenceSystemModel_PWworz8DgiweNRuLWXKgEg" fileId="57oKFâ3vStMGpDe7UZ8xLg">
+  <value name="NumSequenceEngines" type="System.Int32">50</value>
+  <table name="AvailableSequences" type="List`1[[SLS.CmdTlm.SequenceModel]]" id="MissionSequenceSystemModel_Wt6qwS8aqe7tNxsgâPCpVA" />
+  <table name="ExecutionList" type="List`1[[SLS.CmdTlm.MissionSequenceModel]]" id="MissionSequenceSystemModel_33l8NPPoBYgmQcmKofLo0w" />
+</container>

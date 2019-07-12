@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="ControllersModel" type="SLS.ADCS.ControllersModel" id="ControllersModel_âpXâlT8REmjYj8WzPôSpBw" fileId="eZjtY6z4H7xQylTTyGWY9w">
+  <value name="AttitudeControlModelLevel" type="SLS.ADCS.ControllersModel+EAttitudeControlModelLevel">PIIDControl</value>
+  <container name="AttControlDataList" type="List`1[[SLS.ADCS.AttControllerModel]]" id="ControllersModel_1d39Rnv2ofZ0DOuPIMôxzw">
+    <container name="AttControlDataList[0]" type="SLS.ADCS.AttControllerModel" id="ControllersModel_RXy5n9LM4jNz47yVbl3e7w">
+      <value name="Name" type="System.String">Standard</value>
+      <value name="ResetOnModeChange" type="System.Boolean">True</value>
+      <container name="ActuatorSet_ATC" type="List`1[[SLS.ADCS.Actuators.IActuatorSetBaseModel]]" id="ControllersModel_orJcCZUnED6dzWkHhfs59w">
+        <reference name="ActuatorSet_ATC[0]" type="SLS.ADCS.Actuators.ActuatorSetRwModel" id="ActuatorSystemModel_Aô3WrAXtmdulDcsFIllnxQ" />
+        <reference name="ActuatorSet_ATC[1]" type="SLS.ADCS.Actuators.ActuatorSetRwModel" id="ActuatorSystemModel_Aô3WrAXtmdulDcsFIllnxQ" />
+        <reference name="ActuatorSet_ATC[2]" type="SLS.ADCS.Actuators.ActuatorSetRwModel" id="ActuatorSystemModel_Aô3WrAXtmdulDcsFIllnxQ" />
+      </container>
+      <value name="ControllerFrame_BDY2ATC" type="SLS.Util.QuaternionModel">[ 0 0 0 1 ]</value>
+      <value name="LoopGain_ATC_kgm2" type="SLS.Util.VectorModel">[ 4 5 2.5 ]</value>
+      <value name="RateGain_ATC_1ps" type="SLS.Util.VectorModel">[ 1.4 1.4 1.4 ]</value>
+      <value name="PositionGain_ATC_1ps2" type="SLS.Util.VectorModel">[ 1.137475492174 1.137475492174 1.137475492174 ]</value>
+      <value name="Integral1Gain_ATC_1ps3" type="SLS.Util.VectorModel">[ 0.23823230999 0.23823230999 0.23823230999 ]</value>
+      <value name="Integral2Gain_ATC_1ps4" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="FeedFwdGain_ATC" type="SLS.Util.VectorModel">[ 1 1 1 ]</value>
+      <value name="AutoUpdateLowerTorqueLimit" type="System.Boolean">True</value>
+      <value name="MaxTorqueCommandLimit_ATC_Nm" type="SLS.Util.VectorModel">[ 1000000000 1000000000 1000000000 ]</value>
+      <value name="MinTorqueCommandLimit_ATC_Nm" type="SLS.Util.VectorModel">[ -1000000000 -1000000000 -1000000000 ]</value>
+      <value name="AutoUpdateLowerPositionLimit" type="System.Boolean">True</value>
+      <value name="MaxPositionErrorLimit_ATC_rd" type="SLS.Util.VectorModel">[ 1000000000 1000000000 1000000000 ]</value>
+      <value name="MinPositionErrorLimit_ATC_rd" type="SLS.Util.VectorModel">[ -1000000000 -1000000000 -1000000000 ]</value>
+      <value name="AutoUpdateLowerRateLimit" type="System.Boolean">True</value>
+      <value name="MaxRateErrorLimit_ATC_rdps" type="SLS.Util.VectorModel">[ 1000000000 1000000000 1000000000 ]</value>
+      <value name="MinRateErrorLimit_ATC_rdps" type="SLS.Util.VectorModel">[ -1000000000 -1000000000 -1000000000 ]</value>
+      <value name="AutoUpdateLowerIntegral1Limit" type="System.Boolean">True</value>
+      <value name="MaxIntegral1Limit_ATC_rdps2" type="SLS.Util.VectorModel">[ 0.001 0.001 0.001 ]</value>
+      <value name="MinIntegral1Limit_ATC_rdps2" type="SLS.Util.VectorModel">[ -0.001 -0.001 -0.001 ]</value>
+      <value name="AutoUpdateLowerIntegral2Limit" type="System.Boolean">True</value>
+      <value name="MaxIntegral2Limit_ATC_rdps2" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="MinIntegral2Limit_ATC_rdps2" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="AutoUpdateLowerFeedForwardLimit" type="System.Boolean">True</value>
+      <value name="MaxFeedFwdErrorLimit_ATC_Nm" type="SLS.Util.VectorModel">[ 1000000000 1000000000 1000000000 ]</value>
+      <value name="MinFeedFwdErrorLimit_ATC_Nm" type="SLS.Util.VectorModel">[ -1000000000 -1000000000 -1000000000 ]</value>
+      <container name="LoopFilter_ATC" type="List`1[[SLS.Util.DiscreteFilterModel]]" id="ControllersModel_Snlf2OOTSjjNO9CKPb2t1g">
+        <value name="LoopFilter_ATC[0]" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="LoopFilter_ATC[1]" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="LoopFilter_ATC[2]" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      </container>
+      <container name="PositionFilter_ATC" type="List`1[[SLS.Util.DiscreteFilterModel]]" id="ControllersModel_zX6dy8vhXDclxaâ8qAswGw">
+        <value name="PositionFilter_ATC[0]" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="PositionFilter_ATC[1]" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="PositionFilter_ATC[2]" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      </container>
+      <container name="RateFilter_ATC" type="List`1[[SLS.Util.DiscreteFilterModel]]" id="ControllersModel_cXGheôL0ddATwzAPuYgCSQ">
+        <value name="RateFilter_ATC[0]" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="RateFilter_ATC[1]" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="RateFilter_ATC[2]" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      </container>
+      <container name="FeedFwdFilter_ATC" type="List`1[[SLS.Util.DiscreteFilterModel]]" id="ControllersModel_9Jx3dJ3eMVb1jCd6Dmjvtg">
+        <value name="FeedFwdFilter_ATC[0]" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="FeedFwdFilter_ATC[1]" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="FeedFwdFilter_ATC[2]" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      </container>
+      <value name="FeedForwardInclGuidanceCmd" type="System.Boolean">True</value>
+      <value name="FeedForwardInclGyroscopicTrq" type="System.Boolean">True</value>
+      <value name="FeedForwardInclMomentumCtrlTrq" type="System.Boolean">True</value>
+    </container>
+  </container>
+  <container name="MomControlDataList" type="List`1[[SLS.ADCS.MomControllerModel]]" id="ControllersModel_q0YYiPvWqA45snSôQGKLPQ">
+    <container name="MomControlDataList[0]" type="SLS.ADCS.MomControllerModel" id="ControllersModel_uTyUfVDâ2MMC3wZbSw4yfQ">
+      <value name="Name" type="System.String">Standard</value>
+      <value name="EnabledState" type="SLS.ADCS.MomControllerModel+EMomCtrlState">Enabled_IdleDisabled</value>
+      <value name="UseActuatorMomentum" type="System.Boolean">True</value>
+      <value name="UseSpacecraftMomentum" type="System.Boolean">True</value>
+      <container name="ActuatorSet_MMC" type="List`1[[SLS.ADCS.Actuators.IActuatorSetBaseModel]]" id="ControllersModel_MN3wRcu8Gxl8odusVswNôw">
+        <null name="ActuatorSet_MMC[0]" type="SLS.ADCS.Actuators.IActuatorSetBaseModel" />
+        <null name="ActuatorSet_MMC[1]" type="SLS.ADCS.Actuators.IActuatorSetBaseModel" />
+        <null name="ActuatorSet_MMC[2]" type="SLS.ADCS.Actuators.IActuatorSetBaseModel" />
+      </container>
+      <value name="ReferenceFrame" type="SLS.ADCS.MomControllerModel+EMomCtrlRefFrames">BDY</value>
+      <value name="ControllerFrame_REF2MMC" type="SLS.Util.QuaternionModel">[ 0 0 0 1 ]</value>
+      <value name="Command_MMC_Nms" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="Gain_MMC_1ps" type="SLS.Util.VectorModel">[ 0.01 0.01 0.01 ]</value>
+      <value name="TorqueUpperLimit_MMC_Nm" type="SLS.Util.VectorModel">[ 1 1 1 ]</value>
+      <value name="TorqueLowerLimit_MMC_Nm" type="SLS.Util.VectorModel">[ -1 -1 -1 ]</value>
+      <value name="ControlType" type="SLS.ADCS.MomControllerModel+EControlMethod">Continuous</value>
+      <value name="DB_ErrorThresholdTimeout_s" type="System.Double">3600</value>
+      <value name="DB_MomErrorStartCond_MMC_Nms" type="SLS.Util.VectorModel">[ 0.5 0.5 0.5 ]</value>
+      <value name="DB_MomErrorCompleteCond_MMC_Nms" type="SLS.Util.VectorModel">[ 0.1 0.1 0.1 ]</value>
+      <container name="MomentumFilter_MMC" type="List`1[[SLS.Util.DiscreteFilterModel]]" id="ControllersModel_fTFâHâ5hâ5Nx5mmhnJ1txQ">
+        <value name="MomentumFilter_MMC[0]" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="MomentumFilter_MMC[1]" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="MomentumFilter_MMC[2]" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      </container>
+    </container>
+  </container>
+</container>

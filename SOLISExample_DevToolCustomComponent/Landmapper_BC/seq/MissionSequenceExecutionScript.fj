@@ -1,0 +1,4 @@
+PROC MissionSequenceExecutionScript
+BEGIN
+CMD "FJ_START_ABS" (1454682300, "TargetPlan.fj","")
+ENDPROC

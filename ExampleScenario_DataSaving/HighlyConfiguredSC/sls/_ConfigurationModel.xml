@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="_ConfigurationModel" type="ConfigDB+SerializableWrapper" id="_ConfigurationModel_âJsPzgC6l8qZvUaN6E8AôQ" fileId="NxvgJmiMJkePwUbsTdQVZA">
+  <value name="SelectedConfigurationSetId" type="System.Int32">-1</value>
+  <container name="ConfigurationDataSet" type="ConfigDB" id="_ConfigurationModel_Oc3zT7S96olTZqpuEbBocw">
+    <table name="Table" type="ConfigDB+ConfigurationSetsTableDataTable" id="_ConfigurationModel_KjbP3zldz8ylFyZ39kâeeA">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="ConfigurationSetID" type="System.Int32" />
+        <value_column index="2" name="ConfigurationSetName" type="System.String" />
+      </header><![CDATA[
+:0	1	"ConfigSet2"
+]]></table>
+    <table name="Table" type="ConfigDB+ConfigurationSet_VersionTableDataTable" id="_ConfigurationModel_m3uVPhWKâmW0hiA2VQK9Zw">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="ConfigurationSetID" type="System.Int32" />
+        <value_column index="2" name="ComponentID" type="System.Int32" />
+        <value_column index="3" name="ComponentVersionID" type="System.Int32" />
+      </header><![CDATA[
+:0	1	194	13868
+]]></table>
+    <table name="Table" type="ConfigDB+ComponentsTableDataTable" id="_ConfigurationModel_FLSXfpYD0zQ38hKôfGrC5A">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="ComponentID" type="System.Int32" />
+        <value_column index="2" name="ComponentName" type="System.String" />
+      </header><![CDATA[
+:0	-7	"sub_system_adcs"
+:1	25	"FSW_ModeController"
+:2	194	"EignSlew_abc"
+]]></table>
+    <table name="Table" type="ConfigDB+ComponentVersionsTableDataTable" id="_ConfigurationModel_6vokz0291ecQ5YTVMjNyGQ">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="ComponentVersionID" type="System.Int32" />
+        <value_column index="2" name="VersionNameID" type="System.Int32" />
+        <value_column index="3" name="FileID" type="System.Int32" />
+        <value_column index="4" name="FactoryID" type="System.Int32" />
+        <value_column index="5" name="ComponentID" type="System.Int32" />
+        <value_column index="6" name="Subsystem_ComponentID" type="System.Int32" />
+        <value_column index="7" name="Comment" type="System.String" />
+        <value_column index="8" name="long_name" type="System.String" />
+        <value_column index="9" name="group_name" type="System.String" />
+        <value_column index="10" name="priority" type="System.Int32" />
+        <value_column index="11" name="master_id" type="System.UInt16" />
+        <value_column index="12" name="cmdtlm_prefix" type="System.String" />
+      </header><![CDATA[
+:0	13868	2	8	18	194	-7	null	""namelong""	""namegroup""	99	7	""fixpre""
+:1	13869	3	8	18	194	-7	null	""namelong2""	""gn2""	0	8	""fixpre2""
+]]></table>
+    <table name="Table" type="ConfigDB+FactoriesTableDataTable" id="_ConfigurationModel_WIG1p3XxTXcfb2vlLsTEOQ">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="FactoryID" type="System.Int32" />
+        <value_column index="2" name="FactoryName" type="System.String" />
+        <value_column index="3" name="SourceType" type="STKSolis.Satellite.SystemData.MCDHConfigurationData+EFactorySourceType" />
+        <value_column index="4" name="ComponentType" type="ConfigDB+FactoriesTableDataTable+EComponentType" />
+      </header><![CDATA[
+:0	18	"FSC_Gui_EigenSlew"	0	1
+]]></table>
+    <table name="Table" type="ConfigDB+ParametersTableDataTable" id="_ConfigurationModel_qnAJEccDw791EGoWcaKosQ">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="ComponentVersionID" type="System.Int32" />
+        <value_column index="2" name="Section" type="System.UInt32" />
+        <value_column index="3" name="Parameter" type="System.String" />
+        <value_column index="4" name="Type" type="STKSolis.Satellite.SystemData.MCDHConfigurationData+EConfigParameterType" />
+        <value_column index="5" name="Units" type="System.String" />
+        <value_column index="6" name="Value" type="System.Object" />
+        <value_column index="7" name="Comment" type="System.String" />
+        <value_column index="8" name="FileID" type="System.Int32" />
+      </header><![CDATA[
+:0	13868	0	"I_MaxDetermineSlewTimeIters"	3	"none"	7	"abcdefghijk comment"	8
+:1	13869	0	"I_MaxDetermineSlewTimeIters"	3	"none"	7	"abcdefghijk comment"	8
+]]></table>
+    <table name="Table" type="ConfigDB+ConnectionParametersTableDataTable" id="_ConfigurationModel_3H6k9t17zFBvZ2ô4P854DA">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="ComponentVersionID" type="System.Int32" />
+        <value_column index="2" name="ConnectionName" type="System.String" />
+        <value_column index="3" name="Connection_ComponentID" type="System.Int32" />
+        <value_column index="4" name="Connection_Accessor" type="System.String" />
+        <value_column index="5" name="Comment" type="System.String" />
+        <value_column index="6" name="FileID" type="System.Int32" />
+      </header><![CDATA[
+:0	13868	"Connection_FSW_ModeParms"	25	"FSW_ModeParms"	""	8
+:1	13869	"Connection_FSW_ModeParms"	25	"FSW_ModeParms"	""	8
+]]></table>
+    <table name="Table" type="ConfigDB+FunctionsTableDataTable" id="_ConfigurationModel_RbTZQIvwLjcPLy2HMTN6LQ">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="ComponentVersionID" type="System.Int32" />
+        <value_column index="2" name="Section" type="System.UInt32" />
+        <value_column index="3" name="FunctionName" type="System.String" />
+        <value_column index="4" name="FunctionID" type="System.Int32" />
+        <value_column index="5" name="Comment" type="System.String" />
+        <value_column index="6" name="FileID" type="System.Int32" />
+      </header><![CDATA[
+:0	13868	0	"set_mode"	74487	""	8
+]]></table>
+    <table name="Table" type="ConfigDB+ConnectionFunctionsTableDataTable" id="_ConfigurationModel_Awô0LOaWDqsMEX1RnuS8yQ" />
+    <table name="Table" type="ConfigDB+FunctionArgumentsTableDataTable" id="_ConfigurationModel_DJôgôh8l44ckqko6MuAzaQ">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="FunctionID" type="System.Int32" />
+        <value_column index="2" name="Index" type="System.UInt32" />
+        <value_column index="3" name="Type" type="STKSolis.Satellite.SystemData.MCDHConfigurationData+EConfigParameterType" />
+        <value_column index="4" name="Units" type="System.String" />
+        <value_column index="5" name="Value" type="System.Object" />
+      </header><![CDATA[
+:0	74487	0	3	null	1
+:1	74487	1	3	null	2
+]]></table>
+    <table name="Table" type="ConfigDB+FilesTableDataTable" id="_ConfigurationModel_Zôyb2XGb4pXEfFQt2hCSiQ">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="FileID" type="System.Int32" />
+        <value_column index="2" name="FileName" type="System.String" />
+        <value_column index="3" name="FileType" type="STKSolis.Satellite.SystemData.MCDHConfigurationData+EType" />
+      </header><![CDATA[
+:0	8	"FSW_SecondaryComponents"	1
+]]></table>
+    <table name="Table" type="ConfigDB+VersionNamesTableDataTable" id="_ConfigurationModel_zZis3UHCQBDCvH9W0HtuFw">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="VersionNameID" type="System.Int32" />
+        <value_column index="2" name="VersionName" type="System.String" />
+      </header><![CDATA[
+:0	2	"New Version"
+:1	3	"anotherversion"
+]]></table>
+    <table name="Table" type="ConfigDB+FactoryConfigTableDataTable" id="_ConfigurationModel_EOgôtwxâCc5VzrMôlD9BFg" />
+    <table name="Table" type="ConfigDB+FactoryConfigTypesTableDataTable" id="_ConfigurationModel_AxZ3ômâNnâkI8b73byhgmw" />
+  </container>
+</container>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="EnvironmentModel" type="SLS.Environment.EnvironmentModel" id="EnvironmentModel_MâdGcOlUKSômS8tJxE6sCw" fileId="LhQulWoyUVahefUYQvyrlQ">
+  <value name="SpacecraftForceDisturbance_BDYCM_N" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+  <value name="SpacecraftTorqueDisturbance_BDYCM_Nm" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+  <value name="EnableGravityGradient" type="System.Boolean">False</value>
+  <value name="EnableMagneticDisturbances" type="System.Boolean">False</value>
+  <value name="SpacecraftMagneticDipole_BDYCM_Am2" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+  <value name="EnableAeroSolarDisturbances" type="System.Boolean">False</value>
+  <value name="SurfaceDisturbanceMode" type="SLS.Environment.EnvironmentModel+ESurfaceDistEnable">ForceAndTorque</value>
+  <value name="SolarFluxAt1AU_Wpm2" type="System.Double">1367</value>
+  <table name="SurfaceList" type="List`1[[SLS.Environment.DisturbanceSurfaceModel]]" id="EnvironmentModel_K5LJ6OecIxkzu4SXEFl8zA" />
+</container>

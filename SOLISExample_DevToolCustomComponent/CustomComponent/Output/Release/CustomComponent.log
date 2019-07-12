@@ -1,0 +1,9 @@
+﻿  CustomDisturbance.auto.cpp
+  CustomDisturbance.cpp
+  CustomComponent_Init.auto.cpp
+     Creating library C:\ProgramData\AGI\STK 11 (x64)\SOLIS\SOLISExample_DevToolCustomComponent\CustomComponent\Output\Release\CustomComponent.lib and object C:\ProgramData\AGI\STK 11 (x64)\SOLIS\SOLISExample_DevToolCustomComponent\CustomComponent\Output\Release\CustomComponent.exp
+  Generating code
+  All 1275 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  CustomComponent.vcxproj -> C:\ProgramData\AGI\STK 11 (x64)\SOLIS\SOLISExample_DevToolCustomComponent\CustomComponent\Output\Release\CustomComponent.dll
+          1 file(s) copied.

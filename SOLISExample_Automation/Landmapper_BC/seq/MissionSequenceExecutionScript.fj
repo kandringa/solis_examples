@@ -1,0 +1,8 @@
+PROC MissionSequenceExecutionScript
+
+BEGIN
+
+WAIT_UNTIL (1454682300)
+START TargetPlan ()
+
+ENDPROC

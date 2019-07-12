@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="AttitudeDeterminationModel" type="SLS.ADCS.AttitudeDeterminationModel" id="AttitudeDeterminationModel_wz15vu9lNs96SSWsLZIltQ" fileId="GTLzBqMN1XAWpMWbâknrKg">
+  <value name="AttitudeDeterminationModelLevel" type="SLS.ADCS.EAttitudeDeterminationModelLevel">PerfectAD</value>
+  <value name="Init_Method" type="SLS.ADCS.EInitializationType">ODySSy</value>
+  <value name="Init_UndetAttitude_CBI2BDY" type="SLS.Util.QuaternionModel">[ 0 0 0 1 ]</value>
+  <value name="Init_AutoRateDamp" type="System.Boolean">True</value>
+  <null name="Init_DeterminedSequence" type="SLS.CmdTlm.SequenceModel" />
+  <null name="Init_UndeterminedSequence" type="SLS.CmdTlm.SequenceModel" />
+  <value name="Init_FramesRequired" type="System.Int32">2</value>
+  <value name="Init_MeasurementTimeWindow_s" type="System.Double">10</value>
+  <value name="Init_SensorPersistDuration_s" type="System.Double">1</value>
+  <value name="Init_AttitudeConsistencyThreshold_deg" type="System.Double">10</value>
+  <value name="Init_MinReferenceSeparationAngle_deg" type="System.Double">30</value>
+  <value name="EnableBiasProcessing" type="System.Boolean">True</value>
+  <value name="EstimatedRateBiasLimit_degps" type="System.Double">1</value>
+  <value name="FG_RateBiasTimeConstant_s" type="System.Double">100</value>
+  <value name="KF_InitialAttitudeStDev_deg" type="System.Double">1</value>
+  <value name="KF_InitialRateBiasStDev_degps" type="System.Double">0.1</value>
+  <value name="KF_RateNoiseStDev_degps" type="System.Double">0.01</value>
+  <value name="KF_RateDriftStDev_degpsprthr" type="System.Double">0.01</value>
+  <table name="SensorList" type="List`1[[SLS.ADCS.Sensors.AttitudeSensorModel]]" id="AttitudeDeterminationModel_yv0yvdSWczjVenn3dC7X8A" />
+</container>

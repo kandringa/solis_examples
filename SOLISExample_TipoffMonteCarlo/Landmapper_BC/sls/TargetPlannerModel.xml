@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="TargetPlannerModel" type="SLS.TargetPlanner.TargetPlannerModel" id="TargetPlannerModel_zsDEgjpnDgsFezqqtEQSJw" fileId="FwMJnLG1mD1UDQxe4Tjd3Q">
+  <value name="AutosaveSummaryCSV" type="System.Boolean">False</value>
+  <value name="UseSOLISTimes" type="System.Boolean">True</value>
+  <value name="BeginDateTime" type="System.DateTime">07/06/2018 00:35:43</value>
+  <value name="EndDateTime" type="System.DateTime">07/06/2018 05:35:43</value>
+  <reference name="BetweenTgt_SlewMode" type="SLS.ADCS.ModeController.RendezSlewModeModel" id="ModeControllerModel_LOtTmrHRYqyno8lLz5jVoQ" />
+  <reference name="BetweenTgt_DestinationMode" type="SLS.ADCS.ModeController.TrackingModeModel" id="ModeControllerModel_pDg5f7cY1RXdCCEH7âcygg" />
+  <value name="BetweenTgt_ClockingOption" type="SLS.ADCS.ModeController.ModeControllerModel+EEphemVectors">SC2NadirDetic</value>
+  <value name="BetweenTgt_MinDwell_s" type="System.Double">10</value>
+  <table name="TargetList" type="List`1[[SLS.TargetPlanner.TargetModel]]" id="TargetPlannerModel_cvfIz0lzjZen5TeeH49ztg" />
+  <table name="TargetPointsManagedList" type="List`1[[SLS.TargetPlanner.TargetPointManaged]]" id="TargetPlannerModel_kXRWAZNkuKLM0qRJED0sCA" />
+  <table name="TargetPointsCustomList" type="List`1[[SLS.TargetPlanner.TargetPointCustom]]" id="TargetPlannerModel_ôFOWNrPdhE3ouxiM1FB9cw" />
+  <table name="TargetingConfigList" type="List`1[[SLS.TargetPlanner.TargetingConfigModel]]" id="TargetPlannerModel_OUSôZW2TZZoy1l9D4agI6Q" />
+  <container name="TargetAccessConstraintList" type="List`1[[SLS.TargetPlanner.TargetPlannerModel+ConstraintSet]]" id="TargetPlannerModel_6eF2nIxXEqôvâhmrFSEaEQ" />
+  <table name="ScanInfoList" type="List`1[[SLS.TargetPlanner.ScanInfoModel]]" id="TargetPlannerModel_7KDcDq7chVa1JUwfSbpEtA" />
+  <table name="EndOptionList" type="List`1[[SLS.TargetPlanner.TargetPlannerModel+EndPointOptions]]" id="TargetPlannerModel_uH1yjy6tz83APvExFtahFQ" />
+  <table name="CustomBearingList" type="List`1[[SLS.TargetPlanner.CustomBearingModel]]" id="TargetPlannerModel_Uu1ClBIhtZâzw1zGTaVV8w" />
+</container>

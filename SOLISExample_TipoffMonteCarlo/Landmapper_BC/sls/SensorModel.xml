@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="SensorModel" type="SLS.ADCS.Sensors.SensorModel" id="SensorModel_HD0CS6Rgp0TEWRbOyOzqQQ" fileId="vZUôHXjzTiM33UDâzkt4dw">
+  <container name="RateSensorList" type="List`1[[SLS.ADCS.Sensors.RateSensorModel]]" id="SensorModel_jWddSaR3VUSjJdWzsFJ4MA" />
+  <container name="GpsList" type="List`1[[SLS.ADCS.Sensors.GpsModel]]" id="SensorModel_SGh144qCClXUmYsI9cwôIQ">
+    <container name="GpsList[0]" type="SLS.ADCS.Sensors.GpsModel" id="SensorModel_63vUsQI5hE4PUElXDxO6WA">
+      <value name="Name" type="System.String">GPS</value>
+      <value name="ODY_IsOn" type="System.Boolean">True</value>
+      <value name="ODY_MeasurementPeriod_s" type="System.Double">0</value>
+      <value name="ODY_PositionBias_LVLH_m" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_PositionNoiseStDev_LVLH_m" type="SLS.Util.VectorModel">[ 1 1 1 ]</value>
+      <value name="ODY_VelocityBias_LVLH_mps" type="SLS.Util.VectorModel">[ 0.1 0.1 0.1 ]</value>
+      <value name="ODY_VelocityNoiseStDev_LVLH_mps" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+    </container>
+  </container>
+  <container name="HorizonSensorList" type="List`1[[SLS.ADCS.Sensors.HorizonSensorModel]]" id="SensorModel_SAq7âgrIâCDRizQUnômkEA" />
+  <container name="ImuList" type="List`1[[SLS.ADCS.Sensors.ImuModel]]" id="SensorModel_vl3OKy9B6WIZtFyP9VtIvQ">
+    <container name="ImuList[0]" type="SLS.ADCS.Sensors.ImuModel" id="SensorModel_xw2RioERA1Nu3ZwwTBkHXw">
+      <value name="Name" type="System.String">MPU</value>
+      <value name="Location_BDY_m" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="Orientation_BDY2IMU" type="SLS.Util.QuaternionModel">[ 0 -0.7071067811865476 0 0.7071067811865476 ]</value>
+      <value name="Orientation_IMU2RTE" type="SLS.Util.QuaternionModel">[ 0 0 0 1 ]</value>
+      <value name="Orientation_IMU2ACC" type="SLS.Util.QuaternionModel">[ 0 0 0 1 ]</value>
+      <value name="RateBiasEstimate_RTE_degps" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="RateMagnitudeLimit_RTE_degps" type="SLS.Util.VectorModel">[ 100 100 100 ]</value>
+      <value name="RateConsistencyLimit_RTE_degps" type="SLS.Util.VectorModel">[ 100 100 100 ]</value>
+      <value name="RateXFilter" type="SLS.Util.DiscreteFilterModel">[[0.145350373523893 0.107858900557112][1 -1.15808661347859 0.411295887559595]]</value>
+      <value name="RateYFilter" type="SLS.Util.DiscreteFilterModel">[[0.145350373523893 0.107858900557112][1 -1.15808661347859 0.411295887559595]]</value>
+      <value name="RateZFilter" type="SLS.Util.DiscreteFilterModel">[[0.145350373523893 0.107858900557112][1 -1.15808661347859 0.411295887559595]]</value>
+      <value name="ProcessLinearAcc" type="System.Boolean">True</value>
+      <value name="AccBiasEstimate_ACC_mps2" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="AccMagnitudeLimit_ACC_mps2" type="SLS.Util.VectorModel">[ 100 100 100 ]</value>
+      <value name="AccConsistencyLimit_ACC_mps2" type="SLS.Util.VectorModel">[ 100 100 100 ]</value>
+      <value name="AccXFilter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="AccYFilter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="AccZFilter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="ODY_LocationError_BDY_m" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_Misalignment_IMU_deg" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_RateMisalignment_RTE_deg" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_AccMisalignment_ACC_deg" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_SensorOn" type="System.Boolean">True</value>
+      <value name="ODY_MeasurementPeriod_s" type="System.Double">0</value>
+      <value name="ODY_RateNoiseStdDev_RTE_degps" type="SLS.Util.VectorModel">[ 0.015 0.015 0.015 ]</value>
+      <value name="ODY_RateARWStdDev_RTE_degprthr" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_RateRRWStdDev_RTE_degps" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_RateRRWTimeConstant_RTE_hr" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_RateInitialBias_RTE_degps" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_RateScaleFactorErr_RTE_ppm" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_RateQuantization_RTE_degps" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_ModelLinearAcc" type="System.Boolean">True</value>
+      <value name="ODY_AccNoiseStdDev_ACC_mps2" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_AccVRWStdDev_ACC_mpsrthr" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_AccARWStdDev_ACC_mps2" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_AccARWTimeConstant_ACC_hr" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_AccInitialBias_ACC_mps2" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_AccScaleFactorErr_ACC_ppm" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_AccQuantization_ACC_mps2" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+    </container>
+  </container>
+  <container name="MagnetometerList" type="List`1[[SLS.ADCS.Sensors.MagnetometerModel]]" id="SensorModel_hLqLPrte7DJv0XJj0PQmfw">
+    <container name="MagnetometerList[0]" type="SLS.ADCS.Sensors.MagnetometerModel" id="SensorModel_Ic7bB8lp1SYm7âskOfa05w">
+      <value name="Name" type="System.String">Mag_FCHMC</value>
+      <value name="Orientation_BDY2MAG" type="SLS.Util.QuaternionModel">[ 0.5 -0.5 -0.5 0.5 ]</value>
+      <value name="SensorBiasEst_MAG_T" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="SpacecraftBiasEst_BDY_T" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="QuiescentDelay_s" type="System.Double">0</value>
+      <value name="LowerMagnitudeLimit_T" type="System.Double">0</value>
+      <value name="UpperMagnitudeLimit_T" type="System.Double">1</value>
+      <value name="SaturationFaultLimit_T" type="System.Double">1</value>
+      <value name="FilterResetCycles" type="System.UInt32">10</value>
+      <value name="MAGX_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="MAGY_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="MAGZ_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="ODY_Misalignment_MAG_deg" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_IsOn" type="System.Boolean">True</value>
+      <value name="ODY_MeasurementPeriod_s" type="System.Double">0</value>
+      <value name="ODY_SpacecraftBias_BDY_T" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_SensorBias_MAG_T" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_NoiseStdDev_MAG_T" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_Quantization_T" type="System.Double">0</value>
+    </container>
+  </container>
+  <container name="StarTrackerList" type="List`1[[SLS.ADCS.Sensors.StarTrackerModel]]" id="SensorModel_SViwgMMyKNAc785Jbky4hQ">
+    <container name="StarTrackerList[0]" type="SLS.ADCS.Sensors.StarTrackerModel" id="SensorModel_YaLW28NIiJDYlj7IcNkz8Q">
+      <value name="Name" type="System.String">Sinclair_STR</value>
+      <value name="SpecifyFullMounting" type="System.Boolean">True</value>
+      <value name="Boresight_UBDY" type="SLS.Util.VectorModel">[ -1 0 0 ]</value>
+      <value name="Boresight_USTR" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="Orientation_BDY2STR" type="SLS.Util.QuaternionModel">[ -0.5 -0.5 0.5 0.5 ]</value>
+      <value name="ConvertFSWJ2000toTOD" type="System.Boolean">True</value>
+      <value name="PropagateStarTrackerMeas" type="System.Boolean">True</value>
+      <value name="MeasurementBiasTime_s" type="System.Double">0</value>
+      <value name="ODY_Misalignment_STR_deg" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_IsOn" type="System.Boolean">True</value>
+      <value name="ODY_MeasurementPeriod_s" type="System.Double">0</value>
+      <value name="ODY_MeasurementTimetagError_s" type="System.Double">0</value>
+      <value name="ODY_OverrideRefFrame" type="System.Boolean">False</value>
+      <value name="ODY_UseJ2000RefFrame" type="System.Boolean">True</value>
+      <value name="ODY_NoiseAboutBoreStDev_deg" type="System.Double">0.0152777777</value>
+      <value name="ODY_PerpToBoresStDev_deg" type="System.Double">0.001388888</value>
+      <value name="ODY_SunKeepOutAngle_deg" type="System.Double">10</value>
+      <value name="ODY_CelestialBodyKeepOutAngle_deg" type="System.Double">10</value>
+    </container>
+  </container>
+  <container name="SunAngleSensorList" type="SLS.ADCS.Sensors.SunAngleSensorCollectionModel" id="SensorModel_bVa9uUuUG42QK8itlVSfpA">
+    <container name="SunAngleSensorModelList" type="List`1[[SLS.ADCS.Sensors.SunAngleSensorModel]]" id="SensorModel_kSsGqsSâRoe6m7vLOnâ0iA" />
+  </container>
+  <container name="SunVectorSensorList" type="List`1[[SLS.ADCS.Sensors.SunVectorSensorModel]]" id="SensorModel_ODBKTuuCZ71LgpAMzMe40A">
+    <container name="SunVectorSensorList[0]" type="SLS.ADCS.Sensors.SunVectorSensorModel" id="SensorModel_uCAcugIRIac7MW0Cs5hgGw">
+      <value name="Name" type="System.String">SunSens_Mx</value>
+      <value name="SpecifyFullMounting" type="System.Boolean">False</value>
+      <value name="Boresight_UBDY" type="SLS.Util.VectorModel">[ -1 0 0 ]</value>
+      <value name="Boresight_USUN" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="Orientation_BDY2SUN" type="SLS.Util.QuaternionModel">[ 0 -0.7071067811865475 0 0.7071067811865476 ]</value>
+      <value name="FilterResetCycles" type="System.Int32">10</value>
+      <value name="SUNX_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="SUNY_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="SUNZ_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="ODY_Misalignment_SUN_deg" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_IsOn" type="System.Boolean">True</value>
+      <value name="ODY_FieldOfViewType" type="SLS.ADCS.Sensors.SensorModel+EFieldOfViewType">Circular</value>
+      <value name="ODY_FieldOfView_deg" type="System.Double">80</value>
+      <value name="ODY_FieldOfViewAlpha_deg" type="System.Double">30</value>
+      <value name="ODY_FieldOfViewBeta_deg" type="System.Double">10</value>
+      <value name="ODY_MeasurementPeriod_s" type="System.Double">0</value>
+      <value name="ODY_AngularNoiseStdDev_deg" type="System.Double">0.01</value>
+    </container>
+    <container name="SunVectorSensorList[1]" type="SLS.ADCS.Sensors.SunVectorSensorModel" id="SensorModel_8u3IjVtcNP79FtIMOn5rpQ">
+      <value name="Name" type="System.String">SunSens_Px</value>
+      <value name="SpecifyFullMounting" type="System.Boolean">False</value>
+      <value name="Boresight_UBDY" type="SLS.Util.VectorModel">[ 1 0 0 ]</value>
+      <value name="Boresight_USUN" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="Orientation_BDY2SUN" type="SLS.Util.QuaternionModel">[ 0 0.7071067811865475 0 0.7071067811865476 ]</value>
+      <value name="FilterResetCycles" type="System.Int32">10</value>
+      <value name="SUNX_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="SUNY_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="SUNZ_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="ODY_Misalignment_SUN_deg" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_IsOn" type="System.Boolean">True</value>
+      <value name="ODY_FieldOfViewType" type="SLS.ADCS.Sensors.SensorModel+EFieldOfViewType">Circular</value>
+      <value name="ODY_FieldOfView_deg" type="System.Double">80</value>
+      <value name="ODY_FieldOfViewAlpha_deg" type="System.Double">30</value>
+      <value name="ODY_FieldOfViewBeta_deg" type="System.Double">10</value>
+      <value name="ODY_MeasurementPeriod_s" type="System.Double">0</value>
+      <value name="ODY_AngularNoiseStdDev_deg" type="System.Double">0.01</value>
+    </container>
+    <container name="SunVectorSensorList[2]" type="SLS.ADCS.Sensors.SunVectorSensorModel" id="SensorModel_vLxn6eVgDnTDq2SxâaHhEg">
+      <value name="Name" type="System.String">SunSens_My</value>
+      <value name="SpecifyFullMounting" type="System.Boolean">False</value>
+      <value name="Boresight_UBDY" type="SLS.Util.VectorModel">[ 0 -1 0 ]</value>
+      <value name="Boresight_USUN" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="Orientation_BDY2SUN" type="SLS.Util.QuaternionModel">[ 0.7071067811865475 0 0 0.7071067811865476 ]</value>
+      <value name="FilterResetCycles" type="System.Int32">10</value>
+      <value name="SUNX_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="SUNY_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="SUNZ_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="ODY_Misalignment_SUN_deg" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_IsOn" type="System.Boolean">True</value>
+      <value name="ODY_FieldOfViewType" type="SLS.ADCS.Sensors.SensorModel+EFieldOfViewType">Circular</value>
+      <value name="ODY_FieldOfView_deg" type="System.Double">80</value>
+      <value name="ODY_FieldOfViewAlpha_deg" type="System.Double">30</value>
+      <value name="ODY_FieldOfViewBeta_deg" type="System.Double">10</value>
+      <value name="ODY_MeasurementPeriod_s" type="System.Double">0</value>
+      <value name="ODY_AngularNoiseStdDev_deg" type="System.Double">0.01</value>
+    </container>
+    <container name="SunVectorSensorList[3]" type="SLS.ADCS.Sensors.SunVectorSensorModel" id="SensorModel_7LôQwWC6FxeKeLAZ6NN37Q">
+      <value name="Name" type="System.String">SunSens_Py</value>
+      <value name="SpecifyFullMounting" type="System.Boolean">False</value>
+      <value name="Boresight_UBDY" type="SLS.Util.VectorModel">[ 0 1 0 ]</value>
+      <value name="Boresight_USUN" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="Orientation_BDY2SUN" type="SLS.Util.QuaternionModel">[ -0.7071067811865475 0 0 0.7071067811865476 ]</value>
+      <value name="FilterResetCycles" type="System.Int32">10</value>
+      <value name="SUNX_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="SUNY_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="SUNZ_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="ODY_Misalignment_SUN_deg" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_IsOn" type="System.Boolean">True</value>
+      <value name="ODY_FieldOfViewType" type="SLS.ADCS.Sensors.SensorModel+EFieldOfViewType">Circular</value>
+      <value name="ODY_FieldOfView_deg" type="System.Double">80</value>
+      <value name="ODY_FieldOfViewAlpha_deg" type="System.Double">30</value>
+      <value name="ODY_FieldOfViewBeta_deg" type="System.Double">10</value>
+      <value name="ODY_MeasurementPeriod_s" type="System.Double">0</value>
+      <value name="ODY_AngularNoiseStdDev_deg" type="System.Double">0.01</value>
+    </container>
+    <container name="SunVectorSensorList[4]" type="SLS.ADCS.Sensors.SunVectorSensorModel" id="SensorModel_45fqODSYaNR8Zbi9HjvjjQ">
+      <value name="Name" type="System.String">SunSens_Mz</value>
+      <value name="SpecifyFullMounting" type="System.Boolean">False</value>
+      <value name="Boresight_UBDY" type="SLS.Util.VectorModel">[ 0 0 -1 ]</value>
+      <value name="Boresight_USUN" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="Orientation_BDY2SUN" type="SLS.Util.QuaternionModel">[ 0 1 0 6.123031769111886E-17 ]</value>
+      <value name="FilterResetCycles" type="System.Int32">10</value>
+      <value name="SUNX_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="SUNY_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="SUNZ_Filter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+      <value name="ODY_Misalignment_SUN_deg" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="ODY_IsOn" type="System.Boolean">True</value>
+      <value name="ODY_FieldOfViewType" type="SLS.ADCS.Sensors.SensorModel+EFieldOfViewType">Circular</value>
+      <value name="ODY_FieldOfView_deg" type="System.Double">80</value>
+      <value name="ODY_FieldOfViewAlpha_deg" type="System.Double">30</value>
+      <value name="ODY_FieldOfViewBeta_deg" type="System.Double">10</value>
+      <value name="ODY_MeasurementPeriod_s" type="System.Double">0</value>
+      <value name="ODY_AngularNoiseStdDev_deg" type="System.Double">0.01</value>
+    </container>
+  </container>
+</container>

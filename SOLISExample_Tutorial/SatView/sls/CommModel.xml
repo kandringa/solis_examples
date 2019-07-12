@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="CommModel" type="SLS.Communications.CommModel" id="CommModel_nW6Mp31LMâvDonPdNFvODw" fileId="Tm2P1FTPRaZByZvTHSURxw">
+  <table name="CommItemList" type="List`1[[SLS.Communications.CommItemModel]]" id="CommModel_c2dwK99DACpveiQCP93YMg" />
+</container>

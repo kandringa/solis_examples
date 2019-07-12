@@ -1,0 +1,22 @@
+//WARNING: This code is automatically generated and any modifications will be overwritten by SOLIS.
+PROC Seq_1
+DATE SEQ_START_TIME
+// insert variables here, the five types are INT, REAL, STRING, DATE and TIME
+BEGIN
+SEQ_START_TIME = NOW()
+
+//Here Begins the user created sequence
+// 
+CMD "ACS_NOOP"
+// insert code here
+SHOW("Example Text");
+
+WAIT_UNTIL (SEQ_START_TIME + 5)
+WAIT_UNTIL (SEQ_START_TIME + 12.1)
+CALL Seq_2
+WAIT_UNTIL (SEQ_START_TIME + 19.2)
+CALL Seq_2
+WAIT_UNTIL (SEQ_START_TIME + 26.3)
+CALL Seq_2
+CMD "FJ_START_ABS" (1559347260, "","")
+ENDPROC

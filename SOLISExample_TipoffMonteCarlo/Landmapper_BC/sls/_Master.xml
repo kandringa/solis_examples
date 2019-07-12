@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<master name="SolisMasterModel" type="SLS.Core.SolisMasterModel" version="TODO">
+  <reference name="TelemetryModel" type="SLS.CmdTlm.TelemetryModel" id="TelemetryModel_cNt7pGNvhp9fodBJtJ5o7w" fileId="9tBy00sZ9hUc3hbfbLPyjg" />
+  <reference name="PowerModel" type="SLS.PowerThermal.PowerModel" id="PowerModel_yYâPtmhgsL2FlZQeZtx0AA" fileId="aU2GDlsxfen1Tr8rfD2Wsw" />
+  <reference name="StorageDeviceModel" type="SLS.Payload.StorageDeviceModel" id="StorageDeviceModel_mFIjoXCB5sJdJKOcYNmaGA" fileId="kBKWDôI9nDGJutNrU0OHâw" />
+  <reference name="MassPropertiesModel" type="SLS.ADCS.MassPropertiesModel" id="MassPropertiesModel_dTSJ3s2BArFOp7EO7cWLUw" fileId="Jcv0vIVJegl5HKBpOyLqâw" />
+  <reference name="SolisConfigModel" type="SLS.Core.SolisConfigModel" id="SolisConfigModel_k1OCdGHjyxy4iRvB4KMS9Q" fileId="bZqBucUZhzCEtSOhe03hNA" />
+  <reference name="ActuatorSystemModel" type="SLS.ADCS.Actuators.ActuatorSystemModel" id="ActuatorSystemModel_KUzôXnbâOgz5cnCVkN0JMg" fileId="z7Rkj3zTG1ehjVCVBZICIA" />
+  <reference name="ModeControllerModel" type="SLS.ADCS.ModeController.ModeControllerModel" id="ModeControllerModel_aCqo5AG9iZsvsx625mBVzA" fileId="â2SfqTZKHôY609Bg000KzA" />
+  <reference name="ControllersModel" type="SLS.ADCS.ControllersModel" id="ControllersModel_âpXâlT8REmjYj8WzPôSpBw" fileId="2acsPâ4xjiGvjzHJcqmYBA" />
+  <reference name="InitialConditionsModel" type="SLS.InitialConditions.InitialConditionsModel" id="InitialConditionsModel_ZcL0IniRD6hX9P1qmSdmzA" fileId="PbDcWTdqEdvQ8FhrnN7Fyg" />
+  <reference name="MissionSequenceSystemModel" type="SLS.CmdTlm.MissionSequenceSystemModel" id="MissionSequenceSystemModel_PWworz8DgiweNRuLWXKgEg" fileId="Xob7zlWjfQm4YCPRGôdcXg" />
+  <reference name="TargetPlannerModel" type="SLS.TargetPlanner.TargetPlannerModel" id="TargetPlannerModel_zsDEgjpnDgsFezqqtEQSJw" fileId="FwMJnLG1mD1UDQxe4Tjd3Q" />
+  <reference name="_ConfigurationModel" type="ConfigDB+SerializableWrapper" id="_ConfigurationModel_âJsPzgC6l8qZvUaN6E8AôQ" fileId="x6Z0TDRârt2EunLavqg2xA" />
+  <reference name="EnvironmentModel" type="SLS.Environment.EnvironmentModel" id="EnvironmentModel_MâdGcOlUKSômS8tJxE6sCw" fileId="LhQulWoyUVahefUYQvyrlQ" />
+  <reference name="SensorModel" type="SLS.ADCS.Sensors.SensorModel" id="SensorModel_HD0CS6Rgp0TEWRbOyOzqQQ" fileId="vZUôHXjzTiM33UDâzkt4dw" />
+  <reference name="AttitudeDeterminationModel" type="SLS.ADCS.AttitudeDeterminationModel" id="AttitudeDeterminationModel_wz15vu9lNs96SSWsLZIltQ" fileId="oDCqUmOUqctQLR2oXKKCôA" />
+  <reference name="OrbitDeterminationModel" type="SLS.ADCS.OrbitDeterminationModel" id="OrbitDeterminationModel_7ZIzoAIo8nCc5mYOuohhsw" fileId="hLjvK8voS6gqAIALhwVesA" />
+  <reference name="CommModel" type="SLS.Communications.CommModel" id="CommModel_nW6Mp31LMâvDonPdNFvODw" fileId="qRNGeHôRGGK0mfp7IRjH6A" />
+  <reference name="PayloadModel" type="SLS.Payload.PayloadModel" id="PayloadModel_sndvCR6Oc4coGoNtSDdoxw" fileId="Tg7NGTAYSLMlD87Zi30xIw" />
+  <reference name="VehicleStateModel" type="SLS.ADCS.VehicleStateModel" id="VehicleStateModel_dNP0jIt5rvX9VMKHHRmrKQ" fileId="âNCôCimUQAMi6cw4faU71g" />
+</master>

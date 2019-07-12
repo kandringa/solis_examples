@@ -1,0 +1,3208 @@
+stk.v.11.0
+WrittenBy    STK_v11.6.0
+
+BEGIN Satellite
+
+    Name		 Landmapper_BC
+
+    BEGIN VehiclePath
+        CentralBody		 Earth
+
+        BEGIN Interval
+
+            StartTime		 5 Feb 2016 14:25:00.000000000
+            StopTime		 5 Feb 2016 14:45:00.000000000
+
+        END Interval
+
+        StoreEphemeris		 Yes
+        SmoothInterp		 No
+
+        BEGIN J2Perturbation
+
+            EphemSmartEpoch		
+            BEGIN EVENT
+                Epoch		 4 Feb 2016 19:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            EphemSmartInterval		
+            BEGIN EVENTINTERVAL
+                EventInterval		
+                BEGIN EVENTINTERVAL
+                    Type		 EVENTINTERVAL_LINKTO
+                    Name		 AnalysisInterval
+                    AbsolutePath		 Scenario
+                END EVENTINTERVAL
+                IntervalState		 Implicit
+            END EVENTINTERVAL
+
+            EphemEpoch		 4 Feb 2016 19:00:00.000000000
+
+            StartTime		 5 Feb 2016 14:25:00.000000000
+            StopTime		 5 Feb 2016 14:45:00.000000000
+            UseScenTime		 No
+            RadiusOfPerigee		  6.9781370000000000e+06
+            Inclination		  9.7792391106046495e+01
+            Eccentricity		  7.5347276920185005e-16
+            ArgOfPerigee		  0.0000000000000000e+00
+            RightAscension		  2.5500000000000003e+02
+            TrueAnomaly		  6.1658255966649405e-16
+            TimeStep		 60
+            OrbElemCoordSys		 TrueOfEpoch
+            PropagationCoordSys		 TrueOfEpoch
+            DisplayCoordType		 4
+            DisplayCoordSys		 TrueOfDate
+            EllipseType		 Osculating
+            BEGIN DisplayFlags
+                SizeShapeType		 SMAEcc
+                AscenNodeType		 RightAscension
+                AnomalyType		 TrueAnomaly
+                DelLType		 L
+                DelGType		 G
+                DelHType		 H
+                EquiOrbType		 SMA
+                FPAType		 HorizontalFPA
+                MixFPAType		 HorizontalFPA
+                GeodeticAltRad		 Altitude
+            END DisplayFlags
+
+        END J2Perturbation
+
+        BEGIN PassDefn
+
+            Break		 Ascending
+            CoordSystem		 TrueOfOrbitEpoch
+            BreakType		 Latitude
+            BreakAngle		  0.0000000000000000e+00
+            PartialPassMethod		 ByTime
+            DisplayFlag		 Both
+            FirstPass		 1
+            FirstPath		 1
+            RepeatCycle		 1
+            MaintainPassNum		 No
+            RangeFirstPass		 1
+            RangeLastPass		 2147483647
+            DisplayScheme		 AllEphemeris
+            ScenarioEpoch		 5 Feb 2016 14:25:00.000000
+            Periods
+                Rev		 1 0 0 0 0 1 0 1 0 1 0
+                 0.0000000000000000e+00  1.2000000000000000e+03  0.0000000000000000e+00  0.0000000000000000e+00
+            END Periods
+        END PassDefn
+
+    END VehiclePath
+
+    BEGIN Ephemeris
+
+        NumberOfEphemerisPoints		 21
+
+        ScenarioEpoch		 5 Feb 2016 14:25:00.000000
+
+# Epoch in JDate format: 2457424.10069444444444
+# Epoch in YYDDD format:   16036.60069444444444
+
+
+        InterpolationMethod		 OnePt
+
+        InterpolationSamplesM1		 5
+
+        CentralBody		 Earth
+
+        CoordinateSystem		 ICRF
+
+        BlockingFactor		 20
+
+# Time of first point: 5 Feb 2016 14:25:00.000000000 UTCG = 2457424.10069444444444 JDate = 16036.60069444444444 YYDDD
+
+        EphemerisTimePosVel		
+
+ 0.0000000000000000e+00 -1.8890094521627936e+06 -6.5549019365897467e+06  1.4694556414198547e+06 -5.5945964121688939e+02  1.8018801670911303e+03  7.3185763103503277e+03
+ 6.0000000000000000e+01 -1.9184572342722423e+06 -6.4332226260939632e+06  1.9046166213047206e+06 -4.2561397079527620e+02  2.2585346365661703e+03  7.1999444775930542e+03
+ 1.2000000000000000e+02 -1.9398297731131252e+06 -6.2844541376476660e+06  2.3317574131791727e+06 -2.8998686954972209e+02  2.7056818160802432e+03  7.0509942534900265e+03
+ 1.8000000000000000e+02 -1.9530377103011257e+06 -6.1092227294759592e+06  2.7490793612707984e+06 -1.5314920300316729e+02  3.1414388404295814e+03  6.8723528555064640e+03
+ 2.4000000000000000e+02 -1.9580260516601182e+06 -5.9082660913141035e+06  3.1548251561722490e+06 -1.5676889863626164e+01  3.5639707937446087e+03  6.6647725282703777e+03
+ 3.0000000000000000e+02 -1.9547743961732511e+06 -5.6824302388787363e+06  3.5472862347308644e+06  1.2185152188676220e+02  3.9714984360818657e+03  6.4291273759306614e+03
+ 3.6000000000000000e+02 -1.9432970193445410e+06 -5.4326659521908490e+06  3.9248099746716353e+06  2.5885728979250598e+02  4.3623056956270066e+03  6.1664096813745173e+03
+ 4.2000000000000000e+02 -1.9236428106307171e+06 -5.1600247727446472e+06  4.2858066536580157e+06  3.9476391236879726e+02  4.7347468949604645e+03  5.8777257278033503e+03
+ 4.8000000000000000e+02 -1.8958950652170936e+06 -4.8656545763752609e+06  4.6287561434853096e+06  5.2899955493955531e+02  5.0872536809551739e+03  5.5642911402630334e+03
+ 5.4000000000000000e+02 -1.8601711310242245e+06 -4.5507947404629784e+06  4.9522143112195386e+06  6.6099945566255644e+02  5.4183416291264457e+03  5.2274257667438087e+03
+ 6.0000000000000000e+02 -1.8166219124412255e+06 -4.2167709258219553e+06  5.2548191003259160e+06  7.9020830161770652e+02  5.7266164946217459e+03  4.8685481204059715e+03
+ 6.6000000000000000e+02 -1.7654312328843849e+06 -3.8649894952427181e+06  5.5352962661802303e+06  9.1608256496181309e+02  6.0107800835276521e+03  4.4891694063343366e+03
+ 7.2000000000000000e+02 -1.7068150588737612e+06 -3.4969315921882037e+06  5.7924647418112839e+06  1.0380927893219205e+03  6.2696357197691832e+03  4.0908871579744268e+03
+ 7.8000000000000000e+02 -1.6410205889029012e+06 -3.1141469045742452e+06  6.0252416112797065e+06  1.1557258168092767e+03  6.5020932845795642e+03  3.6753785100467894e+03
+ 8.4000000000000000e+02 -1.5683252109455802e+06 -2.7182471398916221e+06  6.2326466697505461e+06  1.2684869462865390e+03  6.7071738073180513e+03  3.2443931362668141e+03
+ 9.0000000000000000e+02 -1.4890353329959442e+06 -2.3108992391417818e+06  6.4138065510578528e+06  1.3759020138111243e+03  6.8840135883027297e+03  2.7997458816081421e+03
+ 9.6000000000000000e+02 -1.4034850915726740e+06 -1.8938183581601584e+06  6.5679584053796995e+06  1.4775193865050796e+03  7.0318678362947594e+03  2.3433091201360512e+03
+ 1.0200000000000000e+03 -1.3120349436304225e+06 -1.4687606458775855e+06  6.6944531115381643e+06  1.5729118614676704e+03  7.1501138053156565e+03  1.8770048705894835e+03
+ 1.0800000000000000e+03 -1.2150701478126470e+06 -1.0375158499285398e+06  6.7927580103968577e+06  1.6616784617463691e+03  7.2382534175856481e+03  1.4027967029137724e+03
+ 1.1400000000000000e+03 -1.1129991414447874e+06 -6.0189978074032720e+05  6.8624591478461269e+06  1.7434461218160120e+03  7.2959153615358746e+03  9.2268146982445421e+02
+ 1.2000000000000000e+03 -1.0062518201051770e+06 -1.6374666583400316e+05  6.9032630179308932e+06  1.8178712554814044e+03  7.3228566560570616e+03  4.3868089821999155e+02
+
+
+    END Ephemeris
+
+    BEGIN MassProperties
+
+        Mass		  1.0000000000000000e+03
+        InertiaXX		  4.5000000000000000e+03
+        InertiaYX		  0.0000000000000000e+00
+        InertiaYY		  4.5000000000000000e+03
+        InertiaZX		  0.0000000000000000e+00
+        InertiaZY		  0.0000000000000000e+00
+        InertiaZZ		  4.5000000000000000e+03
+
+    END MassProperties
+
+    BEGIN Attitude
+
+        ScenarioEpoch		 5 Feb 2016 14:25:00.000000
+
+        BEGIN Profile
+            Name		 CBIVelLHAtt
+            UserNamed		 No
+            StartTime		  0.0000000000000000e+00
+            BEGIN ECIVVLH
+                Azimuth		  0.0000000000000000e+00
+            END ECIVVLH
+        END Profile
+
+        BEGIN Trajectory
+            Enabled		 Yes
+            StartTime		  0.0000000000000000e+00
+            StopTime		  4.5400000000000000e+02
+            BEGIN QuatData
+                BlockingFactor		 20
+                LeadExtensionMethod		 Hold
+                TrailExtensionMethod		 Hold
+
+                BEGIN DataFile
+                    FileName		 C:\Users\kdand\Documents\STK 11 (x64)\SOLISExample_Automation\Landmapper_BC.a
+                    Format		 0
+                    NumPts		 455
+                END DataFile
+                BEGIN Fixed
+
+                    Yaw		 -0.0000000000000000e+00
+
+                    Pitch		  0.0000000000000000e+00
+
+                    Roll		 -0.0000000000000000e+00
+
+                    UiSequence		 321
+
+                    UiCoordType		 1
+
+                    Reference		
+                    TOD		 CentralBody/Earth Absolute
+                END Fixed
+            END QuatData
+        END Trajectory
+
+    END Attitude
+
+    BEGIN Swath
+
+        SwathType		 ElevAngleEnvelope
+        ElevationAngle		  0.0000000000000000e+00
+        HalfAngle		  0.0000000000000000e+00
+        Distance		  0.0000000000000000e+00
+        RepType		 NoSwath
+
+    END Swath
+
+    BEGIN Eclipse
+
+        Sunlight		 Off
+        SunlightLineStyle		 0
+        SunlightLineWidth		 3
+        SunlightMarkerStyle		 15
+
+        Penumbra		 Off
+        PenumbraLineStyle		 0
+        PenumbraLineWidth		 3
+        PenumbraMarkerStyle		 15
+
+        Umbra		 Off
+        UmbraLineStyle		 0
+        UmbraLineWidth		 3
+        UmbraMarkerStyle		 15
+
+        SunlightPenumbraLine		 Off
+        PenumbraUmbraLine		 Off
+
+        SunlightColor		 #ffff00
+        PenumbraColor		 #f0ffff
+        UmbraColor		 #0000ff
+        UseCustomEclipseBodies		 No
+
+    END Eclipse
+
+    BEGIN OrbitWizard
+        OrbitStart		 5 Feb 2016 14:25:00.000000000
+        OrbitStop		 6 Feb 2016 14:25:00.000000000
+        OrbitStep		  6.0000000000000000e+01
+        SmartIntervalPtr		
+        BEGIN EVENTINTERVAL
+            EventInterval		
+            BEGIN EVENTINTERVAL
+                Type		 EVENTINTERVAL_LINKTO
+                Name		 AnalysisInterval
+                AbsolutePath		 Scenario
+            END EVENTINTERVAL
+            IntervalState		 Implicit
+        END EVENTINTERVAL
+
+        UseScenTime		 No
+        BEGIN SunSynchronous
+            Altitude		  6.0000000000000000e+05
+            LTDescenNode		  3.7800000000000000e+04
+        END SunSynchronous
+    END OrbitWizard
+
+    BEGIN RealTimeDef
+
+        HistoryDuration		  1.8000000000000000e+03
+        LookAheadDuration		  1.8000000000000000e+03
+
+    END RealTimeDef
+
+
+    BEGIN Extensions
+
+        BEGIN ClsApp
+            RangeConstraint		 5000
+            ApoPeriPad		 30000
+            OrbitPathPad		 100000
+            TimeDistPad		 30000
+            OutOfDate		 2592000
+            MaxApoPeriStep		 900
+            ApoPeriAngle		 0.785
+            UseApogeePerigeeFilter		 Yes
+            UsePathFilter		 No
+            UseTimeFilter		 Yes
+            UseOutOfDate		 Yes
+            CreateSats		 No
+            MaxSatsToCreate		 500
+            UseModelScale		 No
+            ModelScale		 0
+            UseCrossRefDb		 Yes
+            CollisionDB		 stkAllTLE.tce
+            CollisionCrossRefDB		 stkAllTLE.sd
+            ShowLine		 Yes
+            AnimHighlight		 Yes
+            StaticHighlight		 Yes
+            UseLaunchWindow		 No
+            LaunchWindowUseEntireTraj		 Yes
+            LaunchWindowTrajMETStart		 0
+            LaunchWindowTrajMETStop		 900
+            LaunchWindowStart		 -69900
+            LaunchWindowStop		 -71100
+            LaunchMETOffset		 0
+            LaunchWindowUseSecEphem		 No 
+            LaunchWindowUseScenFolderForSecEphem		 Yes
+            LaunchWindowUsePrimEphem		 No 
+            LaunchWindowUseScenFolderForPrimEphem		 Yes
+            LaunchWindowIntervalPtr		
+            BEGIN EVENTINTERVAL
+                BEGIN Interval
+                    Start		 4 Feb 2016 19:00:00.000000000
+                    Stop		 4 Feb 2016 19:00:00.000000000
+                END Interval
+                IntervalState		 Explicit
+            END EVENTINTERVAL
+
+            LaunchWindowUsePrimMTO		 No 
+            GroupLaunches		 No 
+            LWTimeConvergence		 0.001
+            LWRelValueConvergence		 1e-08
+            LWTSRTimeConvergence		 0.0001
+            LWTSRRelValueConvergence		 1e-10
+            LaunchWindowStep		 300
+            MaxTSRStep		  1.8000000000000000e+02
+            MaxTSRRelMotion		  2.0000000000000000e+01
+            UseLaunchArea		 No 
+            LaunchAreaOrientation		 North
+            LaunchAreaAzimuth		 0
+            LaunchAreaXLimits		 -10000 10000
+            LaunchAreaYLimits		 -10000 10000
+            LaunchAreaNumXIntrPnts		 1
+            LaunchAreaNumYIntrPnts		 1
+            LaunchAreaAltReference		 Ellipsoid
+            TargetSameStop		 No 
+            SkipSurfaceMetric		 No 
+            LWAreaTSRRelValueConvergence		 1e-10
+            AreaLaunchWindowStep		 300
+            AreaMaxTSRStep		  3.0000000000000000e+01
+            AreaMaxTSRRelMotion		 1
+            ShowLaunchArea		 No 
+            ShowBlackoutTracks		 No 
+            ShowClearedTracks		 No 
+            UseObjectForClearedColor		 No 
+            BlackoutColor		 #ff0000
+            ClearedColor		 #ffffff
+            ShowTracksSegments		 No 
+            ShowMinRangeTracks		 No 
+            MinRangeTrackTimeStep		 0.5
+            UsePrimStepForTracks		 Yes
+            GfxTracksTimeStep		 30
+            GfxAreaNumXIntrPnts		 1
+            GfxAreaNumYIntrPnts		 1
+            CreateLaunchMTO		 No 
+            CovarianceSigmaScale		 3
+            CovarianceMode		 None 
+        END ClsApp
+
+        BEGIN ExternData
+            BEGIN DataGroup
+
+                GroupName		 Attitude Determination
+
+                NumberOfPoints		 0
+                BlockFactor		 50
+
+                ThinningInterval		 0
+
+                ReferenceEpoch		 5 Feb 2016 14:25:00.000000000
+
+                BEGIN DataElement
+                    Name		 AD_Summary ADState
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 AD_Summary ADState Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 AD_Summary QEst_CBI2BDY0
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 AD_Summary QEst_CBI2BDY1
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 AD_Summary QEst_CBI2BDY2
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 AD_Summary QEst_CBI2BDY3
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 AD_Summary RateBias_BDYX
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 AD_Summary RateBias_BDYY
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 AD_Summary RateBias_BDYZ
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 AD_Summary WEst_BDYX
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 AD_Summary WEst_BDYY
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 AD_Summary WEst_BDYZ
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN Data
+                END Data
+
+            END DataGroup
+
+            BEGIN DataGroup
+
+                GroupName		 Control
+
+                NumberOfPoints		 0
+                BlockFactor		 50
+
+                ThinningInterval		 0
+
+                ReferenceEpoch		 5 Feb 2016 14:25:00.000000000
+
+                BEGIN DataElement
+                    Name		 Attitude Control FfwTrqState_ATCX (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control FfwTrqState_ATCY (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control FfwTrqState_ATCZ (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control Int1State_ATCX (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control Int1State_ATCY (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control Int1State_ATCZ (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control Int2State_ATCX (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control Int2State_ATCY (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control Int2State_ATCZ (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control PosState_ATCX (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control PosState_ATCY (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control PosState_ATCZ (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control RteState_ATCX (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control RteState_ATCY (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control RteState_ATCZ (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control TrqCmd_ATCX (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control TrqCmd_ATCY (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control TrqCmd_ATCZ (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control TrqCmd_BDYX (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control TrqCmd_BDYY (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Attitude Control TrqCmd_BDYZ (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Control Error Gen AttErr_BDYX
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Control Error Gen AttErr_BDYY
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Control Error Gen AttErr_BDYZ
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Control Error Gen AttErrMag
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Control Error Gen RateErr_BDYX
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Control Error Gen RateErr_BDYY
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Control Error Gen RateErr_BDYZ
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Control Error Gen RateErrMag
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Feed Fwd Control GyroTrq_BDYX (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Feed Fwd Control GyroTrq_BDYY (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Feed Fwd Control GyroTrq_BDYZ (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Feed Fwd Control TotTrq_BDYX (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Feed Fwd Control TotTrq_BDYY (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Feed Fwd Control TotTrq_BDYZ (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control Enabled
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control Enabled Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control InProgress
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control InProgress Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control ThreshCtrlTimer
+                    Dimension		 TimeUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control ThreshCtrlTimerExceed
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control ThreshCtrlTimerExceed Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control TotMom_MMCX (N*m*s)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control TotMom_MMCY (N*m*s)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control TotMom_MMCZ (N*m*s)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control TrqCmd_BDYX (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control TrqCmd_BDYY (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control TrqCmd_BDYZ (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control TrqCmd_MMCX (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control TrqCmd_MMCY (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Momentum Control TrqCmd_MMCZ (N*m)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN Data
+                END Data
+
+            END DataGroup
+
+            BEGIN DataGroup
+
+                GroupName		 Ephemeris
+
+                NumberOfPoints		 0
+                BlockFactor		 50
+
+                ThinningInterval		 0
+
+                ReferenceEpoch		 5 Feb 2016 14:25:00.000000000
+
+                BEGIN DataElement
+                    Name		 EphemSummary Altitude
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary ArgPeriapsis
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary DataEpoch
+                    Dimension		 TimeUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Eccentricity
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Eclipse
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Eclipse Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary EclipseAngle
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary EphemSource
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary EphemSource Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Inclination
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Latitude
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary LimbAngle
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Longitude
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary MagFld_BDYX
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary MagFld_BDYY
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary MagFld_BDYZ
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary MagFld_CBFX
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary MagFld_CBFY
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary MagFld_CBFZ
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary MagFld_CBIX
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary MagFld_CBIY
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary MagFld_CBIZ
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary MagFld_UBDYX (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary MagFld_UBDYY (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary MagFld_UBDYZ (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Nadir_UBDYX (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Nadir_UBDYY (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Nadir_UBDYZ (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary NadirDetic_UBDYX (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary NadirDetic_UBDYY (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary NadirDetic_UBDYZ (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Pos_CBFX
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Pos_CBFY
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Pos_CBFZ
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Pos_CBIX
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Pos_CBIY
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Pos_CBIZ
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Q_CBI2CBF0
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Q_CBI2CBF1
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Q_CBI2CBF2
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Q_CBI2CBF3
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Q_ORB2BDY0
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Q_ORB2BDY1
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Q_ORB2BDY2
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Q_ORB2BDY3
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary RightAscension
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary SemiMajorAxis
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary SolarBetaAngle
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Sun_UBDYX (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Sun_UBDYY (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Sun_UBDYZ (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary SunDistance
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary SunPos_CBIX
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary SunPos_CBIY
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary SunPos_CBIZ
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary TimeSinceOrigin
+                    Dimension		 TimeUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary TrueAnomaly
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary VehiclePitch
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary VehicleRoll
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary VehicleYaw
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Vel_CBFX
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Vel_CBFY
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Vel_CBFZ
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Vel_CBIX
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Vel_CBIY
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Vel_CBIZ
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Vel_UBDYX (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Vel_UBDYY (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 EphemSummary Vel_UBDYZ (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN Data
+                END Data
+
+            END DataGroup
+
+            BEGIN DataGroup
+
+                GroupName		 Guidance
+
+                NumberOfPoints		 0
+                BlockFactor		 50
+
+                ThinningInterval		 0
+
+                ReferenceEpoch		 5 Feb 2016 14:25:00.000000000
+
+                BEGIN DataElement
+                    Name		 Guidance Acmd_BDYX (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Guidance Acmd_BDYY (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Guidance Acmd_BDYZ (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Guidance GuideType
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Guidance GuideType Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Guidance Qcmd_CBI2BDY0
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Guidance Qcmd_CBI2BDY1
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Guidance Qcmd_CBI2BDY2
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Guidance Qcmd_CBI2BDY3
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Guidance Wcmd_BDYX
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Guidance Wcmd_BDYY
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Guidance Wcmd_BDYZ
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN Data
+                END Data
+
+            END DataGroup
+
+            BEGIN DataGroup
+
+                GroupName		 Mode Control
+
+                NumberOfPoints		 0
+                BlockFactor		 50
+
+                ThinningInterval		 0
+
+                ReferenceEpoch		 5 Feb 2016 14:25:00.000000000
+
+                BEGIN DataElement
+                    Name		 Mode Control ACMode
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Mode Control ACMode Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Mode Control ClockingOption
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Mode Control ClockingOption Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Mode Control GuideType
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Mode Control GuideType Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Mode Control InvalidModeTransCnt
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Mode Control ModeCounts
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Mode Control ResACMode
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Mode Control ResACMode Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Mode Control ResClockingOption
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Mode Control ResClockingOption Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Mode Control ValidModeTransCnt
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN Data
+                END Data
+
+            END DataGroup
+
+            BEGIN DataGroup
+
+                GroupName		 ODySSy / Data Management
+
+                NumberOfPoints		 0
+                BlockFactor		 50
+
+                ThinningInterval		 0
+
+                ReferenceEpoch		 5 Feb 2016 14:25:00.000000000
+
+                BEGIN DataElement
+                    Name		 ODY Comm System 1 Rx_PwrState
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Comm System 1 Rx_PwrState Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Comm System 1 TotalRx (Mbits)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Comm System 1 TotalTx (Mbits)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Comm System 1 Tx_PwrState
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Comm System 1 Tx_PwrState Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Data Recorder RcdrState (MBytes)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Data Recorder RcdrStatePct
+                    Dimension		 Percent
+                    InputUnitAbbr		 %
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Data Recorder TotalPldData (MBytes)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Data Recorder TotalTxData (MBytes)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Payload 1 Mode
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Payload 1 Mode Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Payload 1 PwrState
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Payload 1 PwrState Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Payload 1 TotalCollect (Mbits)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN Data
+                END Data
+
+            END DataGroup
+
+            BEGIN DataGroup
+
+                GroupName		 ODySSy / Dynamics
+
+                NumberOfPoints		 0
+                BlockFactor		 50
+
+                ThinningInterval		 0
+
+                ReferenceEpoch		 5 Feb 2016 14:25:00.000000000
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary Acc_CBIX (m/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary Acc_CBIY (m/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary Acc_CBIZ (m/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary AccProper_CBIX (m/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary AccProper_CBIY (m/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary AccProper_CBIZ (m/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary Pos_CBIX
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary Pos_CBIY
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary Pos_CBIZ
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary Q_CBI2BDY0
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary Q_CBI2BDY1
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary Q_CBI2BDY2
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary Q_CBI2BDY3
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary SCAccel_BDYX (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary SCAccel_BDYY (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary SCAccel_BDYZ (rad/s^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary SCRate_BDYX
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary SCRate_BDYY
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary SCRate_BDYZ
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary Vel_CBIX
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary Vel_CBIY
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY_EOM_Summary Vel_CBIZ
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN Data
+                END Data
+
+            END DataGroup
+
+            BEGIN DataGroup
+
+                GroupName		 ODySSy / Ephemeris
+
+                NumberOfPoints		 0
+                BlockFactor		 50
+
+                ThinningInterval		 0
+
+                ReferenceEpoch		 5 Feb 2016 14:25:00.000000000
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Altitude
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris DataEpoch
+                    Dimension		 TimeUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Eclipse
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Eclipse Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Latitude
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris LimbAngle
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Longitude
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris MagFld_BDYX
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris MagFld_BDYY
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris MagFld_BDYZ
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris MagFld_CBFX
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris MagFld_CBFY
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris MagFld_CBFZ
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris MagFld_CBIX
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris MagFld_CBIY
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris MagFld_CBIZ
+                    Dimension		 MagneticFieldUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris MagFld_UBDYX (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris MagFld_UBDYY (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris MagFld_UBDYZ (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Nadir_UBDYX (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Nadir_UBDYY (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Nadir_UBDYZ (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Pos_CBFX
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Pos_CBFY
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Pos_CBFZ
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Pos_CBIX
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Pos_CBIY
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Pos_CBIZ
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Q_CBI2CBF0
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Q_CBI2CBF1
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Q_CBI2CBF2
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Q_CBI2CBF3
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Sun_UBDYX (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Sun_UBDYY (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Sun_UBDYZ (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris SunDistance
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris SunPos_CBIX
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris SunPos_CBIY
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris SunPos_CBIZ
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris VehiclePitch
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris VehicleRoll
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris VehicleYaw
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Vel_CBFX
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Vel_CBFY
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Vel_CBFZ
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Vel_CBIX
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Vel_CBIY
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Vel_CBIZ
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Vel_UBDYX (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Vel_UBDYY (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Ephemeris Vel_UBDYZ (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN Data
+                END Data
+
+            END DataGroup
+
+            BEGIN DataGroup
+
+                GroupName		 ODySSy / Pointing Error
+
+                NumberOfPoints		 0
+                BlockFactor		 50
+
+                ThinningInterval		 0
+
+                ReferenceEpoch		 5 Feb 2016 14:25:00.000000000
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error CtrlAttErr_BDYX
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error CtrlAttErr_BDYY
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error CtrlAttErr_BDYZ
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error CtrlAttErrMag
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error CtrlRateErr_BDYX
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error CtrlRateErr_BDYY
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error CtrlRateErr_BDYZ
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error CtrlRateErrMag
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error EstAttErr_BDYX
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error EstAttErr_BDYY
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error EstAttErr_BDYZ
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error EstAttErrMag
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error EstRateErr_BDYX
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error EstRateErr_BDYY
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error EstRateErr_BDYZ
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error EstRateErrMag
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error TotAttErr_BDYX
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error TotAttErr_BDYY
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error TotAttErr_BDYZ
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error TotAttErrMag
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error TotRateErr_BDYX
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error TotRateErr_BDYY
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error TotRateErr_BDYZ
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Pointing Error TotRateErrMag
+                    Dimension		 AngleRateUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN Data
+                END Data
+
+            END DataGroup
+
+            BEGIN DataGroup
+
+                GroupName		 ODySSy / Power/Thermal
+
+                NumberOfPoints		 0
+                BlockFactor		 50
+
+                ThinningInterval		 0
+
+                ReferenceEpoch		 5 Feb 2016 14:25:00.000000000
+
+                BEGIN DataElement
+                    Name		 ODY Power Model Available Power
+                    Dimension		 PowerUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Power Model Battery Current (A)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Power Model Battery Power
+                    Dimension		 PowerUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Power Model Battery SOC (A*h)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Power Model Battery SOC Percent
+                    Dimension		 Percent
+                    InputUnitAbbr		 %
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Power Model Battery Voltage (V)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Power Model Load Power
+                    Dimension		 PowerUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY Power Model Shunted Power
+                    Dimension		 PowerUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN Data
+                END Data
+
+            END DataGroup
+
+            BEGIN DataGroup
+
+                GroupName		 ODySSy / Sensor Model
+
+                NumberOfPoints		 0
+                BlockFactor		 50
+
+                ThinningInterval		 0
+
+                ReferenceEpoch		 5 Feb 2016 14:25:00.000000000
+
+                BEGIN DataElement
+                    Name		 ODY GPS MeasValid
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY GPS MeasValid Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY GPS Pos_CBFX
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY GPS Pos_CBFY
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY GPS Pos_CBFZ
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY GPS Time
+                    Dimension		 TimeUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY GPS Vel_CBFX
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY GPS Vel_CBFY
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 ODY GPS Vel_CBFZ
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN Data
+                END Data
+
+            END DataGroup
+
+            BEGIN DataGroup
+
+                GroupName		 Vehicle State
+
+                NumberOfPoints		 0
+                BlockFactor		 50
+
+                ThinningInterval		 0
+
+                ReferenceEpoch		 5 Feb 2016 14:25:00.000000000
+
+                BEGIN DataElement
+                    Name		 Vehicle State AttCtrlConfig
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State AttCtrlConfig Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State CG_BDYX
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State CG_BDYY
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State CG_BDYZ
+                    Dimension		 DistanceUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State DeltaVEst_BDYX
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State DeltaVEst_BDYY
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State DeltaVEst_BDYZ
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State DeltaVEst_CBIX
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State DeltaVEst_CBIY
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State DeltaVEst_CBIZ
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State DeltaVEst_ORBX
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State DeltaVEst_ORBY
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State DeltaVEst_ORBZ
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State DeltaVMagEst
+                    Dimension		 SmallVelocityUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State FfwCtrlConfig
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State FfwCtrlConfig Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State Inertia_BDYCGXX (kg*m^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State Inertia_BDYCGXY (kg*m^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State Inertia_BDYCGXZ (kg*m^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State Inertia_BDYCGYX (kg*m^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State Inertia_BDYCGYY (kg*m^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State Inertia_BDYCGYZ (kg*m^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State Inertia_BDYCGZX (kg*m^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State Inertia_BDYCGZY (kg*m^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State Inertia_BDYCGZZ (kg*m^2)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State Mass (kg)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State MissionMode
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State MissionMode Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State MomCtrlConfig
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State MomCtrlConfig Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State SunAvoidAngle
+                    Dimension		 AngleUnit
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State SunAvoidEnabled
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State SunAvoidEnabled Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State SunAvoidIndex
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State SunAvoidViolated
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State SunAvoidViolated Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State SunLostPersCnt
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State SunMeasEst_UBDYX (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State SunMeasEst_UBDYY (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State SunMeasEst_UBDYZ (Uvec)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State SunMeasValidity
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State SunMeasValidity Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State TotalMomentum_BDYX (N*m*s)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State TotalMomentum_BDYY (N*m*s)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State TotalMomentum_BDYZ (N*m*s)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State TotalMomentum_CBIX (N*m*s)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State TotalMomentum_CBIY (N*m*s)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State TotalMomentum_CBIZ (N*m*s)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State TotalMomentumMag (N*m*s)
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State VehicleConfig
+                    InterpOrder		 1
+                    DataType		 CHAR
+                END DataElement
+
+                BEGIN DataElement
+                    Name		 Vehicle State VehicleConfig Enum
+                    InterpOrder		 1
+                    DataType		 REAL
+                END DataElement
+
+                BEGIN Data
+                END Data
+
+            END DataGroup
+
+        END ExternData
+
+        BEGIN Lifetime
+            Semi_parameter		  6.6781370000000000e+06
+            Eccentricity		  0.0000000000000000e+00
+            Argument_Perigee		  0.0000000000000000e+00
+            RA_Asc_Node		  0.0000000000000000e+00
+            Inclination		  4.9741883681799998e-01
+            UTC_Year		 1997
+            UTC_Month		 1
+            UTC_Day		 1
+            UTC_Hour		 0
+            UTC_Minute		 0
+            UTC_Second		  0.0000000000000000e+00
+            Limit_Type		 OrbitCount
+            Duration_Limit		 36525
+            Rev_Count_Limit		 99999
+            Revs_Calculation		 10
+            Gaussian_Quadratures		 1
+            Flux_Sigma_Level		 0
+            Gravity_Model_Flag		 1
+            Reflection_Coef		  1.0000000000000000e+00
+            Sun_Area		  1.5430000000000000e+01
+            Mass		 -1.0000000000000000e+00
+            Drag_Coef		  2.2000000000000002e+00
+            Drag_Area		  1.3650000000000000e+01
+            Rotating_Atm_Flag		 0
+            Osculating_Alt_Flag		 1
+            Compute_Gamma_Flag		 0
+            Initial_Time		  0.0000000000000000e+00
+            Decay_Alt		  6.5000000000000000e+04
+            Solar_Flux_Filename		 SolFlx_CSSI.dat
+            AtmDensityModel		 Jacchia70
+        END Lifetime
+
+        BEGIN ADFFileData
+        END ADFFileData
+
+        BEGIN AccessConstraints
+            LineOfSight IncludeIntervals
+        END AccessConstraints
+
+        BEGIN AttitudeSimulator
+            UseReferenceForAttitude		 No
+            UseForAttitude		 No
+            UsePctCmplt		 Yes
+            PctCmpltDivisor		 24
+            PctCmpltTitle		 Attitude Simulation
+            UseAnimate		 No
+            AnimateSampling		  1.0000000000000000e+00
+            StartTime		 4 Feb 2016 19:00:00.000000000
+            StopTime		 5 Feb 2016 19:00:00.000000000
+            Step		  0.0000000000000000e+00
+            InitialTime		 4 Feb 2016 19:00:00.000000000
+            SmartEpochPtr		
+            BEGIN EVENT
+                Epoch		 4 Feb 2016 19:00:00.000000000
+                EventEpoch		
+                BEGIN EVENT
+                    Type		 EVENT_LINKTO
+                    Name		 EphemerisStartTime
+                END EVENT
+                EpochState		 Implicit
+            END EVENT
+
+            SmartIntervalPtr		
+            BEGIN EVENTINTERVAL
+                EventInterval		
+                BEGIN EVENTINTERVAL
+                    Type		 EVENTINTERVAL_LINKTO
+                    Name		 EphemerisTimeSpan
+                END EVENTINTERVAL
+                IntervalState		 Implicit
+            END EVENTINTERVAL
+
+            BEGIN InitialAttitude
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+                 1.0000000000000000e+00
+            END InitialAttitude
+            Representation		 0
+            Sequence		 0
+            BEGIN InitialAngVel
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+            END InitialAngVel
+            BEGIN InitialMomentumBias
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+            END InitialMomentumBias
+            UseMomentumBias		 No
+            BEGIN IntegratedSimulation
+                BEGIN Integrator
+                    Type		 RK78
+                    RelTol		  1.0000000000000000e-03
+                    AbsTol		  9.9999999999999995e-07
+                    MinStep		  9.9999999999999995e-07
+                    UseMinStep		 No
+                    MaxStep		  1.0000000000000000e+01
+                    UseMaxStep		 No
+                    NumIter		 10
+                    UseIter		 No
+                    UseStat		 No
+                END Integrator
+                BEGIN Formulation
+                    BEGIN EnvironmentData
+                        UseApproxAlt		 No
+                        MeanFlux		 150
+                        DailyFlux		 150
+                        GeoMagIndex		  3.0000000000000000e+00
+                        RefAlt		  0.0000000000000000e+00
+                        ScaleAlt		  8.5000000000000000e+03
+                        RefDensity		  1.2170000000000001e+00
+                        DensityModel		 Exponential
+                    END EnvironmentData
+                    BEGIN InitList
+                    END InitList
+                    BEGIN UpdateList
+                    END UpdateList
+                    BEGIN PostList
+                    END PostList
+                    UseInitialUpdateStep		 No
+                    UseUpdateStep		 No
+                END Formulation
+            END IntegratedSimulation
+        END AttitudeSimulator
+
+        BEGIN ObjectCoverage
+        END ObjectCoverage
+
+        BEGIN Desc
+        END Desc
+
+        BEGIN Ellipse
+            TimesTrackVehStartTime		 Yes
+        END Ellipse
+
+        BEGIN Reference
+        END Reference
+
+        BEGIN AcquisitionData
+            DataType		 IIRV9
+            CoordinateSystem		 1
+            MassAtEpoch		 1000
+            IIRV_MessageID		 0
+            IIRV_MessageClass		 10
+            IIRV_MessageOrigin		 A
+            IIRV_MessageDestination		 GSVL
+            IIRV_VectorType		 1
+            IIRV_VectorSource		 1
+            IIRV_SupportID		 0
+            IIRV_VehicleIdentificationCode		 1
+            IIRV_CounterStart		 1
+            IIRV_Area		 0
+            IIRV_DragCoefficient		 2
+            IIRV_SolarReflectivity		 0
+            IIRV_OriginRouteMsg		 HJSC
+            IIRV9_MessageOrigin		 A
+            IIRV9_MessageDestination		 GSVL
+            IIRV9_VectorSource		 1
+            IIRV9_IRON		 1
+            IIRV9_PerturbationCoeffType		 0
+            IIRV9_DragCoefficient		 2
+            IIRV9_SRPCoefficient		 1
+            IIRV9_Area		 0
+            IIRV9_OriginRouteMsg		 HJSC
+            IIRV1_MessageDestination		 GSVL
+            IIRV1_VectorType		 1
+            IIRV1_VectorSource		 1
+            IIRV1_SupportID		 0
+            IIRV1_VehicleIdentificationCode		 5
+            IIRV1_CounterStart		 1
+            IIRV1_Area		 0
+            IIRV1_DragCoefficient		 2
+            IIRV1_OriginRouteMsg		 HJSC
+            EPV_MessageID		 1
+            EPV_MessageClass		 10
+            EPV_MessageOrigin		 A
+            EPV_MessageDestination		 GSVL
+            EPV_VectorType		 1
+            EPV_VectorSource		 1
+            EPV_SupportID		 0
+            EPV_VehicleIdentificationCode		 1
+            EPV_CounterStart		 1
+            NASA_MissionID		 eol
+            NASA_MessageID		 0
+            NASA_MessageClass		 10
+            NASA_RoutIndicator		 GSVL
+            NASA_VectorType		 1
+            NASA_VectorSource		 1
+            NASA_Area		 0
+            NASA_DragCoefficient		 2
+            NASA_SolarReflectivity		 0
+            NASA_OriginRouteMsg		 0
+        END AcquisitionData
+
+        BEGIN Identification
+        END Identification
+
+        BEGIN Crdn
+        END Crdn
+
+        BEGIN Graphics
+
+            BEGIN GenericGraphics
+                IntvlHideShowAll		 Off
+                ShowPassLabel		 Off
+                ShowPathLabel		 Off
+                TransformTrajectory		 On
+                MinGfxGndTrkTimeStep		  0.0000000000000000e+00
+                MaxGfxGndTrkTimeStep		  6.0000000000000000e+02
+                MinGfxOrbitTimeStep		  0.0000000000000000e+00
+                MaxGfxOrbitTimeStep		  6.0000000000000000e+02
+                ShowGlintPoint		 Off
+                ShowGlintColor		 #ffffff
+                ShowGlintStyle		 2
+            END GenericGraphics
+
+            BEGIN AttributeData
+                ShowGfx		 On
+                AttributeType		                Basic		
+                BEGIN DefaultAttributes
+                    Show		 On
+                    Inherit		 Off
+                    ShowLabel		 Off
+                    ShowGndTrack		 On
+                    ShowGndMarker		 On
+                    ShowOrbit		 On
+                    ShowOrbitMarker		 On
+                    ShowElsetNum		 Off
+                    ShowSpecialSwath		 On
+                    MarkerColor		 #00ffff
+                    GroundTrackColor		 #00ffff
+                    SwathColor		 #00ffff
+                    LabelColor		 #00ffff
+                    LineStyle		 0
+                    LineWidth		 1
+                    MarkerStyle		 15
+                    FontStyle		 0
+                    SwathLineStyle		 0
+                    SpecSwathLineStyle		 1
+                END DefaultAttributes
+
+                BEGIN CustomIntervalList
+                    BEGIN DefaultAttributes
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        MarkerColor		 #00ffff
+                        GroundTrackColor		 #00ffff
+                        SwathColor		 #00ffff
+                        LabelColor		 #00ffff
+                        LineStyle		 0
+                        LineWidth		 1
+                        MarkerStyle		 4
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END DefaultAttributes
+                END CustomIntervalList
+
+                BEGIN AccessIntervalsAttributes
+                    BEGIN AttrDuringAccess
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        MarkerColor		 #00ffff
+                        GroundTrackColor		 #00ffff
+                        SwathColor		 #00ffff
+                        LabelColor		 #00ffff
+                        LineStyle		 0
+                        LineWidth		 1
+                        MarkerStyle		 4
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END AttrDuringAccess
+                    BEGIN AttrDuringNoAccess
+                        Show		 Off
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        MarkerColor		 #ff00ff
+                        GroundTrackColor		 #ff00ff
+                        SwathColor		 #ff00ff
+                        LabelColor		 #ff00ff
+                        LineStyle		 0
+                        LineWidth		 1
+                        MarkerStyle		 4
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END AttrDuringNoAccess
+                END AccessIntervalsAttributes
+
+                BEGIN TimeComponentIntervalsAttributes
+                    BEGIN DefaultAttributes
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        MarkerColor		 #00ffff
+                        GroundTrackColor		 #00ffff
+                        SwathColor		 #00ffff
+                        LabelColor		 #00ffff
+                        LineStyle		 0
+                        LineWidth		 1
+                        MarkerStyle		 4
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END DefaultAttributes
+                END TimeComponentIntervalsAttributes
+
+                BEGIN RealTimeAttributes
+                    BEGIN HistoryAttr
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        MarkerColor		 #00ffff
+                        GroundTrackColor		 #00ffff
+                        SwathColor		 #00ffff
+                        LabelColor		 #00ffff
+                        LineStyle		 0
+                        LineWidth		 1
+                        MarkerStyle		 4
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END HistoryAttr
+                    BEGIN SplineAttr
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        MarkerColor		 #ffff00
+                        GroundTrackColor		 #ffff00
+                        SwathColor		 #ffff00
+                        LabelColor		 #ffff00
+                        LineStyle		 0
+                        LineWidth		 1
+                        MarkerStyle		 4
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END SplineAttr
+                    BEGIN LookAheadAttr
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        MarkerColor		 #ffffff
+                        GroundTrackColor		 #ffffff
+                        SwathColor		 #ffffff
+                        LabelColor		 #ffffff
+                        LineStyle		 0
+                        LineWidth		 1
+                        MarkerStyle		 4
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END LookAheadAttr
+                    BEGIN DropOutAttr
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        MarkerColor		 #ff0000
+                        GroundTrackColor		 #ff0000
+                        SwathColor		 #ff0000
+                        LabelColor		 #ff0000
+                        LineStyle		 0
+                        LineWidth		 1
+                        MarkerStyle		 4
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END DropOutAttr
+                END RealTimeAttributes
+            END AttributeData
+
+            BEGIN LeadTrailData
+                GtLeadingType		 OnePass
+                GtTrailingType		 OnePass
+                OrbitLeadingType		 OnePass
+                OrbitTrailingType		 OnePass
+            END LeadTrailData
+            BEGIN SaaData
+                ShowSaa		 Off
+                ShowSaaFill		 Off
+                SaaFillTranslucency		 0.7
+                TrackSaa		 On
+                SaaAltitude		 500000
+            END SaaData
+            BEGIN GroundTracks
+                BEGIN GroundTrack
+                    CentralBody		 Earth
+                END GroundTrack
+            END GroundTracks
+            BEGIN EllipseSetGxData
+                BEGIN DefEllipseSetGx
+                    ShowStatic		 On
+                    ShowDynamic		 On
+                    UseLastDynPos		 Off
+                    HoldLastDynPos		 Off
+                    ShowName		 Off
+                    ShowMarker		 On
+                    MarkerStyle		 0
+                    LineStyle		 0
+                    LineWidth		 1
+                END DefEllipseSetGx
+            END EllipseSetGxData
+        END Graphics
+
+        BEGIN VO
+        END VO
+
+    END Extensions
+
+    BEGIN SubObjects
+
+        Class Sensor
+
+            AtlasPayload		
+            StarTracker		
+
+        END Class
+
+    END SubObjects
+
+END Satellite
+

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="PayloadModel" type="SLS.Payload.PayloadModel" id="PayloadModel_sndvCR6Oc4coGoNtSDdoxw" fileId="qhH1RVvmIQCbFtxsHKVSrg">
+  <container name="PayloadList" type="List`1[[SLS.Payload.PayloadItemModel]]" id="PayloadModel_TrscceWumAqESpô4aiB06Q">
+    <container name="PayloadList[0]" type="SLS.Payload.PayloadItemModel" id="PayloadModel_tSx3nweUZ7mr4VWSrYDqhw">
+      <value name="Name" type="System.String">Payload 1</value>
+      <value name="StandbyPower_W" type="System.Double">0</value>
+      <value name="StkLink" type="System.String">No Link</value>
+      <table name="PayloadModeList" type="List`1[[SLS.Payload.PayloadModeModel]]" id="PayloadModel_r6WTrypXf6qUA0vU2uZalA" />
+    </container>
+    <container name="PayloadList[1]" type="SLS.Payload.PayloadItemModel" id="PayloadModel_bJykXMlII5rMtoCKHLnslA">
+      <value name="Name" type="System.String">Payload 23</value>
+      <value name="StandbyPower_W" type="System.Double">12</value>
+      <value name="StkLink" type="System.String">Sensor1</value>
+      <table name="PayloadModeList" type="List`1[[SLS.Payload.PayloadModeModel]]" id="PayloadModel_alzWAjV54JâW33MôPVsKKg">
+        <header>
+          <index_column index="0" name="[Row Index]" />
+          <value_column index="1" name="Mnemonic" type="System.String" />
+          <value_column index="2" name="Name" type="System.String" />
+          <value_column index="3" name="Power_W" type="System.Double" />
+          <value_column index="4" name="DataType" type="SLS.Payload.PayloadModeModel+EPayloadDataGenerationType" />
+          <value_column index="5" name="DataOutput" type="System.Double" />
+        </header><![CDATA[
+:0	"a"	"b"	1	BulkData_Mbits	4
+:1	"c"	"d"	2	RateData_Kbits	5
+]]></table>
+    </container>
+  </container>
+</container>

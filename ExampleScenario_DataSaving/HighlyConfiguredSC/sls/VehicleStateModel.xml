@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="VehicleStateModel" type="SLS.ADCS.VehicleStateModel" id="VehicleStateModel_dNP0jIt5rvX9VMKHHRmrKQ" fileId="2UEl6SUFrLYSEkMc97rnKQ">
+  <value name="SunBufferSize" type="System.Int32">5</value>
+  <value name="SunBufferConsistencyAngle_deg" type="System.Double">44</value>
+  <value name="SunLostPersistTime_s" type="System.Double">1999</value>
+  <value name="EclipseKOZAngle_deg" type="System.Double">7</value>
+  <table name="MissionModeList" type="List`1[[SLS.ADCS.MissionModeModel]]" id="VehicleStateModel_lVB6ChkMqpLsQisxhXEflw">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="Name" type="System.String" />
+    </header><![CDATA[
+:0	"NORMAL_OPS"
+:1	"SAFE_MODE"
+:2	"MISSION_MODE_1"
+:3	"MISSION_MODE_2"
+]]></table>
+  <container name="KozList" type="List`1[[SLS.ADCS.KozModel]]" id="VehicleStateModel_aVNwJT8OwjX1aWXt9IuDPA">
+    <container name="KozList[0]" type="SLS.ADCS.KozModel" id="VehicleStateModel_0ô2vtyX9OB3ECMCWzr1RZQ">
+      <value name="Name" type="System.String">KOZ_1</value>
+      <value name="Vector_UBDY" type="SLS.Util.VectorModel">[ 0.577350269189626 0.577350269189626 0.577350269189626 ]</value>
+      <value name="Angle_deg" type="System.Double">1</value>
+    </container>
+    <container name="KozList[1]" type="SLS.ADCS.KozModel" id="VehicleStateModel_BiqcVduEsx6Es30QRBu11Q">
+      <value name="Name" type="System.String">KOZ_2</value>
+      <value name="Vector_UBDY" type="SLS.Util.VectorModel">[ 1 0 0 ]</value>
+      <value name="Angle_deg" type="System.Double">2</value>
+    </container>
+  </container>
+  <container name="ConstraintList" type="List`1[[SLS.TargetPlanner.ConstraintModel]]" id="VehicleStateModel_6YKATQKK0khuYwmh1VRsww">
+    <container name="ConstraintList[0]" type="SLS.TargetPlanner.ConstraintModel" id="VehicleStateModel_C1SNWBâj6BânGQXô4Lk6bg">
+      <value name="Name" type="System.String">Constraint_1</value>
+      <value name="AttErrThresh_deg" type="System.Double">22</value>
+      <value name="RateErrThresh_dps" type="System.Double">44</value>
+      <value name="MomErrThresh_Nms" type="System.Double">55</value>
+    </container>
+    <container name="ConstraintList[1]" type="SLS.TargetPlanner.ConstraintModel" id="VehicleStateModel_ôBeZYvGoFWqjôLO03MsF5g">
+      <value name="Name" type="System.String">Constraint_2</value>
+      <value name="AttErrThresh_deg" type="System.Double">11</value>
+      <value name="RateErrThresh_dps" type="System.Double">33</value>
+      <value name="MomErrThresh_Nms" type="System.Double">66</value>
+    </container>
+  </container>
+</container>

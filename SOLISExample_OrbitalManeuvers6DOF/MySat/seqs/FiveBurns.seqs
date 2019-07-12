@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<sequence version="1.0.3">
+  <sequence_cmd delta_time="0" name="BurnEvent" sequence_type="Series (Sequential Execution)" time_type="Relative" time="90" call_count="5" input_arg="10" />
+</sequence>

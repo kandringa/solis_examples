@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="AttitudeDeterminationModel" type="SLS.ADCS.AttitudeDeterminationModel" id="AttitudeDeterminationModel_wz15vu9lNs96SSWsLZIltQ" fileId="i5bwsYGtL7âbpkvuqAFzIQ">
+  <value name="AttitudeDeterminationModelLevel" type="SLS.ADCS.EAttitudeDeterminationModelLevel">ExtendedKalmanFilter</value>
+  <value name="Init_Method" type="SLS.ADCS.EInitializationType">Sensor</value>
+  <value name="Init_UndetAttitude_CBI2BDY" type="SLS.Util.QuaternionModel">[ 0 0 1 0 ]</value>
+  <value name="Init_AutoRateDamp" type="System.Boolean">False</value>
+  <reference name="Init_DeterminedSequence" type="SLS.CmdTlm.SequenceModel" id="MissionSequenceSystemModel_Wt6qwS8aqe7tNxsgâPCpVA:0" />
+  <reference name="Init_UndeterminedSequence" type="SLS.CmdTlm.SequenceModel" id="MissionSequenceSystemModel_Wt6qwS8aqe7tNxsgâPCpVA:1" />
+  <value name="Init_FramesRequired" type="System.Int32">1</value>
+  <value name="Init_MeasurementTimeWindow_s" type="System.Double">3</value>
+  <value name="Init_SensorPersistDuration_s" type="System.Double">5</value>
+  <value name="Init_AttitudeConsistencyThreshold_deg" type="System.Double">7</value>
+  <value name="Init_MinReferenceSeparationAngle_deg" type="System.Double">9</value>
+  <value name="EnableBiasProcessing" type="System.Boolean">False</value>
+  <value name="EstimatedRateBiasLimit_degps" type="System.Double">5</value>
+  <value name="FG_RateBiasTimeConstant_s" type="System.Double">100</value>
+  <value name="KF_InitialAttitudeStDev_deg" type="System.Double">4</value>
+  <value name="KF_InitialRateBiasStDev_degps" type="System.Double">0.4</value>
+  <value name="KF_RateNoiseStDev_degps" type="System.Double">0.05</value>
+  <value name="KF_RateDriftStDev_degpsprthr" type="System.Double">0.06</value>
+  <table name="SensorList" type="List`1[[SLS.ADCS.Sensors.AttitudeSensorModel]]" id="AttitudeDeterminationModel_yv0yvdSWczjVenn3dC7X8A">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <reference_column index="1" name="AttitudeSensor" type="SLS.ADCS.Sensors.IAttitudeSensor" />
+      <value_column index="2" name="UseForInit" type="System.Boolean" />
+      <value_column index="3" name="IncorporationMethod" type="SLS.ADCS.EIncorporationType" />
+      <value_column index="4" name="ResidualLimit_deg" type="System.Double" />
+      <value_column index="5" name="TimeConstant_s" type="System.Double" />
+      <value_column index="6" name="BoreMeasurementStdDev_deg" type="System.Double" />
+      <value_column index="7" name="OffBoreMeasurementStdDev_deg" type="System.Double" />
+      <value_column index="8" name="AttitudeGainLimit" type="System.Double" />
+      <value_column index="9" name="RateBiasGainLimit" type="System.Double" />
+    </header><![CDATA[
+:0	SensorModel_bVa9uUuUG42QK8itlVSfpA	True	None	0	0	0	0	0	0
+:1	SensorModel_Ic7bB8lp1SYm7âskOfa05w	True	None	6	0	0.3	0.3	2	1
+:2	SensorModel_226zjgRWTIhDjeôru5JiWg	False	AttitudeOnly	2	1	0.1	0.1	2	1
+:3	SensorModel_rUXu6bk8uq3OxA9cv17VYA	False	AttitudeAndBias	4	2	0.2	0.2	1	3
+:4	SensorModel_ceIn2mZ76EBKkxnVl9uCxg	True	AttitudeOnly	8	3	0.4	0.4	1	3
+:5	SensorModel_DutbsEx0ycG8nLnuHvZ7vw	True	AttitudeAndBias	10	4	0.1	0.6	1	3
+:6	SensorModel_QqIHâP8ZsXu2bklJ9fa6ow	False	AttitudeAndBias	10	5	0.1	0.1	2	1
+:7	SensorModel_YaLW28NIiJDYlj7IcNkz8Q	False	AttitudeAndBias	10	6	0.1	0.5	2	1
+:8	SensorModel_Et2LGoQWE8ES39zlnFTq3w	False	AttitudeAndBias	10	7	0.1	0.1	1	3
+:9	SensorModel_8u3IjVtcNP79FtIMOn5rpQ	True	AttitudeAndBias	10	8	0.1	0.1	1	3
+:10	SensorModel_uCAcugIRIac7MW0Cs5hgGw	True	AttitudeAndBias	10	9	0.1	0.1	2	1
+]]></table>
+</container>

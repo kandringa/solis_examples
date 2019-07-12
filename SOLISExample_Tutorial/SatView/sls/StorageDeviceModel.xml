@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="StorageDeviceModel" type="SLS.Payload.StorageDeviceModel" id="StorageDeviceModel_mFIjoXCB5sJdJKOcYNmaGA" fileId="35I1mg8rt0W4ijf0FU6aâQ">
+  <value name="RecorderSize" type="System.Double">1</value>
+  <value name="RecorderSizeUnits" type="SLS.Payload.StorageDeviceModel+EDataRecorderUnit">Gigabytes</value>
+  <value name="SaturateAt100Pct" type="System.Boolean">True</value>
+  <value name="InitialStateFull_pct" type="System.Double">0</value>
+</container>

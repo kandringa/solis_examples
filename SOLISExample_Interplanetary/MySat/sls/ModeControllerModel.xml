@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="ModeControllerModel" type="SLS.ADCS.ModeController.ModeControllerModel" id="ModeControllerModel_aCqo5AG9iZsvsx625mBVzA" fileId="qZWbtlOcfUXQrvOugREogA">
+  <value name="SingularityAvoidanceEnabled" type="System.Boolean">True</value>
+  <value name="SingularityThreshold_deg" type="System.Double">10</value>
+  <container name="ModeModelList" type="List`1[[SLS.ADCS.ModeController.IModeModel]]" id="ModeControllerModel_vD2ôsRRNsU8rwjceâ9QwJw">
+    <container name="ModeModelList[0]" type="SLS.ADCS.ModeController.IdleModeModel" id="ModeControllerModel_zL9hQyHYnwl5ehMj7yUlTA">
+      <value name="Name" type="System.String">Idle</value>
+    </container>
+    <container name="ModeModelList[1]" type="SLS.ADCS.ModeController.HoldModeModel" id="ModeControllerModel_OZLBPVW05utwIVFbLZu6Tg">
+      <value name="Name" type="System.String">Hold</value>
+    </container>
+    <container name="ModeModelList[2]" type="SLS.ADCS.ModeController.RateDampModeModel" id="ModeControllerModel_PtZXBY4DJnhhmâ9Rboj69A">
+      <value name="Name" type="System.String">RateDamp</value>
+      <value name="RateErrPersistLimit_s" type="System.Double">60</value>
+      <value name="MomErrPersistLimit_s" type="System.Double">60</value>
+      <value name="RateErrMagThreshold_degps" type="System.Double">0.1</value>
+      <value name="MomErrMagThreshold_Nms" type="System.Double">0.5</value>
+      <value name="CommandedRateTarget_BDY_degps" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+    </container>
+    <container name="ModeModelList[3]" type="SLS.ADCS.ModeController.TrackingModeModel" id="ModeControllerModel_aZL3iiPF9RbQôUglocjb7Q">
+      <value name="Name" type="System.String">InertialPoint</value>
+      <value name="ReferenceObject" type="SLS.ADCS.ModeController.ModeControllerModel+EEphemVectors">InertialFixed</value>
+      <reference name="CelestialBody" type="SLS.Core.SolisConfigModel+CelestialBody" id="SolisConfigModel_C8sqF8TâXcKkYqCAc9BXMg:1" />
+      <value name="AlignmentVector_UBDY" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="ClockingVector_UBDY" type="SLS.Util.VectorModel">[ 0 1 0 ]</value>
+      <value name="RotisserieOption" type="SLS.ADCS.ModeController.ModeControllerModel+ERotisserieOption">None</value>
+      <value name="RotisserieRate_degps" type="System.Double">0</value>
+      <value name="AlignmentVector_UCBI" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="ClockingVector_UCBI" type="SLS.Util.VectorModel">[ 1 0 0 ]</value>
+      <value name="InertialFixedQ_CBI2BDY" type="SLS.Util.QuaternionModel">[ 0 0 0 1 ]</value>
+      <null name="AlignTarget" type="SLS.ADCS.ModeController.McTargetModel" />
+      <null name="ClockingTarget" type="SLS.ADCS.ModeController.McTargetModel" />
+    </container>
+    <container name="ModeModelList[4]" type="SLS.ADCS.ModeController.TrackingModeModel" id="ModeControllerModel_ThZrJoWfôlMbGgXUkLSSôg">
+      <value name="Name" type="System.String">SunTrack</value>
+      <value name="ReferenceObject" type="SLS.ADCS.ModeController.ModeControllerModel+EEphemVectors">SC2Sun</value>
+      <reference name="CelestialBody" type="SLS.Core.SolisConfigModel+CelestialBody" id="SolisConfigModel_C8sqF8TâXcKkYqCAc9BXMg:1" />
+      <value name="AlignmentVector_UBDY" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="ClockingVector_UBDY" type="SLS.Util.VectorModel">[ 0 1 0 ]</value>
+      <value name="RotisserieOption" type="SLS.ADCS.ModeController.ModeControllerModel+ERotisserieOption">None</value>
+      <value name="RotisserieRate_degps" type="System.Double">0</value>
+      <value name="AlignmentVector_UCBI" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="ClockingVector_UCBI" type="SLS.Util.VectorModel">[ 1 0 0 ]</value>
+      <value name="InertialFixedQ_CBI2BDY" type="SLS.Util.QuaternionModel">[ 0 0 0 1 ]</value>
+      <null name="AlignTarget" type="SLS.ADCS.ModeController.McTargetModel" />
+      <null name="ClockingTarget" type="SLS.ADCS.ModeController.McTargetModel" />
+    </container>
+    <container name="ModeModelList[5]" type="SLS.ADCS.ModeController.TrackingModeModel" id="ModeControllerModel_pDg5f7cY1RXdCCEH7âcygg">
+      <value name="Name" type="System.String">MarsTrack</value>
+      <value name="ReferenceObject" type="SLS.ADCS.ModeController.ModeControllerModel+EEphemVectors">SC2NadirDetic</value>
+      <reference name="CelestialBody" type="SLS.Core.SolisConfigModel+CelestialBody" id="SolisConfigModel_C8sqF8TâXcKkYqCAc9BXMg:1" />
+      <value name="AlignmentVector_UBDY" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="ClockingVector_UBDY" type="SLS.Util.VectorModel">[ 1 0 0 ]</value>
+      <value name="RotisserieOption" type="SLS.ADCS.ModeController.ModeControllerModel+ERotisserieOption">None</value>
+      <value name="RotisserieRate_degps" type="System.Double">0</value>
+      <value name="AlignmentVector_UCBI" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="ClockingVector_UCBI" type="SLS.Util.VectorModel">[ 1 0 0 ]</value>
+      <value name="InertialFixedQ_CBI2BDY" type="SLS.Util.QuaternionModel">[ 0 0 0 1 ]</value>
+      <null name="AlignTarget" type="SLS.ADCS.ModeController.McTargetModel" />
+      <null name="ClockingTarget" type="SLS.ADCS.ModeController.McTargetModel" />
+    </container>
+    <container name="ModeModelList[6]" type="SLS.ADCS.ModeController.TrackingModeModel" id="ModeControllerModel_snv3mcAta6r51HowKoQpyg">
+      <value name="Name" type="System.String">EarthTrack</value>
+      <value name="ReferenceObject" type="SLS.ADCS.ModeController.ModeControllerModel+EEphemVectors">SC2NadirDetic</value>
+      <reference name="CelestialBody" type="SLS.Core.SolisConfigModel+CelestialBody" id="SolisConfigModel_C8sqF8TâXcKkYqCAc9BXMg:0" />
+      <value name="AlignmentVector_UBDY" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="ClockingVector_UBDY" type="SLS.Util.VectorModel">[ 1 0 0 ]</value>
+      <value name="RotisserieOption" type="SLS.ADCS.ModeController.ModeControllerModel+ERotisserieOption">None</value>
+      <value name="RotisserieRate_degps" type="System.Double">0</value>
+      <value name="AlignmentVector_UCBI" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="ClockingVector_UCBI" type="SLS.Util.VectorModel">[ 1 0 0 ]</value>
+      <value name="InertialFixedQ_CBI2BDY" type="SLS.Util.QuaternionModel">[ 0 0 0 1 ]</value>
+      <null name="AlignTarget" type="SLS.ADCS.ModeController.McTargetModel" />
+      <null name="ClockingTarget" type="SLS.ADCS.ModeController.McTargetModel" />
+    </container>
+    <container name="ModeModelList[7]" type="SLS.ADCS.ModeController.TrackingModeModel" id="ModeControllerModel_DDBSCJAôluMRxCViWFuzqw">
+      <value name="Name" type="System.String">VelocityTrack</value>
+      <value name="ReferenceObject" type="SLS.ADCS.ModeController.ModeControllerModel+EEphemVectors">SCVelocity</value>
+      <reference name="CelestialBody" type="SLS.Core.SolisConfigModel+CelestialBody" id="SolisConfigModel_C8sqF8TâXcKkYqCAc9BXMg:1" />
+      <value name="AlignmentVector_UBDY" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="ClockingVector_UBDY" type="SLS.Util.VectorModel">[ 0 1 0 ]</value>
+      <value name="RotisserieOption" type="SLS.ADCS.ModeController.ModeControllerModel+ERotisserieOption">None</value>
+      <value name="RotisserieRate_degps" type="System.Double">0</value>
+      <value name="AlignmentVector_UCBI" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="ClockingVector_UCBI" type="SLS.Util.VectorModel">[ 1 0 0 ]</value>
+      <value name="InertialFixedQ_CBI2BDY" type="SLS.Util.QuaternionModel">[ 0 0 0 1 ]</value>
+      <null name="AlignTarget" type="SLS.ADCS.ModeController.McTargetModel" />
+      <null name="ClockingTarget" type="SLS.ADCS.ModeController.McTargetModel" />
+    </container>
+    <container name="ModeModelList[8]" type="SLS.ADCS.ModeController.TrackingModeModel" id="ModeControllerModel_0yPX2UtLXJyuyrFOPT0wgQ">
+      <value name="Name" type="System.String">TargetTrack</value>
+      <value name="ReferenceObject" type="SLS.ADCS.ModeController.ModeControllerModel+EEphemVectors">SC2Tgt</value>
+      <reference name="CelestialBody" type="SLS.Core.SolisConfigModel+CelestialBody" id="SolisConfigModel_C8sqF8TâXcKkYqCAc9BXMg:1" />
+      <value name="AlignmentVector_UBDY" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="ClockingVector_UBDY" type="SLS.Util.VectorModel">[ 0 1 0 ]</value>
+      <value name="RotisserieOption" type="SLS.ADCS.ModeController.ModeControllerModel+ERotisserieOption">None</value>
+      <value name="RotisserieRate_degps" type="System.Double">0</value>
+      <value name="AlignmentVector_UCBI" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="ClockingVector_UCBI" type="SLS.Util.VectorModel">[ 1 0 0 ]</value>
+      <value name="InertialFixedQ_CBI2BDY" type="SLS.Util.QuaternionModel">[ 0 0 0 1 ]</value>
+      <reference name="AlignTarget" type="SLS.ADCS.ModeController.McTargetModel" id="ModeControllerModel_S0aIHt6lt9klGabDpgrXeQ" />
+      <null name="ClockingTarget" type="SLS.ADCS.ModeController.McTargetModel" />
+    </container>
+    <container name="ModeModelList[9]" type="SLS.ADCS.ModeController.TrackingModeModel" id="ModeControllerModel_tjYb1PgdLJZpyweFk0WLow">
+      <value name="Name" type="System.String">OrbitTrack</value>
+      <value name="ReferenceObject" type="SLS.ADCS.ModeController.ModeControllerModel+EEphemVectors">SC2Tgt</value>
+      <reference name="CelestialBody" type="SLS.Core.SolisConfigModel+CelestialBody" id="SolisConfigModel_C8sqF8TâXcKkYqCAc9BXMg:1" />
+      <value name="AlignmentVector_UBDY" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="ClockingVector_UBDY" type="SLS.Util.VectorModel">[ 1 0 0 ]</value>
+      <value name="RotisserieOption" type="SLS.ADCS.ModeController.ModeControllerModel+ERotisserieOption">None</value>
+      <value name="RotisserieRate_degps" type="System.Double">0</value>
+      <value name="AlignmentVector_UCBI" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="ClockingVector_UCBI" type="SLS.Util.VectorModel">[ 1 0 0 ]</value>
+      <value name="InertialFixedQ_CBI2BDY" type="SLS.Util.QuaternionModel">[ 0 0 0 1 ]</value>
+      <reference name="AlignTarget" type="SLS.ADCS.ModeController.McTargetModel" id="ModeControllerModel_6Xâ2vsoQ78fuoNsqwyN2vw" />
+      <null name="ClockingTarget" type="SLS.ADCS.ModeController.McTargetModel" />
+    </container>
+    <container name="ModeModelList[10]" type="SLS.ADCS.ModeController.EigenSlewModeModel" id="ModeControllerModel_4iO1KeGOj4poz7D5XyRMRg">
+      <value name="Name" type="System.String">EigenSlew</value>
+      <reference name="SlewLimits" type="SLS.ADCS.ModeController.SlewLimitsActsModel" id="ModeControllerModel_ZFVjrôJBs2Q6wzkYmZDJ2A" />
+    </container>
+    <container name="ModeModelList[11]" type="SLS.ADCS.ModeController.RendezSlewModeModel" id="ModeControllerModel_9qbôH6kOBPgmVa1KkskTcQ">
+      <value name="Name" type="System.String">RendezSlew</value>
+      <reference name="SlewLimits" type="SLS.ADCS.ModeController.SlewLimitsActsModel" id="ModeControllerModel_ZFVjrôJBs2Q6wzkYmZDJ2A" />
+    </container>
+    <container name="ModeModelList[12]" type="SLS.ADCS.ModeController.RendezSlewModeModel" id="ModeControllerModel_LOtTmrHRYqyno8lLz5jVoQ">
+      <value name="Name" type="System.String">RendezSlew_SLOW</value>
+      <reference name="SlewLimits" type="SLS.ADCS.ModeController.SlewLimitsScalarModel" id="ModeControllerModel_hopkâ9G1TaUBqY0rme9xbQ" />
+    </container>
+  </container>
+  <container name="SlewLimitModelList" type="List`1[[SLS.ADCS.ModeController.ISlewLimitModel]]" id="ModeControllerModel_1WiiYHbclRUEwvGll9m7Rg">
+    <container name="SlewLimitModelList[0]" type="SLS.ADCS.ModeController.SlewLimitsActsModel" id="ModeControllerModel_ZFVjrôJBs2Q6wzkYmZDJ2A">
+      <value name="Name" type="System.String">ActLimits</value>
+      <value name="InitAttSource" type="SLS.ADCS.ModeController.ModeControllerModel+ESlewInitAttSource">Commanded</value>
+      <reference name="ActuatorSet" type="SLS.ADCS.Actuators.ActuatorSetRwModel" id="ActuatorSystemModel_Aô3WrAXtmdulDcsFIllnxQ" />
+      <value name="UseConstantRateLimit" type="System.Boolean">False</value>
+      <value name="ConstantRateLimit_degps" type="System.Double">0</value>
+      <value name="RateScaleFactor" type="System.Double">0.8</value>
+      <value name="AccelScaleFactor" type="System.Double">0.8</value>
+    </container>
+    <container name="SlewLimitModelList[1]" type="SLS.ADCS.ModeController.SlewLimitsScalarModel" id="ModeControllerModel_hopkâ9G1TaUBqY0rme9xbQ">
+      <value name="Name" type="System.String">ScalarLimits</value>
+      <value name="InitAttSource" type="SLS.ADCS.ModeController.ModeControllerModel+ESlewInitAttSource">Commanded</value>
+      <value name="RateLimit_degps" type="System.Double">2</value>
+      <value name="AccelLimit_degps" type="System.Double">0.25</value>
+    </container>
+  </container>
+  <container name="TargetModelList" type="List`1[[SLS.ADCS.ModeController.McTargetModel]]" id="ModeControllerModel_auaqdOUOtpNH5jQKhCgXwg">
+    <container name="TargetModelList[0]" type="SLS.ADCS.ModeController.McTargetModel" id="ModeControllerModel_S0aIHt6lt9klGabDpgrXeQ">
+      <value name="Name" type="System.String">GeneralTarget</value>
+      <value name="TargetType" type="SLS.ADCS.ModeController.ModeControllerModel+ETargetTypes">SurfaceStatic</value>
+      <value name="IsScan" type="System.Boolean">False</value>
+      <reference name="SurfaceTargetCelestialBody" type="SLS.Core.SolisConfigModel+CelestialBody" id="SolisConfigModel_C8sqF8TâXcKkYqCAc9BXMg:1" />
+      <value name="PositionEntryType" type="SLS.ADCS.ModeController.ModeControllerModel+EPositionEntryTypes">LLA_deg_m</value>
+      <value name="StartPositionEntry" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="EndPositionEntry" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="GroundSpeed_kmps" type="System.Double">0</value>
+      <reference name="OrbitalTargetCelestialBody" type="SLS.Core.SolisConfigModel+CelestialBody" id="SolisConfigModel_C8sqF8TâXcKkYqCAc9BXMg:1" />
+      <value name="Epoch_UTC_s" type="System.DateTime">03/01/2021 06:00:00</value>
+      <value name="Position_CBI_m" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="Velocity_CBI_mps" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+    </container>
+    <container name="TargetModelList[1]" type="SLS.ADCS.ModeController.McTargetModel" id="ModeControllerModel_6Xâ2vsoQ78fuoNsqwyN2vw">
+      <value name="Name" type="System.String">OrbitingTarget</value>
+      <value name="TargetType" type="SLS.ADCS.ModeController.ModeControllerModel+ETargetTypes">OrbitalDynamic</value>
+      <value name="IsScan" type="System.Boolean">False</value>
+      <reference name="SurfaceTargetCelestialBody" type="SLS.Core.SolisConfigModel+CelestialBody" id="SolisConfigModel_C8sqF8TâXcKkYqCAc9BXMg:1" />
+      <value name="PositionEntryType" type="SLS.ADCS.ModeController.ModeControllerModel+EPositionEntryTypes">LLA_deg_m</value>
+      <value name="StartPositionEntry" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="EndPositionEntry" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+      <value name="GroundSpeed_kmps" type="System.Double">0</value>
+      <reference name="OrbitalTargetCelestialBody" type="SLS.Core.SolisConfigModel+CelestialBody" id="SolisConfigModel_C8sqF8TâXcKkYqCAc9BXMg:1" />
+      <value name="Epoch_UTC_s" type="System.DateTime">03/01/2021 06:00:00</value>
+      <value name="Position_CBI_m" type="SLS.Util.VectorModel">[ -4400000 -5650000 -3225000 ]</value>
+      <value name="Velocity_CBI_mps" type="SLS.Util.VectorModel">[ 694 -1489 1654 ]</value>
+    </container>
+  </container>
+</container>

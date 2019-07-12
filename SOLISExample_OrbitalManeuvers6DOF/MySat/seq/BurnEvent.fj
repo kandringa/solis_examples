@@ -1,0 +1,10 @@
+PROC BurnEvent(REAL Duration_s)
+REAL Throttle
+BEGIN
+
+Throttle = 1.0
+
+SHOW("-------------Burn for "+TOSTRING(Duration_s)+" seconds -------------")
+CMD "APT0_ALLTHRON" (Duration_s ,Throttle )
+
+ENDPROC

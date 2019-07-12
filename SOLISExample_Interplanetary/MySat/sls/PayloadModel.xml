@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="PayloadModel" type="SLS.Payload.PayloadModel" id="PayloadModel_sndvCR6Oc4coGoNtSDdoxw" fileId="0KM11TTdSuPlVatuBR9YpA">
+  <container name="PayloadList" type="List`1[[SLS.Payload.PayloadItemModel]]" id="PayloadModel_TrscceWumAqESpô4aiB06Q" />
+</container>

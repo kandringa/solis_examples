@@ -1,0 +1,8 @@
+Headers:Auto:CustomDisturbance.auto.hpp
+Headers:CustomDisturbance.hpp
+Interfaces:IFMyInterface.auto.hpp
+Namespaces:NSMyNamespace.auto.hpp
+Source:Auto:CustomDisturbance.auto.cpp
+Source:CustomDisturbance.cpp
+$(ProjectDir)..\..\..\..\..\..\program files\agi\stk 11\solis\includes\
+C:\Program Files\ASI\MAXDevTool\MCDH_Core.lib

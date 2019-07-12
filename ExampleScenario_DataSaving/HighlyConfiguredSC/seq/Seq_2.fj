@@ -1,0 +1,12 @@
+//WARNING: This code is automatically generated and any modifications will be overwritten by SOLIS.
+PROC Seq_2
+DATE SEQ_START_TIME
+BEGIN
+SEQ_START_TIME = NOW()
+
+//Here Begins the user created sequence
+CMD "EPS_NOOP"
+
+WAIT_UNTIL (SEQ_START_TIME + 5)
+CMD "HWIO_NOOP"
+ENDPROC

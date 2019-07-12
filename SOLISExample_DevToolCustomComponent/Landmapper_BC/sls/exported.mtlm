@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<MonitoredTelemetryList Version="11.0.0" APIDCount="33">
+  <Channel PacketAPID="900" Mnemonic="CEG_ATTERR_BDYX">
+    <Monitor Operator="GreaterThan" ComparisonValue="0.175" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+    <Monitor Operator="LessThan" ComparisonValue="-0.175" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="900" Mnemonic="CEG_ATTERR_BDYY">
+    <Monitor Operator="GreaterThan" ComparisonValue="0.175" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+    <Monitor Operator="LessThan" ComparisonValue="-0.175" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="900" Mnemonic="CEG_ATTERR_BDYZ">
+    <Monitor Operator="GreaterThan" ComparisonValue="0.175" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+    <Monitor Operator="LessThan" ComparisonValue="-0.175" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="900" Mnemonic="CEG_RATEERR_BDYX">
+    <Monitor Operator="GreaterThan" ComparisonValue="0.0175" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+    <Monitor Operator="LessThan" ComparisonValue="-0.0175" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="900" Mnemonic="CEG_RATEERR_BDYY">
+    <Monitor Operator="GreaterThan" ComparisonValue="0.0175" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+    <Monitor Operator="LessThan" ComparisonValue="-0.0175" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="900" Mnemonic="CEG_RATEERR_BDYZ">
+    <Monitor Operator="GreaterThan" ComparisonValue="0.0175" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+    <Monitor Operator="LessThan" ComparisonValue="-0.0175" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="603" Mnemonic="ATD_COVAR00">
+    <Monitor Operator="GreaterThan" ComparisonValue="0.31" PersistenceIntoCondition="100" PersistenceOutOfCondition="100" ConditionColor="Red" />
+    <Monitor Operator="LessThan" ComparisonValue="0.0" PersistenceIntoCondition="100" PersistenceOutOfCondition="100" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="603" Mnemonic="ATD_COVAR11">
+    <Monitor Operator="GreaterThan" ComparisonValue="0.31" PersistenceIntoCondition="100" PersistenceOutOfCondition="100" ConditionColor="Red" />
+    <Monitor Operator="LessThan" ComparisonValue="0.0" PersistenceIntoCondition="100" PersistenceOutOfCondition="100" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="603" Mnemonic="ATD_COVAR22">
+    <Monitor Operator="GreaterThan" ComparisonValue="0.31" PersistenceIntoCondition="100" PersistenceOutOfCondition="100" ConditionColor="Red" />
+    <Monitor Operator="LessThan" ComparisonValue="0.0" PersistenceIntoCondition="100" PersistenceOutOfCondition="100" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="603" Mnemonic="ATD_COVAR33">
+    <Monitor Operator="GreaterThan" ComparisonValue="0.31" PersistenceIntoCondition="100" PersistenceOutOfCondition="100" ConditionColor="Red" />
+    <Monitor Operator="LessThan" ComparisonValue="0.0" PersistenceIntoCondition="100" PersistenceOutOfCondition="100" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="603" Mnemonic="ATD_COVAR44">
+    <Monitor Operator="GreaterThan" ComparisonValue="0.31" PersistenceIntoCondition="100" PersistenceOutOfCondition="100" ConditionColor="Red" />
+    <Monitor Operator="LessThan" ComparisonValue="0.0" PersistenceIntoCondition="100" PersistenceOutOfCondition="100" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="603" Mnemonic="ATD_COVAR55">
+    <Monitor Operator="GreaterThan" ComparisonValue="0.31" PersistenceIntoCondition="100" PersistenceOutOfCondition="100" ConditionColor="Red" />
+    <Monitor Operator="LessThan" ComparisonValue="0.0" PersistenceIntoCondition="100" PersistenceOutOfCondition="100" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="500" Mnemonic="VEH_TOTALMOMENTUM_BDYX">
+    <Monitor Operator="GreaterThan" ComparisonValue="0.01" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+    <Monitor Operator="LessThan" ComparisonValue="-0.01" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="500" Mnemonic="VEH_TOTALMOMENTUM_BDYY">
+    <Monitor Operator="GreaterThan" ComparisonValue="0.01" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+    <Monitor Operator="LessThan" ComparisonValue="-0.01" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="500" Mnemonic="VEH_TOTALMOMENTUM_BDYZ">
+    <Monitor Operator="GreaterThan" ComparisonValue="0.01" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+    <Monitor Operator="LessThan" ComparisonValue="-0.01" PersistenceIntoCondition="600" PersistenceOutOfCondition="600" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="360" Mnemonic="SPG_OUTAGEDUR">
+    <Monitor Operator="GreaterThan" ComparisonValue="86400" PersistenceIntoCondition="1" PersistenceOutOfCondition="1" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="10000" Mnemonic="TLM_MON_FP_FAULT">
+    <Monitor Operator="Equal" ComparisonValue="1" IntoConditionSequence="op_safemode_start" PersistenceIntoCondition="0" PersistenceOutOfCondition="0" ConditionColor="Red" />
+  </Channel>
+  <Channel PacketAPID="3500" Mnemonic="OSD_RCDRSTATEPCT">
+    <Monitor Operator="Equal" ComparisonValue="0" IntoConditionSequence="TrackOtherSat" PersistenceIntoCondition="0" PersistenceOutOfCondition="0" ConditionColor="Green" />
+  </Channel>
+</MonitoredTelemetryList>

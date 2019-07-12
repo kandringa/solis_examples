@@ -1,0 +1,13 @@
+<?xml version = "1.0" standalone = "yes"?>
+<TimelineLine_Prefs STK_version = "11.6.0">
+    <Views Type = "Content">
+        <ContentView Name = "Scenario Availability">
+            <Row ClassName = "Scenario" ComponentName = "AvailabilityIntervals" DisplayName = "SOLISExample_Interplanetary AvailabilityIntervals" IsDefaultName = "True" IsExpanded = "False" IsGroup = "False" IsHidden = "False" Path = "/Application/STK/Scenario/SOLISExample_Interplanetary" Type = "IntervalList">
+                <Interval Name = "SOLISExample_Interplanetary AvailabilityIntervals" StartTime = "1 Mar 2021 06:00:00.000" StopTime = "1 Mar 2021 12:00:00.000" />
+            </Row>
+        </ContentView>
+    </Views>
+    <Views Type = "Time">
+        <TimeView FullViewRulerStartTime = "0.000000" FullViewRulerStopTime = "0.000000" GlobalIntervalComp = "AnalysisInterval" GlobalIntervalCompPath = "/Application/STK/Scenario/SOLISExample_Interplanetary" GlobalStartOffset = "0.000000" GlobalStartTime = "1 Mar 2021 06:00:00.000" GlobalStopOffset = "0.000000" GlobalStopTime = "1 Mar 2021 12:00:00.000" MaxFullViewTime = "0.000000" MinFullViewTime = "0.000000" Name = "Scenario Analysis Period" ViewportStartTime = "0.000000" ViewportStopTime = "0.000000" />
+    </Views>
+</TimelineLine_Prefs>

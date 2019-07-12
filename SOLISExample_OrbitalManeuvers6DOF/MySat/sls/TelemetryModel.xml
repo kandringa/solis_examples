@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="TelemetryModel" type="SLS.CmdTlm.TelemetryModel" id="TelemetryModel_cNt7pGNvhp9fodBJtJ5o7w" fileId="I5jmmmtooQDg3NC3xYi2WA">
+  <value name="OutputDestination" type="SLS.CmdTlm.TelemetryModel+ETelemetryOutput">STK</value>
+  <value name="DirectoryPath" type="System.String"></value>
+  <value name="FileFormat" type="SLS.CmdTlm.TelemetryModel+EFileStructureType">OneFilePerRate</value>
+  <table name="SelectedTelemetry" type="List`1[[SLS.CmdTlm.SelectedTlmApidModel]]" id="TelemetryModel_uyTMxeayMFPâxr1NZiWHrQ">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="Apid" type="System.UInt32" />
+      <value_column index="2" name="Period_s" type="System.Double" />
+    </header><![CDATA[
+:0	610	1
+:1	2201	1
+:2	2999	1
+:3	210	1
+:4	211	1
+:5	212	1
+]]></table>
+  <table name="MonitoredTelemetry" type="List`1[[SLS.CmdTlm.MonitoredTlmMnemonicModel]]" id="TelemetryModel_mpthlVpLââvPYôKgEUQJJQ" />
+</container>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{f2c6f8af-4122-4f8b-a203-3442273dae11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Auto">
+      <UniqueIdentifier>{e950718e-54bb-4be6-a65f-bffeef68e50f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{dd2c6a40-2eae-4e5b-acaf-3da63f08b695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Auto">
+      <UniqueIdentifier>{df40d4f2-ccc7-4b0b-bc20-25f5a00896b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{780aa8f3-869e-4b57-8de1-1b950cf78413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Namespaces">
+      <UniqueIdentifier>{8267e922-2120-4396-b5fe-be3d7ab6132c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CustomComponent_Cond.auto.hpp" />
+    <ClInclude Include="CustomComponent_Init.auto.hpp" />
+    <ClInclude Include="CustomComponent_VSBS.hpp" />
+    <ClInclude Include="CustomDisturbance.auto.hpp">
+      <Filter>Headers\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomDisturbance.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="IFMyInterface.auto.hpp">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="NSMyNamespace.auto.hpp">
+      <Filter>Namespaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CustomComponent_Init.auto.cpp" />
+    <ClCompile Include="CustomDisturbance.auto.cpp">
+      <Filter>Source\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomDisturbance.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="SolisConfigModel" type="SLS.Core.SolisConfigModel" id="SolisConfigModel_k1OCdGHjyxy4iRvB4KMS9Q" fileId="bZqBucUZhzCEtSOhe03hNA">
+  <value name="UseStkTimes" type="System.Boolean">True</value>
+  <value name="StartDateTime" type="System.DateTime">07/06/2018 00:35:43</value>
+  <value name="EndDateTime" type="System.DateTime">07/06/2018 05:35:43</value>
+  <value name="UseODySSyTranslationalDynamics" type="System.Boolean">False</value>
+  <value name="SatelliteDescription" type="System.String">Note:  The momentum capacity of the wheels in this scenario have intentionally been reduced to provide a wider range of Rate Damp Times</value>
+  <value name="ExecutionRate_Hz" type="System.Double">10</value>
+  <value name="EnableCommConstraints" type="System.Boolean">False</value>
+  <table name="CelestialBodies" type="List`1[[SLS.Core.SolisConfigModel+CelestialBody]]" id="SolisConfigModel_C8sqF8TâXcKkYqCAc9BXMg">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="Name" type="System.String" />
+    </header><![CDATA[
+:0	"Earth"
+]]></table>
+</container>

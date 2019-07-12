@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<sequence version="1.0.3">
+  <sc_cmd delta_time="0" mnemonic="MDC_SLEW_TRACK">
+    <parameter mnemonic="SLEWTIME_S" value="0" />
+    <parameter mnemonic="SLEWMODE" value="RendezSlew" />
+    <parameter mnemonic="TRACKMODE" value="OrbitTrack" />
+    <parameter mnemonic="CLOCKINGOPTION" value="SC2Sun" />
+  </sc_cmd>
+</sequence>

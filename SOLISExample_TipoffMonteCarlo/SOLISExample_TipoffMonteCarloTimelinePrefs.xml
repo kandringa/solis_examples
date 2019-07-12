@@ -1,0 +1,13 @@
+<?xml version = "1.0" standalone = "yes"?>
+<TimelineLine_Prefs STK_version = "11.6.0">
+    <Views Type = "Content">
+        <ContentView Name = "Scenario Availability">
+            <Row ClassName = "Scenario" ComponentName = "AvailabilityIntervals" DisplayName = "SOLISExample_TipoffMonteCarlo AvailabilityIntervals" IsDefaultName = "True" IsExpanded = "False" IsGroup = "False" IsHidden = "False" Path = "/Application/STK/Scenario/SOLISExample_TipoffMonteCarlo" Type = "IntervalList">
+                <Interval Name = "SOLISExample_TipoffMonteCarlo AvailabilityIntervals" StartTime = "6 Jul 2018 00:35:43.000" StopTime = "6 Jul 2018 05:35:43.000" />
+            </Row>
+        </ContentView>
+    </Views>
+    <Views Type = "Time">
+        <TimeView FullViewRulerStartTime = "0.000000" FullViewRulerStopTime = "0.000000" GlobalIntervalComp = "AnalysisInterval" GlobalIntervalCompPath = "/Application/STK/Scenario/SOLISExample_TipoffMonteCarlo" GlobalStartOffset = "0.000000" GlobalStartTime = "6 Jul 2018 00:35:43.000" GlobalStopOffset = "0.000000" GlobalStopTime = "6 Jul 2018 05:35:43.000" MaxFullViewTime = "0.000000" MinFullViewTime = "0.000000" Name = "Scenario Analysis Period" ViewportStartTime = "0.000000" ViewportStopTime = "0.000000" />
+    </Views>
+</TimelineLine_Prefs>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="_ConfigurationModel" type="ConfigDB+SerializableWrapper" id="_ConfigurationModel_âJsPzgC6l8qZvUaN6E8AôQ" fileId="daxhablFB1mTR7Yy8hcuqA">
+  <value name="SelectedConfigurationSetId" type="System.Int32">-1</value>
+  <container name="ConfigurationDataSet" type="ConfigDB" id="_ConfigurationModel_Oc3zT7S96olTZqpuEbBocw">
+    <table name="Table" type="ConfigDB+ConfigurationSetsTableDataTable" id="_ConfigurationModel_KjbP3zldz8ylFyZ39kâeeA" />
+    <table name="Table" type="ConfigDB+ConfigurationSet_VersionTableDataTable" id="_ConfigurationModel_m3uVPhWKâmW0hiA2VQK9Zw" />
+    <table name="Table" type="ConfigDB+ComponentsTableDataTable" id="_ConfigurationModel_FLSXfpYD0zQ38hKôfGrC5A" />
+    <table name="Table" type="ConfigDB+ComponentVersionsTableDataTable" id="_ConfigurationModel_6vokz0291ecQ5YTVMjNyGQ" />
+    <table name="Table" type="ConfigDB+FactoriesTableDataTable" id="_ConfigurationModel_WIG1p3XxTXcfb2vlLsTEOQ">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="FactoryID" type="System.Int32" />
+        <value_column index="2" name="FactoryName" type="System.String" />
+        <value_column index="3" name="SourceType" type="STKSolis.Satellite.SystemData.MCDHConfigurationData+EFactorySourceType" />
+        <value_column index="4" name="ComponentType" type="ConfigDB+FactoriesTableDataTable+EComponentType" />
+      </header><![CDATA[
+:0	-1	null	1	2
+]]></table>
+    <table name="Table" type="ConfigDB+ParametersTableDataTable" id="_ConfigurationModel_qnAJEccDw791EGoWcaKosQ" />
+    <table name="Table" type="ConfigDB+ConnectionParametersTableDataTable" id="_ConfigurationModel_3H6k9t17zFBvZ2ô4P854DA" />
+    <table name="Table" type="ConfigDB+FunctionsTableDataTable" id="_ConfigurationModel_RbTZQIvwLjcPLy2HMTN6LQ" />
+    <table name="Table" type="ConfigDB+ConnectionFunctionsTableDataTable" id="_ConfigurationModel_Awô0LOaWDqsMEX1RnuS8yQ" />
+    <table name="Table" type="ConfigDB+FunctionArgumentsTableDataTable" id="_ConfigurationModel_DJôgôh8l44ckqko6MuAzaQ" />
+    <table name="Table" type="ConfigDB+FilesTableDataTable" id="_ConfigurationModel_Zôyb2XGb4pXEfFQt2hCSiQ" />
+    <table name="Table" type="ConfigDB+VersionNamesTableDataTable" id="_ConfigurationModel_zZis3UHCQBDCvH9W0HtuFw" />
+    <table name="Table" type="ConfigDB+FactoryConfigTableDataTable" id="_ConfigurationModel_EOgôtwxâCc5VzrMôlD9BFg" />
+    <table name="Table" type="ConfigDB+FactoryConfigTypesTableDataTable" id="_ConfigurationModel_AxZ3ômâNnâkI8b73byhgmw" />
+  </container>
+</container>

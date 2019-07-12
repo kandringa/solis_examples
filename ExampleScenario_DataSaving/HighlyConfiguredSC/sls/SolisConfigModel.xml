@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="SolisConfigModel" type="SLS.Core.SolisConfigModel" id="SolisConfigModel_k1OCdGHjyxy4iRvB4KMS9Q" fileId="VlTxaK14WT13B6Ii1KULKA">
+  <value name="UseStkTimes" type="System.Boolean">False</value>
+  <value name="StartDateTime" type="System.DateTime">06/01/2019 00:01:00</value>
+  <value name="EndDateTime" type="System.DateTime">06/01/2019 00:09:00</value>
+  <value name="UseODySSyTranslationalDynamics" type="System.Boolean">True</value>
+  <value name="SatelliteDescription" type="System.String"></value>
+  <value name="ExecutionRate_Hz" type="System.Double">8</value>
+  <value name="EnableCommConstraints" type="System.Boolean">True</value>
+  <table name="CelestialBodies" type="List`1[[SLS.Core.SolisConfigModel+CelestialBody]]" id="SolisConfigModel_C8sqF8TâXcKkYqCAc9BXMg">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="Name" type="System.String" />
+    </header><![CDATA[
+:0	"Earth"
+:1	"Sun"
+]]></table>
+</container>

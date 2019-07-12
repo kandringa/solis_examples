@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="PowerModel" type="SLS.PowerThermal.PowerModel" id="PowerModel_yYâPtmhgsL2FlZQeZtx0AA" fileId="IFwkDTBXMD1IuvvTJgeLog">
+  <table name="Storage_BatteryList" type="List`1[[SLS.PowerThermal.BatteryModel]]" id="PowerModel_JRRDâjcfr5wcu1jaDhzLOQ">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="Name" type="System.String" />
+      <value_column index="2" name="EffectiveCapacity_Ahr" type="System.Double" />
+      <value_column index="3" name="RechargeEfficiency" type="System.Double" />
+      <value_column index="4" name="InitialSOC_pct" type="System.Double" />
+    </header><![CDATA[
+:0	"Battery 1"	12.8	0.95	90
+]]></table>
+  <table name="Storage_SystemVoltageTable" type="List`1[[SLS.PowerThermal.VoltageEntryModel]]" id="PowerModel_QNpjrQNTYV97Eui2EV4Zsw">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="StateOfCharge_pct" type="System.Double" />
+      <value_column index="2" name="ChargeCurrentLimit_CRate" type="System.Double" />
+      <value_column index="3" name="ChargeVoltage_V" type="System.Double" />
+      <value_column index="4" name="DischargeVoltage_V" type="System.Double" />
+    </header><![CDATA[
+:0	0	0.5	0	0
+:1	40	0.5	3.4	3.4
+:2	80	0.5	3.8	3.7
+:3	95	0.5	3.8	3.7
+:4	98	0.2	4	3.7
+:5	100	0.05	4	3.7
+]]></table>
+  <value name="Collect_DistanceDependentSolarFlux" type="System.Boolean">True</value>
+  <value name="Collect_IrAlbedoEffects" type="System.Boolean">True</value>
+  <value name="Collect_ThermalModeling" type="System.Boolean">False</value>
+  <value name="Collect_SolarFlux_Wpm2" type="System.Double">1367</value>
+  <value name="Collect_CentralBodyIrFlux_Wpm2" type="System.Double">241</value>
+  <value name="Collect_CentralBodyAlbedo" type="System.Double">0.3</value>
+  <container name="Collect_PanelList" type="List`1[[SLS.PowerThermal.PanelModel]]" id="PowerModel_Kâgn215pttnerââp3zg78w">
+    <container name="Collect_PanelList[0]" type="SLS.PowerThermal.PanelModel" id="PowerModel_sdk5MxxsEJJa54â1RâITZw">
+      <value name="SurfaceType" type="SLS.PowerThermal.PanelModel+ESurfacePanelType">SolarPanel</value>
+      <value name="Name" type="System.String">SP_pY</value>
+      <value name="SurfaceNormalVector_UBDY" type="SLS.Util.VectorModel">[ 0 1 0 ]</value>
+      <value name="SurfaceNormalAlignmentTarget" type="SLS.PowerThermal.PanelModel+ETargetAlignmentVector">SunVector</value>
+      <value name="EffectiveArea_m2" type="System.Double">0.0558</value>
+      <value name="Efficiency" type="System.Double">0.25</value>
+      <table name="PanelEfficiencyList" type="List`1[[SLS.PowerThermal.PanelEfficiencyModel]]" id="PowerModel_AK7apnaZRTstB82U0GQ0OA">
+        <header>
+          <index_column index="0" name="[Row Index]" />
+          <value_column index="1" name="Temperature_degC" type="System.Double" />
+          <value_column index="2" name="Efficiency" type="System.Double" />
+        </header><![CDATA[
+:0	0	0.25
+]]></table>
+      <value name="Absorptivity" type="System.Double">0.95</value>
+      <value name="Emissivity" type="System.Double">0.85</value>
+      <value name="ThermalMass_WspdegC" type="System.Double">1000</value>
+      <value name="InitialTemp_degC" type="System.Double">0</value>
+      <value name="MountingType" type="SLS.PowerThermal.PanelModel+EGimbalType">FixedBody</value>
+      <value name="Gimbal1Axis_UBDY" type="SLS.Util.VectorModel">[ 0 1 0 ]</value>
+      <value name="Gimbal1MinAngle_deg" type="System.Double">-90</value>
+      <value name="Gimbal1MaxAngle_deg" type="System.Double">90</value>
+      <value name="Gimbal2Axis_UBDY" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="Gimbal2MinAngle_deg" type="System.Double">-90</value>
+      <value name="Gimbal2MaxAngle_deg" type="System.Double">90</value>
+      <value name="SpecifyBackSide" type="System.Boolean">False</value>
+      <value name="BackEffectiveArea_m2" type="System.Double">3</value>
+      <value name="BackAbsorptivity" type="System.Double">0.95</value>
+      <value name="BackEmissivity" type="System.Double">0.85</value>
+      <value name="BackThermalMass_WspdegC" type="System.Double">1000</value>
+      <value name="BackInitialTemp_degC" type="System.Double">0</value>
+    </container>
+    <container name="Collect_PanelList[1]" type="SLS.PowerThermal.PanelModel" id="PowerModel_a12qipX2ue7mUNmNF3JhiA">
+      <value name="SurfaceType" type="SLS.PowerThermal.PanelModel+ESurfacePanelType">SolarPanel</value>
+      <value name="Name" type="System.String">SP_mY</value>
+      <value name="SurfaceNormalVector_UBDY" type="SLS.Util.VectorModel">[ 0 -1 0 ]</value>
+      <value name="SurfaceNormalAlignmentTarget" type="SLS.PowerThermal.PanelModel+ETargetAlignmentVector">SunVector</value>
+      <value name="EffectiveArea_m2" type="System.Double">0.0558</value>
+      <value name="Efficiency" type="System.Double">0.25</value>
+      <table name="PanelEfficiencyList" type="List`1[[SLS.PowerThermal.PanelEfficiencyModel]]" id="PowerModel_MIDHHmPbXUXUâSrU4jmdMw">
+        <header>
+          <index_column index="0" name="[Row Index]" />
+          <value_column index="1" name="Temperature_degC" type="System.Double" />
+          <value_column index="2" name="Efficiency" type="System.Double" />
+        </header><![CDATA[
+:0	0	0.25
+:1	0	0.25
+]]></table>
+      <value name="Absorptivity" type="System.Double">0.95</value>
+      <value name="Emissivity" type="System.Double">0.85</value>
+      <value name="ThermalMass_WspdegC" type="System.Double">1000</value>
+      <value name="InitialTemp_degC" type="System.Double">0</value>
+      <value name="MountingType" type="SLS.PowerThermal.PanelModel+EGimbalType">FixedBody</value>
+      <value name="Gimbal1Axis_UBDY" type="SLS.Util.VectorModel">[ 0 1 0 ]</value>
+      <value name="Gimbal1MinAngle_deg" type="System.Double">-90</value>
+      <value name="Gimbal1MaxAngle_deg" type="System.Double">90</value>
+      <value name="Gimbal2Axis_UBDY" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="Gimbal2MinAngle_deg" type="System.Double">-90</value>
+      <value name="Gimbal2MaxAngle_deg" type="System.Double">90</value>
+      <value name="SpecifyBackSide" type="System.Boolean">False</value>
+      <value name="BackEffectiveArea_m2" type="System.Double">3</value>
+      <value name="BackAbsorptivity" type="System.Double">0.95</value>
+      <value name="BackEmissivity" type="System.Double">0.85</value>
+      <value name="BackThermalMass_WspdegC" type="System.Double">1000</value>
+      <value name="BackInitialTemp_degC" type="System.Double">0</value>
+    </container>
+    <container name="Collect_PanelList[2]" type="SLS.PowerThermal.PanelModel" id="PowerModel_oj3sRsgRdâixRz0âNs5JKw">
+      <value name="SurfaceType" type="SLS.PowerThermal.PanelModel+ESurfacePanelType">SolarPanel</value>
+      <value name="Name" type="System.String">SP_pX</value>
+      <value name="SurfaceNormalVector_UBDY" type="SLS.Util.VectorModel">[ 1 0 0 ]</value>
+      <value name="SurfaceNormalAlignmentTarget" type="SLS.PowerThermal.PanelModel+ETargetAlignmentVector">SunVector</value>
+      <value name="EffectiveArea_m2" type="System.Double">0.0124</value>
+      <value name="Efficiency" type="System.Double">0.25</value>
+      <table name="PanelEfficiencyList" type="List`1[[SLS.PowerThermal.PanelEfficiencyModel]]" id="PowerModel_tLôO5j94Cg15zlMPnUs5Dg">
+        <header>
+          <index_column index="0" name="[Row Index]" />
+          <value_column index="1" name="Temperature_degC" type="System.Double" />
+          <value_column index="2" name="Efficiency" type="System.Double" />
+        </header><![CDATA[
+:0	0	0.25
+:1	0	0.25
+:2	0	0.25
+]]></table>
+      <value name="Absorptivity" type="System.Double">0.95</value>
+      <value name="Emissivity" type="System.Double">0.85</value>
+      <value name="ThermalMass_WspdegC" type="System.Double">1000</value>
+      <value name="InitialTemp_degC" type="System.Double">0</value>
+      <value name="MountingType" type="SLS.PowerThermal.PanelModel+EGimbalType">FixedBody</value>
+      <value name="Gimbal1Axis_UBDY" type="SLS.Util.VectorModel">[ 0 1 0 ]</value>
+      <value name="Gimbal1MinAngle_deg" type="System.Double">-90</value>
+      <value name="Gimbal1MaxAngle_deg" type="System.Double">90</value>
+      <value name="Gimbal2Axis_UBDY" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="Gimbal2MinAngle_deg" type="System.Double">-90</value>
+      <value name="Gimbal2MaxAngle_deg" type="System.Double">90</value>
+      <value name="SpecifyBackSide" type="System.Boolean">False</value>
+      <value name="BackEffectiveArea_m2" type="System.Double">3</value>
+      <value name="BackAbsorptivity" type="System.Double">0.95</value>
+      <value name="BackEmissivity" type="System.Double">0.85</value>
+      <value name="BackThermalMass_WspdegC" type="System.Double">1000</value>
+      <value name="BackInitialTemp_degC" type="System.Double">0</value>
+    </container>
+    <container name="Collect_PanelList[3]" type="SLS.PowerThermal.PanelModel" id="PowerModel_wjqBfôpt1KwSLTLeTPP8MA">
+      <value name="SurfaceType" type="SLS.PowerThermal.PanelModel+ESurfacePanelType">SolarPanel</value>
+      <value name="Name" type="System.String">SP_mX</value>
+      <value name="SurfaceNormalVector_UBDY" type="SLS.Util.VectorModel">[ -1 0 0 ]</value>
+      <value name="SurfaceNormalAlignmentTarget" type="SLS.PowerThermal.PanelModel+ETargetAlignmentVector">SunVector</value>
+      <value name="EffectiveArea_m2" type="System.Double">0.0124</value>
+      <value name="Efficiency" type="System.Double">0.25</value>
+      <table name="PanelEfficiencyList" type="List`1[[SLS.PowerThermal.PanelEfficiencyModel]]" id="PowerModel_2SJ368nDinâ51zpTz1lDqQ">
+        <header>
+          <index_column index="0" name="[Row Index]" />
+          <value_column index="1" name="Temperature_degC" type="System.Double" />
+          <value_column index="2" name="Efficiency" type="System.Double" />
+        </header><![CDATA[
+:0	0	0.25
+:1	0	0.25
+:2	0	0.25
+:3	0	0.25
+]]></table>
+      <value name="Absorptivity" type="System.Double">0.95</value>
+      <value name="Emissivity" type="System.Double">0.85</value>
+      <value name="ThermalMass_WspdegC" type="System.Double">1000</value>
+      <value name="InitialTemp_degC" type="System.Double">0</value>
+      <value name="MountingType" type="SLS.PowerThermal.PanelModel+EGimbalType">FixedBody</value>
+      <value name="Gimbal1Axis_UBDY" type="SLS.Util.VectorModel">[ 0 1 0 ]</value>
+      <value name="Gimbal1MinAngle_deg" type="System.Double">-90</value>
+      <value name="Gimbal1MaxAngle_deg" type="System.Double">90</value>
+      <value name="Gimbal2Axis_UBDY" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="Gimbal2MinAngle_deg" type="System.Double">-90</value>
+      <value name="Gimbal2MaxAngle_deg" type="System.Double">90</value>
+      <value name="SpecifyBackSide" type="System.Boolean">False</value>
+      <value name="BackEffectiveArea_m2" type="System.Double">3</value>
+      <value name="BackAbsorptivity" type="System.Double">0.95</value>
+      <value name="BackEmissivity" type="System.Double">0.85</value>
+      <value name="BackThermalMass_WspdegC" type="System.Double">1000</value>
+      <value name="BackInitialTemp_degC" type="System.Double">0</value>
+    </container>
+    <container name="Collect_PanelList[4]" type="SLS.PowerThermal.PanelModel" id="PowerModel_wrHmOvcpeNkEmokeJmGexA">
+      <value name="SurfaceType" type="SLS.PowerThermal.PanelModel+ESurfacePanelType">SolarPanel</value>
+      <value name="Name" type="System.String">SP__pY_Deployed</value>
+      <value name="SurfaceNormalVector_UBDY" type="SLS.Util.VectorModel">[ 0 0.9563047559629592 -0.2923717047229867 ]</value>
+      <value name="SurfaceNormalAlignmentTarget" type="SLS.PowerThermal.PanelModel+ETargetAlignmentVector">SunVector</value>
+      <value name="EffectiveArea_m2" type="System.Double">0.062</value>
+      <value name="Efficiency" type="System.Double">0.25</value>
+      <table name="PanelEfficiencyList" type="List`1[[SLS.PowerThermal.PanelEfficiencyModel]]" id="PowerModel_fzxOjKJUtrnKkBurJo2iZw">
+        <header>
+          <index_column index="0" name="[Row Index]" />
+          <value_column index="1" name="Temperature_degC" type="System.Double" />
+          <value_column index="2" name="Efficiency" type="System.Double" />
+        </header><![CDATA[
+:0	0	0.25
+]]></table>
+      <value name="Absorptivity" type="System.Double">0.95</value>
+      <value name="Emissivity" type="System.Double">0.85</value>
+      <value name="ThermalMass_WspdegC" type="System.Double">1000</value>
+      <value name="InitialTemp_degC" type="System.Double">0</value>
+      <value name="MountingType" type="SLS.PowerThermal.PanelModel+EGimbalType">FixedBody</value>
+      <value name="Gimbal1Axis_UBDY" type="SLS.Util.VectorModel">[ 0 1 0 ]</value>
+      <value name="Gimbal1MinAngle_deg" type="System.Double">-90</value>
+      <value name="Gimbal1MaxAngle_deg" type="System.Double">90</value>
+      <value name="Gimbal2Axis_UBDY" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="Gimbal2MinAngle_deg" type="System.Double">-90</value>
+      <value name="Gimbal2MaxAngle_deg" type="System.Double">90</value>
+      <value name="SpecifyBackSide" type="System.Boolean">False</value>
+      <value name="BackEffectiveArea_m2" type="System.Double">3</value>
+      <value name="BackAbsorptivity" type="System.Double">0.95</value>
+      <value name="BackEmissivity" type="System.Double">0.85</value>
+      <value name="BackThermalMass_WspdegC" type="System.Double">1000</value>
+      <value name="BackInitialTemp_degC" type="System.Double">0</value>
+    </container>
+    <container name="Collect_PanelList[5]" type="SLS.PowerThermal.PanelModel" id="PowerModel_6xFAYHôvdnKsjA5oRQL4pQ">
+      <value name="SurfaceType" type="SLS.PowerThermal.PanelModel+ESurfacePanelType">SolarPanel</value>
+      <value name="Name" type="System.String">SP_mY_Deployed</value>
+      <value name="SurfaceNormalVector_UBDY" type="SLS.Util.VectorModel">[ 0 -0.9563047559629592 -0.2923717047229867 ]</value>
+      <value name="SurfaceNormalAlignmentTarget" type="SLS.PowerThermal.PanelModel+ETargetAlignmentVector">SunVector</value>
+      <value name="EffectiveArea_m2" type="System.Double">0.062</value>
+      <value name="Efficiency" type="System.Double">0.25</value>
+      <table name="PanelEfficiencyList" type="List`1[[SLS.PowerThermal.PanelEfficiencyModel]]" id="PowerModel_W4CQPnbXuKpx7SrYI3ô0Fw">
+        <header>
+          <index_column index="0" name="[Row Index]" />
+          <value_column index="1" name="Temperature_degC" type="System.Double" />
+          <value_column index="2" name="Efficiency" type="System.Double" />
+        </header><![CDATA[
+:0	0	0.25
+]]></table>
+      <value name="Absorptivity" type="System.Double">0.95</value>
+      <value name="Emissivity" type="System.Double">0.85</value>
+      <value name="ThermalMass_WspdegC" type="System.Double">1000</value>
+      <value name="InitialTemp_degC" type="System.Double">0</value>
+      <value name="MountingType" type="SLS.PowerThermal.PanelModel+EGimbalType">FixedBody</value>
+      <value name="Gimbal1Axis_UBDY" type="SLS.Util.VectorModel">[ 0 1 0 ]</value>
+      <value name="Gimbal1MinAngle_deg" type="System.Double">-90</value>
+      <value name="Gimbal1MaxAngle_deg" type="System.Double">90</value>
+      <value name="Gimbal2Axis_UBDY" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+      <value name="Gimbal2MinAngle_deg" type="System.Double">-90</value>
+      <value name="Gimbal2MaxAngle_deg" type="System.Double">90</value>
+      <value name="SpecifyBackSide" type="System.Boolean">False</value>
+      <value name="BackEffectiveArea_m2" type="System.Double">3</value>
+      <value name="BackAbsorptivity" type="System.Double">0.95</value>
+      <value name="BackEmissivity" type="System.Double">0.85</value>
+      <value name="BackThermalMass_WspdegC" type="System.Double">1000</value>
+      <value name="BackInitialTemp_degC" type="System.Double">0</value>
+    </container>
+  </container>
+  <value name="Load_SunlightLoad_W" type="System.Double">7</value>
+  <value name="Load_EclipseLoad_W" type="System.Double">7</value>
+  <value name="Load_AddPayloadPower" type="System.Boolean">True</value>
+  <value name="Load_AddCommunicationPower" type="System.Boolean">True</value>
+  <value name="Load_AddReactionWheelPower" type="System.Boolean">False</value>
+  <value name="Thermal_BusNodeInternalPower_W" type="System.Double">0</value>
+  <value name="Thermal_BusNodeInitialTemp_degC" type="System.Double">0</value>
+  <value name="Thermal_BusNodeThermalMass_WspdegC" type="System.Double">1000</value>
+  <value name="Thermal_UseSpacecraftModeledPower" type="System.Boolean">False</value>
+  <value name="Thermal_IncludeDetailedThermalTelemetry" type="System.Boolean">False</value>
+  <table name="Thermal_ConductivityMatrix" type="List`1[[SLS.PowerThermal.ThermalConductivityModel]]" id="PowerModel_jj40MXLeâcdsjliOCr7M2w" />
+  <table name="Thermal_ShuntMatrix" type="List`1[[SLS.PowerThermal.PowerShuntModel]]" id="PowerModel_i8fcWjTxccxKvZ4Ank15zQ" />
+</container>

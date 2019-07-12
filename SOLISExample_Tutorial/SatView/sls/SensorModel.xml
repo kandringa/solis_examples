@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="SensorModel" type="SLS.ADCS.Sensors.SensorModel" id="SensorModel_HD0CS6Rgp0TEWRbOyOzqQQ" fileId="0nqC0T0XetMOrcô1CiahfA">
+  <container name="RateSensorList" type="List`1[[SLS.ADCS.Sensors.RateSensorModel]]" id="SensorModel_jWddSaR3VUSjJdWzsFJ4MA" />
+  <container name="GpsList" type="List`1[[SLS.ADCS.Sensors.GpsModel]]" id="SensorModel_SGh144qCClXUmYsI9cwôIQ" />
+  <container name="HorizonSensorList" type="List`1[[SLS.ADCS.Sensors.HorizonSensorModel]]" id="SensorModel_SAq7âgrIâCDRizQUnômkEA" />
+  <container name="ImuList" type="List`1[[SLS.ADCS.Sensors.ImuModel]]" id="SensorModel_vl3OKy9B6WIZtFyP9VtIvQ" />
+  <container name="MagnetometerList" type="List`1[[SLS.ADCS.Sensors.MagnetometerModel]]" id="SensorModel_hLqLPrte7DJv0XJj0PQmfw" />
+  <container name="StarTrackerList" type="List`1[[SLS.ADCS.Sensors.StarTrackerModel]]" id="SensorModel_SViwgMMyKNAc785Jbky4hQ" />
+  <container name="SunAngleSensorList" type="SLS.ADCS.Sensors.SunAngleSensorCollectionModel" id="SensorModel_bVa9uUuUG42QK8itlVSfpA">
+    <container name="SunAngleSensorModelList" type="List`1[[SLS.ADCS.Sensors.SunAngleSensorModel]]" id="SensorModel_kSsGqsSâRoe6m7vLOnâ0iA" />
+  </container>
+  <container name="SunVectorSensorList" type="List`1[[SLS.ADCS.Sensors.SunVectorSensorModel]]" id="SensorModel_ODBKTuuCZ71LgpAMzMe40A" />
+</container>

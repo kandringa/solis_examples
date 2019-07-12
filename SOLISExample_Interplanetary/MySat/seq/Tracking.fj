@@ -1,0 +1,21 @@
+//WARNING: This code is automatically generated and any modifications will be overwritten by SOLIS.
+PROC Tracking
+DATE SEQ_START_TIME
+BEGIN
+SEQ_START_TIME = NOW()
+
+//Here Begins the user created sequence
+CMD "MDC_SLEW_TRACK_CB" (0 ,"RendezSlew","OrbitTrack","SC2NadirDetic","Earth")
+
+WAIT_UNTIL (SEQ_START_TIME + 200)
+CMD "MDC_SLEW_TRACK_CB" (0 ,"RendezSlew","MarsTrack","SC2NadirDetic","Earth")
+
+WAIT_UNTIL (SEQ_START_TIME + 400)
+CMD "MDC_SLEW_TRACK" (0 ,"RendezSlew_SLOW","MarsTrack","SCVelocity")
+
+WAIT_UNTIL (SEQ_START_TIME + 600)
+CMD "MDC_SLEW_TRACK" (0 ,"RendezSlew","TargetTrack","SC2Sun")
+
+WAIT_UNTIL (SEQ_START_TIME + 800)
+CMD "MDC_SLEW_TRACK" (0 ,"RendezSlew","EarthTrack","SC2Sun")
+ENDPROC

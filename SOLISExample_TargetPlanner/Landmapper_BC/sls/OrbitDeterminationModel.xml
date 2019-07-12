@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="OrbitDeterminationModel" type="SLS.ADCS.OrbitDeterminationModel" id="OrbitDeterminationModel_7ZIzoAIo8nCc5mYOuohhsw" fileId="hhMmyNTâhbw4nZ2hbevhPA">
+  <value name="MaxPropTime_s" type="System.Double">10800</value>
+  <value name="AllowBackProp" type="System.Boolean">True</value>
+  <value name="IncNonGravAccel" type="System.Boolean">False</value>
+  <value name="DesiredStepSize_s" type="System.Double">48</value>
+  <value name="MaxSteps" type="System.Int32">100</value>
+  <value name="Q_TOD2J2000" type="SLS.Util.QuaternionModel">[ -2.004856133097346E-05 -0.0008366281034388925 0.001925525710497451 0.9999977959986762 ]</value>
+  <value name="ODY_OverrideTODRotation" type="System.Boolean">False</value>
+  <value name="ODY_Q_TOD2J2000" type="SLS.Util.QuaternionModel">[ -2.004856133097346E-05 -0.0008366281034388925 0.001925525710497451 0.9999977959986762 ]</value>
+  <value name="EphemSource" type="SLS.ADCS.OrbitDeterminationModel+EEphemerisUpdateInputType">Perfect</value>
+  <value name="SensorProcessingMethod" type="SLS.ADCS.OrbitDeterminationModel+ESensorProcessSelection">FirstValid</value>
+  <value name="PositionGain" type="System.Double">0.002</value>
+  <value name="VelocityGain" type="System.Double">0.002</value>
+  <value name="OutageTimeThresh_s" type="System.Double">5400</value>
+  <value name="ConsecMeasToConv" type="System.UInt32">15000</value>
+  <value name="MaxTimeToConv_s" type="System.Double">6000</value>
+  <value name="ConsecMeasToDiv" type="System.UInt32">3000</value>
+  <value name="ConsecMeasToRecovOutage" type="System.UInt32">0</value>
+  <value name="PosErrLimConv_m" type="System.Double">200</value>
+  <value name="VelErrLimConv_mps" type="System.Double">12</value>
+  <value name="PosErrLimUnconv_m" type="System.Double">1000</value>
+  <value name="VelErrLimUnconv_mps" type="System.Double">25</value>
+  <value name="PosErrSlope_mps" type="System.Double">0.5</value>
+  <value name="VelErrSlope_mps2" type="System.Double">0.1</value>
+  <container name="EphemTableList" type="List`1[[SLS.ADCS.EphemTableModel]]" id="OrbitDeterminationModel_ôCZMqgECJvKfpôLJpwNJAA" />
+</container>

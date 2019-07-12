@@ -1,0 +1,8 @@
+PROC MissionSequenceExecutionScript
+
+BEGIN
+
+WAIT_UNTIL (0)
+START TargetPlan_ForceDirection ()
+
+ENDPROC

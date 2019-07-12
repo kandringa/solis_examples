@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="VehicleStateModel" type="SLS.ADCS.VehicleStateModel" id="VehicleStateModel_dNP0jIt5rvX9VMKHHRmrKQ" fileId="âNCôCimUQAMi6cw4faU71g">
+  <value name="SunBufferSize" type="System.Int32">3</value>
+  <value name="SunBufferConsistencyAngle_deg" type="System.Double">3</value>
+  <value name="SunLostPersistTime_s" type="System.Double">1200</value>
+  <value name="EclipseKOZAngle_deg" type="System.Double">0</value>
+  <table name="MissionModeList" type="List`1[[SLS.ADCS.MissionModeModel]]" id="VehicleStateModel_lVB6ChkMqpLsQisxhXEflw">
+    <header>
+      <index_column index="0" name="[Row Index]" />
+      <value_column index="1" name="Name" type="System.String" />
+    </header><![CDATA[
+:0	"NORMAL_OPS"
+:1	"SAFE_MODE"
+]]></table>
+  <container name="KozList" type="List`1[[SLS.ADCS.KozModel]]" id="VehicleStateModel_aVNwJT8OwjX1aWXt9IuDPA" />
+  <container name="ConstraintList" type="List`1[[SLS.TargetPlanner.ConstraintModel]]" id="VehicleStateModel_6YKATQKK0khuYwmh1VRsww" />
+</container>

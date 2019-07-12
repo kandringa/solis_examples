@@ -1,0 +1,18 @@
+//WARNING: This code is automatically generated and any modifications will be overwritten by STK SOLIS.
+PROC FiveBurns
+DATE SEQ_START_TIME
+BEGIN
+SEQ_START_TIME = NOW()
+
+//Here Begins the user created sequence
+WAIT_UNTIL (SEQ_START_TIME + 90.1)
+CALL BurnEvent (10)
+WAIT_UNTIL (SEQ_START_TIME + 180.2)
+CALL BurnEvent (10)
+WAIT_UNTIL (SEQ_START_TIME + 270.3)
+CALL BurnEvent (10)
+WAIT_UNTIL (SEQ_START_TIME + 360.4)
+CALL BurnEvent (10)
+WAIT_UNTIL (SEQ_START_TIME + 450.5)
+CALL BurnEvent (10)
+ENDPROC

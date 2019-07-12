@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="OrbitDeterminationModel" type="SLS.ADCS.OrbitDeterminationModel" id="OrbitDeterminationModel_7ZIzoAIo8nCc5mYOuohhsw" fileId="XAuoNXVO8WhyoZZWtârtzA">
+  <value name="MaxPropTime_s" type="System.Double">1234</value>
+  <value name="AllowBackProp" type="System.Boolean">False</value>
+  <value name="IncNonGravAccel" type="System.Boolean">True</value>
+  <value name="DesiredStepSize_s" type="System.Double">56</value>
+  <value name="MaxSteps" type="System.Int32">78</value>
+  <value name="Q_TOD2J2000" type="SLS.Util.QuaternionModel">[ 0 0 0.001925526384767349 0.9999981461723525 ]</value>
+  <value name="ODY_OverrideTODRotation" type="System.Boolean">False</value>
+  <value name="ODY_Q_TOD2J2000" type="SLS.Util.QuaternionModel">[ 0 0 0.001925526384767349 0.9999981461723525 ]</value>
+  <value name="EphemSource" type="SLS.ADCS.OrbitDeterminationModel+EEphemerisUpdateInputType">GPS</value>
+  <value name="SensorProcessingMethod" type="SLS.ADCS.OrbitDeterminationModel+ESensorProcessSelection">BlendAllValid</value>
+  <value name="PositionGain" type="System.Double">0.02</value>
+  <value name="VelocityGain" type="System.Double">0.03</value>
+  <value name="OutageTimeThresh_s" type="System.Double">66</value>
+  <value name="ConsecMeasToConv" type="System.UInt32">77</value>
+  <value name="MaxTimeToConv_s" type="System.Double">88</value>
+  <value name="ConsecMeasToDiv" type="System.UInt32">99</value>
+  <value name="ConsecMeasToRecovOutage" type="System.UInt32">2</value>
+  <value name="PosErrLimConv_m" type="System.Double">99</value>
+  <value name="VelErrLimConv_mps" type="System.Double">60</value>
+  <value name="PosErrLimUnconv_m" type="System.Double">70</value>
+  <value name="VelErrLimUnconv_mps" type="System.Double">80</value>
+  <value name="PosErrSlope_mps" type="System.Double">90</value>
+  <value name="VelErrSlope_mps2" type="System.Double">100</value>
+  <container name="EphemTableList" type="List`1[[SLS.ADCS.EphemTableModel]]" id="OrbitDeterminationModel_ôCZMqgECJvKfpôLJpwNJAA">
+    <container name="EphemTableList[0]" type="SLS.ADCS.EphemTableModel" id="OrbitDeterminationModel_yHFN7IFOuIHkyVD0PJqâ4w">
+      <value name="DateTime_UTC" type="System.DateTime">01/01/1970 00:00:01</value>
+      <value name="Position_CBI_km" type="SLS.Util.VectorModel">[ 1 233 3 ]</value>
+      <value name="Velocity_CBI_kmps" type="SLS.Util.VectorModel">[ 66 77 88 ]</value>
+    </container>
+    <container name="EphemTableList[1]" type="SLS.ADCS.EphemTableModel" id="OrbitDeterminationModel_E8LxlHQR1ADAXD9xAciO7A">
+      <value name="DateTime_UTC" type="System.DateTime">01/02/1970 00:00:02</value>
+      <value name="Position_CBI_km" type="SLS.Util.VectorModel">[ 33 44 55 ]</value>
+      <value name="Velocity_CBI_kmps" type="SLS.Util.VectorModel">[ 44 55 66 ]</value>
+    </container>
+  </container>
+</container>

@@ -1,0 +1,3841 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="_ConfigurationModel" type="ConfigDB+SerializableWrapper" id="_ConfigurationModel_âJsPzgC6l8qZvUaN6E8AôQ" fileId="x6Z0TDRârt2EunLavqg2xA">
+  <value name="SelectedConfigurationSetId" type="System.Int32">-1</value>
+  <container name="ConfigurationDataSet" type="ConfigDB" id="_ConfigurationModel_Oc3zT7S96olTZqpuEbBocw">
+    <table name="Table" type="ConfigDB+ConfigurationSetsTableDataTable" id="_ConfigurationModel_KjbP3zldz8ylFyZ39kâeeA" />
+    <table name="Table" type="ConfigDB+ConfigurationSet_VersionTableDataTable" id="_ConfigurationModel_m3uVPhWKâmW0hiA2VQK9Zw" />
+    <table name="Table" type="ConfigDB+ComponentsTableDataTable" id="_ConfigurationModel_FLSXfpYD0zQ38hKôfGrC5A">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="ComponentID" type="System.Int32" />
+        <value_column index="2" name="ComponentName" type="System.String" />
+      </header><![CDATA[
+:0	0	null
+:1	-1	"tlm_master"
+:2	-3	"time_master"
+:3	-4	"stk_data"
+:4	-5	"sub_system_hwio"
+:5	-6	"sub_system_file"
+:6	-7	"sub_system_adcs"
+:7	-8	"sub_system_time"
+:8	-9	"sub_system_cmdtlm"
+:9	-10	"sub_system_seqeng"
+:10	-11	"sub_system_payloads"
+:11	-12	"sub_system_eps"
+:12	16	"power_model"
+:13	17	"cmd_tlm_serial"
+:14	18	"fum"
+:15	20	"FSW_VehicleState"
+:16	21	"FSW_AttDetermination"
+:17	22	"FSW_Ephemeris"
+:18	23	"FSW_ModeController"
+:19	24	"ODY_SimError"
+:20	25	"FSW_Guidance"
+:21	26	"FSC_Gui_Idle"
+:22	27	"FSC_Gui_Hold"
+:23	28	"FSC_Gui_RateDamp"
+:24	29	"FSC_Gui_SunAcq"
+:25	30	"FSC_Gui_Tracking"
+:26	31	"FSC_Gui_EigenSlew"
+:27	32	"FSC_Gui_RendezSlew"
+:28	33	"STK_DataHandler"
+:29	34	"FOB_EphemTable"
+:30	35	"time_basic"
+:31	37	"misc"
+:32	40	"last_stored_tlm"
+:33	41	"rec_packet_heap"
+:34	42	"rec_packet_payload"
+:35	43	"generic_rt_telemetry"
+:36	45	"fj"
+:37	46	"tlm_frame"
+:38	48	"ody_mgr"
+:39	49	"ODY_VehicleState"
+:40	52	"ODY_Ephemeris"
+:41	56	"UTL_FSWInitialConditions"
+:42	72	"data_recorder"
+:43	73	"sa_sp_py"
+:44	74	"sa_sp_my"
+:45	75	"sa_sp_px"
+:46	76	"sa_sp_mx"
+:47	116	"HWR_SenMgr_MAG"
+:48	117	"FSW_SenProc_MAG"
+:49	120	"HWR_SenMgr_RTE"
+:50	121	"FSW_SenProc_RTE"
+:51	128	"HWR_SenMgr_STR"
+:52	129	"FSW_SenProc_STR"
+:53	143	"FSC_SenProc_RTE_MPU_X"
+:54	144	"OSC_SenMdl_RTE_MPU_X"
+:55	145	"FSC_SenProc_RTE_MPU_Y"
+:56	146	"OSC_SenMdl_RTE_MPU_Y"
+:57	147	"FSC_SenProc_RTE_MPU_Z"
+:58	148	"OSC_SenMdl_RTE_MPU_Z"
+:59	149	"FSC_SenProc_STR_Sinclair_STR"
+:60	150	"OSC_SenMdl_STR_Sinclair_STR"
+:61	180	"HWR_SenMgr_SUN"
+:62	181	"FSW_SenProc_SUN"
+:63	182	"FSC_SenProc_SUN_SunSens_Mx"
+:64	183	"OSC_SenMdl_SUN_SunSens_Mx"
+:65	184	"FSC_SenProc_SUN_SunSens_Px"
+:66	185	"OSC_SenMdl_SUN_SunSens_Px"
+:67	186	"FSC_SenProc_SUN_SunSens_My"
+:68	187	"OSC_SenMdl_SUN_SunSens_My"
+:69	188	"FSC_SenProc_SUN_SunSens_Py"
+:70	189	"OSC_SenMdl_SUN_SunSens_Py"
+:71	190	"FSC_SenProc_SUN_SunSens_Mz"
+:72	191	"OSC_SenMdl_SUN_SunSens_Mz"
+:73	196	"FSW_Ctrl_ErrorGen"
+:74	197	"FSW_Ctrl_Momentum"
+:75	198	"FSW_Ctrl_FeedForward"
+:76	199	"FSW_Ctrl_Attitude"
+:77	200	"FSW_Ctrl_Mix"
+:78	202	"FSW_ActProc_RW_Reaction_Wheels_Set"
+:79	204	"OSC_ActMdl_RW_RW_Px"
+:80	206	"OSC_ActMdl_RW_RW_Py"
+:81	208	"OSC_ActMdl_RW_RW_Mz"
+:82	210	"FSW_ActProc_MT_Magnetic_Torquers_Set"
+:83	212	"OSC_ActMdl_MT_MagCoil_Py"
+:84	214	"OSC_ActMdl_MT_MagCoil_Mz"
+:85	216	"OSC_ActMdl_MT_MagCoil_Px"
+:86	218	"OSC_ActMdl_MT_MagCoil_Mx"
+:87	220	"OSC_ActMdl_MT_MagCoil_My"
+:88	224	"FSC_SenProc_MAG_Mag_FCHMC"
+:89	225	"OSC_SenMdl_MAG_Mag_FCHMC"
+:90	228	"HWR_SenMgr_GPS"
+:91	229	"FSW_SenProc_GPS"
+:92	234	"HWR_ActMgr_RW"
+:93	235	"HWR_ActMgr_MT"
+:94	238	"ODY_EquationsOfMotion"
+:95	246	"FSC_SenProc_GPS_GPS"
+:96	247	"OSC_SenMdl_GPS_GPS"
+:97	248	"tlm_mon_fp"
+:98	249	"tlm_mon_eu_adapter"
+:99	250	"UTL_Propagator"
+:100	251	"UTL_CelestialBody_Earth"
+:101	252	"UTL_GravityModel_Earth"
+:102	253	"UTL_MagField_Earth"
+:103	254	"UTL_CelestialBody_Sun"
+:104	255	"UTL_GravityModel_Sun"
+:105	256	"UTL_MassProps_Bus"
+:106	257	"UTL_MassProps_ODYBus"
+:107	260	"KaTransmitter"
+:108	261	"UHF"
+:109	262	"AtlasMultiSpectralImager"
+:110	263	"sa_sp_mz"
+:111	264	"sa_sp_py_deployed"
+:112	265	"sa_sp_my_deployed"
+]]></table>
+    <table name="Table" type="ConfigDB+ComponentVersionsTableDataTable" id="_ConfigurationModel_6vokz0291ecQ5YTVMjNyGQ">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="ComponentVersionID" type="System.Int32" />
+        <value_column index="2" name="VersionNameID" type="System.Int32" />
+        <value_column index="3" name="FileID" type="System.Int32" />
+        <value_column index="4" name="FactoryID" type="System.Int32" />
+        <value_column index="5" name="ComponentID" type="System.Int32" />
+        <value_column index="6" name="Subsystem_ComponentID" type="System.Int32" />
+        <value_column index="7" name="Comment" type="System.String" />
+        <value_column index="8" name="long_name" type="System.String" />
+        <value_column index="9" name="group_name" type="System.String" />
+        <value_column index="10" name="priority" type="System.Int32" />
+        <value_column index="11" name="master_id" type="System.UInt16" />
+        <value_column index="12" name="cmdtlm_prefix" type="System.String" />
+      </header><![CDATA[
+:0	144916	2	3	62	143	-7	null	""MPU_X""	""Sensor Processing""	null	301	""RSP0""
+:1	144917	2	3	62	145	-7	null	""MPU_Y""	""Sensor Processing""	null	302	""RSP1""
+:2	144918	2	3	62	147	-7	null	""MPU_Z""	""Sensor Processing""	null	303	""RSP2""
+:3	144919	2	3	63	149	-7	null	""Sinclair_STR""	""Sensor Processing""	null	321	""STP0""
+:4	144920	2	3	64	182	-7	null	""SunSens_Mx""	""Sensor Processing""	null	331	""SSP0""
+:5	144921	2	3	64	186	-7	null	""SunSens_My""	""Sensor Processing""	null	333	""SSP2""
+:6	144922	2	3	64	190	-7	null	""SunSens_Mz""	""Sensor Processing""	null	335	""SSP4""
+:7	144923	2	3	64	184	-7	null	""SunSens_Px""	""Sensor Processing""	null	332	""SSP1""
+:8	144924	2	3	64	188	-7	null	""SunSens_Py""	""Sensor Processing""	null	334	""SSP3""
+:9	144925	2	1	66	210	-7	null	""Magnetic Torquers Set""	""Actuator Sets""	430	430	""APM0""
+:10	144926	2	1	68	202	-7	null	""Reaction Wheels Set""	""Actuator Sets""	400	400	""APR0""
+:11	144927	2	1	9	21	-7	null	""Attitude Determination""	""Attitude Determination""	600	600	""ATD""
+:12	144928	2	1	70	199	-7	null	""Attitude Control""	""Control""	930	930	""CAT""
+:13	144929	2	1	71	196	-7	null	""Control Error Gen""	""Control""	900	900	""CEG""
+:14	144930	2	1	72	198	-7	null	""Feed Fwd Control""	""Control""	920	920	""CFF""
+:15	144931	2	1	73	200	-7	null	""Control Mixing""	""Control""	940	940	""CMX""
+:16	144932	2	1	74	197	-7	null	""Momentum Control""	""Control""	910	910	""CMC""
+:17	144933	2	1	10	22	-7	null	""Ephemeris""	""Ephemeris""	610	610	""EPH""
+:18	144934	2	1	13	25	-7	null	""Guidance""	""Guidance""	800	800	""GID""
+:19	144935	2	1	11	23	-7	null	""Mode Control""	""Mode Control""	700	700	""MDC""
+:20	144936	2	1	76	229	-7	null	""All GPS""	""Sensor Sets""	360	360	""SPG""
+:21	144937	2	1	78	117	-7	null	""All Magnetometers""	""Sensor Sets""	340	340	""SPM""
+:22	144938	2	1	79	121	-7	null	""All Rate Sensors""	""Sensor Sets""	300	300	""SPR""
+:23	144939	2	1	80	129	-7	null	""All Star Trackers""	""Sensor Sets""	320	320	""SPT""
+:24	144940	2	1	81	181	-7	null	""All Sun Vector Sensors""	""Sensor Sets""	330	330	""SPS""
+:25	144941	2	1	8	20	-7	null	""Vehicle State""	""Vehicle State""	620	620	""VEH""
+:26	144942	2	12	6	18	-6	null	""File Upload""	""Command & Data Handling""	0	7100	""FUM""
+:27	144943	2	12	31	43	-9	null	""Real-Time Telmetry""	""Command & Data Handling""	0	5700	""RT_TLM""
+:28	144944	2	14	83	235	-7	null	""HWR_ActMgr_MT""	""Actuator Manager""	230	230	""HMT""
+:29	144945	2	14	85	234	-7	null	""HWR_ActMgr_RW""	""Actuator Manager""	200	200	""HRW""
+:30	144946	2	14	88	228	-7	null	""All GPS""	""Sensor Manager""	160	160	""HGP""
+:31	144947	2	14	90	116	-7	null	""All Magnetometers""	""Sensor Manager""	140	140	""HMG""
+:32	144948	2	14	91	120	-7	null	""All Rate Sensors""	""Sensor Manager""	100	100	""HRT""
+:33	144949	2	14	92	128	-7	null	""All Star Trackers""	""Sensor Manager""	120	120	""HST""
+:34	144950	2	14	93	180	-7	null	""All Sun Vector Sensors""	""Sensor Manager""	130	130	""HSS""
+:35	144951	2	2	119	260	-7	null	""ODY KaTransmitter""	""ODySSy Data Management""	3000	3000	""OCM0""
+:36	144952	2	1	28	40	-9	null	""""	""""	0	5400	""""
+:37	144953	2	1	25	37	-9	null	""Misc""	""Command & Data Handling""	0	5100	""MISC""
+:38	144954	2	2	38	52	-7	null	""ODY Ephemeris""	""ODySSy Ephemeris""	2300	2300	""OEP""
+:39	144955	2	2	136	238	-7	null	""ODY EquationsOfMotion""	""ODySSy Dynamics""	2200	2200	""OEM""
+:40	144956	2	2	34	48	-7	null	""ODY Manager""	""ODySSy Manager""	0	2000	""OMG""
+:41	144957	2	2	12	24	-7	null	""ODY Pointing Error""	""ODySSy Pointing Error""	2999	2999	""OER""
+:42	144958	2	2	35	49	-7	null	""ODY Vehicle State""	""ODySSy Vehicle State""	2250	2250	""OVS""
+:43	144959	2	7	99	218	-7	null	""ODY MagCoil_Mx""	""ODySSy Actuator Model""	null	243	""OAM3""
+:44	144960	2	7	99	220	-7	null	""ODY MagCoil_My""	""ODySSy Actuator Model""	null	244	""OAM4""
+:45	144961	2	7	99	214	-7	null	""ODY MagCoil_Mz""	""ODySSy Actuator Model""	null	241	""OAM1""
+:46	144962	2	7	99	216	-7	null	""ODY MagCoil_Px""	""ODySSy Actuator Model""	null	242	""OAM2""
+:47	144963	2	7	99	212	-7	null	""ODY MagCoil_Py""	""ODySSy Actuator Model""	null	240	""OAM0""
+:48	144964	2	7	100	208	-7	null	""ODY RW_Mz""	""ODySSy Actuator Model""	null	212	""OAR2""
+:49	144965	2	7	100	204	-7	null	""ODY RW_Px""	""ODySSy Actuator Model""	null	210	""OAR0""
+:50	144966	2	7	100	206	-7	null	""ODY RW_Py""	""ODySSy Actuator Model""	null	211	""OAR1""
+:51	144967	2	7	104	247	-7	null	""ODY GPS""	""ODySSy Sensor Model""	null	161	""OGP0""
+:52	144968	2	7	106	225	-7	null	""ODY Mag_FCHMC""	""ODySSy Sensor Model""	null	141	""OSM0""
+:53	144969	2	7	107	144	-7	null	""ODY MPU_X""	""ODySSy Sensor Model""	null	101	""OSR0""
+:54	144970	2	7	107	146	-7	null	""ODY MPU_Y""	""ODySSy Sensor Model""	null	102	""OSR1""
+:55	144971	2	7	107	148	-7	null	""ODY MPU_Z""	""ODySSy Sensor Model""	null	103	""OSR2""
+:56	144972	2	7	108	150	-7	null	""ODY Sinclair_STR""	""ODySSy Sensor Model""	null	121	""OST0""
+:57	144973	2	7	109	183	-7	null	""ODY SunSens_Mx""	""ODySSy Sensor Model""	null	131	""OSS0""
+:58	144974	2	7	109	187	-7	null	""ODY SunSens_My""	""ODySSy Sensor Model""	null	133	""OSS2""
+:59	144975	2	7	109	191	-7	null	""ODY SunSens_Mz""	""ODySSy Sensor Model""	null	135	""OSS4""
+:60	144976	2	7	109	185	-7	null	""ODY SunSens_Px""	""ODySSy Sensor Model""	null	132	""OSS1""
+:61	144977	2	7	109	189	-7	null	""ODY SunSens_Py""	""ODySSy Sensor Model""	null	134	""OSS3""
+:62	144978	2	2	4	16	-12	null	""ODY Power""	""ODySSy Power Thermal""	2500	2500	""OPW""
+:63	144979	2	1	29	41	-9	null	""""	""""	0	5500	""""
+:64	144980	2	1	30	42	-9	null	""Payload""	""Command & Data Handling""	0	5600	""PLD""
+:65	144981	2	2	115	76	-12	null	""ODY SP_mX""	""ODySSy Power Thermal""	2700	2706	""OPP3""
+:66	144982	2	2	115	74	-12	null	""ODY SP_mY""	""ODySSy Power Thermal""	2700	2702	""OPP1""
+:67	144983	2	2	115	265	-12	null	""ODY SP_mY_Deployed""	""ODySSy Power Thermal""	2700	2712	""OPP6""
+:68	144984	2	2	115	263	-12	null	""ODY SP_mZ""	""ODySSy Power Thermal""	2700	2708	""OPP4""
+:69	144985	2	2	115	75	-12	null	""ODY SP_pX""	""ODySSy Power Thermal""	2700	2704	""OPP2""
+:70	144986	2	2	115	73	-12	null	""ODY SP_pY""	""ODySSy Power Thermal""	2700	2700	""OPP0""
+:71	144987	2	2	115	264	-12	null	""ODY SP_pY_Deployed""	""ODySSy Power Thermal""	2700	2710	""OPP5""
+:72	144988	2	-1	-1	-4	0	null	null	null	null	null	null
+:73	144989	2	8	21	33	-7	null	""STK""	""SOLIS Simulation""	null	1000	""STK""
+:74	144990	2	-1	-2	-7	0	null	null	null	null	null	null
+:75	144991	2	-1	-2	-9	0	null	null	null	null	null	null
+:76	144992	2	-1	-2	-12	0	null	null	null	null	null	null
+:77	144993	2	-1	-2	-6	0	null	null	null	null	null	null
+:78	144994	2	-1	-2	-5	0	null	null	null	null	null	null
+:79	144995	2	-1	-2	-11	0	null	null	null	null	null	null
+:80	144996	2	-1	-2	-10	0	null	null	null	null	null	null
+:81	144997	2	-1	-2	-8	0	null	null	null	null	null	null
+:82	144998	2	12	23	35	-8	null	""Time""	""Command & Data Handling""	0	4000	""TIME""
+:83	144999	2	-1	-1	-3	0	null	null	null	null	null	null
+:84	145000	2	12	33	46	-1	null	null	null	null	null	null
+:85	145001	2	-1	-1	-1	0	null	null	null	null	null	null
+:86	145002	2	1	2848	249	-9	null	""Telemetry Monitor""	""Telemetry Monitor""	0	10001	""TLM_MON_EU""
+:87	145003	2	1	2841	248	-9	null	""Telemetry Monitor""	""Telemetry Monitor""	0	10000	""TLM_MON_FP""
+:88	145004	2	2	119	261	-7	null	""ODY UHF""	""ODySSy Data Management""	3001	3001	""OCM1""
+:89	145005	2	13	39	251	-7	null	null	null	null	null	null
+:90	145006	2	13	39	254	-7	null	null	null	null	null	null
+:91	145007	2	13	42	56	-7	null	null	null	null	null	null
+:92	145008	2	13	40	252	-7	null	null	null	null	null	null
+:93	145009	2	13	40	255	-7	null	null	null	null	null	null
+:94	145010	2	13	43	253	-7	null	null	null	null	null	null
+:95	145011	2	13	6427	256	-7	null	null	null	null	null	null
+:96	145012	2	23	6427	257	-7	null	null	null	null	null	null
+:97	145013	2	13	41	250	-7	null	null	null	null	null	null
+]]></table>
+    <table name="Table" type="ConfigDB+FactoriesTableDataTable" id="_ConfigurationModel_WIG1p3XxTXcfb2vlLsTEOQ">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="FactoryID" type="System.Int32" />
+        <value_column index="2" name="FactoryName" type="System.String" />
+        <value_column index="3" name="SourceType" type="STKSolis.Satellite.SystemData.MCDHConfigurationData+EFactorySourceType" />
+        <value_column index="4" name="ComponentType" type="ConfigDB+FactoriesTableDataTable+EComponentType" />
+      </header><![CDATA[
+:0	-1	null	0	2
+:1	-2	"sub_system_controller"	0	2
+:2	4	"ody_model_power"	0	2
+:3	6	"file_upload_mgr"	0	2
+:4	8	"FSW_VehicleState"	0	2
+:5	9	"FSW_AttDetermination"	0	2
+:6	10	"FSW_Ephemeris"	0	2
+:7	11	"FSW_ModeController"	0	2
+:8	12	"ODY_SimError"	0	2
+:9	13	"FSW_Guidance"	0	2
+:10	21	"STK_DataHandler"	0	1
+:11	23	"time_master_basic"	0	2
+:12	25	"misc"	0	2
+:13	28	"last_stored_tlm"	0	2
+:14	29	"basic_heap"	0	2
+:15	30	"recorded_packet_tlm"	0	2
+:16	31	"generic_comm"	0	2
+:17	33	"cmdtlm_solis_frame"	0	0
+:18	34	"ody_mgr"	0	2
+:19	35	"ODY_VehicleState"	0	2
+:20	38	"ODY_Ephemeris"	0	2
+:21	39	"UTL_CentralBody"	0	0
+:22	40	"UTL_GravityModel"	0	0
+:23	41	"UTL_Propagator"	0	0
+:24	42	"UTL_FSWInitialConditions"	0	0
+:25	43	"UTL_MagField"	0	0
+:26	62	"FSC_SenProc_RTE"	0	1
+:27	63	"FSC_SenProc_STR"	0	1
+:28	64	"FSC_SenProc_SUN"	0	1
+:29	66	"FSW_ActProc_MT"	0	2
+:30	68	"FSW_ActProc_RW"	0	2
+:31	70	"FSW_Ctrl_Attitude"	0	2
+:32	71	"FSW_Ctrl_ErrorGen"	0	2
+:33	72	"FSW_Ctrl_FeedForward"	0	2
+:34	73	"FSW_Ctrl_Mix"	0	2
+:35	74	"FSW_Ctrl_Momentum"	0	2
+:36	76	"FSW_SenProc_GPS"	0	2
+:37	78	"FSW_SenProc_MAG"	0	2
+:38	79	"FSW_SenProc_RTE"	0	2
+:39	80	"FSW_SenProc_STR"	0	2
+:40	81	"FSW_SenProc_SUN"	0	2
+:41	83	"HWR_ActMgr_MT"	0	2
+:42	85	"HWR_ActMgr_RW"	0	2
+:43	88	"HWR_SenMgr_GPS"	0	2
+:44	90	"HWR_SenMgr_MAG"	0	2
+:45	91	"HWR_SenMgr_RTE"	0	2
+:46	92	"HWR_SenMgr_STR"	0	2
+:47	93	"HWR_SenMgr_SUN"	0	2
+:48	99	"OSC_ActMdl_MT"	0	1
+:49	100	"OSC_ActMdl_RW"	0	1
+:50	104	"OSC_SenMdl_GPS"	0	1
+:51	106	"OSC_SenMdl_MAG"	0	1
+:52	107	"OSC_SenMdl_RTE"	0	1
+:53	108	"OSC_SenMdl_STR"	0	1
+:54	109	"OSC_SenMdl_SUN"	0	1
+:55	115	"ody_model_panel"	0	2
+:56	119	"solis_generic_comm"	0	2
+:57	136	"ODY_EquationsOfMotion"	0	2
+:58	2841	"fpu_subsystem_mon"	0	2
+:59	2848	"tlm_eu_adapter"	0	2
+:60	6427	"UTL_MassProps"	0	0
+]]></table>
+    <table name="Table" type="ConfigDB+ParametersTableDataTable" id="_ConfigurationModel_qnAJEccDw791EGoWcaKosQ">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="ComponentVersionID" type="System.Int32" />
+        <value_column index="2" name="Section" type="System.UInt32" />
+        <value_column index="3" name="Parameter" type="System.String" />
+        <value_column index="4" name="Type" type="STKSolis.Satellite.SystemData.MCDHConfigurationData+EConfigParameterType" />
+        <value_column index="5" name="Units" type="System.String" />
+        <value_column index="6" name="Value" type="System.Object" />
+        <value_column index="7" name="Comment" type="System.String" />
+        <value_column index="8" name="FileID" type="System.Int32" />
+      </header><![CDATA[
+:0	144916	0	"V_SenseAxis_UBDY"	4	"unknown"	[ 0.0  0.0  1.0 ]	null	3
+:1	144916	0	"V_SenseAxis_URTE"	4	"unknown"	[ 0.0  0.0  1.0 ]	null	3
+:2	144916	0	"D_BiasEst_rdps"	2	"unknown"	0	null	3
+:3	144916	0	"F_Filter"	7	"unknown"	[[1.45350373523893e-1 1.07858900557112e-1][1.0 -1.15808661347859e+0 4.11295887559595e-1]]	null	3
+:4	144916	0	"B_PerformFaultChecks"	3	"unknown"	1	null	3
+:5	144916	0	"B_PerformTemperatureCompensation"	3	"unknown"	0	null	3
+:6	144916	0	"D_MagnitudeLimit_rdps"	2	"unknown"	174532925.199433	null	3
+:7	144916	0	"D_ConsistencyLimit_rdps"	2	"unknown"	174532925.199433	null	3
+:8	144916	0	"I_HwrConnectID"	3	"unknown"	0	null	3
+:9	144917	0	"V_SenseAxis_UBDY"	4	"unknown"	[ 0.0  1.0  0.0 ]	null	3
+:10	144917	0	"V_SenseAxis_URTE"	4	"unknown"	[ 0.0  0.0  1.0 ]	null	3
+:11	144917	0	"D_BiasEst_rdps"	2	"unknown"	0	null	3
+:12	144917	0	"F_Filter"	7	"unknown"	[[1.45350373523893e-1 1.07858900557112e-1][1.0 -1.15808661347859e+0 4.11295887559595e-1]]	null	3
+:13	144917	0	"B_PerformFaultChecks"	3	"unknown"	1	null	3
+:14	144917	0	"B_PerformTemperatureCompensation"	3	"unknown"	0	null	3
+:15	144917	0	"D_MagnitudeLimit_rdps"	2	"unknown"	174532925.199433	null	3
+:16	144917	0	"D_ConsistencyLimit_rdps"	2	"unknown"	174532925.199433	null	3
+:17	144917	0	"I_HwrConnectID"	3	"unknown"	1	null	3
+:18	144918	0	"V_SenseAxis_UBDY"	4	"unknown"	[ -1.0  0.0  0.0 ]	null	3
+:19	144918	0	"V_SenseAxis_URTE"	4	"unknown"	[ 0.0  0.0  1.0 ]	null	3
+:20	144918	0	"D_BiasEst_rdps"	2	"unknown"	0	null	3
+:21	144918	0	"F_Filter"	7	"unknown"	[[1.45350373523893e-1 1.07858900557112e-1][1.0 -1.15808661347859e+0 4.11295887559595e-1]]	null	3
+:22	144918	0	"B_PerformFaultChecks"	3	"unknown"	1	null	3
+:23	144918	0	"B_PerformTemperatureCompensation"	3	"unknown"	0	null	3
+:24	144918	0	"D_MagnitudeLimit_rdps"	2	"unknown"	174532925.199433	null	3
+:25	144918	0	"D_ConsistencyLimit_rdps"	2	"unknown"	174532925.199433	null	3
+:26	144918	0	"I_HwrConnectID"	3	"unknown"	2	null	3
+:27	144919	0	"Q_BDY2STR"	5	"unknown"	[ -0.5  -0.5  0.5  0.5 ]	null	3
+:28	144919	0	"V_Boresight_USTR"	4	"unknown"	[ 0.0  0.0  1.0 ]	null	3
+:29	144919	0	"B_ConvertJ2000toTOD"	3	"unknown"	1	null	3
+:30	144919	0	"I_HwrConnectID"	3	"unknown"	0	null	3
+:31	144920	0	"Q_BDY2SUN"	5	"unknown"	[ 0.0  -7.07106781186547e-1  0.0  7.07106781186548e-1 ]	null	3
+:32	144920	0	"V_Boresight_USUN"	4	"unknown"	[ 0.0  0.0  1.0 ]	null	3
+:33	144920	0	"I_FilterResetCycles"	3	"unknown"	10	null	3
+:34	144920	0	"F_Filter[0]"	7	"unknown"	[[1.0][1.0]]	null	3
+:35	144920	0	"F_Filter[1]"	7	"unknown"	[[1.0][1.0]]	null	3
+:36	144920	0	"F_Filter[2]"	7	"unknown"	[[1.0][1.0]]	null	3
+:37	144920	0	"I_HwrConnectID"	3	"unknown"	0	null	3
+:38	144921	0	"Q_BDY2SUN"	5	"unknown"	[ 7.07106781186547e-1  0.0  0.0  7.07106781186548e-1 ]	null	3
+:39	144921	0	"V_Boresight_USUN"	4	"unknown"	[ 0.0  0.0  1.0 ]	null	3
+:40	144921	0	"I_FilterResetCycles"	3	"unknown"	10	null	3
+:41	144921	0	"F_Filter[0]"	7	"unknown"	[[1.0][1.0]]	null	3
+:42	144921	0	"F_Filter[1]"	7	"unknown"	[[1.0][1.0]]	null	3
+:43	144921	0	"F_Filter[2]"	7	"unknown"	[[1.0][1.0]]	null	3
+:44	144921	0	"I_HwrConnectID"	3	"unknown"	2	null	3
+:45	144922	0	"Q_BDY2SUN"	5	"unknown"	[ 0.0  1.0  0.0  6.12303176911189e-17 ]	null	3
+:46	144922	0	"V_Boresight_USUN"	4	"unknown"	[ 0.0  0.0  1.0 ]	null	3
+:47	144922	0	"I_FilterResetCycles"	3	"unknown"	10	null	3
+:48	144922	0	"F_Filter[0]"	7	"unknown"	[[1.0][1.0]]	null	3
+:49	144922	0	"F_Filter[1]"	7	"unknown"	[[1.0][1.0]]	null	3
+:50	144922	0	"F_Filter[2]"	7	"unknown"	[[1.0][1.0]]	null	3
+:51	144922	0	"I_HwrConnectID"	3	"unknown"	4	null	3
+:52	144923	0	"Q_BDY2SUN"	5	"unknown"	[ 0.0  7.07106781186547e-1  0.0  7.07106781186548e-1 ]	null	3
+:53	144923	0	"V_Boresight_USUN"	4	"unknown"	[ 0.0  0.0  1.0 ]	null	3
+:54	144923	0	"I_FilterResetCycles"	3	"unknown"	10	null	3
+:55	144923	0	"F_Filter[0]"	7	"unknown"	[[1.0][1.0]]	null	3
+:56	144923	0	"F_Filter[1]"	7	"unknown"	[[1.0][1.0]]	null	3
+:57	144923	0	"F_Filter[2]"	7	"unknown"	[[1.0][1.0]]	null	3
+:58	144923	0	"I_HwrConnectID"	3	"unknown"	1	null	3
+:59	144924	0	"Q_BDY2SUN"	5	"unknown"	[ -7.07106781186547e-1  0.0  0.0  7.07106781186548e-1 ]	null	3
+:60	144924	0	"V_Boresight_USUN"	4	"unknown"	[ 0.0  0.0  1.0 ]	null	3
+:61	144924	0	"I_FilterResetCycles"	3	"unknown"	10	null	3
+:62	144924	0	"F_Filter[0]"	7	"unknown"	[[1.0][1.0]]	null	3
+:63	144924	0	"F_Filter[1]"	7	"unknown"	[[1.0][1.0]]	null	3
+:64	144924	0	"F_Filter[2]"	7	"unknown"	[[1.0][1.0]]	null	3
+:65	144924	0	"I_HwrConnectID"	3	"unknown"	3	null	3
+:66	144925	0	"D_TotalMagneticPeriod_s"	2	"unknown"	10	null	1
+:67	144925	0	"D_QuiescentPeriod_s"	2	"unknown"	1	null	1
+:68	144925	0	"B_QuiescentIfMTOff"	3	"unknown"	1	null	1
+:69	144925	0	"D_PulseWidthPeriod_s"	2	"unknown"	1	null	1
+:70	144925	0	"D_MeasurementTimeout_s"	2	"unknown"	60	null	1
+:71	144925	0	"E_MagFieldSource"	3	"unknown"	0	"0: MagModelOnly, 1: MagMeasurementOnly, 2: BothModelAndMagnetometer"	1
+:72	144925	0	"E_MTCmdMode"	3	"unknown"	1	"0: Constant, 1: Dynamic"	1
+:73	144926	0	"E_WheelSpeedState"	3	"unknown"	0	"0: BYPASS, 1: COMPENSATE, 2: GOTO_SPEED, 3: HOLD_SPEED, 4:SPD_EXTERNAL"	1
+:74	144927	0	"E_FilterLevel"	3	"none"	2	"0: Perfect-AD, 1: Fixed-Gain, 2: Kalman Filter"	1
+:75	144927	0	"B_InitWithODySSy"	3	"bool"	0	"0: Sensors, 1: ODySSy"	11
+:76	144927	0	"I_InitFramesReq"	3	"none"	2	null	1
+:77	144927	0	"D_InitMeasTimeWindow_s"	2	"s"	10	null	1
+:78	144927	0	"D_InitSensorPersistDur_s"	2	"s"	1	null	1
+:79	144927	0	"D_InitAttConsist_rd"	2	"rad"	0.174532925199433	null	1
+:80	144927	0	"D_InitReqSepAngle_rd"	2	"rad"	0.5235987755982988	null	1
+:81	144927	0	"D_EstRateBiasLim_rdps"	2	"rad/s"	0.08726646259971647	null	1
+:82	144927	0	"D_InitAttCov_rd"	2	"rad"	0.0174532925199433	null	1
+:83	144927	0	"D_InitRateBiasCov_rdps"	2	"rad/s"	0.0174532925199433	null	1
+:84	144927	0	"D_RateMeasNoise_rdps"	2	"rad/s"	0.0002617993877991494	null	1
+:85	144927	0	"D_RateDriftMeasNoise_rdpsrthr"	2	"rad/(s*sqrt(hr))"	3.490658503988659E-07	null	1
+:86	144927	0	"Q_InitUndetAtt"	5	"none"	[ 0.0  0.0  0.0  1.0 ]	null	1
+:87	144927	0	"B_EnableRateBiasEst"	3	"bool"	1	null	1
+:88	144927	0	"D_RateBiasTimeConst_s"	2	"s"	100	null	1
+:89	144927	0	"B_UseForInit[0]"	3	"bool"	1	"SunSens_Mx"	1
+:90	144927	0	"D_TimeConst_s[0]"	2	"s"	0	"SunSens_Mx: Fixed-Gain Filter Variable"	1
+:91	144927	0	"D_MeasSigmaBore_rd[0]"	2	"rad"	0.00174532925199433	"SunSens_Mx: Kalman Filter Variable"	1
+:92	144927	0	"D_MeasSigmaOffBore_rd[0]"	2	"rad"	0.00174532925199433	"SunSens_Mx: Kalman Filter Variable"	1
+:93	144927	0	"D_ResidLimit_rd[0]"	2	"rad"	0.174532925199433	"SunSens_Mx: Kalman Filter Variable"	1
+:94	144927	0	"D_AttGainLim[0]"	2	"none"	1	"SunSens_Mx: Kalman Filter Variable"	1
+:95	144927	0	"D_RBGainLim[0]"	2	"none"	1	"SunSens_Mx: Kalman Filter Variable"	1
+:96	144927	0	"E_IncorpMethod[0]"	3	"none"	0	"SunSens_Mx: 0: None, 1: Attitude Only, 2: Attitude and Rate Bias"	1
+:97	144927	0	"B_UseForInit[1]"	3	"bool"	1	"SunSens_Px"	1
+:98	144927	0	"D_TimeConst_s[1]"	2	"s"	0	"SunSens_Px: Fixed-Gain Filter Variable"	1
+:99	144927	0	"D_MeasSigmaBore_rd[1]"	2	"rad"	0.00174532925199433	"SunSens_Px: Kalman Filter Variable"	1
+:100	144927	0	"D_MeasSigmaOffBore_rd[1]"	2	"rad"	0.00174532925199433	"SunSens_Px: Kalman Filter Variable"	1
+:101	144927	0	"D_ResidLimit_rd[1]"	2	"rad"	0.174532925199433	"SunSens_Px: Kalman Filter Variable"	1
+:102	144927	0	"D_AttGainLim[1]"	2	"none"	1	"SunSens_Px: Kalman Filter Variable"	1
+:103	144927	0	"D_RBGainLim[1]"	2	"none"	1	"SunSens_Px: Kalman Filter Variable"	1
+:104	144927	0	"E_IncorpMethod[1]"	3	"none"	0	"SunSens_Px: 0: None, 1: Attitude Only, 2: Attitude and Rate Bias"	1
+:105	144927	0	"B_UseForInit[2]"	3	"bool"	1	"SunSens_My"	1
+:106	144927	0	"D_TimeConst_s[2]"	2	"s"	0	"SunSens_My: Fixed-Gain Filter Variable"	1
+:107	144927	0	"D_MeasSigmaBore_rd[2]"	2	"rad"	0.00174532925199433	"SunSens_My: Kalman Filter Variable"	1
+:108	144927	0	"D_MeasSigmaOffBore_rd[2]"	2	"rad"	0.00174532925199433	"SunSens_My: Kalman Filter Variable"	1
+:109	144927	0	"D_ResidLimit_rd[2]"	2	"rad"	0.174532925199433	"SunSens_My: Kalman Filter Variable"	1
+:110	144927	0	"D_AttGainLim[2]"	2	"none"	1	"SunSens_My: Kalman Filter Variable"	1
+:111	144927	0	"D_RBGainLim[2]"	2	"none"	1	"SunSens_My: Kalman Filter Variable"	1
+:112	144927	0	"E_IncorpMethod[2]"	3	"none"	0	"SunSens_My: 0: None, 1: Attitude Only, 2: Attitude and Rate Bias"	1
+:113	144927	0	"B_UseForInit[3]"	3	"bool"	1	"SunSens_Py"	1
+:114	144927	0	"D_TimeConst_s[3]"	2	"s"	0	"SunSens_Py: Fixed-Gain Filter Variable"	1
+:115	144927	0	"D_MeasSigmaBore_rd[3]"	2	"rad"	0.00174532925199433	"SunSens_Py: Kalman Filter Variable"	1
+:116	144927	0	"D_MeasSigmaOffBore_rd[3]"	2	"rad"	0.00174532925199433	"SunSens_Py: Kalman Filter Variable"	1
+:117	144927	0	"D_ResidLimit_rd[3]"	2	"rad"	0.174532925199433	"SunSens_Py: Kalman Filter Variable"	1
+:118	144927	0	"D_AttGainLim[3]"	2	"none"	1	"SunSens_Py: Kalman Filter Variable"	1
+:119	144927	0	"D_RBGainLim[3]"	2	"none"	1	"SunSens_Py: Kalman Filter Variable"	1
+:120	144927	0	"E_IncorpMethod[3]"	3	"none"	0	"SunSens_Py: 0: None, 1: Attitude Only, 2: Attitude and Rate Bias"	1
+:121	144927	0	"B_UseForInit[4]"	3	"bool"	1	"SunSens_Mz"	1
+:122	144927	0	"D_TimeConst_s[4]"	2	"s"	0	"SunSens_Mz: Fixed-Gain Filter Variable"	1
+:123	144927	0	"D_MeasSigmaBore_rd[4]"	2	"rad"	0.00174532925199433	"SunSens_Mz: Kalman Filter Variable"	1
+:124	144927	0	"D_MeasSigmaOffBore_rd[4]"	2	"rad"	0.00174532925199433	"SunSens_Mz: Kalman Filter Variable"	1
+:125	144927	0	"D_ResidLimit_rd[4]"	2	"rad"	0.174532925199433	"SunSens_Mz: Kalman Filter Variable"	1
+:126	144927	0	"D_AttGainLim[4]"	2	"none"	1	"SunSens_Mz: Kalman Filter Variable"	1
+:127	144927	0	"D_RBGainLim[4]"	2	"none"	1	"SunSens_Mz: Kalman Filter Variable"	1
+:128	144927	0	"E_IncorpMethod[4]"	3	"none"	0	"SunSens_Mz: 0: None, 1: Attitude Only, 2: Attitude and Rate Bias"	1
+:129	144927	0	"B_UseForInit[5]"	3	"bool"	1	"Mag_FCHMC"	1
+:130	144927	0	"D_TimeConst_s[5]"	2	"s"	1800	"Mag_FCHMC: Fixed-Gain Filter Variable"	1
+:131	144927	0	"D_MeasSigmaBore_rd[5]"	2	"rad"	0.0174532925199433	"Mag_FCHMC: Kalman Filter Variable"	1
+:132	144927	0	"D_MeasSigmaOffBore_rd[5]"	2	"rad"	0.0174532925199433	"Mag_FCHMC: Kalman Filter Variable"	1
+:133	144927	0	"D_ResidLimit_rd[5]"	2	"rad"	0.174532925199433	"Mag_FCHMC: Kalman Filter Variable"	1
+:134	144927	0	"D_AttGainLim[5]"	2	"none"	1	"Mag_FCHMC: Kalman Filter Variable"	1
+:135	144927	0	"D_RBGainLim[5]"	2	"none"	1	"Mag_FCHMC: Kalman Filter Variable"	1
+:136	144927	0	"E_IncorpMethod[5]"	3	"none"	1	"Mag_FCHMC: 0: None, 1: Attitude Only, 2: Attitude and Rate Bias"	1
+:137	144927	0	"B_UseForInit[6]"	3	"bool"	1	"Sinclair_STR"	1
+:138	144927	0	"D_TimeConst_s[6]"	2	"s"	1	"Sinclair_STR: Fixed-Gain Filter Variable"	1
+:139	144927	0	"D_MeasSigmaBore_rd[6]"	2	"rad"	0.0002666475232527665	"Sinclair_STR: Kalman Filter Variable"	1
+:140	144927	0	"D_MeasSigmaOffBore_rd[6]"	2	"rad"	2.4240668541439E-05	"Sinclair_STR: Kalman Filter Variable"	1
+:141	144927	0	"D_ResidLimit_rd[6]"	2	"rad"	0.174532925199433	"Sinclair_STR: Kalman Filter Variable"	1
+:142	144927	0	"D_AttGainLim[6]"	2	"none"	1	"Sinclair_STR: Kalman Filter Variable"	1
+:143	144927	0	"D_RBGainLim[6]"	2	"none"	1	"Sinclair_STR: Kalman Filter Variable"	1
+:144	144927	0	"E_IncorpMethod[6]"	3	"none"	2	"Sinclair_STR: 0: None, 1: Attitude Only, 2: Attitude and Rate Bias"	1
+:145	144933	0	"Q_TODtoJ2000"	5	"none"	[ -2.004856133e-5  -8.36628103438893e-4  1.92552571049745e-3  9.99997795998676e-1 ]	null	1
+:146	144933	0	"D_MaxPropagationTime_s"	2	"s"	10800	null	1
+:147	144933	0	"B_AllowBackProp"	3	"bool"	1	null	1
+:148	144933	0	"B_IncludeNonGravAcc"	3	"bool"	0	null	1
+:149	144933	0	"E_EphemSource"	3	"none"	1	"0: Table, 1: GPS"	1
+:150	144935	0	"B_InitRateDampOnAcq"	3	"bool"	0	null	1
+:151	144935	0	"S_InitAttDetSeq"	0	"string"	""	null	1
+:152	144935	0	"S_InitAttUnDetSeq"	0	"string"	""	null	1
+:153	144936	0	"E_SelectionMethod"	3	"none"	0	"0: FirstValid, 1: RankedList, 2: BlendAllValid, 3: HighestQuality"	1
+:154	144936	0	"D_OutageTimeThreshold_s"	2	"s"	5400	null	1
+:155	144936	0	"D_PosErrLimUnconv_m"	2	"m"	1000	null	1
+:156	144936	0	"D_VelErrLimUnconv_mps"	2	"m/s"	25	null	1
+:157	144936	0	"D_PosErrLimConv_m"	2	"m"	200	null	1
+:158	144936	0	"D_VelErrLimConv_mps"	2	"m/s"	12	null	1
+:159	144936	0	"D_PosErrGain"	2	"none"	0.002	null	1
+:160	144936	0	"D_VelErrGain"	2	"none"	0.002	null	1
+:161	144936	0	"D_PosErrLimOutageSlope_mps"	2	"m/s"	0.5	null	1
+:162	144936	0	"D_VelErrLimOutageSlope_mps2"	2	"m/s^2"	0.1	null	1
+:163	144936	0	"D_MaxTimeToConverge_s"	2	"s"	6000	null	1
+:164	144936	0	"I_NumMeasToConverge"	3	"none"	15000	null	1
+:165	144936	0	"I_NumMeasToDiverge"	3	"none"	3000	null	1
+:166	144936	0	"I_NumMeasToRecoverOutage"	3	"none"	0	null	1
+:167	144937	0	"E_SelectionMethod"	3	"none"	0	"0: FirstValid, 1: RankedList, 2: BlendAllValid, 3: HighestQuality"	1
+:168	144940	0	"E_SelectionMethod"	3	"none"	0	"0: FirstValid, 1: RankedList, 2: BlendAllValid, 3: HighestQuality"	1
+:169	144941	0	"M_StaticInertia_BDYCM_kgm2"	6	"kg*m^2"	[[9.4457e-2 -1.2575e-4 -9.348e-4] [-1.2575e-4 1.7821e-1 1.7159e-4] [-9.348e-4 1.7159e-4 0.1168]]	null	1
+:170	144941	0	"D_SunLostPersistTime_s"	2	"s"	1200	null	1
+:171	144941	0	"I_SunBufferSize"	3	"none"	3	null	1
+:172	144941	0	"D_SunBufferConsistencyAngle_rd"	2	"rad"	0.05235987755982989	null	1
+:173	144941	0	"D_EclipseKOZAngle_rd"	2	"rad"	0	null	1
+:174	144943	0	"enable_rx"	3	"unknown"	0	null	12
+:175	144943	0	"sim_rx"	3	"unknown"	0	null	12
+:176	144943	0	"rx_bps"	2	"unknown"	0	null	12
+:177	144943	0	"enable_tx"	3	"unknown"	0	null	12
+:178	144943	0	"sim_tx"	3	"unknown"	0	null	12
+:179	144943	0	"tx_bps"	2	"unknown"	0	null	12
+:180	144944	0	"E_ConnectionState[0]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:181	144944	0	"E_ConnectionState[1]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:182	144944	0	"E_ConnectionState[2]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:183	144944	0	"E_ConnectionState[3]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:184	144944	0	"E_ConnectionState[4]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:185	144945	0	"E_ConnectionState[0]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:186	144945	0	"E_ConnectionState[1]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:187	144945	0	"E_ConnectionState[2]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:188	144946	0	"E_ConnectionState[0]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:189	144947	0	"E_ConnectionState[0]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:190	144948	0	"E_ConnectionState[0]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:191	144948	0	"E_ConnectionState[1]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:192	144948	0	"E_ConnectionState[2]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:193	144949	0	"E_ConnectionState[0]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:194	144950	0	"E_ConnectionState[0]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:195	144950	0	"E_ConnectionState[1]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:196	144950	0	"E_ConnectionState[2]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:197	144950	0	"E_ConnectionState[3]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:198	144950	0	"E_ConnectionState[4]"	3	"none"	0	"0: ModelClosed, 1: HWClosed, 2: ModelClosedHWOpen, 3: ModelHWCombo"	14
+:199	144951	0	"D_RxRate_Bytespf"	2	"unknown"	0	null	2
+:200	144951	0	"D_RxOnPower_W"	2	"unknown"	0	null	2
+:201	144951	0	"D_RxStandbyPower_W"	2	"unknown"	0	null	2
+:202	144951	0	"D_TxRate_Bytespf"	2	"unknown"	3774873.6	null	2
+:203	144951	0	"D_TxOnPower_W"	2	"unknown"	15	null	2
+:204	144951	0	"D_TxStandbyPower_W"	2	"unknown"	0	null	2
+:205	144953	0	"config_dir"	0	"none"	"../cfg"	null	1
+:206	144954	0	"Q_TODtoJ2000"	5	"none"	[ -2.004856133e-5  -8.36628103438893e-4  1.92552571049745e-3  9.99997795998676e-1 ]	null	2
+:207	144955	0	"E_EOM_Method"	3	"none"	2	"0: Six DOF, 1: Six_DOF_External_Source, 2: Three_DOF_External_PVT"	2
+:208	144955	0	"B_UsePerfectControl"	3	"bool"	0	null	2
+:209	144955	0	"V_DisturbanceForce_BDY_N"	4	"N"	[ 0.0  0.0  0.0 ]	null	2
+:210	144955	0	"V_DisturbanceTorque_BDY_Nm"	4	"N*m"	[ 0.0  0.0  0.0 ]	null	2
+:211	144956	0	"component_id_string"	0	"none"	"ODY_MGR"	null	2
+:212	144956	0	"enable"	3	"none"	1	null	2
+:213	144958	0	"V_MagDipole_BDY_Am2"	4	"A*m^2"	[ -1.4394213699812e-1  2.55438384714125e-1  -1.8151071584204e-1 ]	null	2
+:214	144959	0	"V_Misalignment_MTQ_rd"	4	"unknown"	[ -1.074427971307e-2  -2.44742105135088e-2  2.477163523569e-2 ]	null	7
+:215	144959	0	"D_Dipole_Am2"	2	"unknown"	0.03136724111170977	null	7
+:216	144959	0	"B_IsOn"	3	"unknown"	1	null	7
+:217	144960	0	"V_Misalignment_MTQ_rd"	4	"unknown"	[ -2.00355556492e-2  3.26954317003692e-3  1.46673199473972e-2 ]	null	7
+:218	144960	0	"D_Dipole_Am2"	2	"unknown"	0.1174097614397261	null	7
+:219	144960	0	"B_IsOn"	3	"unknown"	1	null	7
+:220	144961	0	"V_Misalignment_MTQ_rd"	4	"unknown"	[ -3.73213400290974e-2  2.16507744649618e-3  5.07543148106638e-2 ]	null	7
+:221	144961	0	"D_Dipole_Am2"	2	"unknown"	0.1121905701143242	null	7
+:222	144961	0	"B_IsOn"	3	"unknown"	1	null	7
+:223	144962	0	"V_Misalignment_MTQ_rd"	4	"unknown"	[ -6.17584751933847e-3  5.84334178345666e-4  3.99502248615072e-4 ]	null	7
+:224	144962	0	"D_Dipole_Am2"	2	"unknown"	0.03317248804327609	null	7
+:225	144962	0	"B_IsOn"	3	"unknown"	1	null	7
+:226	144963	0	"V_Misalignment_MTQ_rd"	4	"unknown"	[ 9.07676107865349e-3  -2.32508363861805e-3  -5.12696747006197e-3 ]	null	7
+:227	144963	0	"D_Dipole_Am2"	2	"unknown"	0.1125749898095923	null	7
+:228	144963	0	"B_IsOn"	3	"unknown"	1	null	7
+:229	144964	0	"F_BandwidthFilter"	7	"unknown"	[[1.0][1.0]]	null	7
+:230	144964	0	"V_Misalignment_RWL_rd"	4	"unknown"	[ -4.126911018e-4  1.74543540220232e-3  -2.91505013466e-3 ]	null	7
+:231	144964	0	"D_Inertia_kgm2"	2	"unknown"	5.11023768079641E-05	null	7
+:232	144964	0	"D_TorqueLimit_Nm"	2	"unknown"	0.002	null	7
+:233	144964	0	"D_MomentumLimit_Nms"	2	"unknown"	0.01	null	7
+:234	144964	0	"B_EnableFricCompensation"	3	"unknown"	1	null	7
+:235	144964	0	"D_CoulombFricCoeff_Nm"	2	"unknown"	1.993588489867995E-05	null	7
+:236	144964	0	"D_ViscousFricCoeff_Nmsprd"	2	"unknown"	4.963291544365163E-07	null	7
+:237	144964	0	"D_Stiction_Nm"	2	"unknown"	4.921747199292464E-05	null	7
+:238	144964	0	"D_InitialSpeed_rdps"	2	"unknown"	0	null	7
+:239	144964	0	"B_EnablePowerProduction"	3	"unknown"	1	null	7
+:240	144964	0	"D_PowerConstant_W"	2	"unknown"	0	null	7
+:241	144964	0	"D_TotalResistance_ohm"	2	"unknown"	0	null	7
+:242	144964	0	"D_TrqCoeff_Nmpamp"	2	"unknown"	0	null	7
+:243	144964	0	"B_IsOn"	3	"unknown"	1	null	7
+:244	144964	0	"D_Quantization_rdps"	2	"unknown"	0	null	7
+:245	144965	0	"F_BandwidthFilter"	7	"unknown"	[[1.0][1.0]]	null	7
+:246	144965	0	"V_Misalignment_RWL_rd"	4	"unknown"	[ 1.8135553130361e-3  -3.4072526730207e-4  1.44175155174e-3 ]	null	7
+:247	144965	0	"D_Inertia_kgm2"	2	"unknown"	5.108880471557874E-05	null	7
+:248	144965	0	"D_TorqueLimit_Nm"	2	"unknown"	0.002	null	7
+:249	144965	0	"D_MomentumLimit_Nms"	2	"unknown"	0.01	null	7
+:250	144965	0	"B_EnableFricCompensation"	3	"unknown"	1	null	7
+:251	144965	0	"D_CoulombFricCoeff_Nm"	2	"unknown"	2.006150703184765E-05	null	7
+:252	144965	0	"D_ViscousFricCoeff_Nmsprd"	2	"unknown"	4.931915276456462E-07	null	7
+:253	144965	0	"D_Stiction_Nm"	2	"unknown"	5.022583970946412E-05	null	7
+:254	144965	0	"D_InitialSpeed_rdps"	2	"unknown"	0	null	7
+:255	144965	0	"B_EnablePowerProduction"	3	"unknown"	1	null	7
+:256	144965	0	"D_PowerConstant_W"	2	"unknown"	0	null	7
+:257	144965	0	"D_TotalResistance_ohm"	2	"unknown"	0	null	7
+:258	144965	0	"D_TrqCoeff_Nmpamp"	2	"unknown"	0	null	7
+:259	144965	0	"B_IsOn"	3	"unknown"	1	null	7
+:260	144965	0	"D_Quantization_rdps"	2	"unknown"	0	null	7
+:261	144966	0	"F_BandwidthFilter"	7	"unknown"	[[1.0][1.0]]	null	7
+:262	144966	0	"V_Misalignment_RWL_rd"	4	"unknown"	[ -1.85740279988e-3  -7.76021934295289e-4  6.8398442741e-4 ]	null	7
+:263	144966	0	"D_Inertia_kgm2"	2	"unknown"	5.118330442278346E-05	null	7
+:264	144966	0	"D_TorqueLimit_Nm"	2	"unknown"	0.002	null	7
+:265	144966	0	"D_MomentumLimit_Nms"	2	"unknown"	0.01	null	7
+:266	144966	0	"B_EnableFricCompensation"	3	"unknown"	1	null	7
+:267	144966	0	"D_CoulombFricCoeff_Nm"	2	"unknown"	2.003664545260029E-05	null	7
+:268	144966	0	"D_ViscousFricCoeff_Nmsprd"	2	"unknown"	4.941289383427159E-07	null	7
+:269	144966	0	"D_Stiction_Nm"	2	"unknown"	4.973399431159559E-05	null	7
+:270	144966	0	"D_InitialSpeed_rdps"	2	"unknown"	0	null	7
+:271	144966	0	"B_EnablePowerProduction"	3	"unknown"	1	null	7
+:272	144966	0	"D_PowerConstant_W"	2	"unknown"	0	null	7
+:273	144966	0	"D_TotalResistance_ohm"	2	"unknown"	0	null	7
+:274	144966	0	"D_TrqCoeff_Nmpamp"	2	"unknown"	0	null	7
+:275	144966	0	"B_IsOn"	3	"unknown"	1	null	7
+:276	144966	0	"D_Quantization_rdps"	2	"unknown"	0	null	7
+:277	144967	0	"B_IsOn"	3	"unknown"	1	"0: Off, 1: On"	7
+:278	144967	0	"D_MeasurementPeriod_s"	2	"unknown"	0	null	7
+:279	144967	0	"V_PositionBias_LVLH_m"	4	"unknown"	[ 2.85413663935238e-3  -8.24125105225761e-3  7.95108534517645e-3 ]	null	7
+:280	144967	0	"V_PositionNoiseStd_LVLH_m"	4	"unknown"	[ 1.0  1.0  1.0 ]	null	7
+:281	144967	0	"V_VelocityBias_LVLH_mps"	4	"unknown"	[ 2.09232913048888e-3  -2.13470667855501e-4  -6.18171301293719e-4 ]	null	7
+:282	144967	0	"V_VelocityNoiseStd_LVLH_mps"	4	"unknown"	[ 0.0  0.0  0.0 ]	null	7
+:283	144967	0	"S_PositionNoiseSeed[0]"	3	"unknown"	34187	null	7
+:284	144967	0	"S_PositionNoiseSeed[1]"	3	"unknown"	9821	null	7
+:285	144967	0	"S_PositionNoiseSeed[2]"	3	"unknown"	52451	null	7
+:286	144967	0	"S_VelocityNoiseSeed[0]"	3	"unknown"	8727	null	7
+:287	144967	0	"S_VelocityNoiseSeed[1]"	3	"unknown"	3963	null	7
+:288	144967	0	"S_VelocityNoiseSeed[2]"	3	"unknown"	41155	null	7
+:289	144968	0	"D_MeasurementPeriod_s"	2	"unknown"	0	"Modeled measurement period. If less than ADCS ex. rate, model will update every frame."	7
+:290	144968	0	"V_Misalignment_MAG_rd"	4	"unknown"	[ -3.29391152196742e-3  -2.93563505703e-3  -7.32063279892285e-3 ]	null	7
+:291	144968	0	"V_SensorBias_MAG_T"	4	"unknown"	[ 1.57630014654608e-7  8.80952785381048e-8  -6.04530088774459e-8 ]	null	7
+:292	144968	0	"V_SpacecraftBias_BDY_T"	4	"unknown"	[ -4.67714582451856e-8  3.0862313994853e-8  -1.46939507448636e-7 ]	null	7
+:293	144968	0	"V_NoiseStd_MAG_T"	4	"unknown"	[ 0.0  0.0  0.0 ]	null	7
+:294	144968	0	"D_Quantization_T"	2	"unknown"	0	null	7
+:295	144968	0	"S_NoiseSeed_MAG[0]"	3	"unknown"	16502	null	7
+:296	144968	0	"S_NoiseSeed_MAG[1]"	3	"unknown"	64400	null	7
+:297	144968	0	"S_NoiseSeed_MAG[2]"	3	"unknown"	59396	null	7
+:298	144968	0	"B_IsOn"	3	"unknown"	1	null	7
+:299	144969	0	"D_MeasurementPeriod_s"	2	"unknown"	0	"Modeled measurement period. If less than ADCS ex. rate, model will update every frame."	7
+:300	144969	0	"V_Misalignment_RTE_rd"	4	"unknown"	[ 0.0  0.0  0.0 ]	null	7
+:301	144969	0	"D_NoiseStd_rdps"	2	"unknown"	0.0002617993877991494	null	7
+:302	144969	0	"D_ARWStd_rdprthr"	2	"unknown"	0	null	7
+:303	144969	0	"D_RRWStd_rdps"	2	"unknown"	0	null	7
+:304	144969	0	"D_RRWTime_hr"	2	"unknown"	0	null	7
+:305	144969	0	"D_InitialBias_rdps"	2	"unknown"	-9.744073465715369E-06	null	7
+:306	144969	0	"D_ScaleFactorError_ppm"	2	"unknown"	0	null	7
+:307	144969	0	"D_Quantization_rdps"	2	"unknown"	0	null	7
+:308	144969	0	"S_NoiseSeed"	3	"unknown"	1198642031	null	7
+:309	144969	0	"S_ARWSeed"	3	"unknown"	442452829	null	7
+:310	144969	0	"S_RRWSeed"	3	"unknown"	1200195957	null	7
+:311	144969	0	"B_IsOn"	3	"unknown"	1	null	7
+:312	144970	0	"D_MeasurementPeriod_s"	2	"unknown"	0	"Modeled measurement period. If less than ADCS ex. rate, model will update every frame."	7
+:313	144970	0	"V_Misalignment_RTE_rd"	4	"unknown"	[ 0.0  0.0  0.0 ]	null	7
+:314	144970	0	"D_NoiseStd_rdps"	2	"unknown"	0.0002617993877991494	null	7
+:315	144970	0	"D_ARWStd_rdprthr"	2	"unknown"	0	null	7
+:316	144970	0	"D_RRWStd_rdps"	2	"unknown"	0	null	7
+:317	144970	0	"D_RRWTime_hr"	2	"unknown"	0	null	7
+:318	144970	0	"D_InitialBias_rdps"	2	"unknown"	0	null	7
+:319	144970	0	"D_ScaleFactorError_ppm"	2	"unknown"	0	null	7
+:320	144970	0	"D_Quantization_rdps"	2	"unknown"	0	null	7
+:321	144970	0	"S_NoiseSeed"	3	"unknown"	1945678308	null	7
+:322	144970	0	"S_ARWSeed"	3	"unknown"	949569752	null	7
+:323	144970	0	"S_RRWSeed"	3	"unknown"	2099272109	null	7
+:324	144970	0	"B_IsOn"	3	"unknown"	1	null	7
+:325	144971	0	"D_MeasurementPeriod_s"	2	"unknown"	0	"Modeled measurement period. If less than ADCS ex. rate, model will update every frame."	7
+:326	144971	0	"V_Misalignment_RTE_rd"	4	"unknown"	[ 0.0  0.0  0.0 ]	null	7
+:327	144971	0	"D_NoiseStd_rdps"	2	"unknown"	0.0002617993877991494	null	7
+:328	144971	0	"D_ARWStd_rdprthr"	2	"unknown"	0	null	7
+:329	144971	0	"D_RRWStd_rdps"	2	"unknown"	0	null	7
+:330	144971	0	"D_RRWTime_hr"	2	"unknown"	0	null	7
+:331	144971	0	"D_InitialBias_rdps"	2	"unknown"	0	null	7
+:332	144971	0	"D_ScaleFactorError_ppm"	2	"unknown"	0	null	7
+:333	144971	0	"D_Quantization_rdps"	2	"unknown"	0	null	7
+:334	144971	0	"S_NoiseSeed"	3	"unknown"	587775847	null	7
+:335	144971	0	"S_ARWSeed"	3	"unknown"	626863973	null	7
+:336	144971	0	"S_RRWSeed"	3	"unknown"	1003550677	null	7
+:337	144971	0	"B_IsOn"	3	"unknown"	1	null	7
+:338	144972	0	"E_SensorRefFrame"	3	"unknown"	1	"0: TrueOfDate, 1: J2000"	7
+:339	144972	0	"D_MeasurementPeriod_s"	2	"unknown"	0	"Modeled measurement period. If less than ADCS ex. rate, model will update every frame."	7
+:340	144972	0	"V_Misalignment_STR_rd"	4	"unknown"	[ 0.0  0.0  0.0 ]	null	7
+:341	144972	0	"D_AngularNoiseBoreStd_rd"	2	"unknown"	0.0002666475232527665	null	7
+:342	144972	0	"D_AngularNoiseStd_rd"	2	"unknown"	2.4240668541439E-05	null	7
+:343	144972	0	"D_SunKeepOutAngle_rd"	2	"unknown"	0.174532925199433	null	7
+:344	144972	0	"D_LimbKeepOutAngle_rd"	2	"unknown"	0.174532925199433	null	7
+:345	144972	0	"S_AngularNoiseSeed"	3	"unknown"	1358625013	null	7
+:346	144972	0	"S_AngularNoiseBoreSeed"	3	"unknown"	1008269081	null	7
+:347	144972	0	"B_IsOn"	3	"unknown"	1	null	7
+:348	144973	0	"D_MeasurementPeriod_s"	2	"unknown"	0	"Modeled measurement period. If less than ADCS ex. rate, model will update every frame."	7
+:349	144973	0	"V_Misalignment_SUN_rd"	4	"unknown"	[ 0.0  0.0  0.0 ]	null	7
+:350	144973	0	"D_HalfAngleFOV_rd"	2	"unknown"	1.396263401595464	null	7
+:351	144973	0	"D_AngularNoiseStd_rd"	2	"unknown"	0.000174532925199433	null	7
+:352	144973	0	"S_AngularNoiseSeed"	3	"unknown"	2109153755	null	7
+:353	144973	0	"B_IsOn"	3	"unknown"	1	null	7
+:354	144974	0	"D_MeasurementPeriod_s"	2	"unknown"	0	"Modeled measurement period. If less than ADCS ex. rate, model will update every frame."	7
+:355	144974	0	"V_Misalignment_SUN_rd"	4	"unknown"	[ 0.0  0.0  0.0 ]	null	7
+:356	144974	0	"D_HalfAngleFOV_rd"	2	"unknown"	1.396263401595464	null	7
+:357	144974	0	"D_AngularNoiseStd_rd"	2	"unknown"	0.000174532925199433	null	7
+:358	144974	0	"S_AngularNoiseSeed"	3	"unknown"	1851925803	null	7
+:359	144974	0	"B_IsOn"	3	"unknown"	1	null	7
+:360	144975	0	"D_MeasurementPeriod_s"	2	"unknown"	0	"Modeled measurement period. If less than ADCS ex. rate, model will update every frame."	7
+:361	144975	0	"V_Misalignment_SUN_rd"	4	"unknown"	[ 0.0  0.0  0.0 ]	null	7
+:362	144975	0	"D_HalfAngleFOV_rd"	2	"unknown"	1.396263401595464	null	7
+:363	144975	0	"D_AngularNoiseStd_rd"	2	"unknown"	0.000174532925199433	null	7
+:364	144975	0	"S_AngularNoiseSeed"	3	"unknown"	1454235444	null	7
+:365	144975	0	"B_IsOn"	3	"unknown"	1	null	7
+:366	144976	0	"D_MeasurementPeriod_s"	2	"unknown"	0	"Modeled measurement period. If less than ADCS ex. rate, model will update every frame."	7
+:367	144976	0	"V_Misalignment_SUN_rd"	4	"unknown"	[ 0.0  0.0  0.0 ]	null	7
+:368	144976	0	"D_HalfAngleFOV_rd"	2	"unknown"	1.396263401595464	null	7
+:369	144976	0	"D_AngularNoiseStd_rd"	2	"unknown"	0.000174532925199433	null	7
+:370	144976	0	"S_AngularNoiseSeed"	3	"unknown"	65212615	null	7
+:371	144976	0	"B_IsOn"	3	"unknown"	1	null	7
+:372	144977	0	"D_MeasurementPeriod_s"	2	"unknown"	0	"Modeled measurement period. If less than ADCS ex. rate, model will update every frame."	7
+:373	144977	0	"V_Misalignment_SUN_rd"	4	"unknown"	[ 0.0  0.0  0.0 ]	null	7
+:374	144977	0	"D_HalfAngleFOV_rd"	2	"unknown"	1.396263401595464	null	7
+:375	144977	0	"D_AngularNoiseStd_rd"	2	"unknown"	0.000174532925199433	null	7
+:376	144977	0	"S_AngularNoiseSeed"	3	"unknown"	2137491580	null	7
+:377	144977	0	"B_IsOn"	3	"unknown"	1	null	7
+:378	144978	0	"model_state"	3	"unknown"	2	null	2
+:379	144978	0	"base_name"	0	"unknown"	"pwr"	null	2
+:380	144978	0	"D_sunlightLoad_W"	2	"unknown"	7	null	2
+:381	144978	0	"D_eclipseLoad_W"	2	"unknown"	7	null	2
+:382	144978	0	"D_batteryCapacity_Ahr"	2	"unknown"	12.8	null	2
+:383	144978	0	"D_rechargeEfficiency"	2	"unknown"	0.95	null	2
+:384	144978	0	"D_initialStateOfCharge_pct"	2	"unknown"	90	null	2
+:385	144981	0	"model_state"	3	"unknown"	2	null	2
+:386	144981	0	"base_name"	0	"unknown"	"panel"	null	2
+:387	144981	0	"D_solarFlux_wpm2"	2	"unknown"	1367	null	2
+:388	144981	0	"D_panelArea_m2"	2	"unknown"	0.0124	null	2
+:389	144981	0	"V_panelBoresight_unit"	4	"unknown"	[ -1.0  0.0  0.0 ]	null	2
+:390	144981	0	"B_useSolarDistance"	3	"unknown"	1	null	2
+:391	144981	0	"B_enableExtraTelemetry"	3	"unknown"	0	null	2
+:392	144981	0	"I_numGimbals"	3	"unknown"	0	null	2
+:393	144981	0	"B_usePlanetAlbedoIR"	3	"unknown"	1	null	2
+:394	144981	0	"D_albedoFactor"	2	"unknown"	0.3	null	2
+:395	144981	0	"D_planetIRFactor"	2	"unknown"	241	null	2
+:396	144981	0	"B_enablePowerProcessing"	3	"unknown"	1	null	2
+:397	144981	0	"D_efficiency"	2	"unknown"	0.25	null	2
+:398	144981	0	"B_enableThermalProcessing"	3	"unknown"	0	null	2
+:399	144982	0	"model_state"	3	"unknown"	2	null	2
+:400	144982	0	"base_name"	0	"unknown"	"panel"	null	2
+:401	144982	0	"D_solarFlux_wpm2"	2	"unknown"	1367	null	2
+:402	144982	0	"D_panelArea_m2"	2	"unknown"	0.0558	null	2
+:403	144982	0	"V_panelBoresight_unit"	4	"unknown"	[ 0.0  -1.0  0.0 ]	null	2
+:404	144982	0	"B_useSolarDistance"	3	"unknown"	1	null	2
+:405	144982	0	"B_enableExtraTelemetry"	3	"unknown"	0	null	2
+:406	144982	0	"I_numGimbals"	3	"unknown"	0	null	2
+:407	144982	0	"B_usePlanetAlbedoIR"	3	"unknown"	1	null	2
+:408	144982	0	"D_albedoFactor"	2	"unknown"	0.3	null	2
+:409	144982	0	"D_planetIRFactor"	2	"unknown"	241	null	2
+:410	144982	0	"B_enablePowerProcessing"	3	"unknown"	1	null	2
+:411	144982	0	"D_efficiency"	2	"unknown"	0.25	null	2
+:412	144982	0	"B_enableThermalProcessing"	3	"unknown"	0	null	2
+:413	144983	0	"model_state"	3	"unknown"	2	null	2
+:414	144983	0	"base_name"	0	"unknown"	"panel"	null	2
+:415	144983	0	"D_solarFlux_wpm2"	2	"unknown"	1367	null	2
+:416	144983	0	"D_panelArea_m2"	2	"unknown"	0.0062	null	2
+:417	144983	0	"V_panelBoresight_unit"	4	"unknown"	[ 0.0  -9.5630475596296e-1  -2.92371704722987e-1 ]	null	2
+:418	144983	0	"B_useSolarDistance"	3	"unknown"	1	null	2
+:419	144983	0	"B_enableExtraTelemetry"	3	"unknown"	0	null	2
+:420	144983	0	"I_numGimbals"	3	"unknown"	0	null	2
+:421	144983	0	"B_usePlanetAlbedoIR"	3	"unknown"	1	null	2
+:422	144983	0	"D_albedoFactor"	2	"unknown"	0.3	null	2
+:423	144983	0	"D_planetIRFactor"	2	"unknown"	241	null	2
+:424	144983	0	"B_enablePowerProcessing"	3	"unknown"	1	null	2
+:425	144983	0	"D_efficiency"	2	"unknown"	0.25	null	2
+:426	144983	0	"B_enableThermalProcessing"	3	"unknown"	0	null	2
+:427	144984	0	"model_state"	3	"unknown"	2	null	2
+:428	144984	0	"base_name"	0	"unknown"	"panel"	null	2
+:429	144984	0	"D_solarFlux_wpm2"	2	"unknown"	1367	null	2
+:430	144984	0	"D_panelArea_m2"	2	"unknown"	0.009299999999999999	null	2
+:431	144984	0	"V_panelBoresight_unit"	4	"unknown"	[ 0.0  0.0  -1.0 ]	null	2
+:432	144984	0	"B_useSolarDistance"	3	"unknown"	1	null	2
+:433	144984	0	"B_enableExtraTelemetry"	3	"unknown"	0	null	2
+:434	144984	0	"I_numGimbals"	3	"unknown"	0	null	2
+:435	144984	0	"B_usePlanetAlbedoIR"	3	"unknown"	1	null	2
+:436	144984	0	"D_albedoFactor"	2	"unknown"	0.3	null	2
+:437	144984	0	"D_planetIRFactor"	2	"unknown"	241	null	2
+:438	144984	0	"B_enablePowerProcessing"	3	"unknown"	1	null	2
+:439	144984	0	"D_efficiency"	2	"unknown"	0.25	null	2
+:440	144984	0	"B_enableThermalProcessing"	3	"unknown"	0	null	2
+:441	144985	0	"model_state"	3	"unknown"	2	null	2
+:442	144985	0	"base_name"	0	"unknown"	"panel"	null	2
+:443	144985	0	"D_solarFlux_wpm2"	2	"unknown"	1367	null	2
+:444	144985	0	"D_panelArea_m2"	2	"unknown"	0.0124	null	2
+:445	144985	0	"V_panelBoresight_unit"	4	"unknown"	[ 1.0  0.0  0.0 ]	null	2
+:446	144985	0	"B_useSolarDistance"	3	"unknown"	1	null	2
+:447	144985	0	"B_enableExtraTelemetry"	3	"unknown"	0	null	2
+:448	144985	0	"I_numGimbals"	3	"unknown"	0	null	2
+:449	144985	0	"B_usePlanetAlbedoIR"	3	"unknown"	1	null	2
+:450	144985	0	"D_albedoFactor"	2	"unknown"	0.3	null	2
+:451	144985	0	"D_planetIRFactor"	2	"unknown"	241	null	2
+:452	144985	0	"B_enablePowerProcessing"	3	"unknown"	1	null	2
+:453	144985	0	"D_efficiency"	2	"unknown"	0.25	null	2
+:454	144985	0	"B_enableThermalProcessing"	3	"unknown"	0	null	2
+:455	144986	0	"model_state"	3	"unknown"	2	null	2
+:456	144986	0	"base_name"	0	"unknown"	"panel"	null	2
+:457	144986	0	"D_solarFlux_wpm2"	2	"unknown"	1367	null	2
+:458	144986	0	"D_panelArea_m2"	2	"unknown"	0.0558	null	2
+:459	144986	0	"V_panelBoresight_unit"	4	"unknown"	[ 0.0  1.0  0.0 ]	null	2
+:460	144986	0	"B_useSolarDistance"	3	"unknown"	1	null	2
+:461	144986	0	"B_enableExtraTelemetry"	3	"unknown"	0	null	2
+:462	144986	0	"I_numGimbals"	3	"unknown"	0	null	2
+:463	144986	0	"B_usePlanetAlbedoIR"	3	"unknown"	1	null	2
+:464	144986	0	"D_albedoFactor"	2	"unknown"	0.3	null	2
+:465	144986	0	"D_planetIRFactor"	2	"unknown"	241	null	2
+:466	144986	0	"B_enablePowerProcessing"	3	"unknown"	1	null	2
+:467	144986	0	"D_efficiency"	2	"unknown"	0.25	null	2
+:468	144986	0	"B_enableThermalProcessing"	3	"unknown"	0	null	2
+:469	144987	0	"model_state"	3	"unknown"	2	null	2
+:470	144987	0	"base_name"	0	"unknown"	"panel"	null	2
+:471	144987	0	"D_solarFlux_wpm2"	2	"unknown"	1367	null	2
+:472	144987	0	"D_panelArea_m2"	2	"unknown"	0.0062	null	2
+:473	144987	0	"V_panelBoresight_unit"	4	"unknown"	[ 0.0  9.5630475596296e-1  -2.92371704722987e-1 ]	null	2
+:474	144987	0	"B_useSolarDistance"	3	"unknown"	1	null	2
+:475	144987	0	"B_enableExtraTelemetry"	3	"unknown"	0	null	2
+:476	144987	0	"I_numGimbals"	3	"unknown"	0	null	2
+:477	144987	0	"B_usePlanetAlbedoIR"	3	"unknown"	1	null	2
+:478	144987	0	"D_albedoFactor"	2	"unknown"	0.3	null	2
+:479	144987	0	"D_planetIRFactor"	2	"unknown"	241	null	2
+:480	144987	0	"B_enablePowerProcessing"	3	"unknown"	1	null	2
+:481	144987	0	"D_efficiency"	2	"unknown"	0.25	null	2
+:482	144987	0	"B_enableThermalProcessing"	3	"unknown"	0	null	2
+:483	144990	0	"hz"	2	"unknown"	10	"ADCS Execution Rate"	-1
+:484	144990	0	"thread_priority"	3	"unknown"	200	null	12
+:485	144991	0	"hz"	2	"unknown"	10	"Command and Telemetry Execution Rate"	-1
+:486	144991	0	"thread_priority"	3	"unknown"	251	null	12
+:487	144992	0	"hz"	2	"unknown"	10	"EPS Execution Rate"	-1
+:488	144992	0	"thread_priority"	3	"unknown"	254	null	12
+:489	144993	0	"hz"	2	"unknown"	10	"File Execution Rate"	-1
+:490	144993	0	"thread_priority"	3	"unknown"	250	null	12
+:491	144994	0	"hz"	2	"unknown"	10	"Hardware I/O Execution Rate"	-1
+:492	144994	0	"thread_priority"	3	"unknown"	195	null	12
+:493	144995	0	"hz"	2	"unknown"	10	"Payloads Execution Rate"	-1
+:494	144995	0	"thread_priority"	3	"unknown"	254	null	12
+:495	144996	0	"hz"	2	"unknown"	10	"Sequence Engine Execution Rate"	-1
+:496	144996	0	"thread_priority"	3	"unknown"	253	null	12
+:497	144997	0	"hz"	2	"unknown"	10	"Time Execution Rate"	-1
+:498	144997	0	"thread_priority"	3	"unknown"	222	null	12
+:499	144998	0	"init_sclk_sec"	3	"unknown"	1000	null	12
+:500	144998	0	"init_sclk_subsec"	3	"unknown"	1000	null	12
+:501	144998	0	"gps_minus_sclk"	2	"unknown"	-315964785	"At UTC Jan 1, 2009 00:00:00, GPS_Time=914803215, UNIX_Time=1230768000"	12
+:502	145001	0	"hz"	2	"unknown"	10	null	-1
+:503	145001	0	"pt_num_levels"	3	"unknown"	1	"Setup max priority table level"	-1
+:504	145001	0	"rt_apid_default"	2	"unknown"	0	"Setup initial priority table"	-1
+:505	145001	0	"thread_priority"	3	"unknown"	211	null	12
+:506	145003	0	"condition_level_name[0]"	0	"unknown"	"GREEN"	null	1
+:507	145003	0	"condition_level_name[1]"	0	"unknown"	"BLUE"	null	1
+:508	145003	0	"condition_level_name[2]"	0	"unknown"	"YELLOW"	null	1
+:509	145003	0	"condition_level_name[3]"	0	"unknown"	"ORANGE"	null	1
+:510	145003	0	"condition_level_name[4]"	0	"unknown"	"RED"	null	1
+:511	145003	1	"cond_strcmp[0]"	0	"unknown"	"True"	null	1
+:512	145003	1	"in_condition_persist_limit[0]"	3	"unknown"	100	null	1
+:513	145003	1	"exit_condition_persist_limit[0]"	3	"unknown"	0	null	1
+:514	145003	1	"condition_level[0]"	3	"unknown"	0	null	1
+:515	145003	1	"in_condition_seq[0]"	0	"unknown"	"StopSimulation"	null	1
+:516	145004	0	"D_RxRate_Bytespf"	2	"unknown"	442.368	null	2
+:517	145004	0	"D_RxOnPower_W"	2	"unknown"	2	null	2
+:518	145004	0	"D_RxStandbyPower_W"	2	"unknown"	0	null	2
+:519	145004	0	"D_TxRate_Bytespf"	2	"unknown"	442.368	null	2
+:520	145004	0	"D_TxOnPower_W"	2	"unknown"	2	null	2
+:521	145004	0	"D_TxStandbyPower_W"	2	"unknown"	0	null	2
+:522	145005	0	"S_Name"	0	"unknown"	"Earth"	null	13
+:523	145005	0	"D_GravitationalConstant_m3pkgs2"	2	"unknown"	398600441500000	null	13
+:524	145005	0	"D_SemiMajorAxis_m"	2	"unknown"	6378137	null	13
+:525	145005	0	"D_SemiMinorAxis_m"	2	"unknown"	6356752.31424	null	13
+:526	145005	0	"D_Radius_m"	2	"unknown"	6378137	null	13
+:527	145005	0	"D_RotationRate_rdps"	2	"unknown"	7.292115146706981E-05	null	13
+:528	145005	0	"D_CBI2CBFEpoch_s"	2	"unknown"	1514764800	""	13
+:529	145005	0	"D_CBI2CBFEpochAngle_rd"	2	"unknown"	1.75573658647292	null	13
+:530	145005	0	"D_CalcOrbElmEccThresh"	2	"unknown"	1E-06	null	13
+:531	145005	0	"D_ParentCalcMaxValidDuration_s"	2	"unknown"	0	null	13
+:532	145005	0	"D_ParentCalcEccAnomTol_rd"	2	"unknown"	1E-10	null	13
+:533	145005	0	"I_ParentCalcMaxIter"	3	"unknown"	6	null	13
+:534	145005	0	"D_OrbitPeriapsisEpoch_s"	2	"unknown"	1514957700	"03-Jan-2018 05:35:00"	13
+:535	145005	0	"V_OrbitPeriapsis_UCBI"	4	"unknown"	[ 2.21352454744154e-1  -8.94752625410768e-1  -3.87841243422195e-1 ]	null	13
+:536	145005	0	"V_OrbitTilt_UCBI"	4	"unknown"	[ -3.65733996964685e-5  -3.97714425348154e-1  9.17509255829263e-1 ]	null	13
+:537	145005	0	"D_OrbitEccentricity"	2	"unknown"	0.015784	null	13
+:538	145005	0	"D_OrbitSemiMajorAxis_m"	2	"unknown"	149456209608.736	null	13
+:539	145005	0	"D_OrbitMeanMotion_rdps"	2	"unknown"	1.993811777600762E-07	null	13
+:540	145006	0	"S_Name"	0	"unknown"	"Sun"	null	13
+:541	145006	0	"D_GravitationalConstant_m3pkgs2"	2	"unknown"	1.327122E+20	null	13
+:542	145006	0	"D_SemiMajorAxis_m"	2	"unknown"	695508000	null	13
+:543	145006	0	"D_SemiMinorAxis_m"	2	"unknown"	695508000	null	13
+:544	145006	0	"D_Radius_m"	2	"unknown"	695508000	null	13
+:545	145006	0	"D_RotationRate_rdps"	2	"unknown"	2.86532965763754E-06	null	13
+:546	145006	0	"D_CBI2CBFEpoch_s"	2	"unknown"	1059472800	""	13
+:547	145006	0	"D_CBI2CBFEpochAngle_rd"	2	"unknown"	-0.859912237720686	null	13
+:548	145006	0	"D_CalcOrbElmEccThresh"	2	"unknown"	1E-06	null	13
+:549	145006	0	"D_ParentCalcMaxValidDuration_s"	2	"unknown"	0	null	13
+:550	145006	0	"D_ParentCalcEccAnomTol_rd"	2	"unknown"	1E-10	null	13
+:551	145006	0	"I_ParentCalcMaxIter"	3	"unknown"	6	null	13
+:552	145006	0	"D_OrbitPeriapsisEpoch_s"	2	"unknown"	0	null	13
+:553	145006	0	"V_OrbitPeriapsis_UCBI"	4	"unknown"	[ 0.0  0.0  0.0 ]	null	13
+:554	145006	0	"V_OrbitTilt_UCBI"	4	"unknown"	[ 0.0  0.0  0.0 ]	null	13
+:555	145006	0	"D_OrbitEccentricity"	2	"unknown"	0	null	13
+:556	145006	0	"D_OrbitSemiMajorAxis_m"	2	"unknown"	0	null	13
+:557	145006	0	"D_OrbitMeanMotion_rdps"	2	"unknown"	0	null	13
+:558	145007	0	"Q_ODY_CBI2BDY"	5	"none"	[ 0.0  0.0  0.0  1.0 ]	null	20
+:559	145007	0	"V_ODY_Rate_BDY_rdps"	4	"rad/s"	[ 1.39626340159546e-1  1.39626340159546e-1  1.39626340159546e-1 ]	null	20
+:560	145007	0	"V_ODY_Pos_CBI_m"	4	"m"	[ -1.16252496875692e+6  -9.11339039466843e+5  6.81941426241453e+6 ]	null	20
+:561	145007	0	"V_ODY_Vel_CBI_mps"	4	"m/s"	[ -7.44633060393944e+3  4.70569648143654e+2  -1.2064595006586e+3 ]	null	20
+:562	145007	0	"D_ODY_Epoch_s"	2	"s"	1530837343	null	20
+:563	145007	0	"I_ODY_BusConfigIndex"	3	"none"	0	null	20
+:564	145007	0	"S_MissionMode"	0	"string"	"NORMAL_OPS"	"ICs Specific to this Simulation"	21
+:565	145007	0	"B_AttitudeDetermined"	3	"bool"	0	"ICs Specific to this Simulation"	21
+:566	145007	0	"Q_AttEst_CBI2BDY"	5	"none"	[ 0.0  0.0  0.0  1.0 ]	"ICs Specific to this Simulation"	21
+:567	145007	0	"V_RateEst_BDY_rdps"	4	"rad/s"	[ 0.0  0.0  0.0 ]	"ICs Specific to this Simulation"	21
+:568	145007	0	"V_RateBiasEst_BDY_rdps"	4	"rad/s"	[ 0.0  0.0  0.0 ]	"ICs Specific to this Simulation"	21
+:569	145007	0	"B_EphemPropEnabled"	3	"bool"	0	"ICs Specific to this Simulation"	21
+:570	145007	0	"D_EphemEpoch_s"	2	"s"	1530837343	"ICs Specific to this Simulation"	21
+:571	145007	0	"V_EphemPos_CBI_m"	4	"m"	[ -1.16252496875692e+6  -9.11339039466843e+5  6.81941426241453e+6 ]	"ICs Specific to this Simulation"	21
+:572	145007	0	"V_EphemVel_CBI_mps"	4	"m/s"	[ -7.44633060393944e+3  4.70569648143654e+2  -1.2064595006586e+3 ]	"ICs Specific to this Simulation"	21
+:573	145007	0	"I_BusConfigIndex"	3	"none"	0	"ICs Specific to this Simulation"	21
+:574	145007	0	"I_AttControlIndex"	3	"none"	0	"ICs Specific to this Simulation"	21
+:575	145007	0	"I_MomControlIndex"	3	"none"	0	"ICs Specific to this Simulation"	21
+:576	145007	0	"I_FfwControlIndex"	3	"none"	0	"ICs Specific to this Simulation"	21
+:577	145007	0	"S_ACMode"	0	"string"	"Idle"	"ICs Specific to this Simulation"	21
+:578	145007	0	"E_ClockingOption"	3	"none"	0	"0: InertialFixed, 1: SC2Sun, 2: SC2NadirDetic, 3: SC2NadirCentric, 4: SCVelocity, 5: SCMagField, 6: SC2Tgt, 7: TgtNormal, 8: TrueNorth, 9: TrueNorthAtTgt, 10: TgtVelocity"	21
+:579	145008	0	"D_J2"	2	"unknown"	0.0010826158	null	13
+:580	145008	0	"D_J3"	2	"unknown"	-2.53881E-06	null	13
+:581	145008	0	"D_J4"	2	"unknown"	-1.65597E-06	null	13
+:582	145009	0	"D_J2"	2	"unknown"	0	null	13
+:583	145009	0	"D_J3"	2	"unknown"	0	null	13
+:584	145009	0	"D_J4"	2	"unknown"	0	null	13
+:585	145010	0	"I_Degree"	3	"unknown"	13	null	13
+:586	145010	0	"I_Order"	3	"unknown"	13	null	13
+:587	145011	0	"D_MinMass_kg"	2	"unknown"	1	"Spacecraft mass - initial prop mass"	13
+:588	145011	0	"D_MaxMass_kg"	2	"unknown"	1	"Same as spacecraft mass"	13
+:589	145011	0	"D_Mass_kg"	2	"unknown"	1	null	13
+:590	145011	0	"M_Inertia_MPCM_kgm2"	6	"unknown"	[[9.4457e-2 -1.2575e-4 -9.348e-4]r\\n[-1.2575e-4 1.7821e-1 1.7159e-4]r\\n[-9.348e-4 1.7159e-4 0.1168]]	"MP = HWR = BDY frame in this case"	13
+:591	145011	0	"V_LocationCM_MP_m"	4	"unknown"	[ 0.0  0.0  0.0 ]	"MP = HWR = BDY frame in this case"	13
+:592	145012	0	"D_MinMass_kg"	2	"unknown"	0	"Spacecraft mass - initial prop mass"	23
+:593	145012	0	"D_MaxMass_kg"	2	"unknown"	15	"Same as spacecraft mass"	23
+:594	145012	0	"D_Mass_kg"	2	"unknown"	12.49849743519019	null	23
+:595	145012	0	"M_Inertia_MPCM_kgm2"	6	"unknown"	[[9.52336978197741e-2 -7.77949730120033e-4 -1.59712472696168e-3]r\\n[-7.77949730120033e-4 1.77742246958354e-1 5.08490788735598e-4]r\\n[-1.59712472696168e-3 5.08490788735598e-4 1.18525867940543e-1]]	"MP = HWR = BDY frame in this case"	23
+:596	145012	0	"V_LocationCM_MP_m"	4	"unknown"	[ 4.44197815878821e-4  7.19190146407549e-4  -5.11212230427454e-5 ]	"MP = HWR = BDY frame in this case"	23
+:597	145013	0	"D_DesiredStepSize_s"	2	"s"	48	null	13
+:598	145013	0	"I_MaxSteps"	3	"none"	100	null	13
+]]></table>
+    <table name="Table" type="ConfigDB+ConnectionParametersTableDataTable" id="_ConfigurationModel_3H6k9t17zFBvZ2ô4P854DA">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="ComponentVersionID" type="System.Int32" />
+        <value_column index="2" name="ConnectionName" type="System.String" />
+        <value_column index="3" name="Connection_ComponentID" type="System.Int32" />
+        <value_column index="4" name="Connection_Accessor" type="System.String" />
+        <value_column index="5" name="Comment" type="System.String" />
+        <value_column index="6" name="FileID" type="System.Int32" />
+      </header><![CDATA[
+:0	144925	"Connection_FSW_Ephemeris"	22	"FSW_Ephemeris"	null	1
+:1	144925	"Connection_FSW_AttDetermination"	21	"FSW_AttDetermination"	null	1
+:2	144925	"Connection_FSW_SenProc_MAG"	117	"FSW_SenProc_MAG"	null	1
+:3	144927	"Connection_UTL_FSWInitialConditions"	56	"UTL_FSWInitialConditions"	null	1
+:4	144927	"Connection_FSW_SenProc_RTE"	121	"FSW_SenProc_RTE"	null	1
+:5	144927	"Connection_FSW_Ephemeris"	22	"FSW_Ephemeris"	null	1
+:6	144928	"Connection_FSW_Ctrl_ErrorGen"	196	"FSW_Ctrl_ErrorGen"	null	1
+:7	144928	"Connection_FSW_ModeController"	23	"FSW_ModeController"	null	1
+:8	144928	"Connection_FSW_Ctrl_FeedForward"	198	"GEN_TorqueVector"	null	1
+:9	144929	"Connection_FSW_AttDetermination"	21	"FSW_AttDetermination"	null	1
+:10	144929	"Connection_FSW_Gui_Cmd"	25	"FSW_Gui_Cmd"	null	1
+:11	144930	"Connection_FSW_AttDetermination"	21	"FSW_AttDetermination"	null	1
+:12	144930	"Connection_FSW_VehicleState"	20	"FSW_VehicleState"	null	1
+:13	144930	"Connection_FSW_MassProps"	20	"BASE_VehicleState"	null	1
+:14	144930	"Connection_FSW_Gui_Cmd"	25	"FSW_Gui_Cmd"	null	1
+:15	144930	"Connection_FSW_ModeController"	23	"FSW_ModeController"	null	1
+:16	144931	"Connection_GEN_ControllerTrqCmd[0]"	199	"GEN_ControllerTrqCmd"	null	1
+:17	144931	"Connection_GEN_ControllerTrqCmd[1]"	197	"GEN_ControllerTrqCmd"	null	1
+:18	144931	"Connection_AvailableCtrlActSets[0]"	202	"FSW_ActProc_TrqCmd"	null	1
+:19	144931	"Connection_AvailableCtrlActSets[1]"	210	"FSW_ActProc_TrqCmd"	null	1
+:20	144932	"Connection_FSW_ModeController"	23	"FSW_ModeController"	null	1
+:21	144932	"Connection_FSW_MassProps"	20	"BASE_VehicleState"	null	1
+:22	144932	"Connection_FSW_Ephemeris"	22	"FSW_Ephemeris"	null	1
+:23	144932	"Connection_FSW_AttDetermination"	21	"FSW_AttDetermination"	null	1
+:24	144933	"Connection_EarthCelestialBody"	251	"UTL_CentralBody"	null	1
+:25	144933	"Connection_UTL_FSWInitialConditions"	56	"UTL_FSWInitialConditions"	null	1
+:26	144933	"Connection_FSW_AttDetermination"	21	"FSW_AttDetermination"	null	1
+:27	144933	"Connection_FOB_EphemTable"	34	"FOB_EphemTable"	null	1
+:28	144933	"Connection_FSW_SenProc_GPS"	229	"FSW_SenProc_GPS"	null	1
+:29	144934	"Connection_FSC_Gui_Mode[0]"	26	"FSC_Gui_Mode"	null	1
+:30	144934	"Connection_FSC_Gui_Mode[1]"	27	"FSC_Gui_Mode"	null	1
+:31	144934	"Connection_FSC_Gui_Mode[2]"	28	"FSC_Gui_Mode"	null	1
+:32	144934	"Connection_FSC_Gui_Mode[3]"	29	"FSC_Gui_Mode"	null	1
+:33	144934	"Connection_FSC_Gui_Mode[4]"	30	"FSC_Gui_Mode"	null	1
+:34	144934	"Connection_FSC_Gui_Mode[5]"	31	"FSC_Gui_Mode"	null	1
+:35	144934	"Connection_FSC_Gui_Mode[6]"	32	"FSC_Gui_Mode"	null	1
+:36	144934	"Connection_FSW_ModeController"	23	"FSW_ModeController"	null	1
+:37	144934	"Connection_FSW_AttDetermination"	21	"FSW_AttDetermination"	null	1
+:38	144935	"Connection_FSW_AttDetermination"	21	"FSW_AttDetermination"	null	1
+:39	144935	"Connection_FSW_Ephemeris"	22	"FSW_Ephemeris"	null	1
+:40	144935	"Connection_FSW_Gui_Cmd"	25	"FSW_Gui_Cmd"	null	1
+:41	144935	"Connection_UTL_FSWInitialConditions"	56	"UTL_FSWInitialConditions"	null	1
+:42	144935	"container_CelestialBody_data"	56	"container_celestialbody_data"	null	1
+:43	144935	"Connection_SeqControl"	45	"seq_control"	null	1
+:44	144936	"Connection_UTL_FSWInitialConditions"	56	"UTL_FSWInitialConditions"	null	1
+:45	144936	"Connection_FSW_Ephemeris"	22	"FSW_Ephemeris"	null	1
+:46	144936	"Connection_FSC_SenProc_GPS[0]"	246	"FSC_SenProc_GPS"	null	1
+:47	144937	"Connection_FSW_ActProc_MT[0]"	210	"FSW_ActProc_MT"	null	1
+:48	144937	"Connection_FSW_Ephemeris"	22	"FSW_Ephemeris"	null	1
+:49	144937	"Connection_FSC_SenProc_MAG[0]"	224	"FSC_SenProc_MAG"	null	1
+:50	144938	"Connection_FSC_SenProc_RTE[0]"	143	"FSC_SenProc_RTE"	null	1
+:51	144938	"Connection_FSC_SenProc_RTE[1]"	145	"FSC_SenProc_RTE"	null	1
+:52	144938	"Connection_FSC_SenProc_RTE[2]"	147	"FSC_SenProc_RTE"	null	1
+:53	144939	"Connection_FSW_AttDetermination"	21	"FSW_AttDetermination"	null	1
+:54	144939	"Connection_FSW_Ephemeris"	22	"FSW_Ephemeris"	null	1
+:55	144939	"Connection_FSC_SenProc_STR[0]"	149	"FSC_SenProc_STR"	null	1
+:56	144940	"Connection_FSC_SenProc_SUN[0]"	182	"FSC_SenProc_SUN"	null	1
+:57	144940	"Connection_FSC_SenProc_SUN[1]"	184	"FSC_SenProc_SUN"	null	1
+:58	144940	"Connection_FSC_SenProc_SUN[2]"	186	"FSC_SenProc_SUN"	null	1
+:59	144940	"Connection_FSC_SenProc_SUN[3]"	188	"FSC_SenProc_SUN"	null	1
+:60	144940	"Connection_FSC_SenProc_SUN[4]"	190	"FSC_SenProc_SUN"	null	1
+:61	144941	"Connection_FSW_AttDetermination"	21	"FSW_AttDetermination"	null	1
+:62	144941	"Connection_FSW_Ctrl_ErrorGen"	196	"FSW_Ctrl_ErrorGen"	null	1
+:63	144941	"Connection_MomentumCmd_BDY"	197	"MomentumCmd"	null	1
+:64	144941	"Connection_FSW_Ephemeris"	22	"FSW_Ephemeris"	null	1
+:65	144941	"Connection_UTL_FSWInitialConditions"	56	"UTL_FSWInitialConditions"	null	1
+:66	144941	"Connection_FSW_SenProc_SunVec[0]"	181	"FSW_SenProc_SunVec"	null	1
+:67	144941	"Connection_FSW_Ctrl_Attitude"	199	"FSW_Ctrl_Attitude"	null	1
+:68	144941	"Connection_FSW_Ctrl_Momentum"	197	"FSW_Ctrl_Momentum"	null	1
+:69	144941	"Connection_ActuatorMomentum_BDY[0]"	234	"TotalActMomentum_BDY"	null	1
+:70	144943	"serial"	17	"serial"	null	12
+:71	144944	"Connection_ODY_Ephemeris"	52	"ODY_Ephemeris"	null	11
+:72	144944	"Connection_OSC_Mdl[0]"	212	"GEN_ModelAndHardware"	null	11
+:73	144944	"Connection_OSC_Mdl[1]"	214	"GEN_ModelAndHardware"	null	11
+:74	144944	"Connection_OSC_Mdl[2]"	216	"GEN_ModelAndHardware"	null	11
+:75	144944	"Connection_OSC_Mdl[3]"	218	"GEN_ModelAndHardware"	null	11
+:76	144944	"Connection_OSC_Mdl[4]"	220	"GEN_ModelAndHardware"	null	11
+:77	144944	"Connection_FSW_ActProc_MT[0]"	210	"FSW_ActProc_MT"	null	14
+:78	144945	"Connection_OSC_Mdl[0]"	204	"GEN_ModelAndHardware"	null	11
+:79	144945	"Connection_OSC_Mdl[1]"	206	"GEN_ModelAndHardware"	null	11
+:80	144945	"Connection_OSC_Mdl[2]"	208	"GEN_ModelAndHardware"	null	11
+:81	144945	"Connection_FSW_ActProc_RW[0]"	202	"FSW_ActProc_RW"	null	14
+:82	144946	"Connection_FSW_SenProc_GPS[0]"	229	"FSW_SenProc_GPS"	null	14
+:83	144946	"Connection_ODY_Ephemeris"	52	"ODY_Ephemeris"	null	11
+:84	144946	"Connection_OSC_Mdl[0]"	247	"GEN_ModelAndHardware"	null	11
+:85	144947	"Connection_FSW_SenProc_MAG[0]"	117	"FSW_SenProc_MAG"	null	14
+:86	144947	"Connection_ODY_Ephemeris"	52	"ODY_Ephemeris"	null	11
+:87	144947	"Connection_OSC_Mdl[0]"	225	"GEN_ModelAndHardware"	null	11
+:88	144948	"Connection_ODY_Dyn_Rotational"	238	"ODY_Dyn_Rotational"	null	11
+:89	144948	"Connection_FSW_SenProc_RTE[0]"	121	"FSW_SenProc_RTE"	null	14
+:90	144948	"Connection_OSC_Mdl[0]"	144	"GEN_ModelAndHardware"	null	11
+:91	144948	"Connection_OSC_Mdl[1]"	146	"GEN_ModelAndHardware"	null	11
+:92	144948	"Connection_OSC_Mdl[2]"	148	"GEN_ModelAndHardware"	null	11
+:93	144949	"Connection_FSW_SenProc_STR[0]"	129	"FSW_SenProc_STR"	null	14
+:94	144949	"Connection_ODY_Dyn_Rotational"	238	"ODY_Dyn_Rotational"	null	11
+:95	144949	"Connection_ODY_Ephemeris"	52	"ODY_Ephemeris"	null	11
+:96	144949	"Connection_OSC_Mdl[0]"	150	"GEN_ModelAndHardware"	null	11
+:97	144950	"Connection_FSW_SenProc_SUN[0]"	181	"FSW_SenProc_SUN"	null	14
+:98	144950	"Connection_ODY_Ephemeris"	52	"ODY_Ephemeris"	null	11
+:99	144950	"Connection_OSC_Mdl[0]"	183	"GEN_ModelAndHardware"	null	11
+:100	144950	"Connection_OSC_Mdl[1]"	185	"GEN_ModelAndHardware"	null	11
+:101	144950	"Connection_OSC_Mdl[2]"	187	"GEN_ModelAndHardware"	null	11
+:102	144950	"Connection_OSC_Mdl[3]"	189	"GEN_ModelAndHardware"	null	11
+:103	144950	"Connection_OSC_Mdl[4]"	191	"GEN_ModelAndHardware"	null	11
+:104	144951	"tlm_buffer"	72	"TlmBufferStats"	null	2
+:105	144954	"Connection_ODY_Dyn_Rotational"	238	"ODY_Dyn_Rotational"	null	2
+:106	144954	"Connection_ODY_Dyn_Translational"	238	"ODY_Dyn_Translational"	null	2
+:107	144954	"Connection_EarthCelestialBody"	251	"UTL_CentralBody"	null	2
+:108	144954	"Connection_UTL_FSWInitialConditions"	56	"UTL_FSWInitialConditions"	null	2
+:109	144954	"Connection_OSC_ActMdl_RW[0]"	204	"OSC_ActMdl_RW"	null	2
+:110	144954	"Connection_OSC_ActMdl_RW[1]"	206	"OSC_ActMdl_RW"	null	2
+:111	144954	"Connection_OSC_ActMdl_RW[2]"	208	"OSC_ActMdl_RW"	null	2
+:112	144955	"Connection_GEN_ExternalEphemeris"	33	"GEN_ExternalEphemeris"	null	17
+:113	144955	"Connection_ODY_Ephemeris"	52	"ODY_Ephemeris"	null	2
+:114	144955	"Connection_ODY_VehicleState"	49	"ODY_VehicleState"	null	2
+:115	144955	"Connection_ODY_MassProps"	49	"BASE_VehicleState"	null	2
+:116	144955	"Connection_UTL_FSWInitialConditions"	56	"UTL_FSWInitialConditions"	null	2
+:117	144955	"Connection_ODY_ActuatorGroup[0]"	234	"ODY_ActuatorGroup"	null	2
+:118	144955	"Connection_ODY_ActuatorGroup[1]"	235	"ODY_ActuatorGroup"	null	2
+:119	144957	"Connection_ODY_Dyn_Rotational"	238	"ODY_Dyn_Rotational"	null	2
+:120	144957	"Connection_FSW_AttDetermination"	21	"FSW_AttDetermination"	null	2
+:121	144957	"Connection_FSW_Gui_Cmd"	25	"FSW_Gui_Cmd"	null	2
+:122	144958	"Connection_ODY_Dyn_Rotational"	238	"ODY_Dyn_Rotational"	null	2
+:123	144958	"Connection_UTL_FSWInitialConditions"	56	"UTL_FSWInitialConditions"	null	2
+:124	144958	"Connection_ODY_ActuatorGroup[0]"	234	"ODY_ActuatorGroup"	null	2
+:125	144959	"Connection_HWR_MdlDrv_MT"	235	"HWR_MdlDrv_MT"	null	7
+:126	144960	"Connection_HWR_MdlDrv_MT"	235	"HWR_MdlDrv_MT"	null	7
+:127	144961	"Connection_HWR_MdlDrv_MT"	235	"HWR_MdlDrv_MT"	null	7
+:128	144962	"Connection_HWR_MdlDrv_MT"	235	"HWR_MdlDrv_MT"	null	7
+:129	144963	"Connection_HWR_MdlDrv_MT"	235	"HWR_MdlDrv_MT"	null	7
+:130	144964	"Connection_HWR_MdlDrv_RW"	234	"HWR_MdlDrv_RW"	null	7
+:131	144965	"Connection_HWR_MdlDrv_RW"	234	"HWR_MdlDrv_RW"	null	7
+:132	144966	"Connection_HWR_MdlDrv_RW"	234	"HWR_MdlDrv_RW"	null	7
+:133	144967	"Connection_HWR_MdlDrv_GPS"	228	"HWR_MdlDrv_GPS"	null	7
+:134	144968	"Connection_HWR_MdlDrv_MAG"	116	"HWR_MdlDrv_MAG"	null	7
+:135	144969	"Connection_HWR_MdlDrv_RTE"	120	"HWR_MdlDrv_RTE"	null	7
+:136	144970	"Connection_HWR_MdlDrv_RTE"	120	"HWR_MdlDrv_RTE"	null	7
+:137	144971	"Connection_HWR_MdlDrv_RTE"	120	"HWR_MdlDrv_RTE"	null	7
+:138	144972	"Connection_HWR_MdlDrv_STR"	128	"HWR_MdlDrv_STR"	null	7
+:139	144973	"Connection_HWR_MdlDrv_SUN"	180	"HWR_MdlDrv_SUN"	null	7
+:140	144974	"Connection_HWR_MdlDrv_SUN"	180	"HWR_MdlDrv_SUN"	null	7
+:141	144975	"Connection_HWR_MdlDrv_SUN"	180	"HWR_MdlDrv_SUN"	null	7
+:142	144976	"Connection_HWR_MdlDrv_SUN"	180	"HWR_MdlDrv_SUN"	null	7
+:143	144977	"Connection_HWR_MdlDrv_SUN"	180	"HWR_MdlDrv_SUN"	null	7
+:144	144978	"Connection_ODY_Ephemeris"	52	"ODY_Ephemeris"	null	2
+:145	144980	"heap"	41	"heap"	null	1
+:146	144981	"Connection_ODY_Ephemeris"	52	"ODY_Ephemeris"	null	2
+:147	144981	"Connection_UTL_FSWInitialConditions"	56	"UTL_FSWInitialConditions"	null	2
+:148	144982	"Connection_ODY_Ephemeris"	52	"ODY_Ephemeris"	null	2
+:149	144982	"Connection_UTL_FSWInitialConditions"	56	"UTL_FSWInitialConditions"	null	2
+:150	144983	"Connection_ODY_Ephemeris"	52	"ODY_Ephemeris"	null	2
+:151	144983	"Connection_UTL_FSWInitialConditions"	56	"UTL_FSWInitialConditions"	null	2
+:152	144984	"Connection_ODY_Ephemeris"	52	"ODY_Ephemeris"	null	2
+:153	144984	"Connection_UTL_FSWInitialConditions"	56	"UTL_FSWInitialConditions"	null	2
+:154	144985	"Connection_ODY_Ephemeris"	52	"ODY_Ephemeris"	null	2
+:155	144985	"Connection_UTL_FSWInitialConditions"	56	"UTL_FSWInitialConditions"	null	2
+:156	144986	"Connection_ODY_Ephemeris"	52	"ODY_Ephemeris"	null	2
+:157	144986	"Connection_UTL_FSWInitialConditions"	56	"UTL_FSWInitialConditions"	null	2
+:158	144987	"Connection_ODY_Ephemeris"	52	"ODY_Ephemeris"	null	2
+:159	144987	"Connection_UTL_FSWInitialConditions"	56	"UTL_FSWInitialConditions"	null	2
+:160	144989	"Connection_FSW_VehicleState"	20	"FSW_VehicleState"	null	8
+:161	144989	"Connection_FSW_ModeController"	23	"FSW_ModeController"	null	8
+:162	144989	"Connection_FSW_AttDetermination"	21	"FSW_AttDetermination"	null	8
+:163	144989	"Connection_ODY_Ephemeris"	52	"ODY_Ephemeris"	null	17
+:164	144989	"Connection_ODY_PowerModel"	16	"ODY_PowerModel"	null	17
+:165	144989	"Connection_ODY_VehicleState"	49	"BASE_VehicleState"	null	17
+:166	144989	"Connection_ODY_Dyn_Rotational"	238	"ODY_Dyn_Rotational"	null	17
+:167	144989	"Connection_ODY_Dyn_Translational"	238	"ODY_Dyn_Translational"	null	17
+:168	144999	"impl"	35	"impl"	null	12
+:169	145001	"serial"	43	"serial"	null	12
+:170	145001	"frame"	46	"frame"	null	12
+:171	145002	"last_stored_tlm"	40	"last_stored_tlm"	null	1
+:172	145003	"cmd_fj_engine"	45	"seq_control"	null	1
+:173	145003	"last_stored_tlm"	40	"last_stored_tlm"	null	1
+:174	145004	"tlm_buffer"	72	"TlmBufferStats"	null	2
+:175	145005	"Connection_UTL_GravityModel"	252	"UTL_GravityModel"	null	13
+:176	145005	"Connection_UTL_Propagator"	250	"UTL_Propagator"	null	13
+:177	145005	"Connection_UTL_MagField"	253	"UTL_MagField"	null	13
+:178	145006	"Connection_UTL_GravityModel"	255	"UTL_GravityModel"	null	13
+:179	145006	"Connection_UTL_Propagator"	250	"UTL_Propagator"	null	13
+:180	145007	"Connection_SpacecraftCentralBody"	251	"UTL_CentralBody"	null	13
+:181	145007	"ClockCelestialBodyInterface"	251	"UTL_CentralBody"	null	21
+]]></table>
+    <table name="Table" type="ConfigDB+FunctionsTableDataTable" id="_ConfigurationModel_RbTZQIvwLjcPLy2HMTN6LQ">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="ComponentVersionID" type="System.Int32" />
+        <value_column index="2" name="Section" type="System.UInt32" />
+        <value_column index="3" name="FunctionName" type="System.String" />
+        <value_column index="4" name="FunctionID" type="System.Int32" />
+        <value_column index="5" name="Comment" type="System.String" />
+        <value_column index="6" name="FileID" type="System.Int32" />
+      </header><![CDATA[
+:0	144925	0	"ActsInSet"	366818	"Actuator Name, FSC_ActProc Interface, B_ActuatorEnabled"	1
+:1	144925	0	"ActsInSet"	366819	"Actuator Name, FSC_ActProc Interface, B_ActuatorEnabled"	1
+:2	144925	0	"ActsInSet"	366820	"Actuator Name, FSC_ActProc Interface, B_ActuatorEnabled"	1
+:3	144925	0	"ActsInSet"	366821	"Actuator Name, FSC_ActProc Interface, B_ActuatorEnabled"	1
+:4	144925	0	"ActsInSet"	366822	"Actuator Name, FSC_ActProc Interface, B_ActuatorEnabled"	1
+:5	144926	0	"ActsInSet"	366823	"Actuator Name, FSC_ActProc Interface, B_ActuatorEnabled,D_NullVecComponent"	1
+:6	144926	0	"ActsInSet"	366824	"Actuator Name, FSC_ActProc Interface, B_ActuatorEnabled,D_NullVecComponent"	1
+:7	144926	0	"ActsInSet"	366825	"Actuator Name, FSC_ActProc Interface, B_ActuatorEnabled,D_NullVecComponent"	1
+:8	144927	0	"ADSensors"	366826	null	1
+:9	144927	0	"ADSensors"	366827	null	1
+:10	144927	0	"ADSensors"	366828	null	1
+:11	144927	0	"ADSensors"	366829	null	1
+:12	144927	0	"ADSensors"	366830	null	1
+:13	144927	0	"ADSensors"	366831	null	1
+:14	144927	0	"ADSensors"	366832	null	1
+:15	144933	0	"AddEphemTarget"	366833	null	1
+:16	144933	0	"AddEphemTarget"	366834	null	1
+:17	144935	0	"AddIdleMode"	366835	null	1
+:18	144935	0	"AddHoldMode"	366836	null	1
+:19	144935	0	"AddRateDampMode"	366837	null	1
+:20	144935	0	"AddSunAcqMode"	366838	null	1
+:21	144935	0	"AddTrackingMode"	366839	null	1
+:22	144935	0	"AddTrackingMode"	366840	null	1
+:23	144935	0	"AddTrackingMode"	366841	null	1
+:24	144935	0	"AddTrackingMode"	366842	null	1
+:25	144935	0	"AddTrackingMode"	366843	null	1
+:26	144935	0	"AddTrackingMode"	366844	null	1
+:27	144935	0	"AddTrackingMode"	366845	null	1
+:28	144935	0	"AddEigenSlewMode"	366846	null	1
+:29	144935	0	"AddRendezSlewMode"	366847	null	1
+:30	144941	0	"BusConfigs"	366848	null	1
+:31	144941	0	"AttControllers"	366849	null	1
+:32	144941	0	"MomControllers"	366850	null	1
+:33	144941	0	"FfwControllers"	366851	null	1
+:34	144941	0	"MissionModes"	366852	null	1
+:35	144941	0	"MissionModes"	366853	null	1
+:36	144958	0	"BusConfigs"	366854	null	2
+:37	144978	0	"charge_current_limit_c_rate_table_add_entry"	366855	null	2
+:38	144978	0	"charge_current_limit_c_rate_table_add_entry"	366856	null	2
+:39	144978	0	"charge_current_limit_c_rate_table_add_entry"	366857	null	2
+:40	144978	0	"charge_current_limit_c_rate_table_add_entry"	366858	null	2
+:41	144978	0	"charge_current_limit_c_rate_table_add_entry"	366859	null	2
+:42	144978	0	"charge_current_limit_c_rate_table_add_entry"	366860	null	2
+:43	144978	0	"charge_voltage_table_add_entry"	366861	null	2
+:44	144978	0	"charge_voltage_table_add_entry"	366862	null	2
+:45	144978	0	"charge_voltage_table_add_entry"	366863	null	2
+:46	144978	0	"charge_voltage_table_add_entry"	366864	null	2
+:47	144978	0	"charge_voltage_table_add_entry"	366865	null	2
+:48	144978	0	"charge_voltage_table_add_entry"	366866	null	2
+:49	144978	0	"discharge_voltage_table_add_entry"	366867	null	2
+:50	144978	0	"discharge_voltage_table_add_entry"	366868	null	2
+:51	144978	0	"discharge_voltage_table_add_entry"	366869	null	2
+:52	144978	0	"discharge_voltage_table_add_entry"	366870	null	2
+:53	144978	0	"discharge_voltage_table_add_entry"	366871	null	2
+:54	144978	0	"discharge_voltage_table_add_entry"	366872	null	2
+:55	145001	1	"set_apid_freq"	366873	null	15
+:56	145001	1	"set_apid_freq"	366874	null	15
+:57	145001	1	"set_apid_freq"	366875	null	22
+:58	145001	1	"set_apid_freq"	366876	null	16
+:59	145001	1	"set_apid_freq"	366877	null	16
+:60	145001	1	"set_apid_freq"	366878	null	16
+:61	145001	1	"set_apid_freq"	366879	null	16
+:62	145001	1	"set_apid_freq"	366880	null	15
+:63	145001	1	"set_apid_freq"	366881	null	15
+:64	145001	1	"set_apid_freq"	366882	null	15
+:65	145001	1	"set_apid_freq"	366883	null	15
+:66	145001	1	"set_apid_freq"	366884	null	15
+:67	145001	1	"set_apid_freq"	366885	null	15
+:68	145001	1	"set_apid_freq"	366886	null	15
+:69	145001	1	"set_apid_freq"	366887	null	15
+:70	145001	1	"set_apid_freq"	366888	null	15
+:71	145001	1	"set_apid_freq"	366889	null	16
+:72	145001	1	"set_apid_freq"	366890	null	16
+:73	145001	1	"set_apid_freq"	366891	null	16
+:74	145001	1	"set_apid_freq"	366892	null	16
+:75	145001	1	"set_apid_freq"	366893	null	16
+:76	145001	1	"set_apid_freq"	366894	null	16
+:77	145001	1	"set_apid_freq"	366895	null	16
+:78	145001	1	"set_apid_freq"	366896	null	16
+:79	145001	1	"set_apid_freq"	366897	null	16
+:80	145001	1	"set_apid_freq"	366898	null	16
+:81	145001	1	"set_apid_freq"	366899	null	16
+:82	145001	1	"set_apid_freq"	366900	null	15
+:83	145001	0	"add_tlm_provider"	366901	null	-1
+:84	145001	0	"clear_pt_level"	366902	"Setup initial priority table"	-1
+:85	145001	0	"add_pt_tlm_provider"	366903	null	-1
+:86	145001	0	"enable_pt_level"	366904	"Setup initial priority table"	-1
+:87	145002	0	"add_monitored_tlm"	366905	null	1
+:88	145003	0	"create_cond_tlm_eq_value"	366906	null	1
+:89	145003	0	"create_in_condition"	366907	null	1
+:90	145003	2	"finalize"	366908	null	1
+:91	145003	3	"set_all_detections_enable"	366909	null	1
+:92	145003	3	"set_all_responses_enable"	366910	null	1
+:93	145003	3	"set_master_detections_enable"	366911	null	1
+:94	145003	3	"set_master_responses_enable"	366912	null	1
+:95	145007	0	"AddCelestialBodyRelationship"	366913	null	13
+:96	145007	0	"AddCelestialBodyRelationship"	366914	null	13
+:97	145010	0	"SetGCoeff"	366915	null	13
+:98	145010	0	"SetGCoeff"	366916	null	13
+:99	145010	0	"SetGCoeff"	366917	null	13
+:100	145010	0	"SetGCoeff"	366918	null	13
+:101	145010	0	"SetGCoeff"	366919	null	13
+:102	145010	0	"SetGCoeff"	366920	null	13
+:103	145010	0	"SetGCoeff"	366921	null	13
+:104	145010	0	"SetGCoeff"	366922	null	13
+:105	145010	0	"SetGCoeff"	366923	null	13
+:106	145010	0	"SetGCoeff"	366924	null	13
+:107	145010	0	"SetGCoeff"	366925	null	13
+:108	145010	0	"SetGCoeff"	366926	null	13
+:109	145010	0	"SetGCoeff"	366927	null	13
+:110	145010	0	"SetGCoeff"	366928	null	13
+:111	145010	0	"SetGCoeff"	366929	null	13
+:112	145010	0	"SetGCoeff"	366930	null	13
+:113	145010	0	"SetGCoeff"	366931	null	13
+:114	145010	0	"SetGCoeff"	366932	null	13
+:115	145010	0	"SetGCoeff"	366933	null	13
+:116	145010	0	"SetGCoeff"	366934	null	13
+:117	145010	0	"SetGCoeff"	366935	null	13
+:118	145010	0	"SetGCoeff"	366936	null	13
+:119	145010	0	"SetGCoeff"	366937	null	13
+:120	145010	0	"SetGCoeff"	366938	null	13
+:121	145010	0	"SetGCoeff"	366939	null	13
+:122	145010	0	"SetGCoeff"	366940	null	13
+:123	145010	0	"SetGCoeff"	366941	null	13
+:124	145010	0	"SetGCoeff"	366942	null	13
+:125	145010	0	"SetGCoeff"	366943	null	13
+:126	145010	0	"SetGCoeff"	366944	null	13
+:127	145010	0	"SetGCoeff"	366945	null	13
+:128	145010	0	"SetGCoeff"	366946	null	13
+:129	145010	0	"SetGCoeff"	366947	null	13
+:130	145010	0	"SetGCoeff"	366948	null	13
+:131	145010	0	"SetGCoeff"	366949	null	13
+:132	145010	0	"SetGCoeff"	366950	null	13
+:133	145010	0	"SetGCoeff"	366951	null	13
+:134	145010	0	"SetGCoeff"	366952	null	13
+:135	145010	0	"SetGCoeff"	366953	null	13
+:136	145010	0	"SetGCoeff"	366954	null	13
+:137	145010	0	"SetGCoeff"	366955	null	13
+:138	145010	0	"SetGCoeff"	366956	null	13
+:139	145010	0	"SetGCoeff"	366957	null	13
+:140	145010	0	"SetGCoeff"	366958	null	13
+:141	145010	0	"SetGCoeff"	366959	null	13
+:142	145010	0	"SetGCoeff"	366960	null	13
+:143	145010	0	"SetGCoeff"	366961	null	13
+:144	145010	0	"SetGCoeff"	366962	null	13
+:145	145010	0	"SetGCoeff"	366963	null	13
+:146	145010	0	"SetGCoeff"	366964	null	13
+:147	145010	0	"SetGCoeff"	366965	null	13
+:148	145010	0	"SetGCoeff"	366966	null	13
+:149	145010	0	"SetGCoeff"	366967	null	13
+:150	145010	0	"SetGCoeff"	366968	null	13
+:151	145010	0	"SetGCoeff"	366969	null	13
+:152	145010	0	"SetGCoeff"	366970	null	13
+:153	145010	0	"SetGCoeff"	366971	null	13
+:154	145010	0	"SetGCoeff"	366972	null	13
+:155	145010	0	"SetGCoeff"	366973	null	13
+:156	145010	0	"SetGCoeff"	366974	null	13
+:157	145010	0	"SetGCoeff"	366975	null	13
+:158	145010	0	"SetGCoeff"	366976	null	13
+:159	145010	0	"SetGCoeff"	366977	null	13
+:160	145010	0	"SetGCoeff"	366978	null	13
+:161	145010	0	"SetGCoeff"	366979	null	13
+:162	145010	0	"SetGCoeff"	366980	null	13
+:163	145010	0	"SetGCoeff"	366981	null	13
+:164	145010	0	"SetGCoeff"	366982	null	13
+:165	145010	0	"SetGCoeff"	366983	null	13
+:166	145010	0	"SetGCoeff"	366984	null	13
+:167	145010	0	"SetGCoeff"	366985	null	13
+:168	145010	0	"SetGCoeff"	366986	null	13
+:169	145010	0	"SetGCoeff"	366987	null	13
+:170	145010	0	"SetGCoeff"	366988	null	13
+:171	145010	0	"SetGCoeff"	366989	null	13
+:172	145010	0	"SetGCoeff"	366990	null	13
+:173	145010	0	"SetGCoeff"	366991	null	13
+:174	145010	0	"SetGCoeff"	366992	null	13
+:175	145010	0	"SetGCoeff"	366993	null	13
+:176	145010	0	"SetGCoeff"	366994	null	13
+:177	145010	0	"SetGCoeff"	366995	null	13
+:178	145010	0	"SetGCoeff"	366996	null	13
+:179	145010	0	"SetGCoeff"	366997	null	13
+:180	145010	0	"SetGCoeff"	366998	null	13
+:181	145010	0	"SetGCoeff"	366999	null	13
+:182	145010	0	"SetGCoeff"	367000	null	13
+:183	145010	0	"SetGCoeff"	367001	null	13
+:184	145010	0	"SetGCoeff"	367002	null	13
+:185	145010	0	"SetGCoeff"	367003	null	13
+:186	145010	0	"SetGCoeff"	367004	null	13
+:187	145010	0	"SetGCoeff"	367005	null	13
+:188	145010	0	"SetGCoeff"	367006	null	13
+:189	145010	0	"SetGCoeff"	367007	null	13
+:190	145010	0	"SetGCoeff"	367008	null	13
+:191	145010	0	"SetGCoeff"	367009	null	13
+:192	145010	0	"SetGCoeff"	367010	null	13
+:193	145010	0	"SetGCoeff"	367011	null	13
+:194	145010	0	"SetGCoeff"	367012	null	13
+:195	145010	0	"SetGCoeff"	367013	null	13
+:196	145010	0	"SetGCoeff"	367014	null	13
+:197	145010	0	"SetGCoeff"	367015	null	13
+:198	145010	0	"SetGCoeff"	367016	null	13
+:199	145010	0	"SetGCoeff"	367017	null	13
+:200	145010	0	"SetGCoeff"	367018	null	13
+:201	145010	0	"SetGCoeff"	367019	null	13
+:202	145010	0	"SetGCoeff"	367020	null	13
+:203	145010	0	"SetGCoeff"	367021	null	13
+:204	145010	0	"SetGCoeff"	367022	null	13
+:205	145010	0	"SetGCoeff"	367023	null	13
+:206	145010	0	"SetGCoeff"	367024	null	13
+:207	145010	0	"SetGCoeff"	367025	null	13
+:208	145010	0	"SetGCoeff"	367026	null	13
+:209	145010	0	"SetGCoeff"	367027	null	13
+:210	145010	0	"SetGCoeff"	367028	null	13
+:211	145010	0	"SetGCoeff"	367029	null	13
+:212	145010	0	"SetGCoeff"	367030	null	13
+:213	145010	0	"SetGCoeff"	367031	null	13
+:214	145010	0	"SetGCoeff"	367032	null	13
+:215	145010	0	"SetGCoeff"	367033	null	13
+:216	145010	0	"SetGCoeff"	367034	null	13
+:217	145010	0	"SetGCoeff"	367035	null	13
+:218	145010	0	"SetGCoeff"	367036	null	13
+:219	145010	0	"SetGCoeff"	367037	null	13
+:220	145010	0	"SetGCoeff"	367038	null	13
+:221	145010	0	"SetGCoeff"	367039	null	13
+:222	145010	0	"SetGCoeff"	367040	null	13
+:223	145010	0	"SetGCoeff"	367041	null	13
+:224	145010	0	"SetGCoeff"	367042	null	13
+:225	145010	0	"SetGCoeff"	367043	null	13
+:226	145010	0	"SetGCoeff"	367044	null	13
+:227	145010	0	"SetGCoeff"	367045	null	13
+:228	145010	0	"SetGCoeff"	367046	null	13
+:229	145010	0	"SetGCoeff"	367047	null	13
+:230	145010	0	"SetGCoeff"	367048	null	13
+:231	145010	0	"SetGCoeff"	367049	null	13
+:232	145010	0	"SetGCoeff"	367050	null	13
+:233	145010	0	"SetGCoeff"	367051	null	13
+:234	145010	0	"SetGCoeff"	367052	null	13
+:235	145010	0	"SetGCoeff"	367053	null	13
+:236	145010	0	"SetGCoeff"	367054	null	13
+:237	145010	0	"SetGCoeff"	367055	null	13
+:238	145010	0	"SetGCoeff"	367056	null	13
+:239	145010	0	"SetGCoeff"	367057	null	13
+:240	145010	0	"SetGCoeff"	367058	null	13
+:241	145010	0	"SetGCoeff"	367059	null	13
+:242	145010	0	"SetGCoeff"	367060	null	13
+:243	145010	0	"SetGCoeff"	367061	null	13
+:244	145010	0	"SetGCoeff"	367062	null	13
+:245	145010	0	"SetGCoeff"	367063	null	13
+:246	145010	0	"SetGCoeff"	367064	null	13
+:247	145010	0	"SetGCoeff"	367065	null	13
+:248	145010	0	"SetGCoeff"	367066	null	13
+:249	145010	0	"SetGCoeff"	367067	null	13
+:250	145010	0	"SetGCoeff"	367068	null	13
+:251	145010	0	"SetGCoeff"	367069	null	13
+:252	145010	0	"SetGCoeff"	367070	null	13
+:253	145010	0	"SetGCoeff"	367071	null	13
+:254	145010	0	"SetGCoeff"	367072	null	13
+:255	145010	0	"SetGCoeff"	367073	null	13
+:256	145010	0	"SetGCoeff"	367074	null	13
+:257	145010	0	"SetGCoeff"	367075	null	13
+:258	145010	0	"SetGCoeff"	367076	null	13
+:259	145010	0	"SetGCoeff"	367077	null	13
+:260	145010	0	"SetGCoeff"	367078	null	13
+:261	145010	0	"SetGCoeff"	367079	null	13
+:262	145010	0	"SetGCoeff"	367080	null	13
+:263	145010	0	"SetGCoeff"	367081	null	13
+:264	145010	0	"SetGCoeff"	367082	null	13
+:265	145010	0	"SetGCoeff"	367083	null	13
+:266	145010	0	"SetGCoeff"	367084	null	13
+:267	145010	0	"SetGCoeff"	367085	null	13
+:268	145010	0	"SetGCoeff"	367086	null	13
+:269	145010	0	"SetGCoeff"	367087	null	13
+:270	145010	0	"SetGCoeff"	367088	null	13
+:271	145010	0	"SetGCoeff"	367089	null	13
+:272	145010	0	"SetGCoeff"	367090	null	13
+:273	145010	0	"SetGCoeff"	367091	null	13
+:274	145010	0	"SetGCoeff"	367092	null	13
+:275	145010	0	"SetGCoeff"	367093	null	13
+:276	145010	0	"SetGCoeff"	367094	null	13
+:277	145010	0	"SetGCoeff"	367095	null	13
+:278	145010	0	"SetGCoeff"	367096	null	13
+:279	145010	0	"SetGCoeff"	367097	null	13
+:280	145010	0	"SetGCoeff"	367098	null	13
+:281	145010	0	"SetGCoeff"	367099	null	13
+:282	145010	0	"SetGCoeff"	367100	null	13
+:283	145010	0	"SetGCoeff"	367101	null	13
+:284	145010	0	"SetGCoeff"	367102	null	13
+:285	145010	0	"SetGCoeff"	367103	null	13
+:286	145010	0	"SetGCoeff"	367104	null	13
+:287	145010	0	"SetGCoeff"	367105	null	13
+:288	145010	0	"SetGCoeff"	367106	null	13
+:289	145010	0	"SetGCoeff"	367107	null	13
+:290	145010	0	"SetHCoeff"	367108	null	13
+:291	145010	0	"SetHCoeff"	367109	null	13
+:292	145010	0	"SetHCoeff"	367110	null	13
+:293	145010	0	"SetHCoeff"	367111	null	13
+:294	145010	0	"SetHCoeff"	367112	null	13
+:295	145010	0	"SetHCoeff"	367113	null	13
+:296	145010	0	"SetHCoeff"	367114	null	13
+:297	145010	0	"SetHCoeff"	367115	null	13
+:298	145010	0	"SetHCoeff"	367116	null	13
+:299	145010	0	"SetHCoeff"	367117	null	13
+:300	145010	0	"SetHCoeff"	367118	null	13
+:301	145010	0	"SetHCoeff"	367119	null	13
+:302	145010	0	"SetHCoeff"	367120	null	13
+:303	145010	0	"SetHCoeff"	367121	null	13
+:304	145010	0	"SetHCoeff"	367122	null	13
+:305	145010	0	"SetHCoeff"	367123	null	13
+:306	145010	0	"SetHCoeff"	367124	null	13
+:307	145010	0	"SetHCoeff"	367125	null	13
+:308	145010	0	"SetHCoeff"	367126	null	13
+:309	145010	0	"SetHCoeff"	367127	null	13
+:310	145010	0	"SetHCoeff"	367128	null	13
+:311	145010	0	"SetHCoeff"	367129	null	13
+:312	145010	0	"SetHCoeff"	367130	null	13
+:313	145010	0	"SetHCoeff"	367131	null	13
+:314	145010	0	"SetHCoeff"	367132	null	13
+:315	145010	0	"SetHCoeff"	367133	null	13
+:316	145010	0	"SetHCoeff"	367134	null	13
+:317	145010	0	"SetHCoeff"	367135	null	13
+:318	145010	0	"SetHCoeff"	367136	null	13
+:319	145010	0	"SetHCoeff"	367137	null	13
+:320	145010	0	"SetHCoeff"	367138	null	13
+:321	145010	0	"SetHCoeff"	367139	null	13
+:322	145010	0	"SetHCoeff"	367140	null	13
+:323	145010	0	"SetHCoeff"	367141	null	13
+:324	145010	0	"SetHCoeff"	367142	null	13
+:325	145010	0	"SetHCoeff"	367143	null	13
+:326	145010	0	"SetHCoeff"	367144	null	13
+:327	145010	0	"SetHCoeff"	367145	null	13
+:328	145010	0	"SetHCoeff"	367146	null	13
+:329	145010	0	"SetHCoeff"	367147	null	13
+:330	145010	0	"SetHCoeff"	367148	null	13
+:331	145010	0	"SetHCoeff"	367149	null	13
+:332	145010	0	"SetHCoeff"	367150	null	13
+:333	145010	0	"SetHCoeff"	367151	null	13
+:334	145010	0	"SetHCoeff"	367152	null	13
+:335	145010	0	"SetHCoeff"	367153	null	13
+:336	145010	0	"SetHCoeff"	367154	null	13
+:337	145010	0	"SetHCoeff"	367155	null	13
+:338	145010	0	"SetHCoeff"	367156	null	13
+:339	145010	0	"SetHCoeff"	367157	null	13
+:340	145010	0	"SetHCoeff"	367158	null	13
+:341	145010	0	"SetHCoeff"	367159	null	13
+:342	145010	0	"SetHCoeff"	367160	null	13
+:343	145010	0	"SetHCoeff"	367161	null	13
+:344	145010	0	"SetHCoeff"	367162	null	13
+:345	145010	0	"SetHCoeff"	367163	null	13
+:346	145010	0	"SetHCoeff"	367164	null	13
+:347	145010	0	"SetHCoeff"	367165	null	13
+:348	145010	0	"SetHCoeff"	367166	null	13
+:349	145010	0	"SetHCoeff"	367167	null	13
+:350	145010	0	"SetHCoeff"	367168	null	13
+:351	145010	0	"SetHCoeff"	367169	null	13
+:352	145010	0	"SetHCoeff"	367170	null	13
+:353	145010	0	"SetHCoeff"	367171	null	13
+:354	145010	0	"SetHCoeff"	367172	null	13
+:355	145010	0	"SetHCoeff"	367173	null	13
+:356	145010	0	"SetHCoeff"	367174	null	13
+:357	145010	0	"SetHCoeff"	367175	null	13
+:358	145010	0	"SetHCoeff"	367176	null	13
+:359	145010	0	"SetHCoeff"	367177	null	13
+:360	145010	0	"SetHCoeff"	367178	null	13
+:361	145010	0	"SetHCoeff"	367179	null	13
+:362	145010	0	"SetHCoeff"	367180	null	13
+:363	145010	0	"SetHCoeff"	367181	null	13
+:364	145010	0	"SetHCoeff"	367182	null	13
+:365	145010	0	"SetHCoeff"	367183	null	13
+:366	145010	0	"SetHCoeff"	367184	null	13
+:367	145010	0	"SetHCoeff"	367185	null	13
+:368	145010	0	"SetHCoeff"	367186	null	13
+:369	145010	0	"SetHCoeff"	367187	null	13
+:370	145010	0	"SetHCoeff"	367188	null	13
+:371	145010	0	"SetHCoeff"	367189	null	13
+:372	145010	0	"SetHCoeff"	367190	null	13
+:373	145010	0	"SetHCoeff"	367191	null	13
+:374	145010	0	"SetHCoeff"	367192	null	13
+:375	145010	0	"SetHCoeff"	367193	null	13
+:376	145010	0	"SetHCoeff"	367194	null	13
+:377	145010	0	"SetHCoeff"	367195	null	13
+:378	145010	0	"SetHCoeff"	367196	null	13
+:379	145010	0	"SetHCoeff"	367197	null	13
+:380	145010	0	"SetHCoeff"	367198	null	13
+:381	145010	0	"SetHCoeff"	367199	null	13
+:382	145010	0	"SetHCoeff"	367200	null	13
+:383	145010	0	"SetHCoeff"	367201	null	13
+:384	145010	0	"SetHCoeff"	367202	null	13
+:385	145010	0	"SetHCoeff"	367203	null	13
+:386	145010	0	"SetHCoeff"	367204	null	13
+:387	145010	0	"SetHCoeff"	367205	null	13
+:388	145010	0	"SetHCoeff"	367206	null	13
+:389	145010	0	"SetHCoeff"	367207	null	13
+:390	145010	0	"SetHCoeff"	367208	null	13
+:391	145010	0	"SetHCoeff"	367209	null	13
+:392	145010	0	"SetHCoeff"	367210	null	13
+:393	145010	0	"SetHCoeff"	367211	null	13
+:394	145010	0	"SetHCoeff"	367212	null	13
+:395	145010	0	"SetHCoeff"	367213	null	13
+:396	145010	0	"SetHCoeff"	367214	null	13
+:397	145010	0	"SetHCoeff"	367215	null	13
+:398	145010	0	"SetHCoeff"	367216	null	13
+:399	145010	0	"SetHCoeff"	367217	null	13
+:400	145010	0	"SetHCoeff"	367218	null	13
+:401	145010	0	"SetHCoeff"	367219	null	13
+:402	145010	0	"SetHCoeff"	367220	null	13
+:403	145010	0	"SetHCoeff"	367221	null	13
+:404	145010	0	"SetHCoeff"	367222	null	13
+:405	145010	0	"SetHCoeff"	367223	null	13
+:406	145010	0	"SetHCoeff"	367224	null	13
+:407	145010	0	"SetHCoeff"	367225	null	13
+:408	145010	0	"SetHCoeff"	367226	null	13
+:409	145010	0	"SetHCoeff"	367227	null	13
+:410	145010	0	"SetHCoeff"	367228	null	13
+:411	145010	0	"SetHCoeff"	367229	null	13
+:412	145010	0	"SetHCoeff"	367230	null	13
+:413	145010	0	"SetHCoeff"	367231	null	13
+:414	145010	0	"SetHCoeff"	367232	null	13
+:415	145010	0	"SetHCoeff"	367233	null	13
+:416	145010	0	"SetHCoeff"	367234	null	13
+:417	145010	0	"SetHCoeff"	367235	null	13
+:418	145010	0	"SetHCoeff"	367236	null	13
+:419	145010	0	"SetHCoeff"	367237	null	13
+:420	145010	0	"SetHCoeff"	367238	null	13
+:421	145010	0	"SetHCoeff"	367239	null	13
+:422	145010	0	"SetHCoeff"	367240	null	13
+:423	145010	0	"SetHCoeff"	367241	null	13
+:424	145010	0	"SetHCoeff"	367242	null	13
+:425	145010	0	"SetHCoeff"	367243	null	13
+:426	145010	0	"SetHCoeff"	367244	null	13
+:427	145010	0	"SetHCoeff"	367245	null	13
+:428	145010	0	"SetHCoeff"	367246	null	13
+:429	145010	0	"SetHCoeff"	367247	null	13
+:430	145010	0	"SetHCoeff"	367248	null	13
+:431	145010	0	"SetHCoeff"	367249	null	13
+:432	145010	0	"SetHCoeff"	367250	null	13
+:433	145010	0	"SetHCoeff"	367251	null	13
+:434	145010	0	"SetHCoeff"	367252	null	13
+:435	145010	0	"SetHCoeff"	367253	null	13
+:436	145010	0	"SetHCoeff"	367254	null	13
+:437	145010	0	"SetHCoeff"	367255	null	13
+:438	145010	0	"SetHCoeff"	367256	null	13
+:439	145010	0	"SetHCoeff"	367257	null	13
+:440	145010	0	"SetHCoeff"	367258	null	13
+:441	145010	0	"SetHCoeff"	367259	null	13
+:442	145010	0	"SetHCoeff"	367260	null	13
+:443	145010	0	"SetHCoeff"	367261	null	13
+:444	145010	0	"SetHCoeff"	367262	null	13
+:445	145010	0	"SetHCoeff"	367263	null	13
+:446	145010	0	"SetHCoeff"	367264	null	13
+:447	145010	0	"SetHCoeff"	367265	null	13
+:448	145010	0	"SetHCoeff"	367266	null	13
+:449	145010	0	"SetHCoeff"	367267	null	13
+:450	145010	0	"SetHCoeff"	367268	null	13
+:451	145010	0	"SetHCoeff"	367269	null	13
+:452	145010	0	"SetHCoeff"	367270	null	13
+:453	145010	0	"SetHCoeff"	367271	null	13
+:454	145010	0	"SetHCoeff"	367272	null	13
+:455	145010	0	"SetHCoeff"	367273	null	13
+:456	145010	0	"SetHCoeff"	367274	null	13
+:457	145010	0	"SetHCoeff"	367275	null	13
+:458	145010	0	"SetHCoeff"	367276	null	13
+:459	145010	0	"SetHCoeff"	367277	null	13
+:460	145010	0	"SetHCoeff"	367278	null	13
+:461	145010	0	"SetHCoeff"	367279	null	13
+:462	145010	0	"SetHCoeff"	367280	null	13
+:463	145010	0	"SetHCoeff"	367281	null	13
+:464	145010	0	"SetHCoeff"	367282	null	13
+:465	145010	0	"SetHCoeff"	367283	null	13
+:466	145010	0	"SetHCoeff"	367284	null	13
+:467	145010	0	"SetHCoeff"	367285	null	13
+:468	145010	0	"SetHCoeff"	367286	null	13
+:469	145010	0	"SetHCoeff"	367287	null	13
+:470	145010	0	"SetHCoeff"	367288	null	13
+:471	145010	0	"SetHCoeff"	367289	null	13
+:472	145010	0	"SetHCoeff"	367290	null	13
+:473	145010	0	"SetHCoeff"	367291	null	13
+:474	145010	0	"SetHCoeff"	367292	null	13
+:475	145010	0	"SetHCoeff"	367293	null	13
+:476	145010	0	"SetHCoeff"	367294	null	13
+:477	145010	0	"SetHCoeff"	367295	null	13
+:478	145010	0	"SetHCoeff"	367296	null	13
+:479	145010	0	"SetHCoeff"	367297	null	13
+:480	145010	0	"SetHCoeff"	367298	null	13
+:481	145010	0	"SetHCoeff"	367299	null	13
+:482	145010	0	"SetHCoeff"	367300	null	13
+:483	145010	0	"SetHCoeff"	367301	null	13
+:484	145010	0	"SetHCoeff"	367302	null	13
+:485	145010	0	"SetHCoeff"	367303	null	13
+:486	145010	0	"SetKschmidtCoeff"	367304	null	13
+:487	145010	0	"SetKschmidtCoeff"	367305	null	13
+:488	145010	0	"SetKschmidtCoeff"	367306	null	13
+:489	145010	0	"SetKschmidtCoeff"	367307	null	13
+:490	145010	0	"SetKschmidtCoeff"	367308	null	13
+:491	145010	0	"SetKschmidtCoeff"	367309	null	13
+:492	145010	0	"SetKschmidtCoeff"	367310	null	13
+:493	145010	0	"SetKschmidtCoeff"	367311	null	13
+:494	145010	0	"SetKschmidtCoeff"	367312	null	13
+:495	145010	0	"SetKschmidtCoeff"	367313	null	13
+:496	145010	0	"SetKschmidtCoeff"	367314	null	13
+:497	145010	0	"SetKschmidtCoeff"	367315	null	13
+:498	145010	0	"SetKschmidtCoeff"	367316	null	13
+:499	145010	0	"SetKschmidtCoeff"	367317	null	13
+:500	145010	0	"SetKschmidtCoeff"	367318	null	13
+:501	145010	0	"SetKschmidtCoeff"	367319	null	13
+:502	145010	0	"SetKschmidtCoeff"	367320	null	13
+:503	145010	0	"SetKschmidtCoeff"	367321	null	13
+:504	145010	0	"SetKschmidtCoeff"	367322	null	13
+:505	145010	0	"SetKschmidtCoeff"	367323	null	13
+:506	145010	0	"SetKschmidtCoeff"	367324	null	13
+:507	145010	0	"SetKschmidtCoeff"	367325	null	13
+:508	145010	0	"SetKschmidtCoeff"	367326	null	13
+:509	145010	0	"SetKschmidtCoeff"	367327	null	13
+:510	145010	0	"SetKschmidtCoeff"	367328	null	13
+:511	145010	0	"SetKschmidtCoeff"	367329	null	13
+:512	145010	0	"SetKschmidtCoeff"	367330	null	13
+:513	145010	0	"SetKschmidtCoeff"	367331	null	13
+:514	145010	0	"SetKschmidtCoeff"	367332	null	13
+:515	145010	0	"SetKschmidtCoeff"	367333	null	13
+:516	145010	0	"SetKschmidtCoeff"	367334	null	13
+:517	145010	0	"SetKschmidtCoeff"	367335	null	13
+:518	145010	0	"SetKschmidtCoeff"	367336	null	13
+:519	145010	0	"SetKschmidtCoeff"	367337	null	13
+:520	145010	0	"SetKschmidtCoeff"	367338	null	13
+:521	145010	0	"SetKschmidtCoeff"	367339	null	13
+:522	145010	0	"SetKschmidtCoeff"	367340	null	13
+:523	145010	0	"SetKschmidtCoeff"	367341	null	13
+:524	145010	0	"SetKschmidtCoeff"	367342	null	13
+:525	145010	0	"SetKschmidtCoeff"	367343	null	13
+:526	145010	0	"SetKschmidtCoeff"	367344	null	13
+:527	145010	0	"SetKschmidtCoeff"	367345	null	13
+:528	145010	0	"SetKschmidtCoeff"	367346	null	13
+:529	145010	0	"SetKschmidtCoeff"	367347	null	13
+:530	145010	0	"SetKschmidtCoeff"	367348	null	13
+:531	145010	0	"SetKschmidtCoeff"	367349	null	13
+:532	145010	0	"SetKschmidtCoeff"	367350	null	13
+:533	145010	0	"SetKschmidtCoeff"	367351	null	13
+:534	145010	0	"SetKschmidtCoeff"	367352	null	13
+:535	145010	0	"SetKschmidtCoeff"	367353	null	13
+:536	145010	0	"SetKschmidtCoeff"	367354	null	13
+:537	145010	0	"SetKschmidtCoeff"	367355	null	13
+:538	145010	0	"SetKschmidtCoeff"	367356	null	13
+:539	145010	0	"SetKschmidtCoeff"	367357	null	13
+:540	145010	0	"SetKschmidtCoeff"	367358	null	13
+:541	145010	0	"SetKschmidtCoeff"	367359	null	13
+:542	145010	0	"SetKschmidtCoeff"	367360	null	13
+:543	145010	0	"SetKschmidtCoeff"	367361	null	13
+:544	145010	0	"SetKschmidtCoeff"	367362	null	13
+:545	145010	0	"SetKschmidtCoeff"	367363	null	13
+:546	145010	0	"SetKschmidtCoeff"	367364	null	13
+:547	145010	0	"SetKschmidtCoeff"	367365	null	13
+:548	145010	0	"SetKschmidtCoeff"	367366	null	13
+:549	145010	0	"SetKschmidtCoeff"	367367	null	13
+:550	145010	0	"SetKschmidtCoeff"	367368	null	13
+:551	145010	0	"SetKschmidtCoeff"	367369	null	13
+:552	145010	0	"SetKschmidtCoeff"	367370	null	13
+:553	145010	0	"SetKschmidtCoeff"	367371	null	13
+:554	145010	0	"SetKschmidtCoeff"	367372	null	13
+:555	145010	0	"SetKschmidtCoeff"	367373	null	13
+:556	145010	0	"SetKschmidtCoeff"	367374	null	13
+:557	145010	0	"SetKschmidtCoeff"	367375	null	13
+:558	145010	0	"SetKschmidtCoeff"	367376	null	13
+:559	145010	0	"SetKschmidtCoeff"	367377	null	13
+:560	145010	0	"SetKschmidtCoeff"	367378	null	13
+:561	145010	0	"SetKschmidtCoeff"	367379	null	13
+:562	145010	0	"SetKschmidtCoeff"	367380	null	13
+:563	145010	0	"SetKschmidtCoeff"	367381	null	13
+:564	145010	0	"SetKschmidtCoeff"	367382	null	13
+:565	145010	0	"SetKschmidtCoeff"	367383	null	13
+:566	145010	0	"SetKschmidtCoeff"	367384	null	13
+:567	145010	0	"SetKschmidtCoeff"	367385	null	13
+:568	145010	0	"SetKschmidtCoeff"	367386	null	13
+:569	145010	0	"SetKschmidtCoeff"	367387	null	13
+:570	145010	0	"SetKschmidtCoeff"	367388	null	13
+:571	145010	0	"SetKschmidtCoeff"	367389	null	13
+:572	145010	0	"SetKschmidtCoeff"	367390	null	13
+:573	145010	0	"SetKschmidtCoeff"	367391	null	13
+:574	145010	0	"SetKschmidtCoeff"	367392	null	13
+:575	145010	0	"SetKschmidtCoeff"	367393	null	13
+:576	145010	0	"SetKschmidtCoeff"	367394	null	13
+:577	145010	0	"SetKschmidtCoeff"	367395	null	13
+:578	145010	0	"SetKschmidtCoeff"	367396	null	13
+:579	145010	0	"SetKschmidtCoeff"	367397	null	13
+:580	145010	0	"SetKschmidtCoeff"	367398	null	13
+:581	145010	0	"SetKschmidtCoeff"	367399	null	13
+:582	145010	0	"SetKschmidtCoeff"	367400	null	13
+:583	145010	0	"SetKschmidtCoeff"	367401	null	13
+:584	145010	0	"SetKschmidtCoeff"	367402	null	13
+:585	145010	0	"SetKschmidtCoeff"	367403	null	13
+:586	145010	0	"SetKschmidtCoeff"	367404	null	13
+:587	145010	0	"SetKschmidtCoeff"	367405	null	13
+:588	145010	0	"SetKschmidtCoeff"	367406	null	13
+:589	145010	0	"SetKschmidtCoeff"	367407	null	13
+:590	145010	0	"SetKschmidtCoeff"	367408	null	13
+:591	145010	0	"SetKschmidtCoeff"	367409	null	13
+:592	145010	0	"SetKschmidtCoeff"	367410	null	13
+:593	145010	0	"SetKschmidtCoeff"	367411	null	13
+:594	145010	0	"SetKschmidtCoeff"	367412	null	13
+:595	145010	0	"SetKschmidtCoeff"	367413	null	13
+:596	145010	0	"SetKschmidtCoeff"	367414	null	13
+:597	145010	0	"SetKschmidtCoeff"	367415	null	13
+:598	145010	0	"SetKschmidtCoeff"	367416	null	13
+:599	145010	0	"SetKschmidtCoeff"	367417	null	13
+:600	145010	0	"SetKschmidtCoeff"	367418	null	13
+:601	145010	0	"SetKschmidtCoeff"	367419	null	13
+:602	145010	0	"SetKschmidtCoeff"	367420	null	13
+:603	145010	0	"SetKschmidtCoeff"	367421	null	13
+:604	145010	0	"SetKschmidtCoeff"	367422	null	13
+:605	145010	0	"SetKschmidtCoeff"	367423	null	13
+:606	145010	0	"SetKschmidtCoeff"	367424	null	13
+:607	145010	0	"SetKschmidtCoeff"	367425	null	13
+:608	145010	0	"SetKschmidtCoeff"	367426	null	13
+:609	145010	0	"SetKschmidtCoeff"	367427	null	13
+:610	145010	0	"SetKschmidtCoeff"	367428	null	13
+:611	145010	0	"SetKschmidtCoeff"	367429	null	13
+:612	145010	0	"SetKschmidtCoeff"	367430	null	13
+:613	145010	0	"SetKschmidtCoeff"	367431	null	13
+:614	145010	0	"SetKschmidtCoeff"	367432	null	13
+:615	145010	0	"SetKschmidtCoeff"	367433	null	13
+:616	145010	0	"SetKschmidtCoeff"	367434	null	13
+:617	145010	0	"SetKschmidtCoeff"	367435	null	13
+:618	145010	0	"SetKschmidtCoeff"	367436	null	13
+:619	145010	0	"SetKschmidtCoeff"	367437	null	13
+:620	145010	0	"SetKschmidtCoeff"	367438	null	13
+:621	145010	0	"SetKschmidtCoeff"	367439	null	13
+:622	145010	0	"SetKschmidtCoeff"	367440	null	13
+:623	145010	0	"SetKschmidtCoeff"	367441	null	13
+:624	145010	0	"SetKschmidtCoeff"	367442	null	13
+:625	145010	0	"SetKschmidtCoeff"	367443	null	13
+:626	145010	0	"SetKschmidtCoeff"	367444	null	13
+:627	145010	0	"SetKschmidtCoeff"	367445	null	13
+:628	145010	0	"SetKschmidtCoeff"	367446	null	13
+:629	145010	0	"SetKschmidtCoeff"	367447	null	13
+:630	145010	0	"SetKschmidtCoeff"	367448	null	13
+:631	145010	0	"SetKschmidtCoeff"	367449	null	13
+:632	145010	0	"SetKschmidtCoeff"	367450	null	13
+:633	145010	0	"SetKschmidtCoeff"	367451	null	13
+:634	145010	0	"SetKschmidtCoeff"	367452	null	13
+:635	145010	0	"SetKschmidtCoeff"	367453	null	13
+:636	145010	0	"SetKschmidtCoeff"	367454	null	13
+:637	145010	0	"SetKschmidtCoeff"	367455	null	13
+:638	145010	0	"SetKschmidtCoeff"	367456	null	13
+:639	145010	0	"SetKschmidtCoeff"	367457	null	13
+:640	145010	0	"SetKschmidtCoeff"	367458	null	13
+:641	145010	0	"SetKschmidtCoeff"	367459	null	13
+:642	145010	0	"SetKschmidtCoeff"	367460	null	13
+:643	145010	0	"SetKschmidtCoeff"	367461	null	13
+:644	145010	0	"SetKschmidtCoeff"	367462	null	13
+:645	145010	0	"SetKschmidtCoeff"	367463	null	13
+:646	145010	0	"SetKschmidtCoeff"	367464	null	13
+:647	145010	0	"SetKschmidtCoeff"	367465	null	13
+:648	145010	0	"SetKschmidtCoeff"	367466	null	13
+:649	145010	0	"SetKschmidtCoeff"	367467	null	13
+:650	145010	0	"SetKschmidtCoeff"	367468	null	13
+:651	145010	0	"SetKschmidtCoeff"	367469	null	13
+:652	145010	0	"SetKschmidtCoeff"	367470	null	13
+:653	145010	0	"SetKschmidtCoeff"	367471	null	13
+:654	145010	0	"SetKschmidtCoeff"	367472	null	13
+:655	145010	0	"SetKschmidtCoeff"	367473	null	13
+:656	145010	0	"SetKschmidtCoeff"	367474	null	13
+:657	145010	0	"SetKschmidtCoeff"	367475	null	13
+:658	145010	0	"SetKschmidtCoeff"	367476	null	13
+:659	145010	0	"SetKschmidtCoeff"	367477	null	13
+:660	145010	0	"SetKschmidtCoeff"	367478	null	13
+:661	145010	0	"SetKschmidtCoeff"	367479	null	13
+:662	145010	0	"SetKschmidtCoeff"	367480	null	13
+:663	145010	0	"SetKschmidtCoeff"	367481	null	13
+:664	145010	0	"SetKschmidtCoeff"	367482	null	13
+:665	145010	0	"SetKschmidtCoeff"	367483	null	13
+:666	145010	0	"SetKschmidtCoeff"	367484	null	13
+:667	145010	0	"SetKschmidtCoeff"	367485	null	13
+:668	145010	0	"SetKschmidtCoeff"	367486	null	13
+:669	145010	0	"SetKschmidtCoeff"	367487	null	13
+:670	145010	0	"SetKschmidtCoeff"	367488	null	13
+:671	145010	0	"SetKschmidtCoeff"	367489	null	13
+:672	145010	0	"SetKschmidtCoeff"	367490	null	13
+:673	145010	0	"SetKschmidtCoeff"	367491	null	13
+:674	145010	0	"SetKschmidtCoeff"	367492	null	13
+:675	145010	0	"SetKschmidtCoeff"	367493	null	13
+:676	145010	0	"SetKschmidtCoeff"	367494	null	13
+:677	145010	0	"SetKschmidtCoeff"	367495	null	13
+:678	145010	0	"SetKschmidtCoeff"	367496	null	13
+:679	145010	0	"SetKschmidtCoeff"	367497	null	13
+:680	145010	0	"SetKschmidtCoeff"	367498	null	13
+:681	145010	0	"SetKschmidtCoeff"	367499	null	13
+]]></table>
+    <table name="Table" type="ConfigDB+ConnectionFunctionsTableDataTable" id="_ConfigurationModel_Awô0LOaWDqsMEX1RnuS8yQ">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="ComponentVersionID" type="System.Int32" />
+        <value_column index="2" name="ConnectionName" type="System.String" />
+        <value_column index="3" name="Connection_ComponentID" type="System.Int32" />
+        <value_column index="4" name="Connection_Accessor" type="System.String" />
+        <value_column index="5" name="Comment" type="System.String" />
+        <value_column index="6" name="ConnectionFunctionID" type="System.Int32" />
+        <value_column index="7" name="FileID" type="System.Int32" />
+      </header><![CDATA[
+:0	144956	"add_ody_component"	16	"ody_component"	null	13285	2
+:1	144956	"add_ody_component"	73	"ody_component"	null	13286	2
+:2	144956	"add_ody_component"	74	"ody_component"	null	13287	2
+:3	144956	"add_ody_component"	75	"ody_component"	null	13288	2
+:4	144956	"add_ody_component"	76	"ody_component"	null	13289	2
+:5	144956	"add_ody_component"	263	"ody_component"	null	13290	2
+:6	144956	"add_ody_component"	264	"ody_component"	null	13291	2
+:7	144956	"add_ody_component"	265	"ody_component"	null	13292	2
+:8	144978	"add_power_component"	73	"Power"	null	13293	2
+:9	144978	"add_power_component"	74	"Power"	null	13294	2
+:10	144978	"add_power_component"	75	"Power"	null	13295	2
+:11	144978	"add_power_component"	76	"Power"	null	13296	2
+:12	144978	"add_power_component"	263	"Power"	null	13297	2
+:13	144978	"add_power_component"	264	"Power"	null	13298	2
+:14	144978	"add_power_component"	265	"Power"	null	13299	2
+:15	144978	"add_power_component"	260	"Power"	null	13300	2
+:16	144978	"add_power_component"	261	"Power"	null	13301	2
+:17	144978	"add_power_component"	262	"Power"	null	13302	2
+]]></table>
+    <table name="Table" type="ConfigDB+FunctionArgumentsTableDataTable" id="_ConfigurationModel_DJôgôh8l44ckqko6MuAzaQ">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="FunctionID" type="System.Int32" />
+        <value_column index="2" name="Index" type="System.UInt32" />
+        <value_column index="3" name="Type" type="STKSolis.Satellite.SystemData.MCDHConfigurationData+EConfigParameterType" />
+        <value_column index="4" name="Units" type="System.String" />
+        <value_column index="5" name="Value" type="System.Object" />
+      </header><![CDATA[
+:0	366818	0	0	"unknown"	"MagCoil_Py"
+:1	366818	1	9	"unknown"	FSC_ActProc_MT_MagCoil_Py.FSC_ActProc_MT
+:2	366818	2	1	"unknown"	1
+:3	366819	0	0	"unknown"	"MagCoil_Mz"
+:4	366819	1	9	"unknown"	FSC_ActProc_MT_MagCoil_Mz.FSC_ActProc_MT
+:5	366819	2	1	"unknown"	1
+:6	366820	0	0	"unknown"	"MagCoil_Px"
+:7	366820	1	9	"unknown"	FSC_ActProc_MT_MagCoil_Px.FSC_ActProc_MT
+:8	366820	2	1	"unknown"	1
+:9	366821	0	0	"unknown"	"MagCoil_Mx"
+:10	366821	1	9	"unknown"	FSC_ActProc_MT_MagCoil_Mx.FSC_ActProc_MT
+:11	366821	2	1	"unknown"	1
+:12	366822	0	0	"unknown"	"MagCoil_My"
+:13	366822	1	9	"unknown"	FSC_ActProc_MT_MagCoil_My.FSC_ActProc_MT
+:14	366822	2	1	"unknown"	1
+:15	366823	0	0	"unknown"	"RW_Px"
+:16	366823	1	9	"unknown"	FSC_ActProc_RW_RW_Px.FSC_ActProc_RW
+:17	366823	2	1	"unknown"	1
+:18	366823	3	2	"unknown"	0
+:19	366824	0	0	"unknown"	"RW_Py"
+:20	366824	1	9	"unknown"	FSC_ActProc_RW_RW_Py.FSC_ActProc_RW
+:21	366824	2	1	"unknown"	1
+:22	366824	3	2	"unknown"	0
+:23	366825	0	0	"unknown"	"RW_Mz"
+:24	366825	1	9	"unknown"	FSC_ActProc_RW_RW_Mz.FSC_ActProc_RW
+:25	366825	2	1	"unknown"	1
+:26	366825	3	2	"unknown"	0
+:27	366826	0	0	"unknown"	"SunSens_Mx"
+:28	366826	1	9	"unknown"	FSC_SenProc_SUN_SunSens_Mx.FSW_SenProc_ADSensor
+:29	366827	0	0	"unknown"	"SunSens_Px"
+:30	366827	1	9	"unknown"	FSC_SenProc_SUN_SunSens_Px.FSW_SenProc_ADSensor
+:31	366828	0	0	"unknown"	"SunSens_My"
+:32	366828	1	9	"unknown"	FSC_SenProc_SUN_SunSens_My.FSW_SenProc_ADSensor
+:33	366829	0	0	"unknown"	"SunSens_Py"
+:34	366829	1	9	"unknown"	FSC_SenProc_SUN_SunSens_Py.FSW_SenProc_ADSensor
+:35	366830	0	0	"unknown"	"SunSens_Mz"
+:36	366830	1	9	"unknown"	FSC_SenProc_SUN_SunSens_Mz.FSW_SenProc_ADSensor
+:37	366831	0	0	"unknown"	"Mag_FCHMC"
+:38	366831	1	9	"unknown"	FSC_SenProc_MAG_Mag_FCHMC.FSW_SenProc_ADSensor
+:39	366832	0	0	"unknown"	"Sinclair_STR"
+:40	366832	1	9	"unknown"	FSC_SenProc_STR_Sinclair_STR.FSW_SenProc_ADSensor
+:41	366833	0	0	"unknown"	"GeneralTarget"
+:42	366833	1	9	"unknown"	FOB_Target_GeneralTarget.FOB_Target
+:43	366834	0	0	"unknown"	"OrbitTarget"
+:44	366834	1	9	"unknown"	FOB_Target_OrbitTarget.FOB_Target
+:45	366835	0	0	"unknown"	"Idle"
+:46	366836	0	0	"unknown"	"Hold"
+:47	366836	1	9	"unknown"	FOB_ModeType_Hold_Hold.FOB_ModeParms_Hold
+:48	366836	2	9	"unknown"	FOB_ModeType_Hold_Hold.FOB_ModeParms_Tracking
+:49	366837	0	0	"unknown"	"RateDamp"
+:50	366837	1	9	"unknown"	FOB_ModeType_RateDamp_RateDamp.FOB_ModeParms_RateDamp
+:51	366838	0	0	"unknown"	"SunAcq"
+:52	366838	1	9	"unknown"	FOB_ModeType_SunAcq_SunAcq.FOB_ModeParms_SunAcq
+:53	366839	0	0	"unknown"	"InertialPoint"
+:54	366839	1	9	"unknown"	FOB_ModeType_Tracking_InertialPoint.FOB_ModeParms_Tracking
+:55	366840	0	0	"unknown"	"SunTrack"
+:56	366840	1	9	"unknown"	FOB_ModeType_Tracking_SunTrack.FOB_ModeParms_Tracking
+:57	366841	0	0	"unknown"	"NadirTrack"
+:58	366841	1	9	"unknown"	FOB_ModeType_Tracking_NadirTrack.FOB_ModeParms_Tracking
+:59	366842	0	0	"unknown"	"VelocityTrack"
+:60	366842	1	9	"unknown"	FOB_ModeType_Tracking_VelocityTrack.FOB_ModeParms_Tracking
+:61	366843	0	0	"unknown"	"MagFieldTrack"
+:62	366843	1	9	"unknown"	FOB_ModeType_Tracking_MagFieldTrack.FOB_ModeParms_Tracking
+:63	366844	0	0	"unknown"	"TargetTrack"
+:64	366844	1	9	"unknown"	FOB_ModeType_Tracking_TargetTrack.FOB_ModeParms_Tracking
+:65	366845	0	0	"unknown"	"OrbitTrack"
+:66	366845	1	9	"unknown"	FOB_ModeType_Tracking_OrbitTrack.FOB_ModeParms_Tracking
+:67	366846	0	0	"unknown"	"EigenSlew"
+:68	366846	1	9	"unknown"	FOB_Mode_SlewLimitsBdy_BodyLimits.FOB_Mode_SlewLimits
+:69	366847	0	0	"unknown"	"RendezSlew"
+:70	366847	1	9	"unknown"	FOB_Mode_SlewLimitsBdy_BodyLimits.FOB_Mode_SlewLimits
+:71	366848	0	0	"unknown"	"Baseline"
+:72	366848	1	9	"unknown"	UTL_MassProps_Bus.UTL_MassProps
+:73	366849	0	0	"unknown"	"Standard"
+:74	366849	1	9	"unknown"	FOB_CtrlParms_Attitude_Standard.FOB_CtrlParms_Attitude
+:75	366850	0	0	"unknown"	"Standard"
+:76	366850	1	9	"unknown"	FOB_CtrlParms_Momentum_Standard.FOB_CtrlParms_Momentum
+:77	366851	0	0	"unknown"	"Standard"
+:78	366851	1	9	"unknown"	FOB_CtrlParms_FeedForward_Standard.FOB_CtrlParms_FeedForward
+:79	366852	0	0	"unknown"	"NORMAL_OPS"
+:80	366853	0	0	"unknown"	"SAFE_MODE"
+:81	366854	0	0	"unknown"	"Baseline"
+:82	366854	1	9	"unknown"	UTL_MassProps_ODYBus.UTL_MassProps
+:83	366855	0	2	"unknown"	0
+:84	366855	1	2	"unknown"	0.5
+:85	366856	0	2	"unknown"	40
+:86	366856	1	2	"unknown"	0.5
+:87	366857	0	2	"unknown"	80
+:88	366857	1	2	"unknown"	0.5
+:89	366858	0	2	"unknown"	95
+:90	366858	1	2	"unknown"	0.5
+:91	366859	0	2	"unknown"	98
+:92	366859	1	2	"unknown"	0.2
+:93	366860	0	2	"unknown"	100
+:94	366860	1	2	"unknown"	0.05
+:95	366861	0	2	"unknown"	0
+:96	366861	1	2	"unknown"	0
+:97	366862	0	2	"unknown"	40
+:98	366862	1	2	"unknown"	3.4
+:99	366863	0	2	"unknown"	80
+:100	366863	1	2	"unknown"	3.8
+:101	366864	0	2	"unknown"	95
+:102	366864	1	2	"unknown"	3.8
+:103	366865	0	2	"unknown"	98
+:104	366865	1	2	"unknown"	4
+:105	366866	0	2	"unknown"	100
+:106	366866	1	2	"unknown"	4
+:107	366867	0	2	"unknown"	0
+:108	366867	1	2	"unknown"	0
+:109	366868	0	2	"unknown"	40
+:110	366868	1	2	"unknown"	3.4
+:111	366869	0	2	"unknown"	80
+:112	366869	1	2	"unknown"	3.7
+:113	366870	0	2	"unknown"	95
+:114	366870	1	2	"unknown"	3.7
+:115	366871	0	2	"unknown"	98
+:116	366871	1	2	"unknown"	3.7
+:117	366872	0	2	"unknown"	100
+:118	366872	1	2	"unknown"	3.7
+:119	366873	0	9	"unknown"	tlm_mon_fp.apid
+:120	366873	1	2	"unknown"	0.5
+:121	366874	0	9	"unknown"	event_reporting.apid
+:122	366874	1	2	"unknown"	-1
+:123	366875	0	9	"unknown"	STK_DataHandler.apid
+:124	366875	1	2	"unknown"	0.5
+:125	366876	0	9	"unknown"	AtlasMultiSpectralImager.apid
+:126	366876	1	2	"unknown"	0.5
+:127	366877	0	9	"unknown"	KaTransmitter.apid
+:128	366877	1	2	"unknown"	0.5
+:129	366878	0	9	"unknown"	UHF.apid
+:130	366878	1	2	"unknown"	0.5
+:131	366879	0	9	"unknown"	data_recorder.apid
+:132	366879	1	2	"unknown"	0.5
+:133	366880	0	3	"unknown"	800
+:134	366880	1	2	"unknown"	1
+:135	366881	0	3	"unknown"	700
+:136	366881	1	2	"unknown"	1
+:137	366882	0	3	"unknown"	930
+:138	366882	1	2	"unknown"	1
+:139	366883	0	3	"unknown"	900
+:140	366883	1	2	"unknown"	1
+:141	366884	0	3	"unknown"	920
+:142	366884	1	2	"unknown"	1
+:143	366885	0	3	"unknown"	910
+:144	366885	1	2	"unknown"	1
+:145	366886	0	3	"unknown"	610
+:146	366886	1	2	"unknown"	1
+:147	366887	0	3	"unknown"	840
+:148	366887	1	2	"unknown"	1
+:149	366888	0	3	"unknown"	600
+:150	366888	1	2	"unknown"	1
+:151	366889	0	3	"unknown"	2500
+:152	366889	1	2	"unknown"	1
+:153	366890	0	3	"unknown"	3000
+:154	366890	1	2	"unknown"	1
+:155	366891	0	3	"unknown"	3500
+:156	366891	1	2	"unknown"	1
+:157	366892	0	3	"unknown"	4100
+:158	366892	1	2	"unknown"	1
+:159	366893	0	3	"unknown"	2999
+:160	366893	1	2	"unknown"	1
+:161	366894	0	3	"unknown"	161
+:162	366894	1	2	"unknown"	1
+:163	366895	0	3	"unknown"	2300
+:164	366895	1	2	"unknown"	1
+:165	366896	0	3	"unknown"	2200
+:166	366896	1	2	"unknown"	1
+:167	366897	0	3	"unknown"	212
+:168	366897	1	2	"unknown"	1
+:169	366898	0	3	"unknown"	210
+:170	366898	1	2	"unknown"	1
+:171	366899	0	3	"unknown"	211
+:172	366899	1	2	"unknown"	1
+:173	366900	0	3	"unknown"	620
+:174	366900	1	2	"unknown"	1
+:175	366901	0	0	"unknown"	"rec_payload"
+:176	366901	1	9	"unknown"	rec_packet_payload.tlm_provider
+:177	366902	0	3	"unknown"	0
+:178	366903	0	3	"unknown"	0
+:179	366903	1	0	"unknown"	"rt"
+:180	366904	0	3	"unknown"	0
+:181	366905	0	3	"unknown"	0
+:182	366905	1	0	"unknown"	"GSA_SUNCONVERGED"
+:183	366906	0	3	"unknown"	0
+:184	366906	1	0	"unknown"	"GSA_SUNCONVERGED"
+:185	366906	2	0	"unknown"	"SunAcq SunConverged == 1"
+:186	366907	0	3	"unknown"	0
+:187	366907	1	3	"unknown"	0
+:188	366907	2	0	"unknown"	"SunAcq SunConverged == 1"
+:189	366907	3	0	"unknown"	"GSA_SUNCONVERGED_EQ_V0"
+:190	366909	0	1	"unknown"	1
+:191	366910	0	1	"unknown"	1
+:192	366911	0	1	"unknown"	1
+:193	366912	0	1	"unknown"	1
+:194	366913	0	9	"unknown"	UTL_CelestialBody_Sun.UTL_CentralBody
+:195	366913	1	9	"unknown"	UTL_CelestialBody_Sun.UTL_CentralBody
+:196	366913	2	5	"unknown"	[ 0.0  0.0  0.0  1.0 ]
+:197	366914	0	9	"unknown"	UTL_CelestialBody_Earth.UTL_CentralBody
+:198	366914	1	9	"unknown"	UTL_CelestialBody_Sun.UTL_CentralBody
+:199	366914	2	5	"unknown"	[ 2.2362122095851e-1  3.13295201342879e-2  1.38773710594827e-1  9.64237454133018e-1 ]
+:200	366915	0	3	"unknown"	0
+:201	366915	1	3	"unknown"	3
+:202	366915	2	2	"unknown"	0
+:203	366916	0	3	"unknown"	0
+:204	366916	1	3	"unknown"	4
+:205	366916	2	2	"unknown"	0
+:206	366917	0	3	"unknown"	0
+:207	366917	1	3	"unknown"	5
+:208	366917	2	2	"unknown"	0
+:209	366918	0	3	"unknown"	0
+:210	366918	1	3	"unknown"	6
+:211	366918	2	2	"unknown"	0
+:212	366919	0	3	"unknown"	0
+:213	366919	1	3	"unknown"	7
+:214	366919	2	2	"unknown"	0
+:215	366920	0	3	"unknown"	0
+:216	366920	1	3	"unknown"	8
+:217	366920	2	2	"unknown"	0
+:218	366921	0	3	"unknown"	0
+:219	366921	1	3	"unknown"	9
+:220	366921	2	2	"unknown"	0
+:221	366922	0	3	"unknown"	0
+:222	366922	1	3	"unknown"	10
+:223	366922	2	2	"unknown"	0
+:224	366923	0	3	"unknown"	0
+:225	366923	1	3	"unknown"	11
+:226	366923	2	2	"unknown"	0
+:227	366924	0	3	"unknown"	0
+:228	366924	1	3	"unknown"	12
+:229	366924	2	2	"unknown"	0
+:230	366925	0	3	"unknown"	0
+:231	366925	1	3	"unknown"	13
+:232	366925	2	2	"unknown"	0
+:233	366926	0	3	"unknown"	1
+:234	366926	1	3	"unknown"	0
+:235	366926	2	2	"unknown"	-2.94214E-05
+:236	366927	0	3	"unknown"	1
+:237	366927	1	3	"unknown"	1
+:238	366927	2	2	"unknown"	-1.4648E-06
+:239	366928	0	3	"unknown"	1
+:240	366928	1	3	"unknown"	2
+:241	366928	2	2	"unknown"	0
+:242	366929	0	3	"unknown"	1
+:243	366929	1	3	"unknown"	3
+:244	366929	2	2	"unknown"	0
+:245	366930	0	3	"unknown"	1
+:246	366930	1	3	"unknown"	4
+:247	366930	2	2	"unknown"	0
+:248	366931	0	3	"unknown"	1
+:249	366931	1	3	"unknown"	5
+:250	366931	2	2	"unknown"	0
+:251	366932	0	3	"unknown"	1
+:252	366932	1	3	"unknown"	6
+:253	366932	2	2	"unknown"	0
+:254	366933	0	3	"unknown"	1
+:255	366933	1	3	"unknown"	7
+:256	366933	2	2	"unknown"	0
+:257	366934	0	3	"unknown"	1
+:258	366934	1	3	"unknown"	8
+:259	366934	2	2	"unknown"	0
+:260	366935	0	3	"unknown"	1
+:261	366935	1	3	"unknown"	9
+:262	366935	2	2	"unknown"	0
+:263	366936	0	3	"unknown"	1
+:264	366936	1	3	"unknown"	10
+:265	366936	2	2	"unknown"	0
+:266	366937	0	3	"unknown"	1
+:267	366937	1	3	"unknown"	11
+:268	366937	2	2	"unknown"	0
+:269	366938	0	3	"unknown"	1
+:270	366938	1	3	"unknown"	12
+:271	366938	2	2	"unknown"	0
+:272	366939	0	3	"unknown"	1
+:273	366939	1	3	"unknown"	13
+:274	366939	2	2	"unknown"	0
+:275	366940	0	3	"unknown"	2
+:276	366940	1	3	"unknown"	0
+:277	366940	2	2	"unknown"	-2.4625E-06
+:278	366941	0	3	"unknown"	2
+:279	366941	1	3	"unknown"	1
+:280	366941	2	2	"unknown"	3.0063E-06
+:281	366942	0	3	"unknown"	2
+:282	366942	1	3	"unknown"	2
+:283	366942	2	2	"unknown"	1.6809E-06
+:284	366943	0	3	"unknown"	2
+:285	366943	1	3	"unknown"	3
+:286	366943	2	2	"unknown"	0
+:287	366944	0	3	"unknown"	2
+:288	366944	1	3	"unknown"	4
+:289	366944	2	2	"unknown"	0
+:290	366945	0	3	"unknown"	2
+:291	366945	1	3	"unknown"	5
+:292	366945	2	2	"unknown"	0
+:293	366946	0	3	"unknown"	2
+:294	366946	1	3	"unknown"	6
+:295	366946	2	2	"unknown"	0
+:296	366947	0	3	"unknown"	2
+:297	366947	1	3	"unknown"	7
+:298	366947	2	2	"unknown"	0
+:299	366948	0	3	"unknown"	2
+:300	366948	1	3	"unknown"	8
+:301	366948	2	2	"unknown"	0
+:302	366949	0	3	"unknown"	2
+:303	366949	1	3	"unknown"	9
+:304	366949	2	2	"unknown"	0
+:305	366950	0	3	"unknown"	2
+:306	366950	1	3	"unknown"	10
+:307	366950	2	2	"unknown"	0
+:308	366951	0	3	"unknown"	2
+:309	366951	1	3	"unknown"	11
+:310	366951	2	2	"unknown"	0
+:311	366952	0	3	"unknown"	2
+:312	366952	1	3	"unknown"	12
+:313	366952	2	2	"unknown"	0
+:314	366953	0	3	"unknown"	2
+:315	366953	1	3	"unknown"	13
+:316	366953	2	2	"unknown"	0
+:317	366954	0	3	"unknown"	3
+:318	366954	1	3	"unknown"	0
+:319	366954	2	2	"unknown"	1.3575E-06
+:320	366955	0	3	"unknown"	3
+:321	366955	1	3	"unknown"	1
+:322	366955	2	2	"unknown"	-2.3633E-06
+:323	366956	0	3	"unknown"	3
+:324	366956	1	3	"unknown"	2
+:325	366956	2	2	"unknown"	1.2242E-06
+:326	366957	0	3	"unknown"	3
+:327	366957	1	3	"unknown"	3
+:328	366957	2	2	"unknown"	5.618E-07
+:329	366958	0	3	"unknown"	3
+:330	366958	1	3	"unknown"	4
+:331	366958	2	2	"unknown"	0
+:332	366959	0	3	"unknown"	3
+:333	366959	1	3	"unknown"	5
+:334	366959	2	2	"unknown"	0
+:335	366960	0	3	"unknown"	3
+:336	366960	1	3	"unknown"	6
+:337	366960	2	2	"unknown"	0
+:338	366961	0	3	"unknown"	3
+:339	366961	1	3	"unknown"	7
+:340	366961	2	2	"unknown"	0
+:341	366962	0	3	"unknown"	3
+:342	366962	1	3	"unknown"	8
+:343	366962	2	2	"unknown"	0
+:344	366963	0	3	"unknown"	3
+:345	366963	1	3	"unknown"	9
+:346	366963	2	2	"unknown"	0
+:347	366964	0	3	"unknown"	3
+:348	366964	1	3	"unknown"	10
+:349	366964	2	2	"unknown"	0
+:350	366965	0	3	"unknown"	3
+:351	366965	1	3	"unknown"	11
+:352	366965	2	2	"unknown"	0
+:353	366966	0	3	"unknown"	3
+:354	366966	1	3	"unknown"	12
+:355	366966	2	2	"unknown"	0
+:356	366967	0	3	"unknown"	3
+:357	366967	1	3	"unknown"	13
+:358	366967	2	2	"unknown"	0
+:359	366968	0	3	"unknown"	4
+:360	366968	1	3	"unknown"	0
+:361	366968	2	2	"unknown"	9.062E-07
+:362	366969	0	3	"unknown"	4
+:363	366969	1	3	"unknown"	1
+:364	366969	2	2	"unknown"	8.141E-07
+:365	366970	0	3	"unknown"	4
+:366	366970	1	3	"unknown"	2
+:367	366970	2	2	"unknown"	1.022E-07
+:368	366971	0	3	"unknown"	4
+:369	366971	1	3	"unknown"	3
+:370	366971	2	2	"unknown"	-3.267E-07
+:371	366972	0	3	"unknown"	4
+:372	366972	1	3	"unknown"	4
+:373	366972	2	2	"unknown"	6.18E-08
+:374	366973	0	3	"unknown"	4
+:375	366973	1	3	"unknown"	5
+:376	366973	2	2	"unknown"	0
+:377	366974	0	3	"unknown"	4
+:378	366974	1	3	"unknown"	6
+:379	366974	2	2	"unknown"	0
+:380	366975	0	3	"unknown"	4
+:381	366975	1	3	"unknown"	7
+:382	366975	2	2	"unknown"	0
+:383	366976	0	3	"unknown"	4
+:384	366976	1	3	"unknown"	8
+:385	366976	2	2	"unknown"	0
+:386	366977	0	3	"unknown"	4
+:387	366977	1	3	"unknown"	9
+:388	366977	2	2	"unknown"	0
+:389	366978	0	3	"unknown"	4
+:390	366978	1	3	"unknown"	10
+:391	366978	2	2	"unknown"	0
+:392	366979	0	3	"unknown"	4
+:393	366979	1	3	"unknown"	11
+:394	366979	2	2	"unknown"	0
+:395	366980	0	3	"unknown"	4
+:396	366980	1	3	"unknown"	12
+:397	366980	2	2	"unknown"	0
+:398	366981	0	3	"unknown"	4
+:399	366981	1	3	"unknown"	13
+:400	366981	2	2	"unknown"	0
+:401	366982	0	3	"unknown"	5
+:402	366982	1	3	"unknown"	0
+:403	366982	2	2	"unknown"	-2.33E-07
+:404	366983	0	3	"unknown"	5
+:405	366983	1	3	"unknown"	1
+:406	366983	2	2	"unknown"	3.611E-07
+:407	366984	0	3	"unknown"	5
+:408	366984	1	3	"unknown"	2
+:409	366984	2	2	"unknown"	1.898E-07
+:410	366985	0	3	"unknown"	5
+:411	366985	1	3	"unknown"	3
+:412	366985	2	2	"unknown"	-1.411E-07
+:413	366986	0	3	"unknown"	5
+:414	366986	1	3	"unknown"	4
+:415	366986	2	2	"unknown"	-1.547E-07
+:416	366987	0	3	"unknown"	5
+:417	366987	1	3	"unknown"	5
+:418	366987	2	2	"unknown"	1.19E-08
+:419	366988	0	3	"unknown"	5
+:420	366988	1	3	"unknown"	6
+:421	366988	2	2	"unknown"	0
+:422	366989	0	3	"unknown"	5
+:423	366989	1	3	"unknown"	7
+:424	366989	2	2	"unknown"	0
+:425	366990	0	3	"unknown"	5
+:426	366990	1	3	"unknown"	8
+:427	366990	2	2	"unknown"	0
+:428	366991	0	3	"unknown"	5
+:429	366991	1	3	"unknown"	9
+:430	366991	2	2	"unknown"	0
+:431	366992	0	3	"unknown"	5
+:432	366992	1	3	"unknown"	10
+:433	366992	2	2	"unknown"	0
+:434	366993	0	3	"unknown"	5
+:435	366993	1	3	"unknown"	11
+:436	366993	2	2	"unknown"	0
+:437	366994	0	3	"unknown"	5
+:438	366994	1	3	"unknown"	12
+:439	366994	2	2	"unknown"	0
+:440	366995	0	3	"unknown"	5
+:441	366995	1	3	"unknown"	13
+:442	366995	2	2	"unknown"	0
+:443	366996	0	3	"unknown"	6
+:444	366996	1	3	"unknown"	0
+:445	366996	2	2	"unknown"	6.94E-08
+:446	366997	0	3	"unknown"	6
+:447	366997	1	3	"unknown"	1
+:448	366997	2	2	"unknown"	6.75E-08
+:449	366998	0	3	"unknown"	6
+:450	366998	1	3	"unknown"	2
+:451	366998	2	2	"unknown"	7.13E-08
+:452	366999	0	3	"unknown"	6
+:453	366999	1	3	"unknown"	3
+:454	366999	2	2	"unknown"	-1.257E-07
+:455	367000	0	3	"unknown"	6
+:456	367000	1	3	"unknown"	4
+:457	367000	2	2	"unknown"	-3.13E-08
+:458	367001	0	3	"unknown"	6
+:459	367001	1	3	"unknown"	5
+:460	367001	2	2	"unknown"	1.38E-08
+:461	367002	0	3	"unknown"	6
+:462	367002	1	3	"unknown"	6
+:463	367002	2	2	"unknown"	-6.77E-08
+:464	367003	0	3	"unknown"	6
+:465	367003	1	3	"unknown"	7
+:466	367003	2	2	"unknown"	0
+:467	367004	0	3	"unknown"	6
+:468	367004	1	3	"unknown"	8
+:469	367004	2	2	"unknown"	0
+:470	367005	0	3	"unknown"	6
+:471	367005	1	3	"unknown"	9
+:472	367005	2	2	"unknown"	0
+:473	367006	0	3	"unknown"	6
+:474	367006	1	3	"unknown"	10
+:475	367006	2	2	"unknown"	0
+:476	367007	0	3	"unknown"	6
+:477	367007	1	3	"unknown"	11
+:478	367007	2	2	"unknown"	0
+:479	367008	0	3	"unknown"	6
+:480	367008	1	3	"unknown"	12
+:481	367008	2	2	"unknown"	0
+:482	367009	0	3	"unknown"	6
+:483	367009	1	3	"unknown"	13
+:484	367009	2	2	"unknown"	0
+:485	367010	0	3	"unknown"	7
+:486	367010	1	3	"unknown"	0
+:487	367010	2	2	"unknown"	8.22E-08
+:488	367011	0	3	"unknown"	7
+:489	367011	1	3	"unknown"	1
+:490	367011	2	2	"unknown"	-7.65E-08
+:491	367012	0	3	"unknown"	7
+:492	367012	1	3	"unknown"	2
+:493	367012	2	2	"unknown"	-7.8E-09
+:494	367013	0	3	"unknown"	7
+:495	367013	1	3	"unknown"	3
+:496	367013	2	2	"unknown"	5.44E-08
+:497	367014	0	3	"unknown"	7
+:498	367014	1	3	"unknown"	4
+:499	367014	2	2	"unknown"	1.52E-08
+:500	367015	0	3	"unknown"	7
+:501	367015	1	3	"unknown"	5
+:502	367015	2	2	"unknown"	8.200000000000001E-09
+:503	367016	0	3	"unknown"	7
+:504	367016	1	3	"unknown"	6
+:505	367016	2	2	"unknown"	-4.4E-09
+:506	367017	0	3	"unknown"	7
+:507	367017	1	3	"unknown"	7
+:508	367017	2	2	"unknown"	7.2E-09
+:509	367018	0	3	"unknown"	7
+:510	367018	1	3	"unknown"	8
+:511	367018	2	2	"unknown"	0
+:512	367019	0	3	"unknown"	7
+:513	367019	1	3	"unknown"	9
+:514	367019	2	2	"unknown"	0
+:515	367020	0	3	"unknown"	7
+:516	367020	1	3	"unknown"	10
+:517	367020	2	2	"unknown"	0
+:518	367021	0	3	"unknown"	7
+:519	367021	1	3	"unknown"	11
+:520	367021	2	2	"unknown"	0
+:521	367022	0	3	"unknown"	7
+:522	367022	1	3	"unknown"	12
+:523	367022	2	2	"unknown"	0
+:524	367023	0	3	"unknown"	7
+:525	367023	1	3	"unknown"	13
+:526	367023	2	2	"unknown"	0
+:527	367024	0	3	"unknown"	8
+:528	367024	1	3	"unknown"	0
+:529	367024	2	2	"unknown"	2.46E-08
+:530	367025	0	3	"unknown"	8
+:531	367025	1	3	"unknown"	1
+:532	367025	2	2	"unknown"	8.799999999999999E-09
+:533	367026	0	3	"unknown"	8
+:534	367026	1	3	"unknown"	2
+:535	367026	2	2	"unknown"	-1.81E-08
+:536	367027	0	3	"unknown"	8
+:537	367027	1	3	"unknown"	3
+:538	367027	2	2	"unknown"	-2.2E-09
+:539	367028	0	3	"unknown"	8
+:540	367028	1	3	"unknown"	4
+:541	367028	2	2	"unknown"	-2.1E-08
+:542	367029	0	3	"unknown"	8
+:543	367029	1	3	"unknown"	5
+:544	367029	2	2	"unknown"	1.42E-08
+:545	367030	0	3	"unknown"	8
+:546	367030	1	3	"unknown"	6
+:547	367030	2	2	"unknown"	1.19E-08
+:548	367031	0	3	"unknown"	8
+:549	367031	1	3	"unknown"	7
+:550	367031	2	2	"unknown"	-1.67E-08
+:551	367032	0	3	"unknown"	8
+:552	367032	1	3	"unknown"	8
+:553	367032	2	2	"unknown"	-1.4E-09
+:554	367033	0	3	"unknown"	8
+:555	367033	1	3	"unknown"	9
+:556	367033	2	2	"unknown"	0
+:557	367034	0	3	"unknown"	8
+:558	367034	1	3	"unknown"	10
+:559	367034	2	2	"unknown"	0
+:560	367035	0	3	"unknown"	8
+:561	367035	1	3	"unknown"	11
+:562	367035	2	2	"unknown"	0
+:563	367036	0	3	"unknown"	8
+:564	367036	1	3	"unknown"	12
+:565	367036	2	2	"unknown"	0
+:566	367037	0	3	"unknown"	8
+:567	367037	1	3	"unknown"	13
+:568	367037	2	2	"unknown"	0
+:569	367038	0	3	"unknown"	9
+:570	367038	1	3	"unknown"	0
+:571	367038	2	2	"unknown"	5.4E-09
+:572	367039	0	3	"unknown"	9
+:573	367039	1	3	"unknown"	1
+:574	367039	2	2	"unknown"	8.799999999999999E-09
+:575	367040	0	3	"unknown"	9
+:576	367040	1	3	"unknown"	2
+:577	367040	2	2	"unknown"	3.1E-09
+:578	367041	0	3	"unknown"	9
+:579	367041	1	3	"unknown"	3
+:580	367041	2	2	"unknown"	-3.3E-09
+:581	367042	0	3	"unknown"	9
+:582	367042	1	3	"unknown"	4
+:583	367042	2	2	"unknown"	7E-10
+:584	367043	0	3	"unknown"	9
+:585	367043	1	3	"unknown"	5
+:586	367043	2	2	"unknown"	-1.33E-08
+:587	367044	0	3	"unknown"	9
+:588	367044	1	3	"unknown"	6
+:589	367044	2	2	"unknown"	-1E-10
+:590	367045	0	3	"unknown"	9
+:591	367045	1	3	"unknown"	7
+:592	367045	2	2	"unknown"	8.7E-09
+:593	367046	0	3	"unknown"	9
+:594	367046	1	3	"unknown"	8
+:595	367046	2	2	"unknown"	-9.1E-09
+:596	367047	0	3	"unknown"	9
+:597	367047	1	3	"unknown"	9
+:598	367047	2	2	"unknown"	-1.05E-08
+:599	367048	0	3	"unknown"	9
+:600	367048	1	3	"unknown"	10
+:601	367048	2	2	"unknown"	0
+:602	367049	0	3	"unknown"	9
+:603	367049	1	3	"unknown"	11
+:604	367049	2	2	"unknown"	0
+:605	367050	0	3	"unknown"	9
+:606	367050	1	3	"unknown"	12
+:607	367050	2	2	"unknown"	0
+:608	367051	0	3	"unknown"	9
+:609	367051	1	3	"unknown"	13
+:610	367051	2	2	"unknown"	0
+:611	367052	0	3	"unknown"	10
+:612	367052	1	3	"unknown"	0
+:613	367052	2	2	"unknown"	-1.9E-09
+:614	367053	0	3	"unknown"	10
+:615	367053	1	3	"unknown"	1
+:616	367053	2	2	"unknown"	-6.3E-09
+:617	367054	0	3	"unknown"	10
+:618	367054	1	3	"unknown"	2
+:619	367054	2	2	"unknown"	1E-10
+:620	367055	0	3	"unknown"	10
+:621	367055	1	3	"unknown"	3
+:622	367055	2	2	"unknown"	5E-10
+:623	367056	0	3	"unknown"	10
+:624	367056	1	3	"unknown"	4
+:625	367056	2	2	"unknown"	-5E-10
+:626	367057	0	3	"unknown"	10
+:627	367057	1	3	"unknown"	5
+:628	367057	2	2	"unknown"	1.8E-09
+:629	367058	0	3	"unknown"	10
+:630	367058	1	3	"unknown"	6
+:631	367058	2	2	"unknown"	-7E-10
+:632	367059	0	3	"unknown"	10
+:633	367059	1	3	"unknown"	7
+:634	367059	2	2	"unknown"	2.1E-09
+:635	367060	0	3	"unknown"	10
+:636	367060	1	3	"unknown"	8
+:637	367060	2	2	"unknown"	2.4E-09
+:638	367061	0	3	"unknown"	10
+:639	367061	1	3	"unknown"	9
+:640	367061	2	2	"unknown"	-1.8E-09
+:641	367062	0	3	"unknown"	10
+:642	367062	1	3	"unknown"	10
+:643	367062	2	2	"unknown"	-3.6E-09
+:644	367063	0	3	"unknown"	10
+:645	367063	1	3	"unknown"	11
+:646	367063	2	2	"unknown"	0
+:647	367064	0	3	"unknown"	10
+:648	367064	1	3	"unknown"	12
+:649	367064	2	2	"unknown"	0
+:650	367065	0	3	"unknown"	10
+:651	367065	1	3	"unknown"	13
+:652	367065	2	2	"unknown"	0
+:653	367066	0	3	"unknown"	11
+:654	367066	1	3	"unknown"	0
+:655	367066	2	2	"unknown"	3.1E-09
+:656	367067	0	3	"unknown"	11
+:657	367067	1	3	"unknown"	1
+:658	367067	2	2	"unknown"	-1.5E-09
+:659	367068	0	3	"unknown"	11
+:660	367068	1	3	"unknown"	2
+:661	367068	2	2	"unknown"	-2.3E-09
+:662	367069	0	3	"unknown"	11
+:663	367069	1	3	"unknown"	3
+:664	367069	2	2	"unknown"	2E-09
+:665	367070	0	3	"unknown"	11
+:666	367070	1	3	"unknown"	4
+:667	367070	2	2	"unknown"	-8E-10
+:668	367071	0	3	"unknown"	11
+:669	367071	1	3	"unknown"	5
+:670	367071	2	2	"unknown"	6E-10
+:671	367072	0	3	"unknown"	11
+:672	367072	1	3	"unknown"	6
+:673	367072	2	2	"unknown"	-7E-10
+:674	367073	0	3	"unknown"	11
+:675	367073	1	3	"unknown"	7
+:676	367073	2	2	"unknown"	2E-10
+:677	367074	0	3	"unknown"	11
+:678	367074	1	3	"unknown"	8
+:679	367074	2	2	"unknown"	1.7E-09
+:680	367075	0	3	"unknown"	11
+:681	367075	1	3	"unknown"	9
+:682	367075	2	2	"unknown"	-2E-10
+:683	367076	0	3	"unknown"	11
+:684	367076	1	3	"unknown"	10
+:685	367076	2	2	"unknown"	4E-10
+:686	367077	0	3	"unknown"	11
+:687	367077	1	3	"unknown"	11
+:688	367077	2	2	"unknown"	3.5E-09
+:689	367078	0	3	"unknown"	11
+:690	367078	1	3	"unknown"	12
+:691	367078	2	2	"unknown"	0
+:692	367079	0	3	"unknown"	11
+:693	367079	1	3	"unknown"	13
+:694	367079	2	2	"unknown"	0
+:695	367080	0	3	"unknown"	12
+:696	367080	1	3	"unknown"	0
+:697	367080	2	2	"unknown"	-1.9E-09
+:698	367081	0	3	"unknown"	12
+:699	367081	1	3	"unknown"	1
+:700	367081	2	2	"unknown"	-2E-10
+:701	367082	0	3	"unknown"	12
+:702	367082	1	3	"unknown"	2
+:703	367082	2	2	"unknown"	4E-10
+:704	367083	0	3	"unknown"	12
+:705	367083	1	3	"unknown"	3
+:706	367083	2	2	"unknown"	1.2E-09
+:707	367084	0	3	"unknown"	12
+:708	367084	1	3	"unknown"	4
+:709	367084	2	2	"unknown"	-8E-10
+:710	367085	0	3	"unknown"	12
+:711	367085	1	3	"unknown"	5
+:712	367085	2	2	"unknown"	9E-10
+:713	367086	0	3	"unknown"	12
+:714	367086	1	3	"unknown"	6
+:715	367086	2	2	"unknown"	1E-10
+:716	367087	0	3	"unknown"	12
+:717	367087	1	3	"unknown"	7
+:718	367087	2	2	"unknown"	5E-10
+:719	367088	0	3	"unknown"	12
+:720	367088	1	3	"unknown"	8
+:721	367088	2	2	"unknown"	-3E-10
+:722	367089	0	3	"unknown"	12
+:723	367089	1	3	"unknown"	9
+:724	367089	2	2	"unknown"	-4E-10
+:725	367090	0	3	"unknown"	12
+:726	367090	1	3	"unknown"	10
+:727	367090	2	2	"unknown"	2E-10
+:728	367091	0	3	"unknown"	12
+:729	367091	1	3	"unknown"	11
+:730	367091	2	2	"unknown"	-9E-10
+:731	367092	0	3	"unknown"	12
+:732	367092	1	3	"unknown"	12
+:733	367092	2	2	"unknown"	0
+:734	367093	0	3	"unknown"	12
+:735	367093	1	3	"unknown"	13
+:736	367093	2	2	"unknown"	0
+:737	367094	0	3	"unknown"	13
+:738	367094	1	3	"unknown"	0
+:739	367094	2	2	"unknown"	0
+:740	367095	0	3	"unknown"	13
+:741	367095	1	3	"unknown"	1
+:742	367095	2	2	"unknown"	-9E-10
+:743	367096	0	3	"unknown"	13
+:744	367096	1	3	"unknown"	2
+:745	367096	2	2	"unknown"	4E-10
+:746	367097	0	3	"unknown"	13
+:747	367097	1	3	"unknown"	3
+:748	367097	2	2	"unknown"	5E-10
+:749	367098	0	3	"unknown"	13
+:750	367098	1	3	"unknown"	4
+:751	367098	2	2	"unknown"	-5E-10
+:752	367099	0	3	"unknown"	13
+:753	367099	1	3	"unknown"	5
+:754	367099	2	2	"unknown"	1E-09
+:755	367100	0	3	"unknown"	13
+:756	367100	1	3	"unknown"	6
+:757	367100	2	2	"unknown"	-2E-10
+:758	367101	0	3	"unknown"	13
+:759	367101	1	3	"unknown"	7
+:760	367101	2	2	"unknown"	8E-10
+:761	367102	0	3	"unknown"	13
+:762	367102	1	3	"unknown"	8
+:763	367102	2	2	"unknown"	-1E-10
+:764	367103	0	3	"unknown"	13
+:765	367103	1	3	"unknown"	9
+:766	367103	2	2	"unknown"	3E-10
+:767	367104	0	3	"unknown"	13
+:768	367104	1	3	"unknown"	10
+:769	367104	2	2	"unknown"	1E-10
+:770	367105	0	3	"unknown"	13
+:771	367105	1	3	"unknown"	11
+:772	367105	2	2	"unknown"	5E-10
+:773	367106	0	3	"unknown"	13
+:774	367106	1	3	"unknown"	12
+:775	367106	2	2	"unknown"	-4E-10
+:776	367107	0	3	"unknown"	13
+:777	367107	1	3	"unknown"	13
+:778	367107	2	2	"unknown"	-3E-10
+:779	367108	0	3	"unknown"	0
+:780	367108	1	3	"unknown"	0
+:781	367108	2	2	"unknown"	0
+:782	367109	0	3	"unknown"	0
+:783	367109	1	3	"unknown"	1
+:784	367109	2	2	"unknown"	0
+:785	367110	0	3	"unknown"	0
+:786	367110	1	3	"unknown"	2
+:787	367110	2	2	"unknown"	0
+:788	367111	0	3	"unknown"	0
+:789	367111	1	3	"unknown"	3
+:790	367111	2	2	"unknown"	0
+:791	367112	0	3	"unknown"	0
+:792	367112	1	3	"unknown"	4
+:793	367112	2	2	"unknown"	0
+:794	367113	0	3	"unknown"	0
+:795	367113	1	3	"unknown"	5
+:796	367113	2	2	"unknown"	0
+:797	367114	0	3	"unknown"	0
+:798	367114	1	3	"unknown"	6
+:799	367114	2	2	"unknown"	0
+:800	367115	0	3	"unknown"	0
+:801	367115	1	3	"unknown"	7
+:802	367115	2	2	"unknown"	0
+:803	367116	0	3	"unknown"	0
+:804	367116	1	3	"unknown"	8
+:805	367116	2	2	"unknown"	0
+:806	367117	0	3	"unknown"	0
+:807	367117	1	3	"unknown"	9
+:808	367117	2	2	"unknown"	0
+:809	367118	0	3	"unknown"	0
+:810	367118	1	3	"unknown"	10
+:811	367118	2	2	"unknown"	0
+:812	367119	0	3	"unknown"	0
+:813	367119	1	3	"unknown"	11
+:814	367119	2	2	"unknown"	0
+:815	367120	0	3	"unknown"	0
+:816	367120	1	3	"unknown"	12
+:817	367120	2	2	"unknown"	0
+:818	367121	0	3	"unknown"	0
+:819	367121	1	3	"unknown"	13
+:820	367121	2	2	"unknown"	0
+:821	367122	0	3	"unknown"	1
+:822	367122	1	3	"unknown"	0
+:823	367122	2	2	"unknown"	0
+:824	367123	0	3	"unknown"	1
+:825	367123	1	3	"unknown"	1
+:826	367123	2	2	"unknown"	4.7439E-06
+:827	367124	0	3	"unknown"	1
+:828	367124	1	3	"unknown"	2
+:829	367124	2	2	"unknown"	0
+:830	367125	0	3	"unknown"	1
+:831	367125	1	3	"unknown"	3
+:832	367125	2	2	"unknown"	0
+:833	367126	0	3	"unknown"	1
+:834	367126	1	3	"unknown"	4
+:835	367126	2	2	"unknown"	0
+:836	367127	0	3	"unknown"	1
+:837	367127	1	3	"unknown"	5
+:838	367127	2	2	"unknown"	0
+:839	367128	0	3	"unknown"	1
+:840	367128	1	3	"unknown"	6
+:841	367128	2	2	"unknown"	0
+:842	367129	0	3	"unknown"	1
+:843	367129	1	3	"unknown"	7
+:844	367129	2	2	"unknown"	0
+:845	367130	0	3	"unknown"	1
+:846	367130	1	3	"unknown"	8
+:847	367130	2	2	"unknown"	0
+:848	367131	0	3	"unknown"	1
+:849	367131	1	3	"unknown"	9
+:850	367131	2	2	"unknown"	0
+:851	367132	0	3	"unknown"	1
+:852	367132	1	3	"unknown"	10
+:853	367132	2	2	"unknown"	0
+:854	367133	0	3	"unknown"	1
+:855	367133	1	3	"unknown"	11
+:856	367133	2	2	"unknown"	0
+:857	367134	0	3	"unknown"	1
+:858	367134	1	3	"unknown"	12
+:859	367134	2	2	"unknown"	0
+:860	367135	0	3	"unknown"	1
+:861	367135	1	3	"unknown"	13
+:862	367135	2	2	"unknown"	0
+:863	367136	0	3	"unknown"	2
+:864	367136	1	3	"unknown"	0
+:865	367136	2	2	"unknown"	0
+:866	367137	0	3	"unknown"	2
+:867	367137	1	3	"unknown"	1
+:868	367137	2	2	"unknown"	-2.9004E-06
+:869	367138	0	3	"unknown"	2
+:870	367138	1	3	"unknown"	2
+:871	367138	2	2	"unknown"	-6.701000000000001E-07
+:872	367139	0	3	"unknown"	2
+:873	367139	1	3	"unknown"	3
+:874	367139	2	2	"unknown"	0
+:875	367140	0	3	"unknown"	2
+:876	367140	1	3	"unknown"	4
+:877	367140	2	2	"unknown"	0
+:878	367141	0	3	"unknown"	2
+:879	367141	1	3	"unknown"	5
+:880	367141	2	2	"unknown"	0
+:881	367142	0	3	"unknown"	2
+:882	367142	1	3	"unknown"	6
+:883	367142	2	2	"unknown"	0
+:884	367143	0	3	"unknown"	2
+:885	367143	1	3	"unknown"	7
+:886	367143	2	2	"unknown"	0
+:887	367144	0	3	"unknown"	2
+:888	367144	1	3	"unknown"	8
+:889	367144	2	2	"unknown"	0
+:890	367145	0	3	"unknown"	2
+:891	367145	1	3	"unknown"	9
+:892	367145	2	2	"unknown"	0
+:893	367146	0	3	"unknown"	2
+:894	367146	1	3	"unknown"	10
+:895	367146	2	2	"unknown"	0
+:896	367147	0	3	"unknown"	2
+:897	367147	1	3	"unknown"	11
+:898	367147	2	2	"unknown"	0
+:899	367148	0	3	"unknown"	2
+:900	367148	1	3	"unknown"	12
+:901	367148	2	2	"unknown"	0
+:902	367149	0	3	"unknown"	2
+:903	367149	1	3	"unknown"	13
+:904	367149	2	2	"unknown"	0
+:905	367150	0	3	"unknown"	3
+:906	367150	1	3	"unknown"	0
+:907	367150	2	2	"unknown"	0
+:908	367151	0	3	"unknown"	3
+:909	367151	1	3	"unknown"	1
+:910	367151	2	2	"unknown"	-9.890000000000001E-08
+:911	367152	0	3	"unknown"	3
+:912	367152	1	3	"unknown"	2
+:913	367152	2	2	"unknown"	2.441E-07
+:914	367153	0	3	"unknown"	3
+:915	367153	1	3	"unknown"	3
+:916	367153	2	2	"unknown"	-5.348000000000001E-07
+:917	367154	0	3	"unknown"	3
+:918	367154	1	3	"unknown"	4
+:919	367154	2	2	"unknown"	0
+:920	367155	0	3	"unknown"	3
+:921	367155	1	3	"unknown"	5
+:922	367155	2	2	"unknown"	0
+:923	367156	0	3	"unknown"	3
+:924	367156	1	3	"unknown"	6
+:925	367156	2	2	"unknown"	0
+:926	367157	0	3	"unknown"	3
+:927	367157	1	3	"unknown"	7
+:928	367157	2	2	"unknown"	0
+:929	367158	0	3	"unknown"	3
+:930	367158	1	3	"unknown"	8
+:931	367158	2	2	"unknown"	0
+:932	367159	0	3	"unknown"	3
+:933	367159	1	3	"unknown"	9
+:934	367159	2	2	"unknown"	0
+:935	367160	0	3	"unknown"	3
+:936	367160	1	3	"unknown"	10
+:937	367160	2	2	"unknown"	0
+:938	367161	0	3	"unknown"	3
+:939	367161	1	3	"unknown"	11
+:940	367161	2	2	"unknown"	0
+:941	367162	0	3	"unknown"	3
+:942	367162	1	3	"unknown"	12
+:943	367162	2	2	"unknown"	0
+:944	367163	0	3	"unknown"	3
+:945	367163	1	3	"unknown"	13
+:946	367163	2	2	"unknown"	0
+:947	367164	0	3	"unknown"	4
+:948	367164	1	3	"unknown"	0
+:949	367164	2	2	"unknown"	0
+:950	367165	0	3	"unknown"	4
+:951	367165	1	3	"unknown"	1
+:952	367165	2	2	"unknown"	2.807E-07
+:953	367166	0	3	"unknown"	4
+:954	367166	1	3	"unknown"	2
+:955	367166	2	2	"unknown"	-1.781E-07
+:956	367167	0	3	"unknown"	4
+:957	367167	1	3	"unknown"	3
+:958	367167	2	2	"unknown"	1.867E-07
+:959	367168	0	3	"unknown"	4
+:960	367168	1	3	"unknown"	4
+:961	367168	2	2	"unknown"	-3.399E-07
+:962	367169	0	3	"unknown"	4
+:963	367169	1	3	"unknown"	5
+:964	367169	2	2	"unknown"	0
+:965	367170	0	3	"unknown"	4
+:966	367170	1	3	"unknown"	6
+:967	367170	2	2	"unknown"	0
+:968	367171	0	3	"unknown"	4
+:969	367171	1	3	"unknown"	7
+:970	367171	2	2	"unknown"	0
+:971	367172	0	3	"unknown"	4
+:972	367172	1	3	"unknown"	8
+:973	367172	2	2	"unknown"	0
+:974	367173	0	3	"unknown"	4
+:975	367173	1	3	"unknown"	9
+:976	367173	2	2	"unknown"	0
+:977	367174	0	3	"unknown"	4
+:978	367174	1	3	"unknown"	10
+:979	367174	2	2	"unknown"	0
+:980	367175	0	3	"unknown"	4
+:981	367175	1	3	"unknown"	11
+:982	367175	2	2	"unknown"	0
+:983	367176	0	3	"unknown"	4
+:984	367176	1	3	"unknown"	12
+:985	367176	2	2	"unknown"	0
+:986	367177	0	3	"unknown"	4
+:987	367177	1	3	"unknown"	13
+:988	367177	2	2	"unknown"	0
+:989	367178	0	3	"unknown"	5
+:990	367178	1	3	"unknown"	0
+:991	367178	2	2	"unknown"	0
+:992	367179	0	3	"unknown"	5
+:993	367179	1	3	"unknown"	1
+:994	367179	2	2	"unknown"	4.85E-08
+:995	367180	0	3	"unknown"	5
+:996	367180	1	3	"unknown"	2
+:997	367180	2	2	"unknown"	2.004E-07
+:998	367181	0	3	"unknown"	5
+:999	367181	1	3	"unknown"	3
+:1000	367181	2	2	"unknown"	-1.217E-07
+:1001	367182	0	3	"unknown"	5
+:1002	367182	1	3	"unknown"	4
+:1003	367182	2	2	"unknown"	2.28E-08
+:1004	367183	0	3	"unknown"	5
+:1005	367183	1	3	"unknown"	5
+:1006	367183	2	2	"unknown"	1.002E-07
+:1007	367184	0	3	"unknown"	5
+:1008	367184	1	3	"unknown"	6
+:1009	367184	2	2	"unknown"	0
+:1010	367185	0	3	"unknown"	5
+:1011	367185	1	3	"unknown"	7
+:1012	367185	2	2	"unknown"	0
+:1013	367186	0	3	"unknown"	5
+:1014	367186	1	3	"unknown"	8
+:1015	367186	2	2	"unknown"	0
+:1016	367187	0	3	"unknown"	5
+:1017	367187	1	3	"unknown"	9
+:1018	367187	2	2	"unknown"	0
+:1019	367188	0	3	"unknown"	5
+:1020	367188	1	3	"unknown"	10
+:1021	367188	2	2	"unknown"	0
+:1022	367189	0	3	"unknown"	5
+:1023	367189	1	3	"unknown"	11
+:1024	367189	2	2	"unknown"	0
+:1025	367190	0	3	"unknown"	5
+:1026	367190	1	3	"unknown"	12
+:1027	367190	2	2	"unknown"	0
+:1028	367191	0	3	"unknown"	5
+:1029	367191	1	3	"unknown"	13
+:1030	367191	2	2	"unknown"	0
+:1031	367192	0	3	"unknown"	6
+:1032	367192	1	3	"unknown"	0
+:1033	367192	2	2	"unknown"	0
+:1034	367193	0	3	"unknown"	6
+:1035	367193	1	3	"unknown"	1
+:1036	367193	2	2	"unknown"	-2.08E-08
+:1037	367194	0	3	"unknown"	6
+:1038	367194	1	3	"unknown"	2
+:1039	367194	2	2	"unknown"	2.9E-08
+:1040	367195	0	3	"unknown"	6
+:1041	367195	1	3	"unknown"	3
+:1042	367195	2	2	"unknown"	5.75E-08
+:1043	367196	0	3	"unknown"	6
+:1044	367196	1	3	"unknown"	4
+:1045	367196	2	2	"unknown"	-6.630000000000001E-08
+:1046	367197	0	3	"unknown"	6
+:1047	367197	1	3	"unknown"	5
+:1048	367197	2	2	"unknown"	9.1E-09
+:1049	367198	0	3	"unknown"	6
+:1050	367198	1	3	"unknown"	6
+:1051	367198	2	2	"unknown"	6.46E-08
+:1052	367199	0	3	"unknown"	6
+:1053	367199	1	3	"unknown"	7
+:1054	367199	2	2	"unknown"	0
+:1055	367200	0	3	"unknown"	6
+:1056	367200	1	3	"unknown"	8
+:1057	367200	2	2	"unknown"	0
+:1058	367201	0	3	"unknown"	6
+:1059	367201	1	3	"unknown"	9
+:1060	367201	2	2	"unknown"	0
+:1061	367202	0	3	"unknown"	6
+:1062	367202	1	3	"unknown"	10
+:1063	367202	2	2	"unknown"	0
+:1064	367203	0	3	"unknown"	6
+:1065	367203	1	3	"unknown"	11
+:1066	367203	2	2	"unknown"	0
+:1067	367204	0	3	"unknown"	6
+:1068	367204	1	3	"unknown"	12
+:1069	367204	2	2	"unknown"	0
+:1070	367205	0	3	"unknown"	6
+:1071	367205	1	3	"unknown"	13
+:1072	367205	2	2	"unknown"	0
+:1073	367206	0	3	"unknown"	7
+:1074	367206	1	3	"unknown"	0
+:1075	367206	2	2	"unknown"	0
+:1076	367207	0	3	"unknown"	7
+:1077	367207	1	3	"unknown"	1
+:1078	367207	2	2	"unknown"	-5.25E-08
+:1079	367208	0	3	"unknown"	7
+:1080	367208	1	3	"unknown"	2
+:1081	367208	2	2	"unknown"	-1.87E-08
+:1082	367209	0	3	"unknown"	7
+:1083	367209	1	3	"unknown"	3
+:1084	367209	2	2	"unknown"	5.3E-09
+:1085	367210	0	3	"unknown"	7
+:1086	367210	1	3	"unknown"	4
+:1087	367210	2	2	"unknown"	2.38E-08
+:1088	367211	0	3	"unknown"	7
+:1089	367211	1	3	"unknown"	5
+:1090	367211	2	2	"unknown"	2.2E-09
+:1091	367212	0	3	"unknown"	7
+:1092	367212	1	3	"unknown"	6
+:1093	367212	2	2	"unknown"	-2.72E-08
+:1094	367213	0	3	"unknown"	7
+:1095	367213	1	3	"unknown"	7
+:1096	367213	2	2	"unknown"	-2.6E-09
+:1097	367214	0	3	"unknown"	7
+:1098	367214	1	3	"unknown"	8
+:1099	367214	2	2	"unknown"	0
+:1100	367215	0	3	"unknown"	7
+:1101	367215	1	3	"unknown"	9
+:1102	367215	2	2	"unknown"	0
+:1103	367216	0	3	"unknown"	7
+:1104	367216	1	3	"unknown"	10
+:1105	367216	2	2	"unknown"	0
+:1106	367217	0	3	"unknown"	7
+:1107	367217	1	3	"unknown"	11
+:1108	367217	2	2	"unknown"	0
+:1109	367218	0	3	"unknown"	7
+:1110	367218	1	3	"unknown"	12
+:1111	367218	2	2	"unknown"	0
+:1112	367219	0	3	"unknown"	7
+:1113	367219	1	3	"unknown"	13
+:1114	367219	2	2	"unknown"	0
+:1115	367220	0	3	"unknown"	8
+:1116	367220	1	3	"unknown"	0
+:1117	367220	2	2	"unknown"	0
+:1118	367221	0	3	"unknown"	8
+:1119	367221	1	3	"unknown"	1
+:1120	367221	2	2	"unknown"	9.500000000000001E-09
+:1121	367222	0	3	"unknown"	8
+:1122	367222	1	3	"unknown"	2
+:1123	367222	2	2	"unknown"	-1.77E-08
+:1124	367223	0	3	"unknown"	8
+:1125	367223	1	3	"unknown"	3
+:1126	367223	2	2	"unknown"	1.35E-08
+:1127	367224	0	3	"unknown"	8
+:1128	367224	1	3	"unknown"	4
+:1129	367224	2	2	"unknown"	-1.36E-08
+:1130	367225	0	3	"unknown"	8
+:1131	367225	1	3	"unknown"	5
+:1132	367225	2	2	"unknown"	1.58E-08
+:1133	367226	0	3	"unknown"	8
+:1134	367226	1	3	"unknown"	6
+:1135	367226	2	2	"unknown"	5.1E-09
+:1136	367227	0	3	"unknown"	8
+:1137	367227	1	3	"unknown"	7
+:1138	367227	2	2	"unknown"	-8.5E-09
+:1139	367228	0	3	"unknown"	8
+:1140	367228	1	3	"unknown"	8
+:1141	367228	2	2	"unknown"	2.1E-09
+:1142	367229	0	3	"unknown"	8
+:1143	367229	1	3	"unknown"	9
+:1144	367229	2	2	"unknown"	0
+:1145	367230	0	3	"unknown"	8
+:1146	367230	1	3	"unknown"	10
+:1147	367230	2	2	"unknown"	0
+:1148	367231	0	3	"unknown"	8
+:1149	367231	1	3	"unknown"	11
+:1150	367231	2	2	"unknown"	0
+:1151	367232	0	3	"unknown"	8
+:1152	367232	1	3	"unknown"	12
+:1153	367232	2	2	"unknown"	0
+:1154	367233	0	3	"unknown"	8
+:1155	367233	1	3	"unknown"	13
+:1156	367233	2	2	"unknown"	0
+:1157	367234	0	3	"unknown"	9
+:1158	367234	1	3	"unknown"	0
+:1159	367234	2	2	"unknown"	0
+:1160	367235	0	3	"unknown"	9
+:1161	367235	1	3	"unknown"	1
+:1162	367235	2	2	"unknown"	-2.16E-08
+:1163	367236	0	3	"unknown"	9
+:1164	367236	1	3	"unknown"	2
+:1165	367236	2	2	"unknown"	1.08E-08
+:1166	367237	0	3	"unknown"	9
+:1167	367237	1	3	"unknown"	3
+:1168	367237	2	2	"unknown"	1.18E-08
+:1169	367238	0	3	"unknown"	9
+:1170	367238	1	3	"unknown"	4
+:1171	367238	2	2	"unknown"	-6.8E-09
+:1172	367239	0	3	"unknown"	9
+:1173	367239	1	3	"unknown"	5
+:1174	367239	2	2	"unknown"	-6.9E-09
+:1175	367240	0	3	"unknown"	9
+:1176	367240	1	3	"unknown"	6
+:1177	367240	2	2	"unknown"	7.8E-09
+:1178	367241	0	3	"unknown"	9
+:1179	367241	1	3	"unknown"	7
+:1180	367241	2	2	"unknown"	1E-09
+:1181	367242	0	3	"unknown"	9
+:1182	367242	1	3	"unknown"	8
+:1183	367242	2	2	"unknown"	-4E-09
+:1184	367243	0	3	"unknown"	9
+:1185	367243	1	3	"unknown"	9
+:1186	367243	2	2	"unknown"	8.400000000000001E-09
+:1187	367244	0	3	"unknown"	9
+:1188	367244	1	3	"unknown"	10
+:1189	367244	2	2	"unknown"	0
+:1190	367245	0	3	"unknown"	9
+:1191	367245	1	3	"unknown"	11
+:1192	367245	2	2	"unknown"	0
+:1193	367246	0	3	"unknown"	9
+:1194	367246	1	3	"unknown"	12
+:1195	367246	2	2	"unknown"	0
+:1196	367247	0	3	"unknown"	9
+:1197	367247	1	3	"unknown"	13
+:1198	367247	2	2	"unknown"	0
+:1199	367248	0	3	"unknown"	10
+:1200	367248	1	3	"unknown"	0
+:1201	367248	2	2	"unknown"	0
+:1202	367249	0	3	"unknown"	10
+:1203	367249	1	3	"unknown"	1
+:1204	367249	2	2	"unknown"	3.2E-09
+:1205	367250	0	3	"unknown"	10
+:1206	367250	1	3	"unknown"	2
+:1207	367250	2	2	"unknown"	-4E-10
+:1208	367251	0	3	"unknown"	10
+:1209	367251	1	3	"unknown"	3
+:1210	367251	2	2	"unknown"	4.6E-09
+:1211	367252	0	3	"unknown"	10
+:1212	367252	1	3	"unknown"	4
+:1213	367252	2	2	"unknown"	4.4E-09
+:1214	367253	0	3	"unknown"	10
+:1215	367253	1	3	"unknown"	5
+:1216	367253	2	2	"unknown"	-7.9E-09
+:1217	367254	0	3	"unknown"	10
+:1218	367254	1	3	"unknown"	6
+:1219	367254	2	2	"unknown"	-6E-10
+:1220	367255	0	3	"unknown"	10
+:1221	367255	1	3	"unknown"	7
+:1222	367255	2	2	"unknown"	-4.2E-09
+:1223	367256	0	3	"unknown"	10
+:1224	367256	1	3	"unknown"	8
+:1225	367256	2	2	"unknown"	-2.8E-09
+:1226	367257	0	3	"unknown"	10
+:1227	367257	1	3	"unknown"	9
+:1228	367257	2	2	"unknown"	-1.2E-09
+:1229	367258	0	3	"unknown"	10
+:1230	367258	1	3	"unknown"	10
+:1231	367258	2	2	"unknown"	-8.7E-09
+:1232	367259	0	3	"unknown"	10
+:1233	367259	1	3	"unknown"	11
+:1234	367259	2	2	"unknown"	0
+:1235	367260	0	3	"unknown"	10
+:1236	367260	1	3	"unknown"	12
+:1237	367260	2	2	"unknown"	0
+:1238	367261	0	3	"unknown"	10
+:1239	367261	1	3	"unknown"	13
+:1240	367261	2	2	"unknown"	0
+:1241	367262	0	3	"unknown"	11
+:1242	367262	1	3	"unknown"	0
+:1243	367262	2	2	"unknown"	0
+:1244	367263	0	3	"unknown"	11
+:1245	367263	1	3	"unknown"	1
+:1246	367263	2	2	"unknown"	-1E-10
+:1247	367264	0	3	"unknown"	11
+:1248	367264	1	3	"unknown"	2
+:1249	367264	2	2	"unknown"	2E-09
+:1250	367265	0	3	"unknown"	11
+:1251	367265	1	3	"unknown"	3
+:1252	367265	2	2	"unknown"	-7E-10
+:1253	367266	0	3	"unknown"	11
+:1254	367266	1	3	"unknown"	4
+:1255	367266	2	2	"unknown"	-1.1E-09
+:1256	367267	0	3	"unknown"	11
+:1257	367267	1	3	"unknown"	5
+:1258	367267	2	2	"unknown"	8E-10
+:1259	367268	0	3	"unknown"	11
+:1260	367268	1	3	"unknown"	6
+:1261	367268	2	2	"unknown"	-2E-10
+:1262	367269	0	3	"unknown"	11
+:1263	367269	1	3	"unknown"	7
+:1264	367269	2	2	"unknown"	-2.2E-09
+:1265	367270	0	3	"unknown"	11
+:1266	367270	1	3	"unknown"	8
+:1267	367270	2	2	"unknown"	-1.4E-09
+:1268	367271	0	3	"unknown"	11
+:1269	367271	1	3	"unknown"	9
+:1270	367271	2	2	"unknown"	-2.5E-09
+:1271	367272	0	3	"unknown"	11
+:1272	367272	1	3	"unknown"	10
+:1273	367272	2	2	"unknown"	-2E-09
+:1274	367273	0	3	"unknown"	11
+:1275	367273	1	3	"unknown"	11
+:1276	367273	2	2	"unknown"	-2.4E-09
+:1277	367274	0	3	"unknown"	11
+:1278	367274	1	3	"unknown"	12
+:1279	367274	2	2	"unknown"	0
+:1280	367275	0	3	"unknown"	11
+:1281	367275	1	3	"unknown"	13
+:1282	367275	2	2	"unknown"	0
+:1283	367276	0	3	"unknown"	12
+:1284	367276	1	3	"unknown"	0
+:1285	367276	2	2	"unknown"	0
+:1286	367277	0	3	"unknown"	12
+:1287	367277	1	3	"unknown"	1
+:1288	367277	2	2	"unknown"	-1.1E-09
+:1289	367278	0	3	"unknown"	12
+:1290	367278	1	3	"unknown"	2
+:1291	367278	2	2	"unknown"	4E-10
+:1292	367279	0	3	"unknown"	12
+:1293	367279	1	3	"unknown"	3
+:1294	367279	2	2	"unknown"	1.9E-09
+:1295	367280	0	3	"unknown"	12
+:1296	367280	1	3	"unknown"	4
+:1297	367280	2	2	"unknown"	-2.2E-09
+:1298	367281	0	3	"unknown"	12
+:1299	367281	1	3	"unknown"	5
+:1300	367281	2	2	"unknown"	3E-10
+:1301	367282	0	3	"unknown"	12
+:1302	367282	1	3	"unknown"	6
+:1303	367282	2	2	"unknown"	7E-10
+:1304	367283	0	3	"unknown"	12
+:1305	367283	1	3	"unknown"	7
+:1306	367283	2	2	"unknown"	-1E-10
+:1307	367284	0	3	"unknown"	12
+:1308	367284	1	3	"unknown"	8
+:1309	367284	2	2	"unknown"	3E-10
+:1310	367285	0	3	"unknown"	12
+:1311	367285	1	3	"unknown"	9
+:1312	367285	2	2	"unknown"	2E-10
+:1313	367286	0	3	"unknown"	12
+:1314	367286	1	3	"unknown"	10
+:1315	367286	2	2	"unknown"	-9E-10
+:1316	367287	0	3	"unknown"	12
+:1317	367287	1	3	"unknown"	11
+:1318	367287	2	2	"unknown"	-1E-10
+:1319	367288	0	3	"unknown"	12
+:1320	367288	1	3	"unknown"	12
+:1321	367288	2	2	"unknown"	7E-10
+:1322	367289	0	3	"unknown"	12
+:1323	367289	1	3	"unknown"	13
+:1324	367289	2	2	"unknown"	0
+:1325	367290	0	3	"unknown"	13
+:1326	367290	1	3	"unknown"	0
+:1327	367290	2	2	"unknown"	0
+:1328	367291	0	3	"unknown"	13
+:1329	367291	1	3	"unknown"	1
+:1330	367291	2	2	"unknown"	-9E-10
+:1331	367292	0	3	"unknown"	13
+:1332	367292	1	3	"unknown"	2
+:1333	367292	2	2	"unknown"	4E-10
+:1334	367293	0	3	"unknown"	13
+:1335	367293	1	3	"unknown"	3
+:1336	367293	2	2	"unknown"	1.6E-09
+:1337	367294	0	3	"unknown"	13
+:1338	367294	1	3	"unknown"	4
+:1339	367294	2	2	"unknown"	-5E-10
+:1340	367295	0	3	"unknown"	13
+:1341	367295	1	3	"unknown"	5
+:1342	367295	2	2	"unknown"	-1.2E-09
+:1343	367296	0	3	"unknown"	13
+:1344	367296	1	3	"unknown"	6
+:1345	367296	2	2	"unknown"	-1E-10
+:1346	367297	0	3	"unknown"	13
+:1347	367297	1	3	"unknown"	7
+:1348	367297	2	2	"unknown"	4E-10
+:1349	367298	0	3	"unknown"	13
+:1350	367298	1	3	"unknown"	8
+:1351	367298	2	2	"unknown"	-1E-10
+:1352	367299	0	3	"unknown"	13
+:1353	367299	1	3	"unknown"	9
+:1354	367299	2	2	"unknown"	4E-10
+:1355	367300	0	3	"unknown"	13
+:1356	367300	1	3	"unknown"	10
+:1357	367300	2	2	"unknown"	5E-10
+:1358	367301	0	3	"unknown"	13
+:1359	367301	1	3	"unknown"	11
+:1360	367301	2	2	"unknown"	-3E-10
+:1361	367302	0	3	"unknown"	13
+:1362	367302	1	3	"unknown"	12
+:1363	367302	2	2	"unknown"	-4E-10
+:1364	367303	0	3	"unknown"	13
+:1365	367303	1	3	"unknown"	13
+:1366	367303	2	2	"unknown"	-8E-10
+:1367	367304	0	3	"unknown"	0
+:1368	367304	1	3	"unknown"	0
+:1369	367304	2	2	"unknown"	0
+:1370	367305	0	3	"unknown"	0
+:1371	367305	1	3	"unknown"	1
+:1372	367305	2	2	"unknown"	0
+:1373	367306	0	3	"unknown"	0
+:1374	367306	1	3	"unknown"	2
+:1375	367306	2	2	"unknown"	0
+:1376	367307	0	3	"unknown"	0
+:1377	367307	1	3	"unknown"	3
+:1378	367307	2	2	"unknown"	0
+:1379	367308	0	3	"unknown"	0
+:1380	367308	1	3	"unknown"	4
+:1381	367308	2	2	"unknown"	0
+:1382	367309	0	3	"unknown"	0
+:1383	367309	1	3	"unknown"	5
+:1384	367309	2	2	"unknown"	0
+:1385	367310	0	3	"unknown"	0
+:1386	367310	1	3	"unknown"	6
+:1387	367310	2	2	"unknown"	0
+:1388	367311	0	3	"unknown"	0
+:1389	367311	1	3	"unknown"	7
+:1390	367311	2	2	"unknown"	0
+:1391	367312	0	3	"unknown"	0
+:1392	367312	1	3	"unknown"	8
+:1393	367312	2	2	"unknown"	0
+:1394	367313	0	3	"unknown"	0
+:1395	367313	1	3	"unknown"	9
+:1396	367313	2	2	"unknown"	0
+:1397	367314	0	3	"unknown"	0
+:1398	367314	1	3	"unknown"	10
+:1399	367314	2	2	"unknown"	0
+:1400	367315	0	3	"unknown"	0
+:1401	367315	1	3	"unknown"	11
+:1402	367315	2	2	"unknown"	0
+:1403	367316	0	3	"unknown"	0
+:1404	367316	1	3	"unknown"	12
+:1405	367316	2	2	"unknown"	0
+:1406	367317	0	3	"unknown"	0
+:1407	367317	1	3	"unknown"	13
+:1408	367317	2	2	"unknown"	0
+:1409	367318	0	3	"unknown"	1
+:1410	367318	1	3	"unknown"	0
+:1411	367318	2	2	"unknown"	1
+:1412	367319	0	3	"unknown"	1
+:1413	367319	1	3	"unknown"	1
+:1414	367319	2	2	"unknown"	1
+:1415	367320	0	3	"unknown"	1
+:1416	367320	1	3	"unknown"	2
+:1417	367320	2	2	"unknown"	0
+:1418	367321	0	3	"unknown"	1
+:1419	367321	1	3	"unknown"	3
+:1420	367321	2	2	"unknown"	0
+:1421	367322	0	3	"unknown"	1
+:1422	367322	1	3	"unknown"	4
+:1423	367322	2	2	"unknown"	0
+:1424	367323	0	3	"unknown"	1
+:1425	367323	1	3	"unknown"	5
+:1426	367323	2	2	"unknown"	0
+:1427	367324	0	3	"unknown"	1
+:1428	367324	1	3	"unknown"	6
+:1429	367324	2	2	"unknown"	0
+:1430	367325	0	3	"unknown"	1
+:1431	367325	1	3	"unknown"	7
+:1432	367325	2	2	"unknown"	0
+:1433	367326	0	3	"unknown"	1
+:1434	367326	1	3	"unknown"	8
+:1435	367326	2	2	"unknown"	0
+:1436	367327	0	3	"unknown"	1
+:1437	367327	1	3	"unknown"	9
+:1438	367327	2	2	"unknown"	0
+:1439	367328	0	3	"unknown"	1
+:1440	367328	1	3	"unknown"	10
+:1441	367328	2	2	"unknown"	0
+:1442	367329	0	3	"unknown"	1
+:1443	367329	1	3	"unknown"	11
+:1444	367329	2	2	"unknown"	0
+:1445	367330	0	3	"unknown"	1
+:1446	367330	1	3	"unknown"	12
+:1447	367330	2	2	"unknown"	0
+:1448	367331	0	3	"unknown"	1
+:1449	367331	1	3	"unknown"	13
+:1450	367331	2	2	"unknown"	0
+:1451	367332	0	3	"unknown"	2
+:1452	367332	1	3	"unknown"	0
+:1453	367332	2	2	"unknown"	1
+:1454	367333	0	3	"unknown"	2
+:1455	367333	1	3	"unknown"	1
+:1456	367333	2	2	"unknown"	0.577350269189626
+:1457	367334	0	3	"unknown"	2
+:1458	367334	1	3	"unknown"	2
+:1459	367334	2	2	"unknown"	0.288675134594813
+:1460	367335	0	3	"unknown"	2
+:1461	367335	1	3	"unknown"	3
+:1462	367335	2	2	"unknown"	0
+:1463	367336	0	3	"unknown"	2
+:1464	367336	1	3	"unknown"	4
+:1465	367336	2	2	"unknown"	0
+:1466	367337	0	3	"unknown"	2
+:1467	367337	1	3	"unknown"	5
+:1468	367337	2	2	"unknown"	0
+:1469	367338	0	3	"unknown"	2
+:1470	367338	1	3	"unknown"	6
+:1471	367338	2	2	"unknown"	0
+:1472	367339	0	3	"unknown"	2
+:1473	367339	1	3	"unknown"	7
+:1474	367339	2	2	"unknown"	0
+:1475	367340	0	3	"unknown"	2
+:1476	367340	1	3	"unknown"	8
+:1477	367340	2	2	"unknown"	0
+:1478	367341	0	3	"unknown"	2
+:1479	367341	1	3	"unknown"	9
+:1480	367341	2	2	"unknown"	0
+:1481	367342	0	3	"unknown"	2
+:1482	367342	1	3	"unknown"	10
+:1483	367342	2	2	"unknown"	0
+:1484	367343	0	3	"unknown"	2
+:1485	367343	1	3	"unknown"	11
+:1486	367343	2	2	"unknown"	0
+:1487	367344	0	3	"unknown"	2
+:1488	367344	1	3	"unknown"	12
+:1489	367344	2	2	"unknown"	0
+:1490	367345	0	3	"unknown"	2
+:1491	367345	1	3	"unknown"	13
+:1492	367345	2	2	"unknown"	0
+:1493	367346	0	3	"unknown"	3
+:1494	367346	1	3	"unknown"	0
+:1495	367346	2	2	"unknown"	1
+:1496	367347	0	3	"unknown"	3
+:1497	367347	1	3	"unknown"	1
+:1498	367347	2	2	"unknown"	0.408248290463863
+:1499	367348	0	3	"unknown"	3
+:1500	367348	1	3	"unknown"	2
+:1501	367348	2	2	"unknown"	0.129099444873581
+:1502	367349	0	3	"unknown"	3
+:1503	367349	1	3	"unknown"	3
+:1504	367349	2	2	"unknown"	0.052704627669473
+:1505	367350	0	3	"unknown"	3
+:1506	367350	1	3	"unknown"	4
+:1507	367350	2	2	"unknown"	0
+:1508	367351	0	3	"unknown"	3
+:1509	367351	1	3	"unknown"	5
+:1510	367351	2	2	"unknown"	0
+:1511	367352	0	3	"unknown"	3
+:1512	367352	1	3	"unknown"	6
+:1513	367352	2	2	"unknown"	0
+:1514	367353	0	3	"unknown"	3
+:1515	367353	1	3	"unknown"	7
+:1516	367353	2	2	"unknown"	0
+:1517	367354	0	3	"unknown"	3
+:1518	367354	1	3	"unknown"	8
+:1519	367354	2	2	"unknown"	0
+:1520	367355	0	3	"unknown"	3
+:1521	367355	1	3	"unknown"	9
+:1522	367355	2	2	"unknown"	0
+:1523	367356	0	3	"unknown"	3
+:1524	367356	1	3	"unknown"	10
+:1525	367356	2	2	"unknown"	0
+:1526	367357	0	3	"unknown"	3
+:1527	367357	1	3	"unknown"	11
+:1528	367357	2	2	"unknown"	0
+:1529	367358	0	3	"unknown"	3
+:1530	367358	1	3	"unknown"	12
+:1531	367358	2	2	"unknown"	0
+:1532	367359	0	3	"unknown"	3
+:1533	367359	1	3	"unknown"	13
+:1534	367359	2	2	"unknown"	0
+:1535	367360	0	3	"unknown"	4
+:1536	367360	1	3	"unknown"	0
+:1537	367360	2	2	"unknown"	1
+:1538	367361	0	3	"unknown"	4
+:1539	367361	1	3	"unknown"	1
+:1540	367361	2	2	"unknown"	0.316227766016838
+:1541	367362	0	3	"unknown"	4
+:1542	367362	1	3	"unknown"	2
+:1543	367362	2	2	"unknown"	0.07453559924999301
+:1544	367363	0	3	"unknown"	4
+:1545	367363	1	3	"unknown"	3
+:1546	367363	2	2	"unknown"	0.0199204768222399
+:1547	367364	0	3	"unknown"	4
+:1548	367364	1	3	"unknown"	4
+:1549	367364	2	2	"unknown"	0.00704295212273764
+:1550	367365	0	3	"unknown"	4
+:1551	367365	1	3	"unknown"	5
+:1552	367365	2	2	"unknown"	0
+:1553	367366	0	3	"unknown"	4
+:1554	367366	1	3	"unknown"	6
+:1555	367366	2	2	"unknown"	0
+:1556	367367	0	3	"unknown"	4
+:1557	367367	1	3	"unknown"	7
+:1558	367367	2	2	"unknown"	0
+:1559	367368	0	3	"unknown"	4
+:1560	367368	1	3	"unknown"	8
+:1561	367368	2	2	"unknown"	0
+:1562	367369	0	3	"unknown"	4
+:1563	367369	1	3	"unknown"	9
+:1564	367369	2	2	"unknown"	0
+:1565	367370	0	3	"unknown"	4
+:1566	367370	1	3	"unknown"	10
+:1567	367370	2	2	"unknown"	0
+:1568	367371	0	3	"unknown"	4
+:1569	367371	1	3	"unknown"	11
+:1570	367371	2	2	"unknown"	0
+:1571	367372	0	3	"unknown"	4
+:1572	367372	1	3	"unknown"	12
+:1573	367372	2	2	"unknown"	0
+:1574	367373	0	3	"unknown"	4
+:1575	367373	1	3	"unknown"	13
+:1576	367373	2	2	"unknown"	0
+:1577	367374	0	3	"unknown"	5
+:1578	367374	1	3	"unknown"	0
+:1579	367374	2	2	"unknown"	1
+:1580	367375	0	3	"unknown"	5
+:1581	367375	1	3	"unknown"	1
+:1582	367375	2	2	"unknown"	0.258198889747161
+:1583	367376	0	3	"unknown"	5
+:1584	367376	1	3	"unknown"	2
+:1585	367376	2	2	"unknown"	0.0487950036474267
+:1586	367377	0	3	"unknown"	5
+:1587	367377	1	3	"unknown"	3
+:1588	367377	2	2	"unknown"	0.00996023841111995
+:1589	367378	0	3	"unknown"	5
+:1590	367378	1	3	"unknown"	4
+:1591	367378	2	2	"unknown"	0.00234765070757921
+:1592	367379	0	3	"unknown"	5
+:1593	367379	1	3	"unknown"	5
+:1594	367379	2	2	"unknown"	0.000742392338645623
+:1595	367380	0	3	"unknown"	5
+:1596	367380	1	3	"unknown"	6
+:1597	367380	2	2	"unknown"	0
+:1598	367381	0	3	"unknown"	5
+:1599	367381	1	3	"unknown"	7
+:1600	367381	2	2	"unknown"	0
+:1601	367382	0	3	"unknown"	5
+:1602	367382	1	3	"unknown"	8
+:1603	367382	2	2	"unknown"	0
+:1604	367383	0	3	"unknown"	5
+:1605	367383	1	3	"unknown"	9
+:1606	367383	2	2	"unknown"	0
+:1607	367384	0	3	"unknown"	5
+:1608	367384	1	3	"unknown"	10
+:1609	367384	2	2	"unknown"	0
+:1610	367385	0	3	"unknown"	5
+:1611	367385	1	3	"unknown"	11
+:1612	367385	2	2	"unknown"	0
+:1613	367386	0	3	"unknown"	5
+:1614	367386	1	3	"unknown"	12
+:1615	367386	2	2	"unknown"	0
+:1616	367387	0	3	"unknown"	5
+:1617	367387	1	3	"unknown"	13
+:1618	367387	2	2	"unknown"	0
+:1619	367388	0	3	"unknown"	6
+:1620	367388	1	3	"unknown"	0
+:1621	367388	2	2	"unknown"	1
+:1622	367389	0	3	"unknown"	6
+:1623	367389	1	3	"unknown"	1
+:1624	367389	2	2	"unknown"	0.218217890235992
+:1625	367390	0	3	"unknown"	6
+:1626	367390	1	3	"unknown"	2
+:1627	367390	2	2	"unknown"	0.0345032779671177
+:1628	367391	0	3	"unknown"	6
+:1629	367391	1	3	"unknown"	3
+:1630	367391	2	2	"unknown"	0.00575054632785295
+:1631	367392	0	3	"unknown"	6
+:1632	367392	1	3	"unknown"	4
+:1633	367392	2	2	"unknown"	0.00104990131391452
+:1634	367393	0	3	"unknown"	6
+:1635	367393	1	3	"unknown"	5
+:1636	367393	2	2	"unknown"	0.000223839712229272
+:1637	367394	0	3	"unknown"	6
+:1638	367394	1	3	"unknown"	6
+:1639	367394	2	2	"unknown"	6.46169590554494E-05
+:1640	367395	0	3	"unknown"	6
+:1641	367395	1	3	"unknown"	7
+:1642	367395	2	2	"unknown"	0
+:1643	367396	0	3	"unknown"	6
+:1644	367396	1	3	"unknown"	8
+:1645	367396	2	2	"unknown"	0
+:1646	367397	0	3	"unknown"	6
+:1647	367397	1	3	"unknown"	9
+:1648	367397	2	2	"unknown"	0
+:1649	367398	0	3	"unknown"	6
+:1650	367398	1	3	"unknown"	10
+:1651	367398	2	2	"unknown"	0
+:1652	367399	0	3	"unknown"	6
+:1653	367399	1	3	"unknown"	11
+:1654	367399	2	2	"unknown"	0
+:1655	367400	0	3	"unknown"	6
+:1656	367400	1	3	"unknown"	12
+:1657	367400	2	2	"unknown"	0
+:1658	367401	0	3	"unknown"	6
+:1659	367401	1	3	"unknown"	13
+:1660	367401	2	2	"unknown"	0
+:1661	367402	0	3	"unknown"	7
+:1662	367402	1	3	"unknown"	0
+:1663	367402	2	2	"unknown"	1
+:1664	367403	0	3	"unknown"	7
+:1665	367403	1	3	"unknown"	1
+:1666	367403	2	2	"unknown"	0.188982236504614
+:1667	367404	0	3	"unknown"	7
+:1668	367404	1	3	"unknown"	2
+:1669	367404	2	2	"unknown"	0.025717224993682
+:1670	367405	0	3	"unknown"	7
+:1671	367405	1	3	"unknown"	3
+:1672	367405	2	2	"unknown"	0.00363696483726654
+:1673	367406	0	3	"unknown"	7
+:1674	367406	1	3	"unknown"	4
+:1675	367406	2	2	"unknown"	0.000548293079133141
+:1676	367407	0	3	"unknown"	7
+:1677	367407	1	3	"unknown"	5
+:1678	367407	2	2	"unknown"	9.13821798555235E-05
+:1679	367408	0	3	"unknown"	7
+:1680	367408	1	3	"unknown"	6
+:1681	367408	2	2	"unknown"	1.79215199337677E-05
+:1682	367409	0	3	"unknown"	7
+:1683	367409	1	3	"unknown"	7
+:1684	367409	2	2	"unknown"	4.78972767445702E-06
+:1685	367410	0	3	"unknown"	7
+:1686	367410	1	3	"unknown"	8
+:1687	367410	2	2	"unknown"	0
+:1688	367411	0	3	"unknown"	7
+:1689	367411	1	3	"unknown"	9
+:1690	367411	2	2	"unknown"	0
+:1691	367412	0	3	"unknown"	7
+:1692	367412	1	3	"unknown"	10
+:1693	367412	2	2	"unknown"	0
+:1694	367413	0	3	"unknown"	7
+:1695	367413	1	3	"unknown"	11
+:1696	367413	2	2	"unknown"	0
+:1697	367414	0	3	"unknown"	7
+:1698	367414	1	3	"unknown"	12
+:1699	367414	2	2	"unknown"	0
+:1700	367415	0	3	"unknown"	7
+:1701	367415	1	3	"unknown"	13
+:1702	367415	2	2	"unknown"	0
+:1703	367416	0	3	"unknown"	8
+:1704	367416	1	3	"unknown"	0
+:1705	367416	2	2	"unknown"	1
+:1706	367417	0	3	"unknown"	8
+:1707	367417	1	3	"unknown"	1
+:1708	367417	2	2	"unknown"	0.166666666666667
+:1709	367418	0	3	"unknown"	8
+:1710	367418	1	3	"unknown"	2
+:1711	367418	2	2	"unknown"	0.0199204768222399
+:1712	367419	0	3	"unknown"	8
+:1713	367419	1	3	"unknown"	3
+:1714	367419	2	2	"unknown"	0.00245204119306875
+:1715	367420	0	3	"unknown"	8
+:1716	367420	1	3	"unknown"	4
+:1717	367420	2	2	"unknown"	0.000316557156832327
+:1718	367421	0	3	"unknown"	8
+:1719	367421	1	3	"unknown"	5
+:1720	367421	2	2	"unknown"	4.38985792528482E-05
+:1721	367422	0	3	"unknown"	8
+:1722	367422	1	3	"unknown"	6
+:1723	367422	2	2	"unknown"	6.77369783729086E-06
+:1724	367423	0	3	"unknown"	8
+:1725	367423	1	3	"unknown"	7
+:1726	367423	2	2	"unknown"	1.23670236773605E-06
+:1727	367424	0	3	"unknown"	8
+:1728	367424	1	3	"unknown"	8
+:1729	367424	2	2	"unknown"	3.09175591934014E-07
+:1730	367425	0	3	"unknown"	8
+:1731	367425	1	3	"unknown"	9
+:1732	367425	2	2	"unknown"	0
+:1733	367426	0	3	"unknown"	8
+:1734	367426	1	3	"unknown"	10
+:1735	367426	2	2	"unknown"	0
+:1736	367427	0	3	"unknown"	8
+:1737	367427	1	3	"unknown"	11
+:1738	367427	2	2	"unknown"	0
+:1739	367428	0	3	"unknown"	8
+:1740	367428	1	3	"unknown"	12
+:1741	367428	2	2	"unknown"	0
+:1742	367429	0	3	"unknown"	8
+:1743	367429	1	3	"unknown"	13
+:1744	367429	2	2	"unknown"	0
+:1745	367430	0	3	"unknown"	9
+:1746	367430	1	3	"unknown"	0
+:1747	367430	2	2	"unknown"	1
+:1748	367431	0	3	"unknown"	9
+:1749	367431	1	3	"unknown"	1
+:1750	367431	2	2	"unknown"	0.149071198499986
+:1751	367432	0	3	"unknown"	9
+:1752	367432	1	3	"unknown"	2
+:1753	367432	2	2	"unknown"	0.0158910431540932
+:1754	367433	0	3	"unknown"	9
+:1755	367433	1	3	"unknown"	3
+:1756	367433	2	2	"unknown"	0.00173385495536766
+:1757	367434	0	3	"unknown"	9
+:1758	367434	1	3	"unknown"	4
+:1759	367434	2	2	"unknown"	0.000196320414650061
+:1760	367435	0	3	"unknown"	9
+:1761	367435	1	3	"unknown"	5
+:1762	367435	2	2	"unknown"	2.34647776186144E-05
+:1763	367436	0	3	"unknown"	9
+:1764	367436	1	3	"unknown"	6
+:1765	367436	2	2	"unknown"	3.02928976464513E-06
+:1766	367437	0	3	"unknown"	9
+:1767	367437	1	3	"unknown"	7
+:1768	367437	2	2	"unknown"	4.37240315267812E-07
+:1769	367438	0	3	"unknown"	9
+:1770	367438	1	3	"unknown"	8
+:1771	367438	2	2	"unknown"	7.49860954356942E-08
+:1772	367439	0	3	"unknown"	9
+:1773	367439	1	3	"unknown"	9
+:1774	367439	2	2	"unknown"	1.7674392192427E-08
+:1775	367440	0	3	"unknown"	9
+:1776	367440	1	3	"unknown"	10
+:1777	367440	2	2	"unknown"	0
+:1778	367441	0	3	"unknown"	9
+:1779	367441	1	3	"unknown"	11
+:1780	367441	2	2	"unknown"	0
+:1781	367442	0	3	"unknown"	9
+:1782	367442	1	3	"unknown"	12
+:1783	367442	2	2	"unknown"	0
+:1784	367443	0	3	"unknown"	9
+:1785	367443	1	3	"unknown"	13
+:1786	367443	2	2	"unknown"	0
+:1787	367444	0	3	"unknown"	10
+:1788	367444	1	3	"unknown"	0
+:1789	367444	2	2	"unknown"	1
+:1790	367445	0	3	"unknown"	10
+:1791	367445	1	3	"unknown"	1
+:1792	367445	2	2	"unknown"	0.134839972492648
+:1793	367446	0	3	"unknown"	10
+:1794	367446	1	3	"unknown"	2
+:1795	367446	2	2	"unknown"	0.012974982402692
+:1796	367447	0	3	"unknown"	10
+:1797	367447	1	3	"unknown"	3
+:1798	367447	2	2	"unknown"	0.00127230170115096
+:1799	367448	0	3	"unknown"	10
+:1800	367448	1	3	"unknown"	4
+:1801	367448	2	2	"unknown"	0.000128521880085574
+:1802	367449	0	3	"unknown"	10
+:1803	367449	1	3	"unknown"	5
+:1804	367449	2	2	"unknown"	1.35473956745817E-05
+:1805	367450	0	3	"unknown"	10
+:1806	367450	1	3	"unknown"	6
+:1807	367450	2	2	"unknown"	1.51464488232257E-06
+:1808	367451	0	3	"unknown"	10
+:1809	367451	1	3	"unknown"	7
+:1810	367451	2	2	"unknown"	1.83677671621093E-07
+:1811	367452	0	3	"unknown"	10
+:1812	367452	1	3	"unknown"	8
+:1813	367452	2	2	"unknown"	2.49953651452314E-08
+:1814	367453	0	3	"unknown"	10
+:1815	367453	1	3	"unknown"	9
+:1816	367453	2	2	"unknown"	4.05478365554177E-09
+:1817	367454	0	3	"unknown"	10
+:1818	367454	1	3	"unknown"	10
+:1819	367454	2	2	"unknown"	9.06677188784648E-10
+:1820	367455	0	3	"unknown"	10
+:1821	367455	1	3	"unknown"	11
+:1822	367455	2	2	"unknown"	0
+:1823	367456	0	3	"unknown"	10
+:1824	367456	1	3	"unknown"	12
+:1825	367456	2	2	"unknown"	0
+:1826	367457	0	3	"unknown"	10
+:1827	367457	1	3	"unknown"	13
+:1828	367457	2	2	"unknown"	0
+:1829	367458	0	3	"unknown"	11
+:1830	367458	1	3	"unknown"	0
+:1831	367458	2	2	"unknown"	1
+:1832	367459	0	3	"unknown"	11
+:1833	367459	1	3	"unknown"	1
+:1834	367459	2	2	"unknown"	0.123091490979333
+:1835	367460	0	3	"unknown"	11
+:1836	367460	1	3	"unknown"	2
+:1837	367460	2	2	"unknown"	0.0107958379271883
+:1838	367461	0	3	"unknown"	11
+:1839	367461	1	3	"unknown"	3
+:1840	367461	2	2	"unknown"	0.000961769683968529
+:1841	367462	0	3	"unknown"	11
+:1842	367462	1	3	"unknown"	4
+:1843	367462	2	2	"unknown"	8.779715850569629E-05
+:1844	367463	0	3	"unknown"	11
+:1845	367463	1	3	"unknown"	5
+:1846	367463	2	2	"unknown"	8.296051686578281E-06
+:1847	367464	0	3	"unknown"	11
+:1848	367464	1	3	"unknown"	6
+:1849	367464	2	2	"unknown"	8.21431519387298E-07
+:1850	367465	0	3	"unknown"	11
+:1851	367465	1	3	"unknown"	7
+:1852	367465	2	2	"unknown"	8.6586484770554E-08
+:1853	367466	0	3	"unknown"	11
+:1854	367466	1	3	"unknown"	8
+:1855	367466	2	2	"unknown"	9.93215097345444E-09
+:1856	367467	0	3	"unknown"	11
+:1857	367467	1	3	"unknown"	9
+:1858	367467	2	2	"unknown"	1.28223517707356E-09
+:1859	367468	0	3	"unknown"	11
+:1860	367468	1	3	"unknown"	10
+:1861	367468	2	2	"unknown"	1.97853183261687E-10
+:1862	367469	0	3	"unknown"	11
+:1863	367469	1	3	"unknown"	11
+:1864	367469	2	2	"unknown"	4.21824404046294E-11
+:1865	367470	0	3	"unknown"	11
+:1866	367470	1	3	"unknown"	12
+:1867	367470	2	2	"unknown"	0
+:1868	367471	0	3	"unknown"	11
+:1869	367471	1	3	"unknown"	13
+:1870	367471	2	2	"unknown"	0
+:1871	367472	0	3	"unknown"	12
+:1872	367472	1	3	"unknown"	0
+:1873	367472	2	2	"unknown"	1
+:1874	367473	0	3	"unknown"	12
+:1875	367473	1	3	"unknown"	1
+:1876	367473	2	2	"unknown"	0.11322770341446
+:1877	367474	0	3	"unknown"	12
+:1878	367474	1	3	"unknown"	2
+:1879	367474	2	2	"unknown"	0.009124148357522651
+:1880	367475	0	3	"unknown"	12
+:1881	367475	1	3	"unknown"	3
+:1882	367475	2	2	"unknown"	0.000744983593779457
+:1883	367476	0	3	"unknown"	12
+:1884	367476	1	3	"unknown"	4
+:1885	367476	2	2	"unknown"	6.208196614828801E-05
+:1886	367477	0	3	"unknown"	12
+:1887	367477	1	3	"unknown"	5
+:1888	367477	2	2	"unknown"	5.32348467864827E-06
+:1889	367478	0	3	"unknown"	12
+:1890	367478	1	3	"unknown"	6
+:1891	367478	2	2	"unknown"	4.742537088391E-07
+:1892	367479	0	3	"unknown"	12
+:1893	367479	1	3	"unknown"	7
+:1894	367479	2	2	"unknown"	4.44179294788697E-08
+:1895	367480	0	3	"unknown"	12
+:1896	367480	1	3	"unknown"	8
+:1897	367480	2	2	"unknown"	4.44179294788697E-09
+:1898	367481	0	3	"unknown"	12
+:1899	367481	1	3	"unknown"	9
+:1900	367481	2	2	"unknown"	4.84639342976501E-10
+:1901	367482	0	3	"unknown"	12
+:1902	367482	1	3	"unknown"	10
+:1903	367482	2	2	"unknown"	5.96549793142218E-11
+:1904	367483	0	3	"unknown"	12
+:1905	367483	1	3	"unknown"	11
+:1906	367483	2	2	"unknown"	8.79564684446878E-12
+:1907	367484	0	3	"unknown"	12
+:1908	367484	1	3	"unknown"	12
+:1909	367484	2	2	"unknown"	1.79540389388913E-12
+:1910	367485	0	3	"unknown"	12
+:1911	367485	1	3	"unknown"	13
+:1912	367485	2	2	"unknown"	0
+:1913	367486	0	3	"unknown"	13
+:1914	367486	1	3	"unknown"	0
+:1915	367486	2	2	"unknown"	1
+:1916	367487	0	3	"unknown"	13
+:1917	367487	1	3	"unknown"	1
+:1918	367487	2	2	"unknown"	0.104828483672192
+:1919	367488	0	3	"unknown"	13
+:1920	367488	1	3	"unknown"	2
+:1921	367488	2	2	"unknown"	0.00781345384897492
+:1922	367489	0	3	"unknown"	13
+:1923	367489	1	3	"unknown"	3
+:1924	367489	2	2	"unknown"	0.000588961243950183
+:1925	367490	0	3	"unknown"	13
+:1926	367490	1	3	"unknown"	4
+:1927	367490	2	2	"unknown"	4.51712653897785E-05
+:1928	367491	0	3	"unknown"	13
+:1929	367491	1	3	"unknown"	5
+:1930	367491	2	2	"unknown"	3.54898978576551E-06
+:1931	367492	0	3	"unknown"	13
+:1932	367492	1	3	"unknown"	6
+:1933	367492	2	2	"unknown"	2.87861083312721E-07
+:1934	367493	0	3	"unknown"	13
+:1935	367493	1	3	"unknown"	7
+:1936	367493	2	2	"unknown"	2.43287019332506E-08
+:1937	367494	0	3	"unknown"	13
+:1938	367494	1	3	"unknown"	8
+:1939	367494	2	2	"unknown"	2.16737303093259E-09
+:1940	367495	0	3	"unknown"	13
+:1941	367495	1	3	"unknown"	9
+:1942	367495	2	2	"unknown"	2.06650910193405E-10
+:1943	367496	0	3	"unknown"	13
+:1944	367496	1	3	"unknown"	10
+:1945	367496	2	2	"unknown"	2.15448467266695E-11
+:1946	367497	0	3	"unknown"	13
+:1947	367497	1	3	"unknown"	11
+:1948	367497	2	2	"unknown"	2.53908453667547E-12
+:1949	367498	0	3	"unknown"	13
+:1950	367498	1	3	"unknown"	12
+:1951	367498	2	2	"unknown"	3.59080778777825E-13
+:1952	367499	0	3	"unknown"	13
+:1953	367499	1	3	"unknown"	13
+:1954	367499	2	2	"unknown"	7.042153453631631E-14
+]]></table>
+    <table name="Table" type="ConfigDB+FilesTableDataTable" id="_ConfigurationModel_Zôyb2XGb4pXEfFQt2hCSiQ">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="FileID" type="System.Int32" />
+        <value_column index="2" name="FileName" type="System.String" />
+        <value_column index="3" name="FileType" type="STKSolis.Satellite.SystemData.MCDHConfigurationData+EType" />
+      </header><![CDATA[
+:0	-1	"FSW_Static"	0
+:1	1	"FSW_Components"	1
+:2	2	"ODY_Components"	2
+:3	3	"FSW_SecondaryComponents"	1
+:4	7	"ODY_SecondaryComponents"	2
+:5	8	"SOL_SecondaryComponents"	6
+:6	11	"ODY_ConnectionsToFSW"	2
+:7	12	"FSW_MissionSpecific"	7
+:8	13	"FSW_UTL_Objects"	3
+:9	14	"FSW_HWR_Components"	4
+:10	15	"FSW_SelectedTelemetry"	1
+:11	16	"ODY_SelectedTelemetry"	2
+:12	17	"SOL_ConnectionsToODySSy"	6
+:13	20	"ODY_SimulationSpecific"	2
+:14	21	"FSW_SimulationSpecific"	1
+:15	22	"SOL_SelectedTelemetry"	6
+:16	23	"ODY_Objects"	2
+]]></table>
+    <table name="Table" type="ConfigDB+VersionNamesTableDataTable" id="_ConfigurationModel_zZis3UHCQBDCvH9W0HtuFw">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="VersionNameID" type="System.Int32" />
+        <value_column index="2" name="VersionName" type="System.String" />
+      </header><![CDATA[
+:0	2	"Monte Carlo Version"
+]]></table>
+    <table name="Table" type="ConfigDB+FactoryConfigTableDataTable" id="_ConfigurationModel_EOgôtwxâCc5VzrMôlD9BFg" />
+    <table name="Table" type="ConfigDB+FactoryConfigTypesTableDataTable" id="_ConfigurationModel_AxZ3ômâNnâkI8b73byhgmw" />
+  </container>
+</container>

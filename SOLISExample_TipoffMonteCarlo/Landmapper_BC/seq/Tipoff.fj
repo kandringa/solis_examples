@@ -1,0 +1,22 @@
+PROC Tipoff
+BEGIN
+
+// Send the system into RateDamp
+CMD "MDC_GOTO_RATEDAMP" ("RateDamp")
+
+// Enable the ephemeris propagator
+CMD "EPH_SET_EPHEM_PROP" ("TRUE")
+
+// Enable attitude acquisition
+CMD "ATD_ENABLE_AD"
+
+// Wait for RateDamp to complete, when it autonomously transitions to Hold Mode
+CHECK(TM("MDC_ACMODE") == "Hold",-1) // The -1 halts on this check indefinitely until it is true
+
+// Wait 10 seconds in Hold
+WAIT(10)
+
+// Transition the system to SunAcq
+CMD "MDC_GOTO_SUNACQ" ("SunAcq")
+
+ENDPROC

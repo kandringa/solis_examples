@@ -1,0 +1,20 @@
+//WARNING: This code is automatically generated and any modifications will be overwritten by STK SOLIS.
+PROC DisplayAltitude
+DATE SEQ_START_TIME
+// insert variables here, the five types are INT, REAL, STRING, DATE and TIME
+REAL Altitude_km
+REAL Eccentricity
+REAL Delay_s
+BEGIN
+SEQ_START_TIME = NOW()
+
+//Here Begins the user created sequence
+// insert code here
+Delay_s = 10
+WHILE(1)
+   Altitude_km  = TM("OEP_ALTITUDE") / 1000
+   Eccentricity = TM("EPH_ECCENTRICITY")
+   SHOW("Altitude = "+TOSTRING(Altitude_km)+" km, Eccentricity = "+TOSTRING(Eccentricity))
+   WAIT(Delay_s)
+ENDWHILE
+ENDPROC

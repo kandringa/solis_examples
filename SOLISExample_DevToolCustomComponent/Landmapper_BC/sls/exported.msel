@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<MissionSequenceExecutionList Version="11.0.0" SequenceCount="1">
+  <ListEntry Index="0" Sequence="TargetPlan" File="TargetPlan.fj" AbsoluteStartTime="0" />
+</MissionSequenceExecutionList>

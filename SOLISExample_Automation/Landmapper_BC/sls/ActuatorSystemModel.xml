@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="ActuatorSystemModel" type="SLS.ADCS.Actuators.ActuatorSystemModel" id="ActuatorSystemModel_KUzôXnbâOgz5cnCVkN0JMg" fileId="xfWsZk5uVHDZUKjqyfBZPw">
+  <container name="ReactionWheelCollection" type="SLS.ADCS.Actuators.ReactionWheelCollectionModel" id="ActuatorSystemModel_j51B0zDGzUADicUiFôOâ1Q">
+    <container name="ReactionWheelModelList" type="List`1[[SLS.ADCS.Actuators.ReactionWheelModel]]" id="ActuatorSystemModel_U0g2cDotRSUW5hZvfw6rYw">
+      <container name="ReactionWheelModelList[0]" type="SLS.ADCS.Actuators.ReactionWheelModel" id="ActuatorSystemModel_Yfm8mmP5Q7TBG00VYdnKbA">
+        <value name="Name" type="System.String">RW_Px</value>
+        <value name="SpecifyFullMounting" type="System.Boolean">False</value>
+        <value name="SpinAxis_UBDY" type="SLS.Util.VectorModel">[ 1 0 0 ]</value>
+        <value name="SpinAxis_URWL" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+        <value name="Orientation_BDY2RWL" type="SLS.Util.QuaternionModel">[ 0 0.7071067811865475 0 0.7071067811865476 ]</value>
+        <value name="Inertia_kgm2" type="System.Double">5.11569459938235E-05</value>
+        <value name="TorqueLimit_Nm" type="System.Double">0.02</value>
+        <value name="MomentumLimit_Nms" type="System.Double">0.03</value>
+        <value name="MomentumUnsaturatedThreshold" type="System.Double">0.8</value>
+        <value name="SpeedFilter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="ODY_Misalignment_RWL_deg" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+        <value name="ODY_OverrideParms" type="System.Boolean">False</value>
+        <value name="ODY_Inertia_kgm2" type="System.Double">5.11569459938235E-05</value>
+        <value name="ODY_TorqueLimit_Nm" type="System.Double">0.02</value>
+        <value name="ODY_MomentumLimit_Nms" type="System.Double">0.03</value>
+        <value name="ODY_EnableFrictionCompensation" type="System.Boolean">True</value>
+        <value name="ODY_CoulombFrictionCoeff_Nm" type="System.Double">0</value>
+        <value name="ODY_ViscousFrictionCoeff_Nmprdps" type="System.Double">0</value>
+        <value name="ODY_Stiction_Nm" type="System.Double">0</value>
+        <value name="ODY_InitialSpeed_rdps" type="System.Double">0</value>
+        <value name="ODY_Quantization_rdps" type="System.Double">0</value>
+        <value name="ODY_TorqueResponseFilter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="ODY_PowerConstant_W" type="System.Double">0</value>
+        <value name="ODY_PowerTotalResistance_Ohm" type="System.Double">0</value>
+        <value name="ODY_PowerTorqueCoefficient_NmpAmp" type="System.Double">0</value>
+        <value name="ODY_EnablePowerReturnToBus" type="System.Boolean">True</value>
+      </container>
+      <container name="ReactionWheelModelList[1]" type="SLS.ADCS.Actuators.ReactionWheelModel" id="ActuatorSystemModel_WXPWmi1iNCWvcDL9hP3s5A">
+        <value name="Name" type="System.String">RW_Py</value>
+        <value name="SpecifyFullMounting" type="System.Boolean">False</value>
+        <value name="SpinAxis_UBDY" type="SLS.Util.VectorModel">[ 0 1 0 ]</value>
+        <value name="SpinAxis_URWL" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+        <value name="Orientation_BDY2RWL" type="SLS.Util.QuaternionModel">[ -0.7071067811865475 0 0 0.7071067811865476 ]</value>
+        <value name="Inertia_kgm2" type="System.Double">5.11569459938235E-05</value>
+        <value name="TorqueLimit_Nm" type="System.Double">0.02</value>
+        <value name="MomentumLimit_Nms" type="System.Double">0.03</value>
+        <value name="MomentumUnsaturatedThreshold" type="System.Double">0.8</value>
+        <value name="SpeedFilter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="ODY_Misalignment_RWL_deg" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+        <value name="ODY_OverrideParms" type="System.Boolean">False</value>
+        <value name="ODY_Inertia_kgm2" type="System.Double">5.11569459938235E-05</value>
+        <value name="ODY_TorqueLimit_Nm" type="System.Double">0.02</value>
+        <value name="ODY_MomentumLimit_Nms" type="System.Double">0.03</value>
+        <value name="ODY_EnableFrictionCompensation" type="System.Boolean">True</value>
+        <value name="ODY_CoulombFrictionCoeff_Nm" type="System.Double">0</value>
+        <value name="ODY_ViscousFrictionCoeff_Nmprdps" type="System.Double">0</value>
+        <value name="ODY_Stiction_Nm" type="System.Double">0</value>
+        <value name="ODY_InitialSpeed_rdps" type="System.Double">0</value>
+        <value name="ODY_Quantization_rdps" type="System.Double">0</value>
+        <value name="ODY_TorqueResponseFilter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="ODY_PowerConstant_W" type="System.Double">0</value>
+        <value name="ODY_PowerTotalResistance_Ohm" type="System.Double">0</value>
+        <value name="ODY_PowerTorqueCoefficient_NmpAmp" type="System.Double">0</value>
+        <value name="ODY_EnablePowerReturnToBus" type="System.Boolean">True</value>
+      </container>
+      <container name="ReactionWheelModelList[2]" type="SLS.ADCS.Actuators.ReactionWheelModel" id="ActuatorSystemModel_5MnJbQJSjpCXn4d1gsbGaw">
+        <value name="Name" type="System.String">RW_Mz</value>
+        <value name="SpecifyFullMounting" type="System.Boolean">False</value>
+        <value name="SpinAxis_UBDY" type="SLS.Util.VectorModel">[ 0 0 -1 ]</value>
+        <value name="SpinAxis_URWL" type="SLS.Util.VectorModel">[ 0 0 1 ]</value>
+        <value name="Orientation_BDY2RWL" type="SLS.Util.QuaternionModel">[ 0 1 0 6.123031769111886E-17 ]</value>
+        <value name="Inertia_kgm2" type="System.Double">5.11569459938235E-05</value>
+        <value name="TorqueLimit_Nm" type="System.Double">0.02</value>
+        <value name="MomentumLimit_Nms" type="System.Double">0.03</value>
+        <value name="MomentumUnsaturatedThreshold" type="System.Double">0.8</value>
+        <value name="SpeedFilter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="ODY_Misalignment_RWL_deg" type="SLS.Util.VectorModel">[ 0 0 0 ]</value>
+        <value name="ODY_OverrideParms" type="System.Boolean">False</value>
+        <value name="ODY_Inertia_kgm2" type="System.Double">5.11569459938235E-05</value>
+        <value name="ODY_TorqueLimit_Nm" type="System.Double">0.02</value>
+        <value name="ODY_MomentumLimit_Nms" type="System.Double">0.03</value>
+        <value name="ODY_EnableFrictionCompensation" type="System.Boolean">True</value>
+        <value name="ODY_CoulombFrictionCoeff_Nm" type="System.Double">0</value>
+        <value name="ODY_ViscousFrictionCoeff_Nmprdps" type="System.Double">0</value>
+        <value name="ODY_Stiction_Nm" type="System.Double">0</value>
+        <value name="ODY_InitialSpeed_rdps" type="System.Double">0</value>
+        <value name="ODY_Quantization_rdps" type="System.Double">0</value>
+        <value name="ODY_TorqueResponseFilter" type="SLS.Util.DiscreteFilterModel">[[1][1]]</value>
+        <value name="ODY_PowerConstant_W" type="System.Double">0</value>
+        <value name="ODY_PowerTotalResistance_Ohm" type="System.Double">0</value>
+        <value name="ODY_PowerTorqueCoefficient_NmpAmp" type="System.Double">0</value>
+        <value name="ODY_EnablePowerReturnToBus" type="System.Boolean">True</value>
+      </container>
+    </container>
+  </container>
+  <container name="MagneticTorquerCollection" type="SLS.ADCS.Actuators.MagneticTorquerCollectionModel" id="ActuatorSystemModel_2duNUUUsTWIJOjjFzSBExQ">
+    <table name="MagneticTorquerModelList" type="List`1[[SLS.ADCS.Actuators.MagneticTorquerModel]]" id="ActuatorSystemModel_lUB0vQHIhXoFqjfFD41PGw">
+      <header>
+        <index_column index="0" name="[Row Index]" />
+        <value_column index="1" name="Name" type="System.String" />
+        <value_column index="2" name="SpecifyFullMounting" type="System.Boolean" />
+        <value_column index="3" name="PosDipoleAxis_UBDY" type="SLS.Util.VectorModel" />
+        <value_column index="4" name="PosDipoleAxis_UMTQ" type="SLS.Util.VectorModel" />
+        <value_column index="5" name="Orientation_BDY2MTQ" type="SLS.Util.QuaternionModel" />
+        <value_column index="6" name="MaxDipole_Am2" type="System.Double" />
+        <value_column index="7" name="ConstantPWCmd_s" type="System.Double" />
+        <value_column index="8" name="ODY_Misalignment_MTQ_deg" type="SLS.Util.VectorModel" />
+        <value_column index="9" name="ODY_OverrideParms" type="System.Boolean" />
+        <value_column index="10" name="ODY_MaxDipole_Am2" type="System.Double" />
+      </header><![CDATA[
+:0	"MagCoil_Py"	False	[ 0 1 0 ]	[ 0 0 1 ]	[ -0.7071067811865475 0 0 0.7071067811865476 ]	0.1154	0	[ 0 0 0 ]	False	0.1154
+:1	"MagCoil_Mz"	False	[ 0 0 -1 ]	[ 0 0 1 ]	[ 0 1 0 6.123031769111886E-17 ]	0.1139	0	[ 0 0 0 ]	False	0.1139
+:2	"MagCoil_Px"	False	[ 1 0 0 ]	[ 0 0 1 ]	[ 0 0.7071067811865475 0 0.7071067811865476 ]	0.0334	0	[ 0 0 0 ]	False	0.0334
+:3	"MagCoil_Mx"	False	[ -1 0 0 ]	[ 0 0 1 ]	[ 0 -0.7071067811865475 0 0.7071067811865476 ]	0.0313	0	[ 0 0 0 ]	False	0.0313
+:4	"MagCoil_My"	False	[ 0 -1 0 ]	[ 0 0 1 ]	[ 0.7071067811865475 0 0 0.7071067811865476 ]	0.1154	0	[ 0 0 0 ]	False	0.1154
+]]></table>
+  </container>
+  <null name="ThrusterCollection" type="SLS.ADCS.Actuators.ThrusterCollectionModel" />
+  <container name="PerfectSetCollection" type="SLS.ADCS.Actuators.PerfectSetCollectionModel" id="ActuatorSystemModel_byôpqsGOyDh4ôhppN1ldnQ" />
+  <container name="ActuatorSetContainer" type="SLS.ADCS.Actuators.ActuatorSetContainerModel" id="ActuatorSystemModel_wByXRkUeo7o6JLRNOKifSw">
+    <container name="PerfectActuatorSet" type="SLS.ADCS.Actuators.ActuatorSetPerfectModel" id="ActuatorSystemModel_5Z6EYB9LvjKli5v77ôtxsg">
+      <value name="Name" type="System.String">Perfect Actuator</value>
+      <value name="IsEnabled" type="System.Boolean">False</value>
+      <table name="ActuatorsList" type="List`1[[SLS.ADCS.Actuators.ActuatorModel]]" id="ActuatorSystemModel_Qlnkpfsx0ihg1366rrgJCg" />
+      <value name="TorqueLimit_BDY_Nm" type="SLS.Util.VectorModel">[ 1 1 1 ]</value>
+    </container>
+    <container name="ActuatorSets" type="List`1[[SLS.ADCS.Actuators.IActuatorSetBaseModel]]" id="ActuatorSystemModel_d3JR5NUb56OBkLHbi6AoMA">
+      <container name="ActuatorSets[0]" type="SLS.ADCS.Actuators.ActuatorSetRwModel" id="ActuatorSystemModel_Aô3WrAXtmdulDcsFIllnxQ">
+        <value name="Name" type="System.String">Reaction Wheels Set</value>
+        <value name="IsEnabled" type="System.Boolean">True</value>
+        <table name="ActuatorsList" type="List`1[[SLS.ADCS.Actuators.ActuatorModel]]" id="ActuatorSystemModel_5Lgsuy1GYPfPixXNôjKQ4A">
+          <header>
+            <index_column index="0" name="[Row Index]" />
+            <value_column index="1" name="IsEnabled" type="System.Boolean" />
+            <reference_column index="2" name="SensorOrActuatorModel" type="SLS.ADCS.ISensorOrActuatorModel" />
+          </header><![CDATA[
+:0	True	ActuatorSystemModel_Yfm8mmP5Q7TBG00VYdnKbA
+:1	True	ActuatorSystemModel_WXPWmi1iNCWvcDL9hP3s5A
+:2	True	ActuatorSystemModel_5MnJbQJSjpCXn4d1gsbGaw
+]]></table>
+        <value name="ControlMethod" type="SLS.ADCS.Actuators.ActuatorSystemModel+ESpeedControlState">E_BYPASS</value>
+        <value name="EnableNullSpaceControl" type="System.Boolean">False</value>
+        <value name="OverrideDefaultNullSpaceParms" type="System.Boolean">False</value>
+        <value name="NullSpaceMomentumBias_Nms" type="System.Double">0.003</value>
+        <value name="NullSpaceControlGain_1ps" type="System.Double">5</value>
+        <value name="NullSpaceTorqueDeadband_Nm" type="System.Double">0.001</value>
+        <value name="NullSpaceTorqueLimit_Nm" type="System.Double">0.004</value>
+      </container>
+      <container name="ActuatorSets[1]" type="SLS.ADCS.Actuators.ActuatorSetMtModel" id="ActuatorSystemModel_HkYaS8lpeoPpaWigUQôSnw">
+        <value name="Name" type="System.String">Magnetic Torquers Set</value>
+        <value name="IsEnabled" type="System.Boolean">True</value>
+        <table name="ActuatorsList" type="List`1[[SLS.ADCS.Actuators.ActuatorModel]]" id="ActuatorSystemModel_sRbexLGF5UtoLcYSXf4xxQ">
+          <header>
+            <index_column index="0" name="[Row Index]" />
+            <value_column index="1" name="IsEnabled" type="System.Boolean" />
+            <reference_column index="2" name="SensorOrActuatorModel" type="SLS.ADCS.ISensorOrActuatorModel" />
+          </header><![CDATA[
+:0	True	ActuatorSystemModel_lUB0vQHIhXoFqjfFD41PGw:0
+:1	True	ActuatorSystemModel_lUB0vQHIhXoFqjfFD41PGw:1
+:2	True	ActuatorSystemModel_lUB0vQHIhXoFqjfFD41PGw:2
+:3	True	ActuatorSystemModel_lUB0vQHIhXoFqjfFD41PGw:3
+:4	True	ActuatorSystemModel_lUB0vQHIhXoFqjfFD41PGw:4
+]]></table>
+        <value name="MagneticFieldSource" type="SLS.ADCS.Actuators.ActuatorSystemModel+EMagneticFieldSource">E_MODEL_ONLY</value>
+        <value name="ControlMode" type="SLS.ADCS.Actuators.ActuatorSystemModel+EMTCmdMode">E_DYNAMIC_MODE</value>
+        <value name="TotalMagneticPeriod_s" type="System.Double">10</value>
+        <value name="CommandPeriod_s" type="System.Double">1</value>
+        <value name="QuiescentPeriod_s" type="System.Double">1</value>
+        <value name="AllowDynmicQuiescentPeriod" type="System.Boolean">True</value>
+        <value name="MaxPulseWidthFraction" type="System.Double">1</value>
+        <value name="MeasurementTimeoutPeriod_s" type="System.Double">60</value>
+        <value name="SaturationPreservesDir" type="System.Boolean">True</value>
+      </container>
+    </container>
+  </container>
+</container>

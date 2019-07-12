@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="ActuatorSystemModel" type="SLS.ADCS.Actuators.ActuatorSystemModel" id="ActuatorSystemModel_KUzôXnbâOgz5cnCVkN0JMg" fileId="T0blWxze7R3UMLDIbhdVlA">
+  <null name="ReactionWheelCollection" type="SLS.ADCS.Actuators.ReactionWheelCollectionModel" />
+  <container name="MagneticTorquerCollection" type="SLS.ADCS.Actuators.MagneticTorquerCollectionModel" id="ActuatorSystemModel_2duNUUUsTWIJOjjFzSBExQ">
+    <table name="MagneticTorquerModelList" type="List`1[[SLS.ADCS.Actuators.MagneticTorquerModel]]" id="ActuatorSystemModel_lUB0vQHIhXoFqjfFD41PGw" />
+  </container>
+  <null name="ThrusterCollection" type="SLS.ADCS.Actuators.ThrusterCollectionModel" />
+  <container name="PerfectSetCollection" type="SLS.ADCS.Actuators.PerfectSetCollectionModel" id="ActuatorSystemModel_byôpqsGOyDh4ôhppN1ldnQ" />
+  <container name="ActuatorSetContainer" type="SLS.ADCS.Actuators.ActuatorSetContainerModel" id="ActuatorSystemModel_wByXRkUeo7o6JLRNOKifSw">
+    <container name="PerfectActuatorSet" type="SLS.ADCS.Actuators.ActuatorSetPerfectModel" id="ActuatorSystemModel_5Z6EYB9LvjKli5v77ôtxsg">
+      <value name="Name" type="System.String">Perfect Set</value>
+      <value name="IsEnabled" type="System.Boolean">False</value>
+      <table name="ActuatorsList" type="List`1[[SLS.ADCS.Actuators.ActuatorModel]]" id="ActuatorSystemModel_Qlnkpfsx0ihg1366rrgJCg" />
+      <value name="TorqueLimit_BDY_Nm" type="SLS.Util.VectorModel">[ 1 1 1 ]</value>
+    </container>
+    <null name="ActuatorSets" type="List`1[[SLS.ADCS.Actuators.IActuatorSetBaseModel]]" />
+  </container>
+</container>

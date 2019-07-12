@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<container name="MassPropertiesModel" type="SLS.ADCS.MassPropertiesModel" id="MassPropertiesModel_dTSJ3s2BArFOp7EO7cWLUw" fileId="BLôcFoPWyZzVjCraANfznw">
+  <value name="UseStkValues" type="System.Boolean">False</value>
+  <value name="DryInertiaTensor_BDYCM_kgm2" type="SLS.ADCS.MatrixModel">
+[[ 55 1 2 ]
+ [ 1 66 3 ]
+ [ 2 3 77 ]]</value>
+  <value name="DrySpacecraftMass_kg" type="System.Double">99</value>
+  <value name="DrySpacecraftCM_BDY_m" type="SLS.Util.VectorModel">[ 0 1 2 ]</value>
+  <value name="PropellantMass_kg" type="System.Double">11</value>
+  <value name="PropellantCM_BDY_m" type="SLS.Util.VectorModel">[ 2 1 0 ]</value>
+  <value name="ODY_OverrideParms" type="System.Boolean">False</value>
+  <value name="ODY_DryInertiaTensor_BDYCM_kgm2" type="SLS.ADCS.MatrixModel">
+[[ 55 1 2 ]
+ [ 1 66 3 ]
+ [ 2 3 77 ]]</value>
+  <value name="ODY_DrySpacecraftMass_kg" type="System.Double">99</value>
+  <value name="ODY_DrySpacecraftCM_BDY_m" type="SLS.Util.VectorModel">[ 0 1 2 ]</value>
+  <value name="ODY_PropellantMass_kg" type="System.Double">11</value>
+  <value name="ODY_PropellantCM_BDY_m" type="SLS.Util.VectorModel">[ 2 1 0 ]</value>
+</container>
